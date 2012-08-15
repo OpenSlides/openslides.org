@@ -13,38 +13,57 @@ Veranstaltung einsetzen? Dann nutzen Sie unsere abgestimmten
 <strong>Supportpakete</strong> von der Intevation GmbH!{% endblocktrans %}
 {% endblock %}
 
+
 {% block content %}
+<div class="well">
+ <img class="os-icon" src="/static/img/icons/glyphicons_078_warning_sign.png">
+ <h2>{% trans 'Aktion bis 31.10.2012' %}: <span class="discount">10%
+         {% trans 'Einstiegsrabatt' %}</span>!</h2>
+</div>
+
+
     <table class="table table-bordered table-striped packagetable">
         <thead>
           <tr>
-            <th class="span4"></th>
-            <th class="span1"><h3>OpenSlides v1.2</h3><small>{% trans 'Community-Paket' %}</small></th>
-            <th class="span1"><h3>Starter</h3><small>{% trans 'bis' %} <nobr>75 {% trans 'Teilnehmer' %}</nobr></small></th>
-            <th class="span1"><h3>Business</h3><small>{% trans 'bis' %} <nobr>150 {% trans 'Teilnehmer' %}</nobr></small></th>
-            <th class="span1"><h3>Premium</h3><small>{% trans 'bis' %} <nobr>1000 {% trans 'Teilnehmer' %}</nobr></small></th>
-            <th class="span1"><h3>Premium Plus</h3><small><nobr>&gt; 1000 {% trans 'Teilnehmer' %}</nobr></small></th>
+            <th></th>
+            <th><h3>OpenSlides v1.2</h3><small>{% trans 'Community-Paket' %}</small></th>
+            <th><h3>Starter</h3><small>{% trans 'bis' %} <nobr>75 {% trans 'Teilnehmer' %}</nobr></small></th>
+            <th><h3>Business</h3><small>{% trans 'bis' %} <nobr>150 {% trans 'Teilnehmer' %}</nobr></small></th>
+            <th><h3>Premium</h3><small>{% trans 'bis' %} <nobr>1000 {% trans 'Teilnehmer' %}</nobr></small></th>
+            <th><h3><nobr>Premium Plus</nobr></h3><small>{% trans 'ab' %} <nobr>1000 {% trans 'Teilnehmer' %}</nobr></small></th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="leftcolumn">{% trans 'Paketpreis' %}</td>
-            <td><p class="price">0,- &euro;<small>&nbsp;</small></p>
+            <td><p class="price">0,- &euro;<small>&nbsp;<br>&nbsp;</small></p>
                 <p class="orderbutton"><a class="btn" href="{% url download %}"><i
                         class="icon-download"></i> {% trans 'Herunterladen' %}</a></p>
                 </td>
-                <td><p class="price">499,- &euro;
-                    <small>{% trans 'zzgl. 19% MwSt.' %}</small></p>
+                <td><p class="price">
+                    <span class="discount">449,- &euro;</span><br>
+                    <small>{% trans 'sonst' %} 499,- &euro;<br>
+                    {% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
                 <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '1' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
-            <td><p class="price">1.999,- &euro;<small>{% trans 'zzgl. 19% MwSt.' %}</small></p>
+            <td><p class="price">
+                <span class="discount">1.799,- &euro;</span><br>
+                <small>{% trans 'sonst' %} 1.999,- &euro;<br>
+                {% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
                 <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '2' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
-            <td><p class="price">5.999,- &euro;<small>{% trans 'zzgl. 19% MwSt.' %}</small></p>
+            <td><p class="price">
+                <span class="discount">5.399,- &euro;</span><br>                
+                <small>{% trans 'sonst' %} 5.999,- &euro;<br>
+                {% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
                 <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '3' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
-            <td><p class="price">29.999,- &euro;<small>{% trans 'zzgl. 19% MwSt.' %}</small></p>
+            <td><p class="price">
+                <span class="discount">26.999,- &euro;</span><br>                
+                <small>{% trans 'sonst' %} 29.999,- &euro;<br>
+                <small>{% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
                 <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '4' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
           </tr>
           <tr>
             <td class="leftcolumn">{% url license as license_url %}
-            {% blocktrans  %}Lizenzkostenfreie Nutzung<small>OpenSlides 
+            {% blocktrans %}Lizenzkostenfreie Nutzung<small>OpenSlides 
             ist Freie Software unter der <a href="{{ license_url }}">GNU GPL v2+</a>.</small>{% endblocktrans %}</td>
             <td><i class="icon-ok"></i></td>
             <td><i class="icon-ok"></i></td>

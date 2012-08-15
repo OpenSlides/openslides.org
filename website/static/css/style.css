@@ -158,6 +158,10 @@ form .error input, form .error textarea {
     margin: 10px 0;
     white-space: nowrap;
 }
+.discount {
+    color: #CC0000;
+}
+
 .orderbutton {
     white-space: nowrap;
 }

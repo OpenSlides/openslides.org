@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:OpenSlides Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-13 14:07+0200\n"
+"POT-Creation-Date: 2012-08-15 11:49+0200\n"
 "PO-Revision-Date: 2012-07-31 11:44+0200\n"
 "Last-Translator: Oskar Hahn <mail@oshahn.de>\n"
 "Language-Team: Deutsch <mail@oshahn.de>\n"
@@ -301,7 +301,7 @@ msgstr "Development"
 
 #: templates/base.html:51 templates/base.html.py:123 templates/contact.html:5
 #: templates/contact.html.py:6 templates/impressum.html:5
-#: templates/pricing.html:178
+#: templates/order-form.html:220 templates/pricing.html:197
 msgid "Kontakt"
 msgstr "Contact"
 
@@ -336,7 +336,7 @@ msgstr "License"
 msgid "Demo"
 msgstr "Demo"
 
-#: templates/base.html:98 templates/pricing.html:118
+#: templates/base.html:98 templates/pricing.html:137
 msgid "Tipp"
 msgstr "Tip"
 
@@ -477,7 +477,8 @@ msgstr ""
 msgid "Kontaktieren Sie uns! Wir beraten Sie gerne."
 msgstr "Contact us!  We are happy to help."
 
-#: templates/contact.html:58 templates/pricing.html:180
+#: templates/contact.html:58 templates/order-form.html:223
+#: templates/pricing.html:199
 msgid "Ihr Ansprechpartner"
 msgstr "Your contact person"
 
@@ -854,8 +855,8 @@ msgid ""
 "       Ihrer Veranstaltung einsetzen? Dann nutzen Sie unsere\n"
 "       abgestimmten Supportpakete von der Intevation GmbH."
 msgstr ""
-"You want to utilize OpenSlides professionally and successfully on your event?"
-"Then use our matched support packages by Intevation GmbH."
+"You want to utilize OpenSlides professionally and successfully on your "
+"event? Then use our matched support packages by Intevation GmbH."
 
 #: templates/home.html:59
 msgid "OpenSlides ist <strong>Freie Software</strong>."
@@ -930,6 +931,14 @@ msgstr "OpenSlides manual (German)"
 msgid "Bestellformular"
 msgstr "Order form"
 
+#: templates/order-form.html:27
+msgid "Hiermit bestelle ich das Supportpaket"
+msgstr "Hereby I order the support package"
+
+#: templates/order-form.html:33
+msgid "zu den rechts angegebenen Leistungen und Kosten"
+msgstr "to the following services and costs (listed on the right side)"
+
 #: templates/order-form.html:37
 msgid "Ihre Veranstaltung"
 msgstr "Your Event"
@@ -938,9 +947,237 @@ msgstr "Your Event"
 msgid "Ihre Kontaktdaten"
 msgstr "Your contact details"
 
+#: templates/order-form.html:47
+msgid "Kostenpflichtig bestellen"
+msgstr "Send order"
+
 #: templates/order-form.html:52
 msgid "Zurück zur Paketübersicht"
 msgstr "Back to the package overview"
+
+#: templates/order-form.html:57 templates/order-form.html.py:84
+#: templates/order-form.html:122 templates/pricing.html:30
+#: templates/pricing.html.py:31 templates/pricing.html:32
+msgid "bis"
+msgstr "up to"
+
+#: templates/order-form.html:57 templates/order-form.html.py:84
+#: templates/order-form.html:122 templates/order-form.html.py:166
+#: templates/pricing.html:30 templates/pricing.html.py:31
+#: templates/pricing.html:32 templates/pricing.html.py:33
+msgid "Teilnehmer"
+msgstr "Participants"
+
+#: templates/order-form.html:59 templates/order-form.html.py:86
+#: templates/order-form.html:124 templates/order-form.html.py:168
+#: templates/pricing.html:20
+msgid "Aktion bis 31.10.2012"
+msgstr "Action until 2012-10-31"
+
+#: templates/order-form.html:60 templates/order-form.html.py:87
+#: templates/order-form.html:125 templates/order-form.html.py:169
+#: templates/pricing.html:21
+msgid "Einstiegsrabatt"
+msgstr "discount"
+
+#: templates/order-form.html:61 templates/order-form.html.py:88
+#: templates/order-form.html:126 templates/order-form.html.py:170
+#: templates/pricing.html:45 templates/pricing.html.py:50
+#: templates/pricing.html:55 templates/pricing.html.py:60
+msgid "sonst"
+msgstr "instead of"
+
+#: templates/order-form.html:61 templates/order-form.html.py:77
+#: templates/order-form.html:88 templates/order-form.html.py:110
+#: templates/order-form.html:126 templates/order-form.html.py:154
+#: templates/order-form.html:170 templates/order-form.html.py:197
+#: templates/pricing.html:46 templates/pricing.html.py:51
+#: templates/pricing.html:56 templates/pricing.html.py:61
+#: templates/pricing.html:174
+#, python-format
+msgid "zzgl. 19%% MwSt."
+msgstr "plus VAT"
+
+#: templates/order-form.html:65 templates/order-form.html.py:92
+#: templates/order-form.html:130 templates/order-form.html.py:174
+#: templates/pricing.html:66
+#, python-format
+msgid ""
+"Lizenzkostenfreie Nutzung<small>OpenSlides \n"
+"            ist Freie Software unter der <a href=\"%(license_url)s\">GNU GPL "
+"v2+</a>.</small>"
+msgstr ""
+"Usage without license fee<small>OpenSlides \n"
+"            is free software under <a href=\"%(license_url)s\">GNU GPL v2+</"
+"a>.</small>"
+
+#: templates/order-form.html:67 templates/order-form.html.py:94
+#: templates/order-form.html:132 templates/pricing.html:75
+msgid "Supportkontingent"
+msgstr "support quota"
+
+#: templates/order-form.html:68 templates/order-form.html.py:95
+#: templates/order-form.html:133 templates/order-form.html.py:177
+#: templates/pricing.html:77 templates/pricing.html.py:78
+#: templates/pricing.html:79 templates/pricing.html.py:80
+msgid "Laufzeit"
+msgstr "Duration"
+
+#: templates/order-form.html:68 templates/pricing.html:77
+msgid "Monat"
+msgstr "month"
+
+#: templates/order-form.html:69 templates/order-form.html.py:96
+#: templates/order-form.html:134 templates/order-form.html.py:178
+#: templates/pricing.html:83
+msgid ""
+"inkl. qualitätsgesicherte Updates aus\n"
+"                      der stabilen Entwicklungsversion"
+msgstr "incl. quality-assured updates of the stable development version"
+
+#: templates/order-form.html:71 templates/order-form.html.py:98
+#: templates/order-form.html:136 templates/order-form.html.py:180
+#: templates/pricing.html:92
+msgid "Werbefrei"
+msgstr "Ad free"
+
+#: templates/order-form.html:71 templates/order-form.html.py:98
+#: templates/order-form.html:136 templates/order-form.html.py:180
+#: templates/pricing.html:92
+msgid "Kein Verweis auf den professional Support"
+msgstr "No reference to the professional support"
+
+#: templates/order-form.html:72 templates/order-form.html.py:99
+#: templates/order-form.html:137 templates/order-form.html.py:181
+#: templates/pricing.html:100
+msgid "USB-Stick mit eingraviertem OpenSlides-Logo"
+msgstr "USB-Stick with engraved OpenSlides logo"
+
+#: templates/order-form.html:73 templates/order-form.html.py:100
+#: templates/order-form.html:138 templates/order-form.html.py:182
+#: templates/pricing.html:101
+msgid ""
+"\"OpenSlides portable\" bereits vorinstalliert und direkt vom USB-Stick "
+"startbar"
+msgstr ""
+"\"OpenSlides portable\" preinstalled and directly runable from the USB stick"
+
+#: templates/order-form.html:74 templates/order-form.html.py:101
+#: templates/order-form.html:139 templates/order-form.html.py:183
+#: templates/pricing.html:109
+msgid "Veranstaltungsdaten vorkonfiguriert"
+msgstr "Event preconfigured"
+
+#: templates/order-form.html:74 templates/order-form.html.py:101
+#: templates/order-form.html:106 templates/order-form.html.py:139
+#: templates/order-form.html:144 templates/order-form.html.py:183
+#: templates/order-form.html:188 templates/pricing.html:110
+#: templates/pricing.html.py:138
+msgid "nach Vorlage"
+msgstr "after submittal"
+
+#: templates/order-form.html:75 templates/order-form.html.py:102
+#: templates/order-form.html:140 templates/order-form.html.py:184
+#: templates/pricing.html:118
+msgid "Werkzeug zum Datenexport ins CSV-Format"
+msgstr "Tool for exporting data to the CSV format"
+
+#: templates/order-form.html:76 templates/order-form.html.py:108
+#: templates/order-form.html:112 templates/order-form.html.py:152
+#: templates/order-form.html:156 templates/order-form.html.py:195
+#: templates/order-form.html:199
+msgid "Optional"
+msgstr "optional"
+
+#: templates/order-form.html:77 templates/order-form.html.py:109
+#: templates/order-form.html:153 templates/order-form.html.py:196
+#: templates/pricing.html:176
+msgid "Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)"
+msgstr "On site service (e.g.: consulting, training, technical implementation)"
+
+#: templates/order-form.html:95 templates/order-form.html.py:133
+#: templates/order-form.html:177 templates/pricing.html:78
+#: templates/pricing.html.py:79 templates/pricing.html:80
+msgid "Monate"
+msgstr "months"
+
+#: templates/order-form.html:103 templates/order-form.html.py:141
+#: templates/order-form.html:185 templates/pricing.html:126
+msgid "Namenskarten mit QR-Code"
+msgstr "Name badges with QR code"
+
+#: templates/order-form.html:104 templates/order-form.html.py:142
+#: templates/order-form.html:186 templates/pricing.html:128
+msgid "Für schnelle Anwesenheitserfassung der Teilnehmer"
+msgstr "To quickly check the attendance of participants"
+
+#: templates/order-form.html:105 templates/order-form.html.py:143
+#: templates/order-form.html:187 templates/pricing.html:136
+msgid "Anpassung des Projektortemplates"
+msgstr "Customization of the projector template"
+
+#: templates/order-form.html:113 templates/order-form.html.py:157
+#: templates/order-form.html:200 templates/pricing.html:181
+msgid ""
+"Verleih oder Verkauf eines elektronischen\n"
+"                Abstimmungssystems mit Anbindung an OpenSlides"
+msgstr ""
+"Rental or sale of an electronic voting system with support for OpenSlides"
+
+#: templates/order-form.html:115 templates/order-form.html.py:159
+#: templates/order-form.html:202 templates/pricing.html:184
+msgid "Preis auf Anfrage"
+msgstr "Price by request"
+
+#: templates/order-form.html:145 templates/order-form.html.py:189
+#: templates/pricing.html:146
+msgid "OpenSlides-Schulung vor Ort"
+msgstr "On site training of OpenSlides"
+
+#: templates/order-form.html:146 templates/order-form.html.py:190
+#: templates/pricing.html:147
+msgid "Tag"
+msgstr "day"
+
+#: templates/order-form.html:147 templates/order-form.html.py:191
+#: templates/pricing.html:155
+msgid ""
+"Unterstützung bei Umstellung auf\n"
+"             leistungsfähigere Datenbank und Webserver"
+msgstr "Support for switching to a more powerful database and webserver"
+
+#: templates/order-form.html:166 templates/pricing.html:33
+msgid "ab"
+msgstr "over"
+
+#: templates/order-form.html:176
+msgid "unbegrenztes Supportkontingent"
+msgstr "unlimited support quota"
+
+#: templates/order-form.html:208
+msgid "Lieferung und Zahlung"
+msgstr "Delivery and Payment"
+
+#: templates/order-form.html:209
+msgid ""
+"Nach Bestelleingang wird Ihr persönlicher\n"
+"        <strong>USB-Stick</strong> mit OpenSlides zusammengestellt und\n"
+"        gemeinsam mit der <strong>Rechnung</strong> an Sie per Post\n"
+"        verschickt."
+msgstr ""
+"After your order received we will set up your personal <strong>USB stick</"
+"strong> with OpenSlides and send it to you (together with the "
+"<strong>invoice</strong> per post."
+
+#: templates/order-form.html:213
+msgid ""
+" Ihre Zahlung wird nach Erhalt der Rechnung\n"
+"        innerhalb von 14 Tagen gefordert."
+msgstr "Your payment is required within 14 days after receipt of the invoice."
+
+#: templates/order-form.html:222 templates/pricing.html:198
+msgid "Haben Sie noch Fragen? Wir beraten Sie gerne."
+msgstr "Do you have further questions? We are happy to help."
 
 #: templates/pm-20110915.html:5 templates/pm-20110915.html.py:14
 #: templates/pm-20120416.html:5 templates/pm-20120416.html.py:14
@@ -1101,193 +1338,66 @@ msgid ""
 "Veranstaltung einsetzen? Dann nutzen Sie unsere abgestimmten \n"
 "<strong>Supportpakete</strong> von der Intevation GmbH!"
 msgstr ""
-"You want to utilize OpenSlides professionally and successfully on your event?"
-"Then use our matched <strong>support packages</strong> by Intevation GmbH!"
+"You want to utilize OpenSlides professionally and successfully on your "
+"event? Then use our matched <strong>support packages</strong> by Intevation "
+"GmbH!"
 
-#: templates/pricing.html:21
+#: templates/pricing.html:29
 msgid "Community-Paket"
 msgstr "Community package"
 
-#: templates/pricing.html:22 templates/pricing.html.py:23
-#: templates/pricing.html:24
-msgid "bis"
-msgstr "up to"
-
-#: templates/pricing.html:22 templates/pricing.html.py:23
-#: templates/pricing.html:24 templates/pricing.html.py:25
-msgid "Teilnehmer"
-msgstr "Participants"
-
-#: templates/pricing.html:30
+#: templates/pricing.html:38
 msgid "Paketpreis"
 msgstr "Package price"
 
-#: templates/pricing.html:33
+#: templates/pricing.html:41
 msgid "Herunterladen"
 msgstr "Download"
 
-#: templates/pricing.html:36 templates/pricing.html.py:38
-#: templates/pricing.html:40 templates/pricing.html.py:42
-#: templates/pricing.html:155
-#, python-format
-msgid "zzgl. 19%% MwSt."
-msgstr "plus VAT."
-
-#: templates/pricing.html:37 templates/pricing.html.py:39
-#: templates/pricing.html:41 templates/pricing.html.py:43
+#: templates/pricing.html:47 templates/pricing.html.py:52
+#: templates/pricing.html:57 templates/pricing.html.py:62
 msgid "Bestellen"
 msgstr "Order"
 
-#: templates/pricing.html:47
-#, python-format
-msgid ""
-"Lizenzkostenfreie Nutzung<small>OpenSlides \n"
-"            ist Freie Software unter der <a href=\"%(license_url)s\">GNU GPL "
-"v2+</a>.</small>"
-msgstr ""
-"Usage without license fee<small>OpenSlides \n"
-"            is free software under <a href=\"%(license_url)s\">GNU GPL v2+</"
-"a>.</small>"
-
-#: templates/pricing.html:56
-msgid "Supportkontingent"
-msgstr "Support quota"
-
-#: templates/pricing.html:58 templates/pricing.html.py:59
-#: templates/pricing.html:60
+#: templates/pricing.html:77 templates/pricing.html.py:78
+#: templates/pricing.html:79
 msgid "Stunden"
 msgstr "Hours"
 
-#: templates/pricing.html:58 templates/pricing.html.py:59
-#: templates/pricing.html:60 templates/pricing.html.py:61
-msgid "Laufzeit"
-msgstr "Duration"
-
-#: templates/pricing.html:58
-msgid "Monat"
-msgstr "Month"
-
-#: templates/pricing.html:59 templates/pricing.html.py:60
-#: templates/pricing.html:61
-msgid "Monate"
-msgstr "Months"
-
-#: templates/pricing.html:61
+#: templates/pricing.html:80
 msgid "unbegrenzt"
 msgstr "unlimited"
 
-#: templates/pricing.html:64
-msgid ""
-"inkl. qualitätsgesicherte Updates aus\n"
-"                      der stabilen Entwicklungsversion"
-msgstr "incl. quality-assured updates of the stable development version"
-
-#: templates/pricing.html:73
-msgid "Werbefrei"
-msgstr "Ad free"
-
-#: templates/pricing.html:73
-msgid "Kein Verweis auf den professional Support"
-msgstr "No reference to the professional support"
-
-#: templates/pricing.html:81
-msgid "USB-Stick mit eingraviertem OpenSlides-Logo"
-msgstr "USB-Stick with engraved OpenSlides logo"
-
-#: templates/pricing.html:82
-msgid ""
-"\"OpenSlides portable\" bereits vorinstalliert und direkt vom USB-Stick "
-"startbar"
-msgstr ""
-"\"OpenSlides portable\" preinstalled and directly runable from the USB stick"
-
-#: templates/pricing.html:82
+#: templates/pricing.html:101
 msgid "Foto siehe unten"
 msgstr "see the photo below"
 
-#: templates/pricing.html:90
-msgid "Veranstaltungsdaten vorkonfiguriert"
-msgstr "Event preconfigured"
-
-#: templates/pricing.html:91 templates/pricing.html.py:119
-msgid "nach Vorlage"
-msgstr "after submittal"
-
-#: templates/pricing.html:99
-msgid "Werkzeug zum Datenexport ins CSV-Format"
-msgstr "Tool for exporting data to the CSV format"
-
-#: templates/pricing.html:107
-msgid "Namenskarten mit QR-Code"
-msgstr "Name tags with QR code"
-
-#: templates/pricing.html:108
+#: templates/pricing.html:127
 msgid "Neu"
 msgstr "New"
 
-#: templates/pricing.html:109
-msgid "Für schnelle Anwesenheitserfassung der Teilnehmer"
-msgstr "To quickly check the attendance of participants"
-
-#: templates/pricing.html:117
-msgid "Anpassung des Projektortemplates"
-msgstr "Customization of the projector template"
-
-#: templates/pricing.html:127
-msgid "OpenSlides-Schulung vor Ort"
-msgstr "On site training of OpenSlides"
-
-#: templates/pricing.html:128
-msgid "Tag"
-msgstr "Day"
-
-#: templates/pricing.html:136
-msgid ""
-"Unterstützung bei Umstellung auf\n"
-"             leistungsfähigere Datenbank und Webserver"
-msgstr "Support for switching to a more powerful database and webserver"
-
-#: templates/pricing.html:152
+#: templates/pricing.html:171
 msgid "Zusatzleistungen"
 msgstr "Additional services"
 
-#: templates/pricing.html:154
+#: templates/pricing.html:173
 msgid "zusätzliche Supportstunde"
 msgstr "Additional support hour"
 
-#: templates/pricing.html:157
-msgid "Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)"
-msgstr "On site service (e.g.: consulting, training, technical implementation)"
-
-#: templates/pricing.html:159
+#: templates/pricing.html:178
 #, python-format
 msgid "zzgl. 19%% MwSt. und Spesen"
 msgstr "plus VAT and expenses"
 
-#: templates/pricing.html:162
-msgid ""
-"Verleih oder Verkauf eines elektronischen\n"
-"                Abstimmungssystems mit Anbindung an OpenSlides"
-msgstr ""
-"Rental or sale of an electronic voting system with support for OpenSlides"
-
-#: templates/pricing.html:163
+#: templates/pricing.html:182
 msgid "Profi-Tipp"
 msgstr "Pro tip"
 
-#: templates/pricing.html:165
-msgid "Preis auf Anfrage"
-msgstr "Price by request"
-
-#: templates/pricing.html:179
-msgid "Haben Sie noch Fragen? Wir beraten Sie gerne."
-msgstr "Do you have further questions? We are happy to help."
-
-#: templates/pricing.html:193
+#: templates/pricing.html:212
 msgid "Alle Preisangaben gelten zuzüglich der gesetzlich gültigen MwSt."
 msgstr "All prices are plus the statutory VAT."
 
-#: templates/pricing.html:197
+#: templates/pricing.html:216
 msgid ""
 "1) Zählung pro angefangene 15-Minuten; begrenzt auf die\n"
 "        angegebene Supportlaufzeit. Enthält kein Vor-Ort-Support."
@@ -1295,7 +1405,7 @@ msgstr ""
 "1) Payment per started 15 minutes; limited to the mentioned support "
 "duration. Does not include on site support."
 
-#: templates/pricing.html:200
+#: templates/pricing.html:219
 msgid ""
 "2) Export anhand der sqlite-Datenbank; enthält\n"
 "        Grunddaten aus Tagesordnung, Anträge, Wahlen und Teillnehmer.\n"
@@ -1380,4 +1490,3 @@ msgstr ""
 #: templates/thanks-order.html:18
 msgid "Sollten Sie noch Fragen haben, melden Sie sich gerne!"
 msgstr "If you have further questions don't hesitate to contact us!"
-
