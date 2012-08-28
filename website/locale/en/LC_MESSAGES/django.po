@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:OpenSlides Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-15 11:49+0200\n"
+"POT-Creation-Date: 2012-08-28 09:37+0200\n"
 "PO-Revision-Date: 2012-07-31 11:44+0200\n"
 "Last-Translator: Oskar Hahn <mail@oshahn.de>\n"
 "Language-Team: Deutsch <mail@oshahn.de>\n"
@@ -447,10 +447,9 @@ msgid "Englischsprachige Mailingliste für Anwender und Entwickler"
 msgstr "English speaking mailing list for users and developers"
 
 #: templates/contact.html:38
-msgid ""
-"HG-commits-Mailingliste von hg.openslides.org (moderiert), für Entwickler"
+msgid "Git-commits-Mailingliste (moderiert), für Entwickler"
 msgstr ""
-"HG commits mailing list of hg.openslides.org (moderated), for developers"
+"Git commits mailing list (moderated), for developers"
 
 #: templates/contact.html:42
 msgid ""
@@ -1185,7 +1184,7 @@ msgstr "Do you have further questions? We are happy to help."
 msgid "Pressemitteilung"
 msgstr "Press release"
 
-#: templates/pm-20110915.html:16 templates/press.html:40
+#: templates/pm-20110915.html:16 templates/press.html:44
 msgid ""
 "OpenSlides 1.0 - Neues Präsentationssystem für Veranstaltungen mit "
 "Tagesordnungen, Anträgen und Wahlen"
@@ -1291,44 +1290,52 @@ msgstr ""
 "about OpenSlides."
 
 #: templates/press.html:21
-msgid "Linux-Magazin-Meldung zu OpenSlides 1.2"
-msgstr "Linux Magazin news for OpenSlides 1.2"
-
-#: templates/press.html:22
-msgid "Heise-Meldung zu OpenSlides 1.2"
-msgstr "Heise news for OpenSlides 1.2"
+msgid "Meldung in iX 9/2012 zu OpenSlides 1.2"
+msgstr "News in iX 9/2012 about OpenSlides 1.2"
 
 #: templates/press.html:23
-msgid "Pro-Linux-Meldung zu OpenSlides 1.2"
-msgstr "Pro-Linux news for OpenSlides 1.2"
-
-#: templates/press.html:24
-msgid "Artikel aus c't 26/2011 zu OpenSlides 1.1"
-msgstr "Article from c't 26/2011 zu OpenSlides 1.1"
+msgid "ubuntuusers: Ein Interview mit einem Entwickler"
+msgstr ""
 
 #: templates/press.html:25
-msgid "Artikel aus AV-views 2011/5 zu OpenSlides 1.1"
-msgstr "Article from AV-views 2011/5 for OpenSlides 1.1"
+msgid "Linux-Magazin-Meldung zu OpenSlides 1.2"
+msgstr "Linux Magazin news about OpenSlides 1.2"
 
 #: templates/press.html:26
-msgid "Pro-Linux-Meldung zu OpenSlides 1.0"
-msgstr "Pro-Linux news for OpenSlides 1.0"
+msgid "Heise-Meldung zu OpenSlides 1.2"
+msgstr "Heise news about OpenSlides 1.2"
 
-#: templates/press.html:46
+#: templates/press.html:27
+msgid "Pro-Linux-Meldung zu OpenSlides 1.2"
+msgstr "Pro-Linux news about OpenSlides 1.2"
+
+#: templates/press.html:28
+msgid "Artikel aus c't 26/2011 zu OpenSlides 1.1"
+msgstr "Article from c't 26/2011 about OpenSlides 1.1"
+
+#: templates/press.html:29
+msgid "Artikel aus AV-views 2011/5 zu OpenSlides 1.1"
+msgstr "Article from AV-views 2011/5 about OpenSlides 1.1"
+
+#: templates/press.html:30
+msgid "Pro-Linux-Meldung zu OpenSlides 1.0"
+msgstr "Pro-Linux news about OpenSlides 1.0"
+
+#: templates/press.html:50
 msgid "Pressekontakt"
 msgstr "Press contact"
 
-#: templates/press.html:59
+#: templates/press.html:63
 msgid "Logos"
 msgstr "Logos"
 
-#: templates/press.html:60
+#: templates/press.html:64
 msgid ""
 "Das Motiv von OpenSlides ist ein Overheadprojektor (auch Polylux oder "
 "Tageslichtprojektor)."
 msgstr "The motive of OpenSlides is an overhead projector."
 
-#: templates/press.html:61
+#: templates/press.html:65
 msgid "Alle Größen und Varianten des OpenSlides Logos"
 msgstr "All sizes and variants of the OpenSlides logo"
 
