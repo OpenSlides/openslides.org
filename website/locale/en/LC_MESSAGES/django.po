@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:OpenSlides Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-28 09:37+0200\n"
+"POT-Creation-Date: 2012-09-14 08:06+0200\n"
 "PO-Revision-Date: 2012-07-31 11:44+0200\n"
 "Last-Translator: Oskar Hahn <mail@oshahn.de>\n"
 "Language-Team: Deutsch <mail@oshahn.de>\n"
@@ -448,8 +448,7 @@ msgstr "English speaking mailing list for users and developers"
 
 #: templates/contact.html:38
 msgid "Git-commits-Mailingliste (moderiert), für Entwickler"
-msgstr ""
-"Git commits mailing list (moderated), for developers"
+msgstr "Git commits mailing list (moderated), for developers"
 
 #: templates/contact.html:42
 msgid ""
@@ -1435,37 +1434,23 @@ msgstr ""
 "your event here. Write us at <a href=\"mailto:support@openslides.org"
 "\">support@openslides.org</a>!"
 
-#: templates/references.html:23
-msgid ""
-"Erstmaliger Einsatz von OpenSildes: Bundesparteitag 12/2011; weitere "
-"Einsätze auf Bundes-, Landes- und Kreisparteitagen."
-msgstr ""
-"First use of OpenSlides: Bundesparteitag 12/2011; further uses on Bundes-, "
-"Landes- and Kreisparteitagen."
+#: templates/references.html:23 templates/references.html.py:30
+#: templates/references.html:36 templates/references.html.py:45
+#: templates/references.html:53 templates/references.html.py:59
+msgid "Erstmaliger Einsatz von OpenSlides"
+msgstr "First use of OpenSlides"
 
-#: templates/references.html:29
-msgid "Erstmaliger Einsatz von OpenSlides: Landesparteitag 04/2012"
-msgstr "First use of OpenSlides: Landesparteitag 04/2012"
+#: templates/references.html:24
+msgid "weitere Einsätze"
+msgstr "further uses"
 
-#: templates/references.html:35
-msgid ""
-"Erstmaliger Einsatz von OpenSlides: Kreissynode des Evangelischen "
-"Kirchenkreises Krefeld-Viersen 06/2012"
-msgstr ""
-"First use of OpenSlides: Kreissynode des Evangelischen Kirchenkreises "
-"Krefeld-Viersen 06/2012"
-
-#: templates/references.html:43
-msgid "Erstmaliger Einsatz von OpenSildes: Bundesversammlung 09/2011"
-msgstr "First use of OpenSlides: Bundesversammlung 09/2011"
-
-#: templates/references.html:44
+#: templates/references.html:47
 msgid "Ein erster Prototyp von OpenSlides wurde bereits seit 2005 verwendet."
 msgstr "A first prototype of OpenSlides was already used since 2005."
 
-#: templates/references.html:50
-msgid "Erstmaliger Einsatz von OpenSlides: Mitgliederversammlung 11/2011"
-msgstr "First use of OpenSlides: general assembly 11/2011"
+#: templates/references.html:60
+msgid "weiterer Einsatz"
+msgstr "further use"
 
 #: templates/thanks-contact.html:5
 msgid "Absendebestätigung"
@@ -1497,3 +1482,4 @@ msgstr ""
 #: templates/thanks-order.html:18
 msgid "Sollten Sie noch Fragen haben, melden Sie sich gerne!"
 msgstr "If you have further questions don't hesitate to contact us!"
+
