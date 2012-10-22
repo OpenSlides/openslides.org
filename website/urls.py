@@ -29,6 +29,7 @@ urlpatterns = i18n_patterns('',
     url(r'^about/press/20110915/$', TemplateView.as_view(template_name="pm-20110915.html"), name='pm-20110915',),
     url(r'^about/press/20120416/$', TemplateView.as_view(template_name="pm-20120416.html"), name='pm-20120416',),
     url(r'^about/press/20120726/$', TemplateView.as_view(template_name="pm-20120726.html"), name='pm-20120726',),
+    url(r'^about/press/20121022/$', TemplateView.as_view(template_name="pm-20121022.html"), name='pm-20121022',),
     url(r'^authors/$', TemplateView.as_view(template_name="authors.html"), name='authors',),
 )
 
