@@ -15,13 +15,6 @@ Veranstaltung einsetzen? Dann nutzen Sie unsere abgestimmten
 
 
 {% block content %}
-<div class="well">
- <img class="os-icon" src="/static/img/icons/glyphicons_078_warning_sign.png">
- <h2>{% trans 'Aktion bis 31.10.2012' %}: <span class="discount">10%
-         {% trans 'Einstiegsrabatt' %}</span>!</h2>
-</div>
-
-
     <table class="table table-bordered table-striped packagetable">
         <thead>
           <tr>
@@ -36,28 +29,24 @@ Veranstaltung einsetzen? Dann nutzen Sie unsere abgestimmten
         <tbody>
           <tr>
             <td class="leftcolumn">{% trans 'Paketpreis' %}</td>
-            <td><p class="price">0,- &euro;<small>&nbsp;<br>&nbsp;</small></p>
+            <td><p class="price">0,- &euro;<small>&nbsp;</small></p>
                 <p class="orderbutton"><a class="btn" href="{% url download %}"><i
                         class="icon-download"></i> {% trans 'Herunterladen' %}</a></p>
                 </td>
                 <td><p class="price">
-                    <span class="discount">449,- &euro;</span><br>
-                    <small>{% trans 'sonst' %} 499,- &euro;<br>
-                    {% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
+                    399,- &euro;
+                    <small>{% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
                 <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '1' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
             <td><p class="price">
-                <span class="discount">1.799,- &euro;</span><br>
-                <small>{% trans 'sonst' %} 1.999,- &euro;<br>
-                {% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
+                1.999,- &euro;
+                <small>{% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
                 <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '2' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
             <td><p class="price">
-                <span class="discount">5.399,- &euro;</span><br>                
-                <small>{% trans 'sonst' %} 5.999,- &euro;<br>
-                {% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
+                5.999,- &euro;
+                <small>{% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
                 <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '3' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
             <td><p class="price">
-                <span class="discount">26.999,- &euro;</span><br>                
-                <small>{% trans 'sonst' %} 29.999,- &euro;<br>
+                29.999,- &euro;
                 <small>{% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
                 <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '4' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
           </tr>
@@ -187,9 +176,12 @@ Veranstaltung einsetzen? Dann nutzen Sie unsere abgestimmten
         </div>
         </div>
         <div class="span4">
-        <div class="well thumbnail">
-            <img src="/static/img/usb-stick-openslides.jpg">
-        </div>
+            <div class="well thumbnail">
+                <img src="/static/img/usb-stick-openslides.jpg">
+            </div>
+            <div class="well thumbnail">
+                <img src="/static/img/keypads.jpg">
+            </div>
         </div>
         <div class="span4">
         <div class="well">
