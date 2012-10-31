@@ -69,6 +69,14 @@ uns Ihre Rückmeldung!{% endblocktrans %}
 
     <div class="span4">
         <div class="well">
+        <img class="os-icon" src="/static/img/icons/glyphicons_043_group.png">
+        <h2>{% trans 'Autoren' %}</h2>
+        <p>{% blocktrans %}OpenSlides ist eine Freie Software
+        Initiative von engagierten, freiwilligen {% endblocktrans %}
+        <a href="{% url authors %}">{% trans 'Autoren' %}</a>.</p>
+        </div>
+
+        <div class="well">
         <img class="os-icon" src="/static/img/icons/glyphicons_245_chat.png">
         <h2>IRC</h2>
         <p>{% blocktrans %}Für den direkten Kontakt zwischen interessierten OpenSlides-Anwendern 
