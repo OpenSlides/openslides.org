@@ -2,10 +2,10 @@
 
 {% load i18n %}
 
-{% block title %}{{ block.super }} - {% trans "Preise" %}{% endblock %}
-{% block headline %}{% trans 'Preise' %}{% endblock %}
+{% block title %}{{ block.super }} - {% trans "Supportpreise" %}{% endblock %}
+{% block headline %}{% trans 'Supportpreise' %}{% endblock %}
 
-{% block mainmenu_pricing %}active{% endblock %}
+{% block mainmenu_support %}active{% endblock %}
  
 {% block lead %}
 {% blocktrans %}Sie wollen OpenSlides professionell und erfolgreich auf Ihrer
@@ -152,7 +152,6 @@ Veranstaltung einsetzen? Dann nutzen Sie unsere abgestimmten
         </tbody>
       </table>
 
-
     <div class="row">
         <div class="span4">
         <div class="well">
@@ -202,6 +201,7 @@ Veranstaltung einsetzen? Dann nutzen Sie unsere abgestimmten
     <p><strong>
         <small>
          {% trans 'Alle Preisangaben gelten zuzüglich der gesetzlich gültigen MwSt.' %}
+         | {% trans 'Stand: 31.10.2012' %}
         </small>
         </strong></p>
     <p>

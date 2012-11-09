@@ -48,11 +48,11 @@ uns Ihre Rückmeldung!{% endblocktrans %}
         <img class="os-icon" src="/static/img/icons/glyphicons_352_nameplate.png">
         <h2>{% trans 'Professionelle Unterstützung' %}</h2>
         <p>
-        {% url pricing as pricing_url %}
+        {% url support as support_url %}
         {% blocktrans %}Sie haben Interesse an OpenSlides und denken über einen Einsatz auf Ihrer 
         Veranstaltung nach? Sie suchen dafür professionelle Unterstützung 
         bei der Vorbereitung? Sie haben Fragen zu unseren 
-        <a href="{{ pricing_url }}">Supportpaketen</a>?{% endblocktrans %}</p>
+        <a href="{{ support_url }}">Supportpaketen</a>?{% endblocktrans %}</p>
         <p>{% trans 'Kontaktieren Sie uns! Wir beraten Sie gerne.' %}</p>
         
         <p>{% trans 'Ihr Ansprechpartner' %}:<p>
@@ -68,6 +68,14 @@ uns Ihre Rückmeldung!{% endblocktrans %}
     </div>
 
     <div class="span4">
+        <div class="well">
+        <img class="os-icon" src="/static/img/icons/glyphicons_043_group.png">
+        <h2>{% trans 'Autoren' %}</h2>
+        <p>{% blocktrans %}OpenSlides ist eine Freie Software
+        Initiative von engagierten, freiwilligen {% endblocktrans %}
+        <a href="{% url authors %}">{% trans 'Autoren' %}</a>.</p>
+        </div>
+
         <div class="well">
         <img class="os-icon" src="/static/img/icons/glyphicons_245_chat.png">
         <h2>IRC</h2>
