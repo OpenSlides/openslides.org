@@ -21,8 +21,8 @@ Lesen Sie, was die Pressestimmen über OpenSlides berichten.{% endblocktrans %}{
         >{% trans 'Artikel im IHK Magazin 11/2012 (Seite 36) zum innovate! Award 2012' %}</a></li>
     <li><a href="http://www.weser-ems-manager.de/artikel?id=5296"
         >{% trans 'Artikel im Weser Ems Manager 9/2012 zum innovate! Award 2012' %}</a></li>
-    <li><a href="http://www.noz.de"
-        >{% trans 'Artikel der Neuen Osnabrücker Zeitung (20.12.2012) zum innovate! Award 2012' %}</a></li>
+    <li><a href="/static/NOZ_20_10_2012_InnovateAward.pdf"
+        >{% trans 'Artikel der Neuen Osnabrücker Zeitung (20.12.2012, Autorin: Claudia Sarrazin) zum innovate! Award 2012' %}</a></li>
     <li><a href="http://www.av-views.de/aktuell/archiv/2012/2012-4/thema1.php"
         >{% trans 'Artikel aus AV-views 2012/4 zu OpenSlides 1.2' %}</a></li>
     <li><a href="http://www.heise.de/ix/inhalt/2012/09/20/"
@@ -91,12 +91,22 @@ Lesen Sie, was die Pressestimmen über OpenSlides berichten.{% endblocktrans %}{
     <strong>Tel: ++49-541-335083-746</strong></p>
 </div>
 <div class="span4">
+    <img class="os-icon" src="/static/img/icons/glyphicons_355_announcement.png">
+    <h2>{% trans 'News' %}</h2>
+    <ul>
+    <li>2012-11-19: 
+    <a href="{% url news-20121119 %}">Die virtuelle Mitgliederversammlung im Verein</a></li>
+    <li>2012-10-18: 
+    <a href="http://mail.openslides.org/pipermail/users-de/2012-October/000065.html">OpenSlides gewinnt innovate!Interaction 
+        Award 2012 (Community-Announcement)</a></li>
+    </ul>
+
+</div>
+<div class="span4">
     <img class="os-icon" src="/static/img/icons/glyphicons_062_attach.png">
     <h2>{% trans 'Logos' %}</h2>
     <p>{% trans 'Das Motiv von OpenSlides ist ein Overheadprojektor (auch Polylux oder Tageslichtprojektor).' %}</p>
     <p><a href="http://dev.openslides.org/browser/extras/logo/">{% trans 'Alle Größen und Varianten des OpenSlides Logos' %} &raquo;</a></p>
-</div>
-<div class="span4">
     <a class="thumbnail" href="/static/img/openslides-logo_wide75.png" title="OpenSlides Logo">
       <img alt="Logo" src="/static/img/openslides-logo_wide75.png">
     </a>
