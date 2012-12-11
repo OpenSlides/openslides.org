@@ -1,0 +1,114 @@
+{% extends "base_about.html" %}
+
+{% load i18n %}
+
+{% block title %}{{ block.super }} - {% trans "Pressemitteilung" %}{% endblock %}
+{% block headline %}{% trans "Presse" %}{% endblock %}
+
+{% block submenu_press %}active{% endblock %}
+
+
+{% block content %}
+<p><i><a href="{% url press %}">&laquo; Zurück</a></i></p>
+
+<h3>{% trans 'Pressemitteilung' %}</h3>
+<br>
+<h4>+++ OpenSlides 1.3 - Neue Dashboard-Widgets und verbesserte Teilnehmerverwaltung +++</h4>
+<br>
+<p><em>Osnabrück, 11. Dezember 2012</em></p>
+
+
+<p>OpenSlides, das freie Präsentations- und Versammlungssystem, ist
+nach 5-monatiger Entwicklungsarbeit in der Version 1.3 erschienen. Die
+Software kann auf der Website <a
+    href="http://www.openslides.org/">http://www.openslides.org/</a>
+kostenlos heruntergeladen werden.</p><br>
+
+<p><b>Was ist neu in OpenSlides 1.3?</b></p>
+
+<p>Eine erweiterte Dashboard-Seite bietet neue Widgets für alle
+Teilnehmer: Delegierte behalten bespielsweise ihre gestellten und
+unterstützte Anträge besser im Blick und sehen, für welche Wahlen sie
+als Kandidat vorgeschlagen wurden. Veranstaltungsleiter steuern und
+verwalten über Widgets die aktuelle Projektorfolie.</p>
+<p>
+Neu ist, dass neben Tagesordnung, Anträgen und Wahlen nun auch
+Teilnehmer und Gruppen auf separaten Folien präsentiert werden können
+(z.B. zur Vorstellung der Delegierten bei der Mandatsvergabe).</p>
+<p>
+In der Antragsverwaltung wurde ein häufig nachgefragtes Feature in
+OpenSlides 1.3 umgesetzt: Als Antragsteller kann nun auch eine Gruppe
+(z.B. der Vorstand) anstatt eines einzelnen Teilnehmers ausgewählt
+werden.</p>
+<p>
+OpenSlides wird internationaler! Neben Deutsch und Englisch liegt nun
+auch eine vollständige französische Übersetzung bereit - ein Beitrag
+der Schweizer Piratenpartei, die OpenSlides bereits im Einsatz
+hatten. OpenSlides erkennt die passende Sprache automatisch anhand
+der genutzten Browsersprache.</p>
+<p>
+Für Linux- und Mac-Nutzer hat sich die Installation von OpenSlides 1.3
+wesentlich vereinfacht: OpenSlides ist nun über Python Package Index
+(PyPI) installierbar, d.h. ein "pip install openslides" ist
+ausreichend um OpenSlides auf dem eigenen Rechner mit allen
+Abhängigkeiten zu installieren. Für Windows-Nutzer wird, wie gewohnt,
+eine portable Version angeboten, die ohne Installation auskommt.</p>
+<p>
+Darüber hinaus wurden zahlreiche Code-Optimierungen und
+Fehlerbereinigungen umgesetzt. Eine vollständige Übersicht aller in
+OpenSlides 1.3 enthaltenen Änderungen sind im <a
+    href="https://github.com/OpenSlides/OpenSlides/blob/master/CHANGELOG">Changelog</a>
+zu finden.</p><br>
+
+
+<p><b>OpenSlides-Intitative unterstützen</b></p>
+<p>
+Der Freie Softwaredienstleister Intevation GmbH unterstützt die
+Weiterentwicklung von OpenSlides und bietet professionelle
+<a href="{% url support %}">Supportpakete</a>
+für Veranstalter an, die OpenSlides einsetzen wollen.
+Bereits zum zweiten Mal stellt Intevation die Räume für das
+OpenSlides-Entwicklertreffen vom 4.-6.1.2013 in Osnabrück bereit.</p>
+<p>
+Das OpenSlides-Team sucht Freiwillige, die sich an einer engagierten
+Freien Softare Initiative beteiligen wollen. Ob Python-Entwickler,
+Tester, Grafiker oder Übersetzer - jede Mithilfe ist sehr
+willkommen. Auch Spenden unterstützen die Weiterentwicklung von
+OpenSlides.</p><br>
+
+
+<p><b>Was ist OpenSlides?</b></p>
+<p>
+OpenSlides ist ein freies, webbasiertes Präsentations- und
+Versammlungssystem zur professionellen Darstellung und Steuerung von
+Tagesordnung, Anträgen und Wahlen auf Veranstaltungen wie
+Mitgliederversammlungen und Parteitagen. Eine große
+Stärke der Software ist die Bearbeitung der Folien über ein
+Redaktionssystem während der Präsentationsmodus läuft.</p>
+
+<p>Hohe Interaktivität schafft OpenSlides durch die Möglichkeit
+Teilnehmer mit ihren Mobilgeräten auf gezielte Inhalte von OpenSlides
+zugreifen zu lassen. "OpenSlides bietet damit mehr Transparenz in den
+demokratischen Prozessen.", sagt Emanuel Schütze, Mitbegründer von
+OpenSlides und Mitarbeiter der Intevation GmbH.</p>
+
+<p>OpenSlides ist Freie Software, lizensiert unter der GNU GPL v2+. Der
+vollständigen Quellcode kann auf der Webseite kostenlos heruntergeladen
+werden. OpenSlides ist plattformunabhängig und läuft als
+Serveranwendung überall dort, wo Python verfügbar ist (u.a. Windows,
+MacOSX, GNU/Linux).</p>
+
+<p>Download und weitere Informationen auf der offiziellen Webseite:<br>
+<a href="http://openslides.org">http://openslides.org</a></p><br>
+
+
+<p><b>Ansprechpartner:</b></p>
+
+<p>Emanuel Schütze<br>
+Intevation GmbH<br>
+Neuer Graben 17<br>
+49074 Osnabrück<br>
+E-Mail: emanuel.schuetze@intevation.de<br>
+Telefon: 0541-335083-746</p>
+
+{% endblock %}
