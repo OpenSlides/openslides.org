@@ -125,10 +125,18 @@
              </ul>
            </div>
            <div class="span4">
-             <a href="https://twitter.com/openslides" class="twitter-follow-button" data-show-count="false" data-lang="de" data-size="large">{% trans '@openslides folgen' %}</a>
-             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-              <div class="license">
+             <p>
+             <a href="https://twitter.com/intent/follow?screen_name=openslides" target="_blank" class="btn">
+               <img src="/static/img/icons/glyphicons_391_twitter_t_18px.png">
+               <b>{% trans '@openslides folgen' %}</b></span>
+             </a>
+             </p>
+             <p>
+             <a href="{% url donate %}" class="btn btn-primary">
+               <i class="icon-heart icon-white"></i> {% trans 'Spenden' %}
+             </a>
+             </p>
+             <div class="license">
               <p>OpenSlides is licensed under the <a href="{% url license %}">GNU GPL v2+</a>.<br>
                 Icons from <a href="http://glyphicons.com">Glyphicons
                  Free</a>, licensed under <a
