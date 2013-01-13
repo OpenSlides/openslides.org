@@ -887,7 +887,7 @@ msgid ""
 msgstr ""
 "OpenSlides is released under the <strong>GNU General Public Licens (GNU GPL) "
 "Version 2+</strong> and can (under the conditions of the license) be used, "
-"modifified and distributed (also with modifications) without restrictions."
+"modified and distributed (also with modifications) without restrictions."
 
 #: templates/license.html:22
 msgid ""
