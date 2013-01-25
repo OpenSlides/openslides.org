@@ -4,6 +4,7 @@ from django.shortcuts import render_to_response, render
 
 from .forms import ContactForm, OrderEventForm, OrderContactForm
 
+
 def contactform(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
