@@ -2,7 +2,7 @@ from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response, render
 
-from website.forms import ContactForm, OrderEventForm, OrderContactForm
+from .forms import ContactForm, OrderEventForm, OrderContactForm
 
 def contactform(request):
     if request.method == 'POST':

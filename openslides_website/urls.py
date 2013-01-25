@@ -3,7 +3,7 @@ from django.conf.urls.i18n import i18n_patterns
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.generic import TemplateView, RedirectView
 
-from website import views
+from .views import orderform, contactform
 
 urlpatterns = i18n_patterns('',
     url(r'^i18n/', include('django.conf.urls.i18n')),
@@ -15,13 +15,13 @@ urlpatterns = i18n_patterns('',
     url(r'^about/press/$', TemplateView.as_view(template_name="press.html"), name='press',),
     url(r'^download/$', TemplateView.as_view(template_name="download.html"), name='download',),
     url(r'^support/$', TemplateView.as_view(template_name="support.html"), name='support',),
-    url(r'^support/order/(?P<package>(1|2|3|4))$', 'website.views.orderform', name='orderform',),
+    url(r'^support/order/(?P<package>(1|2|3|4))$', orderform, name='orderform',),
     url(r'^support/thanks/$', TemplateView.as_view(template_name="thanks-order.html"), name='thanksorder',),
     url(r'^manual/$', TemplateView.as_view(template_name="manual.html"), name='manual',),
     url(r'^faq/$', TemplateView.as_view(template_name="faq.html"), name='faq',),
     url(r'^development/$', TemplateView.as_view(template_name="development.html"), name='development',),
     url(r'^contact/$', TemplateView.as_view(template_name="contact.html"), name='contact',),
-    url(r'^contact/form/$', 'website.views.contactform', name='contactform',),
+    url(r'^contact/form/$', contactform, name='contactform',),
     url(r'^contact/thanks/$', TemplateView.as_view(template_name="thanks-contact.html"), name='thankscontact',),
     url(r'^donate/$', TemplateView.as_view(template_name="donate.html"), name='donate',),
     url(r'^demo/$', TemplateView.as_view(template_name="demo.html"), name='demo',),
