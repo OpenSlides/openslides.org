@@ -2,7 +2,7 @@ Instruction to update translation for openslides.org:
 -----------------------------------------------------
 
 1. Go to the website directory (which contains the 'locale' directory):
-   $ cd website
+   $ cd openslides_website
 
 2. Update the English po file (locale/en/LC_MESSAGES/django.po):
    $ django-admin.py makemessages -l en
