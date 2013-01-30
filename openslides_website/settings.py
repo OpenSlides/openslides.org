@@ -26,6 +26,10 @@ LANGUAGES = (
     ('en', ugettext('Englisch')),
 )
 
+LOCALE_PATHS = (
+    os.path.join(SITE_ROOT, 'locale'),
+)
+
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
