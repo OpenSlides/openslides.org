@@ -54,16 +54,15 @@ Supportpaket
     {% if package == '1' %}
         <div class="header">  
             <h3>OpenSlides Starter</h3>
-            <small>{% trans 'bis' %} <nobr>75 {% trans 'Teilnehmer' %}</nobr></small>
              <p class="price">399,- &euro;
-            <small>{% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
+            <small>{% blocktrans %}zzgl. MwSt.{% endblocktrans %}</small></p>
         </div>
         <ul class="unstyled">
             <li>{% url license as license_url %}
             {% blocktrans %}Lizenzkostenfreie Nutzung<small>OpenSlides 
             ist Freie Software unter der <a href="{{ license_url }}">GNU GPL v2+</a>.</small>{% endblocktrans %}</li>
             <li><strong>2h {% trans 'Supportkontingent' %}</strong>
-                <small>{% trans 'Laufzeit' %}: 1 {% trans 'Monat' %}</small></li>
+                <small>{% trans 'Supportlaufzeit begrenzt bis Veranstaltungsende' %}</small></li>
             <li>OpenSlides 1.3.1+ <small>{% blocktrans %}inkl. qualitätsgesicherte Updates aus
                       der stabilen Entwicklungsversion{% endblocktrans %}</small></li>
             <li>{% trans 'Werbefrei' %} <small>{% trans 'Kein Verweis auf den professional Support' %}</small></li>
@@ -72,23 +71,22 @@ Supportpaket
             <li>{% trans 'Veranstaltungsdaten vorkonfiguriert' %} <small>{% trans 'nach Vorlage' %}</small></li>
             <li>{% trans 'Werkzeug zum Datenexport ins CSV-Format' %}<br><br></li>
             <li><span class="label label-important">{% trans 'Optional' %}</span>
-            {% trans 'Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)' %}<br>1000,- &euro;/d {% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}
+            {% trans 'Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)' %}<br>1000,- &euro;/d {% blocktrans %}zzgl. MwSt.{% endblocktrans %}
                 </small></li>
         </ul>
     {% endif %}
     {% if package == '2' %}
         <div class="header">  
             <h3>OpenSlides Business</h3>
-            <small>{% trans 'bis' %} <nobr>150 {% trans 'Teilnehmer' %}</nobr></small>
             <p class="price">1.999,- &euro;
-            <small>{% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
+            <small>{% blocktrans %}zzgl. MwSt.{% endblocktrans %}</small></p>
         </div>
         <ul class="unstyled">
             <li>{% url license as license_url %}
             {% blocktrans %}Lizenzkostenfreie Nutzung<small>OpenSlides 
             ist Freie Software unter der <a href="{{ license_url }}">GNU GPL v2+</a>.</small>{% endblocktrans %}</li>
             <li><strong>6h {% trans 'Supportkontingent' %}</strong>
-                <small>{% trans 'Laufzeit' %}: 2 {% trans 'Monate' %}</small></li>
+                <small>{% trans 'Supportlaufzeit begrenzt bis Veranstaltungsende' %}</small></li>
             <li>OpenSlides 1.3.1+ <small>{% blocktrans %}inkl. qualitätsgesicherte Updates aus
                       der stabilen Entwicklungsversion{% endblocktrans %}</small></li>
             <li>{% trans 'Werbefrei' %} <small>{% trans 'Kein Verweis auf den professional Support' %}</small></li>
@@ -103,7 +101,7 @@ Supportpaket
 
             <li><span class="label label-important">{% trans 'Optional' %}</span>
             {% trans 'Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)' %}
-            <small>1000,- &euro;/d {% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}
+            <small>1000,- &euro;/d {% blocktrans %}zzgl. MwSt.{% endblocktrans %}
                 </small></li>
             <li><span class="label label-important">{% trans 'Optional' %}</span>
             {% blocktrans %}Verleih oder Verkauf eines elektronischen
@@ -115,16 +113,15 @@ Supportpaket
     {% if package == '3' %}
         <div class="header">  
             <h3>OpenSlides Premium</h3>
-            <small>{% trans 'bis' %} <nobr>1000 {% trans 'Teilnehmer' %}</nobr></small>
             <p class="price">5.999,- &euro;
-            <small>{% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}</small></p>
+            <small>{% blocktrans %}zzgl. MwSt.{% endblocktrans %}</small></p>
         </div>
         <ul class="unstyled">
             <li>{% url license as license_url %}
             {% blocktrans %}Lizenzkostenfreie Nutzung<small>OpenSlides 
             ist Freie Software unter der <a href="{{ license_url }}">GNU GPL v2+</a>.</small>{% endblocktrans %}</li>
             <li><strong>12h {% trans 'Supportkontingent' %}</strong>
-                <small>{% trans 'Laufzeit' %}: 3 {% trans 'Monate' %}</small></li>
+                <small>{% trans 'Supportlaufzeit begrenzt bis Veranstaltungsende' %}</small></li>
             <li>OpenSlides 1.3.1+ <small>{% blocktrans %}inkl. qualitätsgesicherte Updates aus
                       der stabilen Entwicklungsversion{% endblocktrans %}</small></li>
             <li>{% trans 'Werbefrei' %} <small>{% trans 'Kein Verweis auf den professional Support' %}</small></li>
@@ -145,7 +142,7 @@ Supportpaket
                 
             <li><span class="label label-important">{% trans 'Optional' %}</span>
             {% trans 'Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)' %}
-            <small>1000,- &euro;/d {% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}
+            <small>1000,- &euro;/d {% blocktrans %}zzgl. MwSt.{% endblocktrans %}
                 </small></li>
             <li><span class="label label-important">{% trans 'Optional' %}</span>
             {% blocktrans %}Verleih oder Verkauf eines elektronischen
@@ -157,7 +154,6 @@ Supportpaket
     {% if package == '4' %}
         <div class="header">  
             <h3>OpenSlides Premium Plus</h3>
-            <small>{% trans 'ab' %} 1000 {% trans 'Teilnehmer' %}</small>
             <p class="price">Preis auf Anfrage</p>
         </div>
         <ul class="unstyled">
@@ -165,7 +161,7 @@ Supportpaket
             {% blocktrans %}Lizenzkostenfreie Nutzung<small>OpenSlides 
             ist Freie Software unter der <a href="{{ license_url }}">GNU GPL v2+</a>.</small>{% endblocktrans %}</li>
             <li><strong>{% trans 'unbegrenztes Supportkontingent' %}</strong>
-                <small>{% trans 'Laufzeit' %}: 3 {% trans 'Monate' %}</small></li>
+                <small>{% trans 'Supportlaufzeit' %}: 3 {% trans 'Monate' %}</small></li>
             <li>OpenSlides 1.3.1+ <small>{% blocktrans %}inkl. qualitätsgesicherte Updates aus
                       der stabilen Entwicklungsversion{% endblocktrans %}</small></li>
             <li>{% trans 'Werbefrei' %} <small>{% trans 'Kein Verweis auf den professional Support' %}</small></li>
@@ -185,7 +181,7 @@ Supportpaket
                 
             <li><span class="label label-important">{% trans 'Optional' %}</span>
             {% trans 'Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)' %}
-            <small>1000,- &euro;/d {% blocktrans %}zzgl. 19% MwSt.{% endblocktrans %}
+            <small>1000,- &euro;/d {% blocktrans %}zzgl. MwSt.{% endblocktrans %}
                 </small></li>
             <li><span class="label label-important">{% trans 'Optional' %}</span>
             {% blocktrans %}Verleih oder Verkauf eines elektronischen
