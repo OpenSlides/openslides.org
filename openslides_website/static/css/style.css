@@ -1,7 +1,7 @@
 /**
  * OpenSlides website style
  *
- * :copyright: 2012 by OpenSlides team, see AUTHORS.
+ * :copyright: 2012-2013 by OpenSlides team, see AUTHORS.
  * :license: GNU GPL, see LICENSE for more details.
  */
 body {
@@ -13,6 +13,9 @@ body {
 }
 .navbar .nav.pull-right > li > a {
     font-size: 11px;
+}
+.navbar .nav .active a, .navbar .nav .active a:hover {
+    background-color: #525252;
 }
 .hero-unit {
     margin-top: -15px;
@@ -207,6 +210,11 @@ input, textarea {
     float: left;
     margin: 7px 10px 0 0;
     opacity: 0.8;
+}
+.logo-right {
+    float: right;
+    margin: 0 0 10px 10px;
+    text-align: right;
 }
 h2 {
     font-size: 22px;

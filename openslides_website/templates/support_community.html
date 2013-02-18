@@ -1,0 +1,83 @@
+{% extends "base_support.html" %}
+
+{% load i18n %}
+
+{% block title %}{{ block.super }} - {% trans "Community-Support" %}{% endblock %}
+{% block headline %}{% trans "Community-Support" %}{% endblock %}
+
+{% block submenu_support_community %}active{% endblock %}
+
+{% block lead %}
+{% blocktrans %}Hier gibt es Hilfe von der OpenSlides-Gemeinschaft{% endblocktrans %}
+{% endblock %}
+
+{% block content %}
+
+<br>
+<div class="row">
+    <div class="span4">
+        <div class="well">
+        <img class="os-icon" src="/static/img/icons/glyphicons_399_e-mail.png">
+        <h2>{% trans 'Mailinglisten' %}</h2>
+        <p>{% blocktrans %}OpenSlides bietet öffentliche Mailinglisten zur Koordination der Entwicklung 
+        sowie Diskussion von Tickets, Anwenderfragen und speziellen Anwendungsfällen. 
+        Bei Problemen und Fragen zu OpenSlides schreiben Sie an die 
+        OpenSlides-Mailingliste in Ihrer Sprache.{% endblocktrans %} 
+               
+        <blockquote>
+        <p><strong>users-de@openslides.org</strong><small>{% trans 'Deutschsprachige Mailingliste für Anwender und Entwickler' %}</small></p>
+        <p><a class="btn btn-primary" href="http://mail.openslides.org/listinfo/users-de/ ">{% trans 'Abonnieren' %} &raquo;</a>
+        <a class="btn" href="http://mail.openslides.org/pipermail/users-de/ ">{% trans 'Archiv' %} &raquo;</a></p>
+        <br>
+        <p><strong>users-en@openslides.org</strong><small>{% trans 'Englischsprachige Mailingliste für Anwender und Entwickler' %}</small></p>
+        <p><a class="btn btn-primary" href="http://mail.openslides.org/listinfo/users-en/">{% trans 'Abonnieren' %} &raquo;</a>
+        <a class="btn" href="http://mail.openslides.org/pipermail/users-en/">{% trans 'Archiv' %} &raquo;</a></p>
+        </blockquote>
+        <p><small>{% trans 'Hinweis: Bitte abonnieren Sie eine Mailingliste bevor Sie an diese schreiben!' %}</small></p>
+        </div>
+    </div>
+
+    <div class="span4">
+        <div class="well">
+        <img class="os-icon" src="/static/img/icons/glyphicons_235_pen.png">
+        <h2>{% trans 'Probleme und Wünsche berichten' %}</h2>
+        <p>
+        {% url support as support_url %}
+        {% blocktrans %}Probleme und Wünsche an OpenSlides erfassen
+        wir in einzelnen Tickets auf 
+        <a href="https://github.com/OpenSlides/OpenSlides">GitHub</a>.{% endblocktrans %}
+        
+        <p><a class="btn btn-primary" target="_blank"
+            href="https://github.com/OpenSlides/OpenSlides/issues/new">Neues Ticket &raquo;</a>
+        <a class="btn" target="_blank"
+            href="https://github.com/OpenSlides/OpenSlides/issues">Alle Tickets &raquo;</a></p>
+        </p>
+         </div>
+    </div>
+
+    <div class="span4">
+        <div class="well">
+        <img class="os-icon" src="/static/img/icons/glyphicons_245_chat.png">
+        <h2>IRC</h2>
+        <p>{% blocktrans %}Für den direkten Kontakt zwischen interessierten OpenSlides-Anwendern 
+        und -Entwicklern nutzen Sie IRC (ein textbasierter Chat):{% endblocktrans %}</p>
+        
+        <blockquote>
+        <p>{% trans 'Netzwerk' %}: freenode<br>
+        {% trans 'Kanal' %}: #openslides</p>
+        <br>
+        <p><a class="btn btn-primary"
+            href="http://webchat.freenode.net?channels=openslides&uio=d4s">IRC Web-Chat starten &raquo;</a></p>
+        </blockquote>
+        </div>
+        
+        <div class="well">
+        <img class="os-icon" src="/static/img/icons/glyphicons_043_group.png">
+        <h2>{% trans 'Hauptentwickler' %}</h2>
+        <p>{% blocktrans %}Direktkontakt zu den Hauptentwicklern gibt
+        es über das Kontaktformular.{% endblocktrans %}</p>
+        <p><a class="btn btn-primary" href="{% url contactform %}">{% trans 'Zum Kontaktformular' %} &raquo;</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

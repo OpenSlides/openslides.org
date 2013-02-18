@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block mainmenu_support %}active{% endblock %}
+
+{% block submenu %}
+  <div class="subnav subnav-fixed">
+    <ul class="nav nav-pills">
+        <li class="{% block submenu_support_packages %}{% endblock %}">
+            <a href="{% url support_packages %}">{% trans "Supportpakete" %}</a>
+        </li>
+        <li class="{% block submenu_support_community %}{% endblock %}">
+            <a href="{% url support_community %}">{% trans "Community-Support" %}</a>
+        </li>
+        <li class="{% block submenu_support_manual %}{% endblock %}">
+            <a href="{% url support_manual %}">{% trans "Handbuch" %}</a>
+        </li>
+        <li class="{% block submenu_support_faq %}{% endblock %}">
+            <a href="{% url support_faq %}">{% trans "FAQ" %}</a>
+        </li>
+    </ul>
+  </div>
+{% endblock %}

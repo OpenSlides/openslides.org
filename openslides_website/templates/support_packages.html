@@ -1,0 +1,245 @@
+{% extends "base_support.html" %}
+
+
+{% load i18n %}
+
+{% block title %}{{ block.super }} - {% trans "Supportpakete" %}{% endblock %}
+{% block headline %}{% trans 'Supportpakete' %}{% endblock %}
+
+{% block mainmenu_support %}active{% endblock %}
+{% block submenu_support_packages %}active{% endblock %}
+
+{% block lead %}
+<span class="logo-right">
+<a href="http://intevation.de" target="_blank">
+    <img alt="Intevation GmbH" src="/static/img/intevation-logo.png">
+</a><br>
+<small>Ein Service der <a href="http://intevation.de" target="_blank">Intevation GmbH</a></small>
+</span>
+
+{% blocktrans %}Sie wollen OpenSlides professionell und erfolgreich auf Ihrer
+Veranstaltung einsetzen? Der Open Source Spezialist
+Intevation bietet Ihnen abgestimmte Supportpakete für
+OpenSlides an.{% endblocktrans %}
+{% endblock %}
+
+
+{% block content %}
+<p>
+{% blocktrans %}Die Intevation GmbH arbeitet eng mit der
+OpenSlides-Gemeinschaft zusammen und unterstützt die Weiterentwicklung und Pflege von
+OpenSlides. Jedes gekaufte Supportpaket fördert diese Freie
+Software Entwicklung.{% endblocktrans %}
+</p>
+
+    <table class="table table-bordered table-striped packagetable">
+        <thead>
+          <tr>
+            <th></th>
+            <th><h3>OpenSlides v1.3.1</h3><small>{% trans 'Community-Paket' %}</small></th>
+            <th><h3>Starter</h3></th>
+            <th><h3>Business</h3></th>
+            <th><h3>Premium</h3></th>
+            <th><h3><nobr>Premium Plus</nobr></h3></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="leftcolumn">{% trans 'Paketpreis' %}</td>
+            <td><p class="price">0,- &euro;<small>&nbsp;</small></p>
+                <p class="orderbutton"><a class="btn" href="{% url download %}"><i
+                        class="icon-download"></i> {% trans 'Herunterladen' %}</a></p>
+                </td>
+                <td><p class="price">
+                    399,- &euro;
+                    <small>{% blocktrans %}zzgl. MwSt.{% endblocktrans %}</small></p>
+                <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '1' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
+            <td><p class="price">
+                1.999,- &euro;
+                <small>{% blocktrans %}zzgl. MwSt.{% endblocktrans %}</small></p>
+                <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '2' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
+            <td><p class="price">
+                5.999,- &euro;
+                <small>{% blocktrans %}zzgl. MwSt.{% endblocktrans %}</small></p>
+                <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '3' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
+            <td><p class="price">
+                <i style="font-size:14px;">{% trans 'auf Anfrage' %}</i>
+                <small>&nbsp;</small></p>
+                <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '4' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
+          </tr>
+          <tr>
+            <td class="leftcolumn">{% url license as license_url %}
+            {% blocktrans %}Lizenzkostenfreie Nutzung<small>OpenSlides 
+            ist Freie Software unter der <a href="{{ license_url }}">GNU GPL v2+</a>.</small>{% endblocktrans %}</td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+          </tr>
+          <tr>
+            <td class="leftcolumn">{% trans 'Supportkontingent' %} <sup>1</sup></td>
+            <td>-</td>
+            <td>2 {% trans 'Stunden' %}</td>
+            <td>6 {% trans 'Stunden' %}</td>
+            <td>12 {% trans 'Stunden' %}</td>
+            <td>{% trans 'unbegrenzt' %}</td>
+          </tr>
+          <tr>
+            <td class="leftcolumn">OpenSlides 1.3+ <small>{% blocktrans %}inkl. qualitätsgesicherte Updates aus
+                      der stabilen Entwicklungsversion{% endblocktrans %}</small></td>
+            <td>-</td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+          </tr>
+          <tr>
+            <td class="leftcolumn">{% trans 'Werbefrei' %} <small>{% trans 'Kein Verweis auf den professional Support' %}</small></td>
+            <td>-</td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+          </tr>
+          <tr>
+            <td class="leftcolumn">{% trans 'USB-Stick mit eingraviertem OpenSlides-Logo' %}
+            <small>{% trans '"OpenSlides portable" bereits vorinstalliert und direkt vom USB-Stick startbar' %}, {% trans 'Foto siehe unten' %}</small></td>
+            <td>-</td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+          </tr>
+          <tr>
+            <td class="leftcolumn">{% trans 'Veranstaltungsdaten vorkonfiguriert' %}
+                    <small>{% trans 'nach Vorlage' %}</small></td>
+            <td>-</td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+          </tr>
+          <tr>
+            <td class="leftcolumn">{% trans 'Werkzeug zum Datenexport ins CSV-Format' %} <sup>2</sup></td>
+            <td>-</td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+          </tr>
+          <tr>
+            <td class="leftcolumn">{% trans 'Namenskarten mit QR-Code' %} <span class="label
+                    label-important">{% trans 'Neu' %}</span>
+               <small>{% trans 'Für schnelle Anwesenheitserfassung der Teilnehmer' %}</small></td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+          </tr>
+          <tr>
+            <td class="leftcolumn">{% trans 'Anpassung des Projektortemplates' %} 
+                <span class="label label-important">{% trans 'Tipp' %}</span>
+                <small>{% trans 'nach Vorlage' %}</small></td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+          </tr>
+          <tr>
+              <td class="leftcolumn">{% trans 'OpenSlides-Schulung vor Ort' %}
+                  <small>1 {% trans 'Tag' %}</small></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+          </tr>
+          <tr>
+            <td class="leftcolumn">{% blocktrans %}Unterstützung bei Umstellung auf
+             leistungsfähigere Datenbank und Webserver{% endblocktrans %}</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="icon-ok"></i></td>
+            <td><i class="icon-ok"></i></td>
+          </tr>
+        </tbody>
+      </table>
+
+    <div class="row">
+        <div class="span4">
+        <div class="well">
+        <img class="os-icon" src="/static/img/icons/glyphicons_069_gift.png">
+        <h2>{% trans 'Zusatzleistungen' %}</h2>
+        <ul>
+            <li><p>{% trans 'zusätzliche Supportstunde' %}<br> 
+               <em>100,- &euro;/h <small>{% trans 'zzgl. MwSt.' %}</small></p></em>
+            </li>
+            <li><p>{% trans 'Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)' %}
+                <br>
+                <em>1000,- &euro;/d <small> {% trans 'zzgl. MwSt. und Spesen' %}</small></em>
+                </p>
+            </li>
+            <li><p>{% blocktrans %}Verleih oder Verkauf eines elektronischen
+            Abstimmungssystems der Firma 
+            <a href="http://www.keypaddepot.de/de/Wahlen/Mitglieder-Versammlungen/VoteCollector-App-nur-Plug-In-zu-OpenSlides.html">Voteworks</a>
+            mit Anbindung an OpenSlides{% endblocktrans %}
+            <span class="label label-important">{% trans 'Profi-Tipp' %}</span>
+                <br>
+                <em>{% trans 'Preis auf Anfrage' %}</em></p>
+            </li>
+            <li><p>{% blocktrans %}Hosting Ihrer
+            OpenSlides-Installation (zur Vorbereitung und Durchführung
+            Ihrer Veranstaltung){% endblocktrans %}
+                <br>
+                <em>{% trans 'Preis auf Anfrage' %}</em></p>
+            </li>
+        </ul>
+        </div>
+        </div>
+        <div class="span4">
+            <div class="well thumbnail">
+                <img src="/static/img/usb-stick-openslides.jpg"
+                title="USB-Stick mit eingraviertem OpenSlides-Logo">
+            </div>
+            <div class="well thumbnail">
+                <img src="/static/img/keypads.jpg"
+                title="Keypads zur elektronischen Abstimmungssystem mit OpenSlides">
+            </div>
+        </div>
+        <div class="span4">
+        <div class="well">
+            <img class="os-icon" src="/static/img/icons/glyphicons_352_nameplate.png">
+            <h2>{% trans 'Kontakt' %}</h2>
+            <p><strong>{% trans 'Haben Sie noch Fragen? Wir beraten Sie gerne.' %}</strong>
+            <br>{% trans 'Ihr Ansprechpartner' %}:</p>
+            <p><a href="mailto:emanuel.schuetze@intevation.de">Emanuel Schütze</a><br>
+            Intevation GmbH<br>
+            Neuer Graben 17<br>
+            D-49074 Osnabrück<br>
+            <strong>Telefon: ++49-541-335083-746</strong></p>
+        </div>
+       </div>
+    </div>
+
+    <hr>
+    <p><strong>
+        <small>
+         {% trans 'Alle Preisangaben gelten zuzüglich der gesetzlich gültigen MwSt.' %}
+         | {% trans 'Stand: 18.02.2013' %}
+        </small>
+        </strong></p>
+    <p>
+    <small>{% blocktrans %}1) Zählung pro angefangene 15-Minuten.
+        Supportlaufzeit begrenzt bis Veranstaltungsende; bei
+        'Premium Plus' 3 Monate Laufzeit. Enthält keinen Vor-Ort-Support.{% endblocktrans %}</small>
+    <br>
+    <small>{% blocktrans %}2) Export anhand der sqlite-Datenbank; enthält
+        Grunddaten aus Tagesordnung, Anträge, Wahlen und Teillnehmer.
+        Weiterverarbeitung möglich.{% endblocktrans %}</small>
+    </p>
+
+{% endblock %}
