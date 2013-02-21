@@ -5,7 +5,7 @@
 {% block mainmenu_about %}active{% endblock %}
 
 {% block submenu %}
-  <div class="subnav subnav-fixed">
+  <div class="subnav navbar-fixed-top">
     <ul class="nav nav-pills">
         <li class="{% block submenu_about %}{% endblock %}"><a href="{% url about %}">{% trans "Was ist OpenSlides?" %}</a></li>
         <li class="{% block submenu_features %}{% endblock %}"><a href="{% url features %}">{% trans "Funktionen" %}</a></li>
