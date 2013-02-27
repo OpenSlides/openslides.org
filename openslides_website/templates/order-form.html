@@ -13,14 +13,10 @@ Supportpaket
 {% if package == '1' %}Starter{% endif %}
 {% if package == '2' %}Business{% endif %}
 {% if package == '3' %}Premium{% endif %}
-{% if package == '4' %}Premium Plus{% endif %}
 </strong>
 {% endblock %}
 
 {% block content %}
-
-
-
 
 <div class="row">
     <div class="span7">
@@ -29,7 +25,6 @@ Supportpaket
 {% if package == '1' %}Starter{% endif %}
 {% if package == '2' %}Business{% endif %}
 {% if package == '3' %}Premium{% endif %}
-{% if package == '4' %}Premium Plus{% endif %}
 </strong> {% trans "zu den rechts angegebenen Leistungen und Kosten" %}.</p>
 
     <form action="" method="post">{% csrf_token %}
@@ -48,148 +43,82 @@ Supportpaket
        </button><br>
     </form>
     </div>
+
     <div class="span5">
-    <p class="pager" style="text-align: right;"><a href="{% url support_packages %}">&larr; {% trans "Zurück zur Paketübersicht" %}</a></p>
+    <ul class="pager">
+        <li class="next"><a href="{% url support_packages %}">&larr; {% trans "Zurück zur Paketübersicht" %}</a></li>
+    </ul>
     <div class="well box">
-    {% if package == '1' %}
         <div class="header">  
-            <h3>OpenSlides Starter</h3>
-             <p class="price">399,- &euro;
-            <small>{% blocktrans %}zzgl. MwSt.{% endblocktrans %}</small></p>
+            <h3>OpenSlides
+            {% if package == '1' %}Starter{% endif %}
+            {% if package == '2' %}Business{% endif %}
+            {% if package == '3' %}Premium{% endif %}
+            </h3>
+            <p class="price">
+            {% if package == '1' %}80,-{% endif %}
+            {% if package == '2' %}800,-{% endif %}
+            {% if package == '3' %}2500,-{% endif %}
+            &euro;
+            <small>{% trans 'zzgl. MwSt.' %}</small></p>
         </div>
         <ul class="unstyled">
             <li>{% url license as license_url %}
-            {% blocktrans %}Lizenzkostenfreie Nutzung<small>OpenSlides 
-            ist Freie Software unter der <a href="{{ license_url }}">GNU GPL v2+</a>.</small>{% endblocktrans %}</li>
-            <li><strong>2h {% trans 'Supportkontingent' %}</strong>
-                <small>{% trans 'Supportlaufzeit begrenzt bis Veranstaltungsende' %}</small></li>
-            <li>OpenSlides 1.3.1+ <small>{% blocktrans %}inkl. qualitätsgesicherte Updates aus
-                      der stabilen Entwicklungsversion{% endblocktrans %}</small></li>
-            <li>{% trans 'Werbefrei' %} <small>{% trans 'Kein Verweis auf den professional Support' %}</small></li>
-            <li>{% trans 'USB-Stick mit eingraviertem OpenSlides-Logo' %}
-            <small>{% trans '"OpenSlides portable" bereits vorinstalliert und direkt vom USB-Stick startbar' %}</small></li>
-            <li>{% trans 'Veranstaltungsdaten vorkonfiguriert' %} <small>{% trans 'nach Vorlage' %}</small></li>
-            <li>{% trans 'Werkzeug zum Datenexport ins CSV-Format' %}<br><br></li>
-            <li><span class="label label-important">{% trans 'Optional' %}</span>
-            {% trans 'Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)' %}<br>1000,- &euro;/d {% blocktrans %}zzgl. MwSt.{% endblocktrans %}
-                </small></li>
-        </ul>
-    {% endif %}
-    {% if package == '2' %}
-        <div class="header">  
-            <h3>OpenSlides Business</h3>
-            <p class="price">1.999,- &euro;
-            <small>{% blocktrans %}zzgl. MwSt.{% endblocktrans %}</small></p>
-        </div>
-        <ul class="unstyled">
-            <li>{% url license as license_url %}
-            {% blocktrans %}Lizenzkostenfreie Nutzung<small>OpenSlides 
-            ist Freie Software unter der <a href="{{ license_url }}">GNU GPL v2+</a>.</small>{% endblocktrans %}</li>
-            <li><strong>6h {% trans 'Supportkontingent' %}</strong>
-                <small>{% trans 'Supportlaufzeit begrenzt bis Veranstaltungsende' %}</small></li>
-            <li>OpenSlides 1.3.1+ <small>{% blocktrans %}inkl. qualitätsgesicherte Updates aus
-                      der stabilen Entwicklungsversion{% endblocktrans %}</small></li>
-            <li>{% trans 'Werbefrei' %} <small>{% trans 'Kein Verweis auf den professional Support' %}</small></li>
-            <li>{% trans 'USB-Stick mit eingraviertem OpenSlides-Logo' %}
-            <small>{% trans '"OpenSlides portable" bereits vorinstalliert und direkt vom USB-Stick startbar' %}</small></li>
-            <li>{% trans 'Veranstaltungsdaten vorkonfiguriert' %} <small>{% trans 'nach Vorlage' %}</small></li>
-            <li>{% trans 'Werkzeug zum Datenexport ins CSV-Format' %}</li>
-            <li><strong>{% trans 'Namenskarten mit QR-Code' %}</strong>
-               <small>{% trans 'Für schnelle Anwesenheitserfassung der Teilnehmer' %}</small></li>
-            <li><strong>{% trans 'Anpassung des Projektortemplates' %}</strong> 
-             <small>{% trans 'nach Vorlage' %}</small><br></li>
+            {% trans 'Lizenzkostenfreie Nutzung' %}
+            <small>{% blocktrans %}OpenSlides ist Freie Software, lizensiert unter 
+            der <a href="{{ license_url }}">GNU GPL v2+</a>.{% endblocktrans %}</small></li>
+            <li>{% trans 'Qualitätgesicherte Version' %}
+                <small>{% blocktrans %}mit Update auf aktuellsten Entwicklungsstand 
+                (einmalig){% endblocktrans %}</small></li>
+            <li>{% trans 'Portable Version auf USB-Stick' %}
+                <small>{% blocktrans %}OpenSlides direkt vom USB-Stick startbar; 
+                vorkonfiguriert mit Ihren Veranstaltungsdaten; 
+                inkl. Werkzeug zum Datenexport<sup>1</sup> ins CSV-Format{% endblocktrans %}</small></li>
+            <li>{% trans 'Individueller Support' %}<sup>2</sup> mit bis zu <strong>
+                {% if package == '1' %}0,5{% endif %}
+                {% if package == '2' %}5{% endif %}
+                {% if package == '3' %}10{% endif %}
+                Stunden</strong></li>
 
-            <li><span class="label label-important">{% trans 'Optional' %}</span>
-            {% trans 'Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)' %}
-            <small>1000,- &euro;/d {% blocktrans %}zzgl. MwSt.{% endblocktrans %}
-                </small></li>
-            <li><span class="label label-important">{% trans 'Optional' %}</span>
-            {% blocktrans %}Verleih oder Verkauf eines elektronischen
-                Abstimmungssystems mit Anbindung an OpenSlides{% endblocktrans %}
-                <br><small>{% trans 'Preis auf Anfrage' %}</small></li>
-        </ul>
-    {% endif %}
+            {% if package == '2' or package == '3' %}
+                <li>{% trans 'Anpassung des Projektortemplates' %} 
+                    <small>{% trans 'nach Vorlage' %}</small>
+                    {% if package == '2' %}<br><br>{% endif %}</li>
+            {% endif %}
 
-    {% if package == '3' %}
-        <div class="header">  
-            <h3>OpenSlides Premium</h3>
-            <p class="price">5.999,- &euro;
-            <small>{% blocktrans %}zzgl. MwSt.{% endblocktrans %}</small></p>
-        </div>
-        <ul class="unstyled">
-            <li>{% url license as license_url %}
-            {% blocktrans %}Lizenzkostenfreie Nutzung<small>OpenSlides 
-            ist Freie Software unter der <a href="{{ license_url }}">GNU GPL v2+</a>.</small>{% endblocktrans %}</li>
-            <li><strong>12h {% trans 'Supportkontingent' %}</strong>
-                <small>{% trans 'Supportlaufzeit begrenzt bis Veranstaltungsende' %}</small></li>
-            <li>OpenSlides 1.3.1+ <small>{% blocktrans %}inkl. qualitätsgesicherte Updates aus
-                      der stabilen Entwicklungsversion{% endblocktrans %}</small></li>
-            <li>{% trans 'Werbefrei' %} <small>{% trans 'Kein Verweis auf den professional Support' %}</small></li>
-            <li>{% trans 'USB-Stick mit eingraviertem OpenSlides-Logo' %}
-            <small>{% trans '"OpenSlides portable" bereits vorinstalliert und direkt vom USB-Stick startbar' %}</small></li>
-            <li>{% trans 'Veranstaltungsdaten vorkonfiguriert' %} <small>{% trans 'nach Vorlage' %}</small></li>
-            <li>{% trans 'Werkzeug zum Datenexport ins CSV-Format' %}</li>
-            <li>{% trans 'Namenskarten mit QR-Code' %}
-               <small>{% trans 'Für schnelle Anwesenheitserfassung der Teilnehmer' %}</small></li>
-            <li>{% trans 'Anpassung des Projektortemplates' %} 
-             <small>{% trans 'nach Vorlage' %}</small></li>
-             <li><strong>{% trans 'OpenSlides-Schulung vor Ort' %}</strong>
-             <small>1 {% trans 'Tag' %}</small></li>
-             <li><strong>{% blocktrans %}Unterstützung bei Umstellung auf
-             leistungsfähigere Datenbank und Webserver{% endblocktrans %}
-             </strong>
-             <br><br></li>
-                
-            <li><span class="label label-important">{% trans 'Optional' %}</span>
-            {% trans 'Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)' %}
-            <small>1000,- &euro;/d {% blocktrans %}zzgl. MwSt.{% endblocktrans %}
-                </small></li>
-            <li><span class="label label-important">{% trans 'Optional' %}</span>
-            {% blocktrans %}Verleih oder Verkauf eines elektronischen
-                Abstimmungssystems mit Anbindung an OpenSlides{% endblocktrans %}
-                <br><small>{% trans 'Preis auf Anfrage' %}</small></li>
-        </ul>
-    {% endif %}
-    
-    {% if package == '4' %}
-        <div class="header">  
-            <h3>OpenSlides Premium Plus</h3>
-            <p class="price">Preis auf Anfrage</p>
-        </div>
-        <ul class="unstyled">
-           <li>{% url license as license_url %}
-            {% blocktrans %}Lizenzkostenfreie Nutzung<small>OpenSlides 
-            ist Freie Software unter der <a href="{{ license_url }}">GNU GPL v2+</a>.</small>{% endblocktrans %}</li>
-            <li><strong>{% trans 'unbegrenztes Supportkontingent' %}</strong>
-                <small>{% trans 'Supportlaufzeit' %}: 3 {% trans 'Monate' %}</small></li>
-            <li>OpenSlides 1.3.1+ <small>{% blocktrans %}inkl. qualitätsgesicherte Updates aus
-                      der stabilen Entwicklungsversion{% endblocktrans %}</small></li>
-            <li>{% trans 'Werbefrei' %} <small>{% trans 'Kein Verweis auf den professional Support' %}</small></li>
-            <li>{% trans 'USB-Stick mit eingraviertem OpenSlides-Logo' %}
-            <small>{% trans '"OpenSlides portable" bereits vorinstalliert und direkt vom USB-Stick startbar' %}</small></li>
-            <li>{% trans 'Veranstaltungsdaten vorkonfiguriert' %} <small>{% trans 'nach Vorlage' %}</small></li>
-            <li>{% trans 'Werkzeug zum Datenexport ins CSV-Format' %}</li>
-            <li>{% trans 'Namenskarten mit QR-Code' %}
-               <small>{% trans 'Für schnelle Anwesenheitserfassung der Teilnehmer' %}</small></li>
-            <li>{% trans 'Anpassung des Projektortemplates' %} 
-             <small>{% trans 'nach Vorlage' %}</small></li>
-             <li>{% trans 'OpenSlides-Schulung vor Ort' %}
-             <small>1 {% trans 'Tag' %}</small></li>
-             <li>{% blocktrans %}Unterstützung bei Umstellung auf
-             leistungsfähigere Datenbank und Webserver{% endblocktrans %}
-             <br><br></li>
-                
-            <li><span class="label label-important">{% trans 'Optional' %}</span>
-            {% trans 'Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)' %}
-            <small>1000,- &euro;/d {% blocktrans %}zzgl. MwSt.{% endblocktrans %}
-                </small></li>
-            <li><span class="label label-important">{% trans 'Optional' %}</span>
-            {% blocktrans %}Verleih oder Verkauf eines elektronischen
-                Abstimmungssystems mit Anbindung an OpenSlides{% endblocktrans %}
-                <br><small>{% trans 'Preis auf Anfrage' %}</small></li>
+            {% if package == '3' %}
+                <li>{% trans 'OpenSlides-Schulung vor Ort' %}
+                    <small>1 {% trans 'Tag' %}</small></li>
+                <li>{% trans 'Hosting Ihrer OpenSlides-Installation für max 10 Nutzer' %}
+                    <small>{% blocktrans %}nur in der Vorbereitungsphase; anschließend Download 
+                    der Datenbank für eigene OpenSlides-Installation vor OrtTag{% endblocktrans %}</small>
+                    <br><br></li>
+            {% endif %}
 
+            {% if package == '2' or package == '3' %}
+                <li><span class="label label-important">{% trans 'Optional (auf Anfrage)' %}</span>
+                {% trans 'Einsatz eines elektronischen Abstimmungssystems' %}
+                    <small>{% blocktrans %}Verleih oder Verkauf von Keypads von der Firma 
+                          <a href="http://www.keypaddepot.de/de/Wahlen/Mitglieder-Versammlungen/VoteCollector-App-nur-Plug-In-zu-OpenSlides.html">Voteworks</a>
+                          mit Anbindung an OpenSlides{% endblocktrans %}
+                    </small></li>
+
+                <li><span class="label label-important">{% trans 'Optional (auf Anfrage)' %}</span>
+                {% trans 'Verleih eines Xirrus-WLAN-Arrays' %}
+                    <small>{% blocktrans %}bis zu 1000 gleichzeitige Benutzer pro
+                       Array; leichte Installation ohne Verkabelung;
+                       erprobt mit OpenSlides und elektronischem
+                       Abstimmungssystem {% endblocktrans %}
+                    </small></li>
+
+                <li><span class="label label-important">{% trans 'Optional (auf Anfrage)' %}</span>
+                {% trans 'Namenskarten mit Barcode' %}
+                    <small>{% blocktrans %}Für schnelle Anwesenheitserfassung der Teilnehmer; 
+                    inkl. Verleih eines Barcodescanners{% endblocktrans %}
+                    </small></li>
+            {% endif %}
         </ul>
-        {% endif %}
+
         <br>
         <img class="os-icon" src="/static/img/icons/glyphicons_059_cargo.png">
         <h2>{% trans "Lieferung und Zahlung" %}</h2>
@@ -215,5 +144,23 @@ Supportpaket
         <strong>Telefon: ++49-541-335083-746</strong></p>
     </div>
     </div>
+
+    <hr style="clear: both;">
+    <small>
+    <p>
+        <strong>
+        {% trans 'Alle Preisangaben gelten zuzüglich der gesetzlich gültigen MwSt.' %}
+        | {% trans 'Stand: 27.02.2013' %}
+        </strong>
+    </p>
+    <p>
+        {% blocktrans %}<sup>1</sup> Export anhand der sqlite-Datenbank; enthält
+        Grunddaten aus Tagesordnung, Anträge, Wahlen und Teillnehmer.
+        Weiterverarbeitung möglich.{% endblocktrans %}
+        <br>
+        {% blocktrans %}<sup>2</sup> Zeitkontingent; Zählung pro angefangene 15-Minuten.
+        Supportlaufzeit begrenzt bis Veranstaltungsende. Enthält keinen Vor-Ort-Support.{% endblocktrans %}
+    </p>
+    </small>
 </div>
 {% endblock %}
