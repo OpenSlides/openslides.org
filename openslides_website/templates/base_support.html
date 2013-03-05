@@ -7,11 +7,14 @@
 {% block submenu %}
   <div class="subnav navbar-fixed-top">
     <ul class="nav nav-pills">
+        <li class="{% block submenu_support_overview %}{% endblock %}">
+            <a href="{% url support_overview %}">{% trans "Übersicht" %}</a>
+        </li>
         <li class="{% block submenu_support_packages %}{% endblock %}">
             <a href="{% url support_packages %}">{% trans "Supportpakete" %}</a>
         </li>
         <li class="{% block submenu_support_community %}{% endblock %}">
-            <a href="{% url support_community %}">{% trans "Community-Support" %}</a>
+            <a href="{% url support_community %}">{% trans "Community" %}</a>
         </li>
         <li class="{% block submenu_support_manual %}{% endblock %}">
             <a href="{% url support_manual %}">{% trans "Handbuch" %}</a>

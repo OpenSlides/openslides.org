@@ -74,6 +74,15 @@ Software Entwicklung.{% endblocktrans %}
             <td><i class="icon-ok"></i></td>
           </tr>
           <tr>
+            <td class="leftcolumn">{% trans 'Individueller Support' %}<sup>1</sup>
+                <small>{% blocktrans %}für Unterstützung, Beratung und Anpassungsarbeiten{% endblocktrans %}
+                </small></td>
+            <td>-</td>
+            <td><i class="icon-ok"></i><br>{% trans 'bis zu' %} 0,5 {% trans 'Stunden' %}</td>
+            <td><i class="icon-ok"></i><br>{% trans 'bis zu' %} 5 {% trans 'Stunden' %}</td>
+            <td><i class="icon-ok"></i><br>{% trans 'bis zu' %} 10 {% trans 'Stunden' %}</td>
+          </tr>
+          <tr>
             <td class="leftcolumn">{% trans 'Qualitätgesicherte Version' %}
                 <small>
                 {% blocktrans %}mit Update auf aktuellsten Entwicklungsstand (einmalig){% endblocktrans %}
@@ -88,26 +97,18 @@ Software Entwicklung.{% endblocktrans %}
             <td class="leftcolumn">{% trans 'Portable Version auf USB-Stick' %}
                 <small>{% blocktrans %}OpenSlides direkt vom USB-Stick startbar;
                     vorkonfiguriert mit Ihren Veranstaltungsdaten;
-                    inkl. Werkzeug zum Datenexport<sup>1</sup> ins CSV-Format{% endblocktrans %}
+                    inkl. Werkzeug zum Datenexport<sup>2</sup> ins CSV-Format{% endblocktrans %}
                 </small></td>
             <td>-</td>
             <td><i class="icon-ok"></i></td>
             <td><i class="icon-ok"></i></td>
             <td><i class="icon-ok"></i></td>
           </tr>
-          <tr>
-            <td class="leftcolumn">{% trans 'Individueller Support' %}<sup>2</sup>
-                <small>{% blocktrans %}für Unterstützung, Beratung und Anpassungsarbeiten{% endblocktrans %}
-                </small></td>
-            <td>-</td>
-            <td><i class="icon-ok"></i><br>{% trans 'bis zu' %} 0,5 {% trans 'Stunden' %}</td>
-            <td><i class="icon-ok"></i><br>{% trans 'bis zu' %} 5 {% trans 'Stunden' %}</td>
-            <td><i class="icon-ok"></i><br>{% trans 'bis zu' %} 10 {% trans 'Stunden' %}</td>
-          </tr>
+
           <tr>
             <td class="leftcolumn">{% trans 'Anpassung des Projektortemplates' %} 
                 <span class="label label-important">{% trans 'Tipp' %}</span>
-                <small>{% trans 'nach Vorlage' %} 
+                <small>{% trans 'nach Vorlage; mit Ihrem Logo' %} 
  </small></td>
             <td>-</td>
             <td>-</td>
@@ -123,13 +124,14 @@ Software Entwicklung.{% endblocktrans %}
             <td><i class="icon-ok"></i></td>
           </tr>
           <tr>
-            <td class="leftcolumn">{% trans 'Hosting Ihrer OpenSlides-Installation' %}
+            <td class="leftcolumn">{% trans 'Hosting Ihrer OpenSlides-Installation' %} 
+            	<span class="label label-important">{% trans 'Neu' %}</span>
                <small>{% blocktrans %}nur in der Vorbereitungsphase; anschließend Download 
                 der Datenbank für eigene OpenSlides-Installation vor Ort {% endblocktrans %}</small></td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
-            <td><i class="icon-ok"></i><br>max. 10 Nutzer</td>
+            <td><i class="icon-ok"></i><br>bis zu 10 Nutzer</td>
           </tr>
           <tr class="topline">
               <td class="leftcolumn">
@@ -185,7 +187,7 @@ Software Entwicklung.{% endblocktrans %}
             <li><p>{% trans 'Weiterentwicklung von OpenSlides' %}
                 <br>
                 <em>{% trans 'auf Anfrage' %}<br>
-                <small>({% trans 'Sie erhalten ein individuelles Angebot.' %})</small></em>
+                <small>{% trans 'Ihnen fehlen bestimmte Funktionen in OpenSlides? Wir erstellen Ihnen ein individuelles Weiterentwicklungsangebot.' %}</small></em>
                 </p>
             </li>
         </ul>
@@ -225,16 +227,16 @@ Software Entwicklung.{% endblocktrans %}
     <p>
         <strong>
         {% trans 'Alle Preisangaben gelten zuzüglich der gesetzlich gültigen MwSt.' %}
-        | {% trans 'Stand: 27.02.2013' %}
+        | {% trans 'Stand: 05.03.2013' %}
         </strong>
     </p>
     <p>
-        {% blocktrans %}<sup>1</sup> Export anhand der sqlite-Datenbank; enthält
+        {% blocktrans %}<sup>1</sup> Zeitkontingent; Zählung pro angefangene 15-Minuten.
+        Supportlaufzeit begrenzt bis Veranstaltungsende. Enthält keinen Vor-Ort-Support.{% endblocktrans %}
+        <br>
+        {% blocktrans %}<sup>2</sup> Export anhand der sqlite-Datenbank; enthält
         Grunddaten aus Tagesordnung, Anträge, Wahlen und Teillnehmer.
         Weiterverarbeitung möglich.{% endblocktrans %}
-        <br>
-        {% blocktrans %}<sup>2</sup> Zeitkontingent; Zählung pro angefangene 15-Minuten.
-        Supportlaufzeit begrenzt bis Veranstaltungsende. Enthält keinen Vor-Ort-Support.{% endblocktrans %}
     </p>
     </small>
 {% endblock %}
