@@ -10,13 +10,27 @@
 
 {% block content %}
 
-<blockquote>
-<p>Emanuel Schütze<br>
+<p>{% trans 'Verantwortlich für den Inhalt dieser Seiten in Vertretung für die OpenSlides-Initiative' %}:</p>
+
+<p><i>Emanuel Schütze<br>
 c/o Intevation GmbH<br>
 Neuer Graben 17<br>
 D-49074 Osnabrück<br>
 E-Mail: <a href="mailto:emanuel.schuetze@intevation.de">emanuel.schuetze@intevation.de</a><br>
-Tel: ++49-541-335083-746</p>
-</blockquote>
+Tel: ++49-541-335083-746</i></p>
+<br>
+
+
+<p>{% blocktrans %}Die Realisierung dieser Seiten erfolgt mit 
+<a href="https://www.djangoproject.com/">Django</a>. 
+Diese OpenSlides-Website ist im 
+<a href="https://github.com/OpenSlides/openslides.org">GitHub-Repository</a>
+verfügbar. Inhaltliche Änderungen und Korrekturen können direkt als 
+<a href="https://github.com/OpenSlides/openslides.org/issues">Issue</a>
+oder persönlich an Emanuel Schütze geschickt werden. Übersetzungen in 
+andere Sprachen sind sehr willkommen.</p>
+{% endblocktrans %}
+</p>
+
 
 {% endblock %}

@@ -104,9 +104,10 @@
            <div class="span2">
              <h4>{% trans 'Entwicklung' %}</h4>
              <ul class="unstyled">
-                 <li><a href="http://dev.openslides.org">{% trans 'Wiki' %}</a></li>
-                 <li><a href="http://dev.openslides.org/roadmap">{% trans 'Roadmap' %}</a></li>
-                 <li><a href="http://dev.openslides.org/report/3">{% trans 'Tickets' %}</a></li>
+                 <li><a href="{% url development %}">{% trans 'Übersicht' %}</a></li>
+                 <li><a href="https://github.com/OpenSlides/OpenSlides/wiki">{% trans 'Wiki' %}</a></li>
+                 <li><a href="https://github.com/OpenSlides/OpenSlides/issues/milestones">{% trans 'Roadmap' %}</a></li>
+                 <li><a href="https://github.com/OpenSlides/OpenSlides/issues">{% trans 'Tickets' %}</a></li>
                  <li><a href="https://github.com/OpenSlides/OpenSlides">{% trans 'Quellcode' %}</a></li>
              </ul>
            </div>
@@ -115,7 +116,6 @@
              <ul class="unstyled">
                <li><a href="{% url authors %}">{% trans 'Autoren' %}</a></li>
                <li><a href="{% url contact %}">{% trans 'Kontakt' %}</a></li>
-               <li><a href="{% url impressum %}">{% trans 'Impressum' %}</a></li>
              </ul>
            </div>
            <div class="span4">
@@ -126,7 +126,7 @@
              </p>
              <p>
              <a href="https://twitter.com/intent/follow?screen_name=openslides" target="_blank" class="btn">
-               <img src="/static/img/icons/glyphicons_391_twitter_t_18px.png">
+               <img src="/static/img/icons/glyphicons_411_twitter_18px.png">
                <b>{% trans '@openslides folgen' %}</b></span>
              </a>
              </p>
@@ -138,9 +138,10 @@
              </p>
              <p>
              <div class="license">
-              <p>OpenSlides is licensed under the <a href="{% url license %}">GNU GPL v2+</a>.<br>
+              <p>&copy; 2013 | <a href="{% url impressum %}">Impressum</a> <br>
+              OpenSlides is Free Software licensed under <a href="{% url license %}">GNU GPL v2+</a>.<br>
                 Icons from <a href="http://glyphicons.com">Glyphicons
-                 Free</a>, licensed under <a
+                 Free</a> licensed under <a
                  href="http://creativecommons.org/licenses/by/3.0/">CC
                  BY 3.0</a>.</p>
              </div>

@@ -21,20 +21,19 @@
 
 <p>{% trans 'Es sind drei Demo-Nutzer mit unterschiedlichen Rechten eingerichtet:' %}</p>
 
-<blockquote>
-<p><strong>{% trans 'Versammlungsleitung' %}</strong></p>
+<h2><img class="os-icon" src="/static/img/icons/glyphicons_034_old_man.png">
+{% trans 'Versammlungsleitung' %}</h2>
 <p>{% trans 'Nutzername' %}: demo<br>
     {% trans 'Passwort' %}: demo</p>
 
-<br>
-<p><strong>{% trans 'Delegierter' %}</strong></p>
+<h2><img class="os-icon" src="/static/img/icons/glyphicons_003_user.png">
+{% trans 'Delegierter' %}</h2>
 <p>{% trans 'Nutzername' %}: delegierter<br>
     {% trans 'Passwort' %}: demo</p>
 
-<br>
-<p><strong>{% trans 'Gast' %}:</strong></p>
+<h2><img class="os-icon" src="/static/img/icons/glyphicons_003_user.png">
+{% trans 'Gast' %}</h2>
 <p>{% trans 'ohne Zugangsdaten' %}</p>
-</blockquote>
 
 <p><span class="label label-warning">{% trans 'Achtung' %}:</span> {% trans 'Die Demo wird täglich zurückgesetzt!' %}</p>
 {% endblock %}

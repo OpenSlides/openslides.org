@@ -19,8 +19,8 @@ uns Ihre Rückmeldung!{% endblocktrans %}
 <div class="row">
     <div class="span4">
         <div class="well box">
-        <img class="os-icon" src="/static/img/icons/glyphicons_399_e-mail.png">
-        <h2>{% trans 'Mailinglisten' %}</h2>
+        <h2><img class="os-icon" src="/static/img/icons/glyphicons_399_e-mail.png">
+        {% trans 'Mailinglisten' %}</h2>
         <p>{% blocktrans %}OpenSlides bietet öffentliche Mailinglisten zur Koordination der Entwicklung 
         sowie Diskussion von Tickets, Anwenderfragen und speziellen Anwendungsfällen. 
         Bei Problemen und Fragen zu OpenSlides schreiben Sie an die 
@@ -46,8 +46,8 @@ uns Ihre Rückmeldung!{% endblocktrans %}
 
     <div class="span4">
         <div class="well">
-        <img class="os-icon" src="/static/img/icons/glyphicons_352_nameplate.png">
-        <h2>{% trans 'Professionelle Unterstützung' %}</h2>
+        <h2><img class="os-icon" src="/static/img/icons/glyphicons_352_nameplate.png">
+        {% trans 'Professionelle Unterstützung' %}</h2>
         <p>
         {% url support_packages as support_url %}
         {% blocktrans %}Sie haben Interesse an OpenSlides und denken über einen Einsatz auf Ihrer 
@@ -55,7 +55,7 @@ uns Ihre Rückmeldung!{% endblocktrans %}
         bei der Vorbereitung? Sie haben Fragen zu unseren 
         <a href="{{ support_url }}">Supportpaketen</a>?{% endblocktrans %}</p>
         <p>{% trans 'Kontaktieren Sie uns! Wir beraten Sie gerne.' %}
-        {% trans 'Ihr Ansprechpartner' %}:<p>
+        {% trans 'Ihr Ansprechpartner' %}:<p><br>
         
         <a href="mailto:emanuel.schuetze@intevation.de">Emanuel Schütze</a><br>
         Intevation GmbH<br>
@@ -67,8 +67,8 @@ uns Ihre Rückmeldung!{% endblocktrans %}
 
     <div class="span4">
         <div class="well">
-        <img class="os-icon" src="/static/img/icons/glyphicons_245_chat.png">
-        <h2>IRC</h2>
+        <h2><img class="os-icon" src="/static/img/icons/glyphicons_245_chat.png">
+        IRC</h2>
         <p>{% blocktrans %}Für den direkten Kontakt zwischen interessierten OpenSlides-Anwendern 
         und -Entwicklern nutzen Sie IRC (ein textbasierter Chat):{% endblocktrans %}</p>
         
@@ -79,8 +79,8 @@ uns Ihre Rückmeldung!{% endblocktrans %}
         </div>
         
         <div class="well">
-        <img class="os-icon" src="/static/img/icons/glyphicons_043_group.png">
-        <h2>{% trans 'Kernentwickler' %}</h2>
+        <h2><img class="os-icon" src="/static/img/icons/glyphicons_043_group.png">
+        {% trans 'Kernentwickler' %}</h2>
         {% url contactform as contactform_url %}
         <p>{% blocktrans %}Direktkontakt zu den drei Gründern und Kernentwicklern von OpenSlides gibt
         es über das <a href="{{ contactform_url }}">Kontaktformular</a>.{% endblocktrans %}

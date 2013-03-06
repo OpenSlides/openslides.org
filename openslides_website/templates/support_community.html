@@ -17,8 +17,8 @@
 <div class="row">
     <div class="span4">
         <div class="well box">
-        <img class="os-icon" src="/static/img/icons/glyphicons_399_e-mail.png">
-        <h2>{% trans 'Mailinglisten' %}</h2>
+        <h2><img class="os-icon" src="/static/img/icons/glyphicons_399_e-mail.png">
+        {% trans 'Mailinglisten' %}</h2>
         <p>{% blocktrans %}OpenSlides bietet öffentliche Mailinglisten zur Koordination der Entwicklung 
         sowie Diskussion von Tickets, Anwenderfragen und speziellen Anwendungsfällen. 
         Bei Problemen und Fragen zu OpenSlides schreiben Sie an die 
@@ -44,24 +44,36 @@
 
     <div class="span4">
         <div class="well">
-        <img class="os-icon" src="/static/img/icons/glyphicons_235_pen.png">
-        <h2>{% trans 'Probleme und Wünsche berichten' %}</h2>
+        <h2><img class="os-icon" src="/static/img/icons/glyphicons_235_pen.png">
+        {% trans 'Issues' %}</h2>
         <p>
         {% blocktrans %}Probleme und Wünsche zu OpenSlides erfassen
-        wir in einzelnen Tickets auf GitHub. Durchsuchen Sie die offenen 
-        Issues.{% endblocktrans %}
+        wir in einzelnen Issues auf GitHub. Durchsuchen Sie offene 
+        Issues oder berichten Sie ein neues Problem.{% endblocktrans %}
         </p>
         <p>
-        <a class="btn"
+        <a class="btn btn-small"
             href="https://github.com/OpenSlides/OpenSlides/issues">Alle Tickets &raquo;</a></p>
         </p>
-         </div>
+        </div>
+
+        <div class="well">
+        <h2><img class="os-icon" src="/static/img/icons/glyphicons_411_twitter.png">
+        {% trans 'Twitter' %}</h2>
+        <p>{% blocktrans %}Twittern Sie Ihre OpenSlides-Erfahrung und erwähnen Sie <b>#openslides</b>. 
+        Oder stellen Sie direkte Fragen an das Entwicklerteam (<b>@openslides</b>).{% endblocktrans %}
+        </p>
+        <p>
+        <a class="btn btn-small"
+            href="https://twitter.com/openslides">Alle Tweets von @openslides &raquo;</a></p>
+        </p>
+        </div>
     </div>
 
     <div class="span4">
         <div class="well">
-        <img class="os-icon" src="/static/img/icons/glyphicons_245_chat.png">
-        <h2>IRC</h2>
+        <h2><img class="os-icon" src="/static/img/icons/glyphicons_245_chat.png">
+        IRC</h2>
         <p>{% blocktrans %}Für den direkten Kontakt zwischen interessierten OpenSlides-Anwendern 
         und -Entwicklern nutzen Sie IRC (ein textbasierter Chat):{% endblocktrans %}</p>
         
@@ -72,8 +84,8 @@
         </div>
         
         <div class="well">
-        <img class="os-icon" src="/static/img/icons/glyphicons_043_group.png">
-        <h2>{% trans 'Kernentwickler' %}</h2>
+        <h2><img class="os-icon" src="/static/img/icons/glyphicons_043_group.png">
+        {% trans 'Kernentwickler' %}</h2>
         {% url contactform as contactform_url %}
         <p>{% blocktrans %}Direktkontakt zu den drei Gründern und Kernentwicklern von OpenSlides gibt
         es über das <a href="{{ contactform_url }}">Kontaktformular</a>.{% endblocktrans %}
