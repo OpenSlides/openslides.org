@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:OpenSlides Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-07 12:51+0100\n"
+"POT-Creation-Date: 2013-03-07 21:51+0100\n"
 "PO-Revision-Date: 2012-07-31 11:44+0200\n"
 "Last-Translator: Oskar Hahn <mail@oshahn.de>\n"
 "Language-Team: Deutsch <mail@oshahn.de>\n"
@@ -73,7 +73,7 @@ msgstr "City"
 msgid "Ansprechpartner"
 msgstr "Contact person"
 
-#: forms.py:34 templates/support_packages.html:222
+#: forms.py:34 templates/support_packages.html:234
 msgid "Telefon"
 msgstr "Phone"
 
@@ -290,6 +290,7 @@ msgstr ""
 "THANKS\">THANKS file</a>."
 
 #: templates/base.html:35 templates/base.html.py:90 templates/home.html:24
+#: templates/support_packages.html:50
 msgid "Download"
 msgstr "Download"
 
@@ -305,7 +306,7 @@ msgstr "Development"
 
 #: templates/base.html:44 templates/base.html.py:118 templates/contact.html:5
 #: templates/contact.html.py:6 templates/impressum.html:5
-#: templates/order-form.html:141 templates/support_packages.html:215
+#: templates/order-form.html:141 templates/support_packages.html:227
 msgid "Kontakt"
 msgstr "Contact"
 
@@ -341,7 +342,7 @@ msgstr "License"
 msgid "Demo"
 msgstr "Demo"
 
-#: templates/base.html:91 templates/support_packages.html:111
+#: templates/base.html:91 templates/support_packages.html:120
 msgid "Tipp"
 msgstr "Tip"
 
@@ -506,7 +507,7 @@ msgid "Kontaktieren Sie uns! Wir beraten Sie gerne."
 msgstr "Contact us!  We are happy to help."
 
 #: templates/contact.html:58 templates/order-form.html:144
-#: templates/support_packages.html:217
+#: templates/support_packages.html:229
 msgid "Ihr Ansprechpartner"
 msgstr "Your contact person"
 
@@ -985,7 +986,7 @@ msgstr "Back to the package overview"
 
 #: templates/order-form.html:62 templates/support_packages.html:54
 #: templates/support_packages.html.py:58 templates/support_packages.html:62
-#: templates/support_packages.html:182
+#: templates/support_packages.html:194
 msgid "zzgl. MwSt."
 msgstr "plus VAT"
 
@@ -1012,21 +1013,21 @@ msgid ""
 "                Anpassungsarbeiten"
 msgstr "for support, consulting and customisation"
 
-#: templates/order-form.html:77 templates/support_packages.html:86
+#: templates/order-form.html:77 templates/support_packages.html:95
 msgid "Neuste qualitätsgesicherte Version"
 msgstr "Latest quality-assured version"
 
-#: templates/order-form.html:78 templates/support_packages.html:88
+#: templates/order-form.html:78 templates/support_packages.html:97
 msgid ""
 "mit Update auf aktuellsten Entwicklungsstand\n"
 "                (einmalig)"
 msgstr "with update to latest stable level of development (one-time)"
 
-#: templates/order-form.html:80 templates/support_packages.html:98
+#: templates/order-form.html:80 templates/support_packages.html:107
 msgid "Portable Version auf USB-Stick"
 msgstr "Portable version on USB stick"
 
-#: templates/order-form.html:81 templates/support_packages.html:99
+#: templates/order-form.html:81 templates/support_packages.html:108
 msgid ""
 "OpenSlides direkt vom USB-Stick startbar;\n"
 "                    vorkonfiguriert mit Ihren Veranstaltungsdaten;\n"
@@ -1035,20 +1036,20 @@ msgstr ""
 "OpenSlides directly runable from USB stick; preconfigured with your event "
 "data; incl. tool for exporting data to csv format<sup>2</sup>."
 
-#: templates/order-form.html:86 templates/support_packages.html:110
+#: templates/order-form.html:86 templates/support_packages.html:119
 msgid "Anpassung des Projektortemplates"
 msgstr "Customization of the projector template"
 
-#: templates/order-form.html:87 templates/support_packages.html:112
+#: templates/order-form.html:87 templates/support_packages.html:121
 msgid "nach Vorlage; mit Ihrem Logo"
 msgstr "after submission; with your logo"
 
-#: templates/order-form.html:92 templates/support_packages.html:120
+#: templates/order-form.html:92 templates/support_packages.html:129
 msgid "OpenSlides-Schulung vor Ort"
 msgstr "Inhouse-training of OpenSlides"
 
-#: templates/order-form.html:93 templates/support_packages.html:121
-#: templates/support_packages.html:186
+#: templates/order-form.html:93 templates/support_packages.html:130
+#: templates/support_packages.html:198
 msgid "Tag"
 msgstr "day"
 
@@ -1056,7 +1057,7 @@ msgstr "day"
 msgid "für bis zu 10 Nutzer"
 msgstr "for up to 10 users"
 
-#: templates/order-form.html:96 templates/support_packages.html:130
+#: templates/order-form.html:96 templates/support_packages.html:139
 msgid ""
 "nur in der Vorbereitungsphase; \n"
 "                anschließend Download der Datenbank für eigene OpenSlides-"
@@ -1071,18 +1072,18 @@ msgid "Im Paketpreis nicht enthalten"
 msgstr "Not included in package price"
 
 #: templates/order-form.html:104 templates/order-form.html.py:111
-#: templates/order-form.html:119 templates/support_packages.html:148
-#: templates/support_packages.html:149 templates/support_packages.html:159
-#: templates/support_packages.html:160 templates/support_packages.html:169
-#: templates/support_packages.html:170 templates/support_packages.html:191
+#: templates/order-form.html:119 templates/support_packages.html:160
+#: templates/support_packages.html:161 templates/support_packages.html:171
+#: templates/support_packages.html:172 templates/support_packages.html:181
+#: templates/support_packages.html:182 templates/support_packages.html:203
 msgid "Auf Anfrage"
 msgstr "On request"
 
-#: templates/order-form.html:105 templates/support_packages.html:140
+#: templates/order-form.html:105 templates/support_packages.html:152
 msgid "Einsatz eines elektronischen Abstimmungssystems"
 msgstr "Use of an electronic voting system"
 
-#: templates/order-form.html:106 templates/support_packages.html:142
+#: templates/order-form.html:106 templates/support_packages.html:154
 msgid ""
 "Verleih oder Verkauf von Keypads von der Firma \n"
 "                      <a href=\"http://www.keypaddepot.de/de/Wahlen/"
@@ -1094,11 +1095,11 @@ msgstr ""
 "de/Wahlen/Mitglieder-Versammlungen/VoteCollector-App-nur-Plug-In-zu-"
 "OpenSlides.html\">Voteworks</a> with connection to OpenSlides"
 
-#: templates/order-form.html:112 templates/support_packages.html:152
+#: templates/order-form.html:112 templates/support_packages.html:164
 msgid "Verleih eines Xirrus-WLAN-Arrays"
 msgstr "Rental of a Xirrus WLAN array"
 
-#: templates/order-form.html:113 templates/support_packages.html:153
+#: templates/order-form.html:113 templates/support_packages.html:165
 msgid ""
 "bis zu 1000 gleichzeitige Benutzer pro\n"
 "                   Array; leichte Installation ohne Verkabelung;\n"
@@ -1108,11 +1109,11 @@ msgstr ""
 "up to 1000 simultaneously users per array; easy installation without "
 "cabling; tested with OpenSlides and Voteworks' electronic voting system"
 
-#: templates/order-form.html:120 templates/support_packages.html:163
+#: templates/order-form.html:120 templates/support_packages.html:175
 msgid "Namenskarten mit Barcode"
 msgstr "Name badges with barcode"
 
-#: templates/order-form.html:121 templates/support_packages.html:165
+#: templates/order-form.html:121 templates/support_packages.html:177
 msgid ""
 "Für schnelle Anwesenheitserfassung der Teilnehmer; \n"
 "                inkl. Verleih eines Barcodescanners"
@@ -1139,7 +1140,7 @@ msgid ""
 "        innerhalb von 14 Tagen gefordert."
 msgstr "Your payment is required within 14 days after receipt of the invoice."
 
-#: templates/order-form.html:143 templates/support_packages.html:216
+#: templates/order-form.html:143 templates/support_packages.html:228
 msgid "Haben Sie noch Fragen? Wir beraten Sie gerne."
 msgstr "Do you have further questions? We are happy to help."
 
@@ -1540,62 +1541,62 @@ msgstr "Package price"
 msgid "einmalig für Ihre Veranstaltung"
 msgstr "one-time for your assembly"
 
-#: templates/support_packages.html:50
-msgid "Herunterladen"
-msgstr "Download"
-
 #: templates/support_packages.html:55 templates/support_packages.html.py:59
 #: templates/support_packages.html:63
 msgid "Bestellen"
 msgstr "Order"
 
-#: templates/support_packages.html:81 templates/support_packages.html.py:82
-#: templates/support_packages.html:83
+#: templates/support_packages.html:83 templates/support_packages.html.py:87
+#: templates/support_packages.html:91 templates/support_packages.html:147
 msgid "bis zu"
 msgstr "up to"
 
-#: templates/support_packages.html:81 templates/support_packages.html.py:82
-#: templates/support_packages.html:83
+#: templates/support_packages.html:83 templates/support_packages.html.py:87
+#: templates/support_packages.html:91
 msgid "Stunden"
-msgstr "Hours"
+msgstr "hours"
 
-#: templates/support_packages.html:128
+#: templates/support_packages.html:137
 msgid "Hosting Ihrer OpenSlides-Installation"
 msgstr "Hosting of your OpenSlides installation"
 
-#: templates/support_packages.html:129 templates/support_packages.html:164
+#: templates/support_packages.html:138 templates/support_packages.html:176
 msgid "Neu"
 msgstr "New"
 
-#: templates/support_packages.html:141
+#: templates/support_packages.html:147
+msgid "Nutzer"
+msgstr "users"
+
+#: templates/support_packages.html:153
 msgid "Profi-Tipp"
 msgstr "Pro tip"
 
-#: templates/support_packages.html:179
+#: templates/support_packages.html:191
 msgid "Zusatzleistungen"
 msgstr "Additional services"
 
-#: templates/support_packages.html:181
+#: templates/support_packages.html:193
 msgid "zusätzliche Supportstunde"
 msgstr "Additional support hour"
 
-#: templates/support_packages.html:182
+#: templates/support_packages.html:194
 msgid "Stunde"
-msgstr "Hour"
+msgstr "hour"
 
-#: templates/support_packages.html:184
+#: templates/support_packages.html:196
 msgid "Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)"
 msgstr "On site service (e.g.: consulting, training, technical implementation)"
 
-#: templates/support_packages.html:186
+#: templates/support_packages.html:198
 msgid "zzgl. MwSt. und Spesen"
 msgstr "plus VAT and expenses"
 
-#: templates/support_packages.html:189
+#: templates/support_packages.html:201
 msgid "Weiterentwicklung von OpenSlides"
 msgstr "Further development of OpenSlides"
 
-#: templates/support_packages.html:192
+#: templates/support_packages.html:204
 msgid ""
 "Ihnen fehlen bestimmte Funktionen in OpenSlides? Wir erstellen Ihnen ein "
 "individuelles Weiterentwicklungsangebot."
@@ -1603,23 +1604,23 @@ msgstr ""
 "You miss special features in OpenSlides? We create a individual offer for "
 "your."
 
-#: templates/support_packages.html:202
+#: templates/support_packages.html:214
 msgid "USB-Stick mit eingraviertem OpenSlides-Logo"
 msgstr "USB-Stick with engraved OpenSlides logo"
 
-#: templates/support_packages.html:208
+#: templates/support_packages.html:220
 msgid "Keypads zur elektronischen Abstimmung von Anträgen mit OpenSlides"
 msgstr "Keypads for electronic voting of motions with OpenSlides"
 
-#: templates/support_packages.html:232
+#: templates/support_packages.html:244
 msgid "Alle Preisangaben gelten zuzüglich der gesetzlich gültigen MwSt."
 msgstr "All prices are plus the statutory VAT."
 
-#: templates/support_packages.html:233
+#: templates/support_packages.html:245
 msgid "Stand: 07.03.2013"
 msgstr "As of: 2013-03-07"
 
-#: templates/support_packages.html:237
+#: templates/support_packages.html:249
 msgid ""
 "<sup>1</sup> Zeitkontingent; Zählung pro angefangene 15-Minuten.\n"
 "        Supportlaufzeit begrenzt bis Veranstaltungsende. Enthält keinen Vor-"
@@ -1628,7 +1629,7 @@ msgstr ""
 "<sup>1</sup> Contingent; Payment per started 15 minutes; duration of support "
 "is limited to the end of the event. Does not include on-site support."
 
-#: templates/support_packages.html:240
+#: templates/support_packages.html:252
 msgid ""
 "<sup>2</sup> Export anhand der sqlite-Datenbank; enthält\n"
 "        Grunddaten aus Tagesordnung, Anträge, Wahlen und Teilnehmer.\n"
@@ -1667,3 +1668,6 @@ msgstr ""
 #: templates/thanks-order.html:18
 msgid "Sollten Sie noch Fragen haben, melden Sie sich gerne!"
 msgstr "If you have further questions don't hesitate to contact us!"
+
+#~ msgid "Herunterladen"
+#~ msgstr "Download"
