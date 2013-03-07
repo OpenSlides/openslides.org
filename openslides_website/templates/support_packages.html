@@ -6,7 +6,6 @@
 {% block title %}{{ block.super }} - {% trans "Supportpakete" %}{% endblock %}
 {% block headline %}{% trans 'Supportpakete' %}{% endblock %}
 
-{% block mainmenu_support %}active{% endblock %}
 {% block submenu_support_packages %}active{% endblock %}
 
 {% block lead %}
@@ -75,7 +74,8 @@ Software Entwicklung.{% endblocktrans %}
           </tr>
           <tr>
             <td class="leftcolumn">{% trans 'Individueller Support' %}<sup>1</sup>
-                <small>{% blocktrans %}für Unterstützung, Beratung und Anpassungsarbeiten{% endblocktrans %}
+                <small>{% blocktrans %}für Unterstützung, Beratung und 
+                Anpassungsarbeiten{% endblocktrans %}
                 </small></td>
             <td>-</td>
             <td><i class="icon-ok"></i><br>{% trans 'bis zu' %} 0,5 {% trans 'Stunden' %}</td>
@@ -83,9 +83,10 @@ Software Entwicklung.{% endblocktrans %}
             <td><i class="icon-ok"></i><br>{% trans 'bis zu' %} 10 {% trans 'Stunden' %}</td>
           </tr>
           <tr>
-            <td class="leftcolumn">{% trans 'Qualitätgesicherte Version' %}
+            <td class="leftcolumn">{% trans 'Neuste qualitätgesicherte Version' %}
                 <small>
-                {% blocktrans %}mit Update auf aktuellsten Entwicklungsstand (einmalig){% endblocktrans %}
+                {% blocktrans %}mit Update auf aktuellsten Entwicklungsstand
+                (einmalig){% endblocktrans %}
                 </small>
             </td>
             <td>-</td>
@@ -127,7 +128,7 @@ Software Entwicklung.{% endblocktrans %}
             <td class="leftcolumn">{% trans 'Hosting Ihrer OpenSlides-Installation' %} 
             	<span class="label label-important">{% trans 'Neu' %}</span>
                <small>{% blocktrans %}nur in der Vorbereitungsphase; anschließend Download 
-                der Datenbank für eigene OpenSlides-Installation vor Ort {% endblocktrans %}</small></td>
+                der Datenbank für eigene OpenSlides-Installation vor Ort{% endblocktrans %}</small></td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
@@ -222,12 +223,13 @@ Software Entwicklung.{% endblocktrans %}
        </div>
     </div>
 
-    <hr>
+{% block footnote %}
+    <hr style="clear: both;">
     <small>
     <p>
         <strong>
         {% trans 'Alle Preisangaben gelten zuzüglich der gesetzlich gültigen MwSt.' %}
-        | {% trans 'Stand: 05.03.2013' %}
+        | {% trans 'Stand: 07.03.2013' %}
         </strong>
     </p>
     <p>
@@ -239,4 +241,5 @@ Software Entwicklung.{% endblocktrans %}
         Weiterverarbeitung möglich.{% endblocktrans %}
     </p>
     </small>
+{% endblock %}
 {% endblock %}

@@ -1,11 +1,10 @@
-{% extends "base.html" %}
+{% extends "support_packages.html" %}
 
 {% load i18n %}
 
 {% block title %}{{ block.super }} - {% trans "Bestellformular" %}{% endblock %}
 {% block headline %}{% trans "Bestellformular" %}{% endblock %}
 
-{% block mainmenu_support %}active{% endblock %}
 
 {% block lead %}
 Supportpaket 
@@ -67,43 +66,47 @@ Supportpaket
             {% trans 'Lizenzkostenfreie Nutzung' %}
             <small>{% blocktrans %}OpenSlides ist Freie Software, lizensiert unter 
             der <a href="{{ license_url }}">GNU GPL v2+</a>.{% endblocktrans %}</small></li>
-            <li>{% trans 'Qualitätgesicherte Version' %}
+            <li>{% trans 'Individueller Support' %}<sup>1</sup> mit bis zu <strong>
+                {% if package == '1' %}0,5{% endif %}
+                {% if package == '2' %}5{% endif %}
+                {% if package == '3' %}10{% endif %}
+                Stunden</strong>
+                <small>{% blocktrans %}für Unterstützung, Beratung und 
+                Anpassungsarbeiten{% endblocktrans %}
+                </small></li>
+            <li>{% trans 'Neuste qualitätgesicherte Version' %}
                 <small>{% blocktrans %}mit Update auf aktuellsten Entwicklungsstand 
                 (einmalig){% endblocktrans %}</small></li>
             <li>{% trans 'Portable Version auf USB-Stick' %}
                 <small>{% blocktrans %}OpenSlides direkt vom USB-Stick startbar; 
                 vorkonfiguriert mit Ihren Veranstaltungsdaten; 
-                inkl. Werkzeug zum Datenexport<sup>1</sup> ins CSV-Format{% endblocktrans %}</small></li>
-            <li>{% trans 'Individueller Support' %}<sup>2</sup> mit bis zu <strong>
-                {% if package == '1' %}0,5{% endif %}
-                {% if package == '2' %}5{% endif %}
-                {% if package == '3' %}10{% endif %}
-                Stunden</strong></li>
+                inkl. Werkzeug zum Datenexport<sup>2</sup> ins CSV-Format{% endblocktrans %}</small></li>
 
             {% if package == '2' or package == '3' %}
                 <li>{% trans 'Anpassung des Projektortemplates' %} 
-                    <small>{% trans 'nach Vorlage' %}</small>
+                    <small>{% trans 'nach Vorlage; mit Ihrem Logo' %}</small>
                     {% if package == '2' %}<br><br>{% endif %}</li>
             {% endif %}
 
             {% if package == '3' %}
                 <li>{% trans 'OpenSlides-Schulung vor Ort' %}
                     <small>1 {% trans 'Tag' %}</small></li>
-                <li>{% trans 'Hosting Ihrer OpenSlides-Installation für max 10 Nutzer' %}
+                <li>{% trans 'Hosting Ihrer OpenSlides-Installation für bis zu 10 Nutzer' %}
                     <small>{% blocktrans %}nur in der Vorbereitungsphase; anschließend Download 
-                    der Datenbank für eigene OpenSlides-Installation vor OrtTag{% endblocktrans %}</small>
+                    der Datenbank für eigene OpenSlides-Installation vor Ort{% endblocktrans %}</small>
                     <br><br></li>
             {% endif %}
 
             {% if package == '2' or package == '3' %}
-                <li><span class="label label-important">{% trans 'Optional (auf Anfrage)' %}</span>
+                <i>{% trans 'Im Paketpreis nicht enthalten' %}:</i><br><br>
+                <li><span class="label label-important">{% trans 'Auf Anfrage' %}</span>
                 {% trans 'Einsatz eines elektronischen Abstimmungssystems' %}
                     <small>{% blocktrans %}Verleih oder Verkauf von Keypads von der Firma 
                           <a href="http://www.keypaddepot.de/de/Wahlen/Mitglieder-Versammlungen/VoteCollector-App-nur-Plug-In-zu-OpenSlides.html">Voteworks</a>
                           mit Anbindung an OpenSlides{% endblocktrans %}
                     </small></li>
 
-                <li><span class="label label-important">{% trans 'Optional (auf Anfrage)' %}</span>
+                <li><span class="label label-important">{% trans 'Auf Anfrage' %}</span>
                 {% trans 'Verleih eines Xirrus-WLAN-Arrays' %}
                     <small>{% blocktrans %}bis zu 1000 gleichzeitige Benutzer pro
                        Array; leichte Installation ohne Verkabelung;
@@ -111,7 +114,7 @@ Supportpaket
                        Abstimmungssystem {% endblocktrans %}
                     </small></li>
 
-                <li><span class="label label-important">{% trans 'Optional (auf Anfrage)' %}</span>
+                <li><span class="label label-important">{% trans 'Auf Anfrage' %}</span>
                 {% trans 'Namenskarten mit Barcode' %}
                     <small>{% blocktrans %}Für schnelle Anwesenheitserfassung der Teilnehmer; 
                     inkl. Verleih eines Barcodescanners{% endblocktrans %}
@@ -120,8 +123,8 @@ Supportpaket
         </ul>
 
         <br>
-        <img class="os-icon" src="/static/img/icons/glyphicons_059_cargo.png">
-        <h2>{% trans "Lieferung und Zahlung" %}</h2>
+        <h2><img class="os-icon" src="/static/img/icons/glyphicons_059_cargo.png">
+        {% trans "Lieferung und Zahlung" %}</h2>
         <p>{% blocktrans %}Nach Bestelleingang wird Ihr persönlicher
         <strong>USB-Stick</strong> mit OpenSlides zusammengestellt und
         gemeinsam mit der <strong>Rechnung</strong> an Sie per Post
@@ -132,8 +135,8 @@ Supportpaket
         src="/static/img/usb-stick-openslides.jpg"></p>
 
          <br>
-        <img class="os-icon" src="/static/img/icons/glyphicons_352_nameplate.png">
-        <h2>{% trans 'Kontakt' %}</h2>
+        <h2><img class="os-icon" src="/static/img/icons/glyphicons_352_nameplate.png">
+        {% trans 'Kontakt' %}</h2>
 
         <p><strong>{% trans 'Haben Sie noch Fragen? Wir beraten Sie gerne.' %}</strong>
         <br>{% trans 'Ihr Ansprechpartner' %}:</p>
@@ -145,22 +148,6 @@ Supportpaket
     </div>
     </div>
 
-    <hr style="clear: both;">
-    <small>
-    <p>
-        <strong>
-        {% trans 'Alle Preisangaben gelten zuzüglich der gesetzlich gültigen MwSt.' %}
-        | {% trans 'Stand: 27.02.2013' %}
-        </strong>
-    </p>
-    <p>
-        {% blocktrans %}<sup>1</sup> Export anhand der sqlite-Datenbank; enthält
-        Grunddaten aus Tagesordnung, Anträge, Wahlen und Teillnehmer.
-        Weiterverarbeitung möglich.{% endblocktrans %}
-        <br>
-        {% blocktrans %}<sup>2</sup> Zeitkontingent; Zählung pro angefangene 15-Minuten.
-        Supportlaufzeit begrenzt bis Veranstaltungsende. Enthält keinen Vor-Ort-Support.{% endblocktrans %}
-    </p>
-    </small>
+    {% block footnote %}{{ block.super }}{% endblock %}
 </div>
 {% endblock %}
