@@ -74,14 +74,14 @@ Supportpaket
                 <small>{% blocktrans %}für Unterstützung, Beratung und 
                 Anpassungsarbeiten{% endblocktrans %}
                 </small></li>
-            <li>{% trans 'Neuste qualitätgesicherte Version' %}
-                <small>{% blocktrans %}mit Update auf aktuellsten Entwicklungsstand 
+            <li>{% trans 'Neuste qualitätsgesicherte Version' %}
+                <small>{% blocktrans %}mit Update auf aktuellsten Entwicklungsstand
                 (einmalig){% endblocktrans %}</small></li>
             <li>{% trans 'Portable Version auf USB-Stick' %}
-                <small>{% blocktrans %}OpenSlides direkt vom USB-Stick startbar; 
-                vorkonfiguriert mit Ihren Veranstaltungsdaten; 
-                inkl. Werkzeug zum Datenexport<sup>2</sup> ins CSV-Format{% endblocktrans %}</small></li>
-
+                <small>{% blocktrans %}OpenSlides direkt vom USB-Stick startbar;
+                    vorkonfiguriert mit Ihren Veranstaltungsdaten;
+                    inkl. Werkzeug zum Datenexport<sup>2</sup> ins CSV-Format{% endblocktrans %}
+                </small></li>
             {% if package == '2' or package == '3' %}
                 <li>{% trans 'Anpassung des Projektortemplates' %} 
                     <small>{% trans 'nach Vorlage; mit Ihrem Logo' %}</small>
@@ -91,9 +91,11 @@ Supportpaket
             {% if package == '3' %}
                 <li>{% trans 'OpenSlides-Schulung vor Ort' %}
                     <small>1 {% trans 'Tag' %}</small></li>
-                <li>{% trans 'Hosting Ihrer OpenSlides-Installation für bis zu 10 Nutzer' %}
-                    <small>{% blocktrans %}nur in der Vorbereitungsphase; anschließend Download 
-                    der Datenbank für eigene OpenSlides-Installation vor Ort{% endblocktrans %}</small>
+                <li>{% trans 'Hosting Ihrer OpenSlides-Installation'
+                %} {% trans 'für bis zu 10 Nutzer' %}
+               <small>{% blocktrans %}nur in der Vorbereitungsphase; 
+                anschließend Download der Datenbank für eigene OpenSlides-Installation 
+                vor Ort{% endblocktrans %}</small>
                     <br><br></li>
             {% endif %}
 
@@ -102,22 +104,22 @@ Supportpaket
                 <li><span class="label label-important">{% trans 'Auf Anfrage' %}</span>
                 {% trans 'Einsatz eines elektronischen Abstimmungssystems' %}
                     <small>{% blocktrans %}Verleih oder Verkauf von Keypads von der Firma 
-                          <a href="http://www.keypaddepot.de/de/Wahlen/Mitglieder-Versammlungen/VoteCollector-App-nur-Plug-In-zu-OpenSlides.html">Voteworks</a>
-                          mit Anbindung an OpenSlides{% endblocktrans %}
+                      <a href="http://www.keypaddepot.de/de/Wahlen/Mitglieder-Versammlungen/VoteCollector-App-nur-Plug-In-zu-OpenSlides.html">Voteworks</a>
+                      mit Anbindung an OpenSlides{% endblocktrans %}
                     </small></li>
 
                 <li><span class="label label-important">{% trans 'Auf Anfrage' %}</span>
                 {% trans 'Verleih eines Xirrus-WLAN-Arrays' %}
-                    <small>{% blocktrans %}bis zu 1000 gleichzeitige Benutzer pro
-                       Array; leichte Installation ohne Verkabelung;
-                       erprobt mit OpenSlides und elektronischem
-                       Abstimmungssystem {% endblocktrans %}
+                   <small>{% blocktrans %}bis zu 1000 gleichzeitige Benutzer pro
+                   Array; leichte Installation ohne Verkabelung;
+                   erprobt mit OpenSlides und elektronischem
+                   Abstimmungssystem {% endblocktrans %}
                     </small></li>
 
                 <li><span class="label label-important">{% trans 'Auf Anfrage' %}</span>
                 {% trans 'Namenskarten mit Barcode' %}
                     <small>{% blocktrans %}Für schnelle Anwesenheitserfassung der Teilnehmer; 
-                    inkl. Verleih eines Barcodescanners{% endblocktrans %}
+                inkl. Verleih eines Barcodescanners{% endblocktrans %}
                     </small></li>
             {% endif %}
         </ul>

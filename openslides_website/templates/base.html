@@ -112,7 +112,7 @@
              </ul>
            </div>
            <div class="span2">
-             <h4>Mehr</h4>
+             <h4>{% trans 'Mehr' %}</h4>
              <ul class="unstyled">
                <li><a href="{% url authors %}">{% trans 'Autoren' %}</a></li>
                <li><a href="{% url contact %}">{% trans 'Kontakt' %}</a></li>
@@ -138,7 +138,9 @@
              </p>
              <p>
              <div class="license">
-              <p>&copy; 2013 | <a href="{% url impressum %}">Impressum</a> <br>
+              <p>&copy; 2013 | 
+                <a href="{% url impressum %}">{% trans 'Impressum' %}</a>
+                <br>
               OpenSlides is Free Software licensed under <a href="{% url license %}">GNU GPL v2+</a>.<br>
                 Icons from <a href="http://glyphicons.com">Glyphicons
                  Free</a> licensed under <a
