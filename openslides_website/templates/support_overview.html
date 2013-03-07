@@ -21,7 +21,7 @@ die Wahl!{% endblocktrans %}
         {% blocktrans %}Nutzen Sie diese professionellen OpenSlides-Supportpakete 
         für Ihre erfolgreiche Veranstaltung.{% endblocktrans %}
         </p> 
-        <p><a class="btn" href="{% url support_packages %}">{% trans 'Mehr' %} &raquo;</a></p>
+        <p><a class="btn" href="{% url 'support_packages' %}">{% trans 'Mehr' %} &raquo;</a></p>
     </div>
     <div class="span3">
         <h2><img class="os-icon" src="/static/img/icons/glyphicons_043_group.png">
@@ -30,7 +30,7 @@ die Wahl!{% endblocktrans %}
         {% blocktrans %}Hier gibt es Hilfe von der
         Community: Mailingliste, Ticketsystem, Twitter 
         und IRC{% endblocktrans %}</p> 
-        <p><a class="btn" href="{% url support_community %}">{% trans 'Mehr' %} &raquo;</a></p>
+        <p><a class="btn" href="{% url 'support_community' %}">{% trans 'Mehr' %} &raquo;</a></p>
     </div>
     <div class="span3">
         <h2><img class="os-icon" src="/static/img/icons/glyphicons_071_book.png">
@@ -39,7 +39,7 @@ die Wahl!{% endblocktrans %}
         {% blocktrans %}Sie brauchen Hilfe zu OpenSlides? Werfen Sie
         mal einen Blick in unser Handbuch!{% endblocktrans %}
         </p>
-        <p><a class="btn" href="{% url support_manual %}">{% trans 'Mehr' %} &raquo;</a></p>
+        <p><a class="btn" href="{% url 'support_manual' %}">{% trans 'Mehr' %} &raquo;</a></p>
     </div>
     <div class="span3">
         <h2><img class="os-icon" src="/static/img/icons/glyphicons_194_circle_question_mark.png">
@@ -48,7 +48,7 @@ die Wahl!{% endblocktrans %}
         {% blocktrans %}Hier finden Sie Antworten auf die häufigsten Fragen
         zu OpenSlides!<br><br>{% endblocktrans %}
         </p>
-        <p><a class="btn" href="{% url support_faq %}">{% trans 'Mehr' %} &raquo;</a></p>
+        <p><a class="btn" href="{% url 'support_faq' %}">{% trans 'Mehr' %} &raquo;</a></p>
     </div>
   </div>
     

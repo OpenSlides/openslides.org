@@ -45,7 +45,7 @@ Supportpaket
 
     <div class="span5">
     <ul class="pager">
-        <li class="next"><a href="{% url support_packages %}">&larr; {% trans "Zurück zur Paketübersicht" %}</a></li>
+        <li class="next"><a href="{% url 'support_packages' %}">&larr; {% trans "Zurück zur Paketübersicht" %}</a></li>
     </ul>
     <div class="well box">
         <div class="header">  
@@ -62,7 +62,7 @@ Supportpaket
             <small>{% trans 'zzgl. MwSt.' %}</small></p>
         </div>
         <ul class="unstyled">
-            <li>{% url license as license_url %}
+            <li>{% url 'license' as license_url %}
             {% trans 'Lizenzkostenfreie Nutzung' %}
             <small>{% blocktrans %}OpenSlides ist Freie Software, lizensiert unter 
             der <a href="{{ license_url }}">GNU GPL v2+</a>.{% endblocktrans %}</small></li>

@@ -9,19 +9,19 @@
     <div class="container">
     <ul class="nav nav-pills">
         <li class="{% block submenu_support_overview %}{% endblock %}">
-            <a href="{% url support_overview %}">{% trans "Übersicht" %}</a>
+            <a href="{% url 'support_overview' %}">{% trans "Übersicht" %}</a>
         </li>
         <li class="{% block submenu_support_packages %}{% endblock %}">
-            <a href="{% url support_packages %}">{% trans "Supportpakete" %}</a>
+            <a href="{% url 'support_packages' %}">{% trans "Supportpakete" %}</a>
         </li>
         <li class="{% block submenu_support_community %}{% endblock %}">
-            <a href="{% url support_community %}">{% trans "Community" %}</a>
+            <a href="{% url 'support_community' %}">{% trans "Community" %}</a>
         </li>
         <li class="{% block submenu_support_manual %}{% endblock %}">
-            <a href="{% url support_manual %}">{% trans "Handbuch" %}</a>
+            <a href="{% url 'support_manual' %}">{% trans "Handbuch" %}</a>
         </li>
         <li class="{% block submenu_support_faq %}{% endblock %}">
-            <a href="{% url support_faq %}">{% trans "FAQ" %}</a>
+            <a href="{% url 'support_faq' %}">{% trans "FAQ" %}</a>
         </li>
     </ul>
     </div>

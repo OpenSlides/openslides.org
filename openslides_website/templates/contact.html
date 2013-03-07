@@ -14,7 +14,7 @@ uns Ihre Rückmeldung!{% endblocktrans %}
 
 {% block content %}
 
-<p><a class="btn btn-primary" href="{% url contactform %}">{% trans 'Zum Kontaktformular' %} &raquo;</a></p>
+<p><a class="btn btn-primary" href="{% url 'contactform' %}">{% trans 'Zum Kontaktformular' %} &raquo;</a></p>
 <br>
 <div class="row">
     <div class="span4">
@@ -49,7 +49,7 @@ uns Ihre Rückmeldung!{% endblocktrans %}
         <h2><img class="os-icon" src="/static/img/icons/glyphicons_352_nameplate.png">
         {% trans 'Professionelle Unterstützung' %}</h2>
         <p>
-        {% url support_packages as support_url %}
+        {% url 'support_packages' as support_url %}
         {% blocktrans %}Sie haben Interesse an OpenSlides und denken über einen Einsatz auf Ihrer 
         Veranstaltung nach? Sie suchen dafür professionelle Unterstützung 
         bei der Vorbereitung? Sie haben Fragen zu unseren 
@@ -81,14 +81,14 @@ uns Ihre Rückmeldung!{% endblocktrans %}
         <div class="well">
         <h2><img class="os-icon" src="/static/img/icons/glyphicons_043_group.png">
         {% trans 'Kernentwickler' %}</h2>
-        {% url contactform as contactform_url %}
+        {% url 'contactform' as contactform_url %}
         <p>{% blocktrans %}Direktkontakt zu den drei Gründern und Kernentwicklern von OpenSlides gibt
         es über das <a href="{{ contactform_url }}">Kontaktformular</a>.{% endblocktrans %}
         </p>
 
         <p>{% blocktrans %}OpenSlides ist eine Freie Software
         Initiative von engagierten, freiwilligen {% endblocktrans %}
-        <a href="{% url authors %}">{% trans 'Autoren' %}</a>.</p>
+        <a href="{% url 'authors' %}">{% trans 'Autoren' %}</a>.</p>
         </div>
     </div>    
 </div>

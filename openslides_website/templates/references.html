@@ -8,7 +8,7 @@
 {% block submenu_references %}active{% endblock %}
 
 {% block lead %}
-{% url contactform as contactform_url %}
+{% url 'contactform' as contactform_url %}
 {% blocktrans %}Auf zahlreichen Veranstaltungen war OpenSlides bereits erfolgreich im Einsatz.
 Hier eine Auswahl an Referenzen. - Wir freuen uns, wenn wir Ihre Organisation hier nennen dürften. 
 <a href="{{ contactform_url }}">Schreiben Sie uns</a>!{% endblocktrans %}

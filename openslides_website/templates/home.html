@@ -20,11 +20,11 @@
     <p>{% trans 'Mehr Transparenz.' %}<br> {% trans 'Mehr Flexibilität.' %}<br> {% trans 'Mehr Effizienz.' %}<br>
     <strong>{% trans 'Die Lösung für Ihre Versammlung!' %}</strong></p>
     <br>
-    <a class="jumbotron btn btn-primary btn-large" href="{% url download %}">
+    <a class="jumbotron btn btn-primary btn-large" href="{% url 'download' %}">
     {% trans 'Download' %} 1.3.1
     </a>
 
-    <a class="jumbotron btn btn-large" href="{% url demo %}">
+    <a class="jumbotron btn btn-large" href="{% url 'demo' %}">
     {% trans 'Demo' %}
     </a>
     </p>
@@ -40,7 +40,7 @@
   <div class="row">
     <div class="span4">
         {% include "news.html" %}
-        <p><a class="btn" href="{% url press %}">{% trans 'Mehr' %} &raquo;</a></p>
+        <p><a class="btn" href="{% url 'press' %}">{% trans 'Mehr' %} &raquo;</a></p>
     </div>
     <div class="span4">
       <h2><img class="os-icon" src="/static/img/icons/glyphicons_074_cup.png">
@@ -48,7 +48,7 @@
        <p>{% blocktrans %}OpenSlides hat am 17.10.2012 den 1. Platz beim
        <a href="http://innovate-os.de">innovate!Interaction Award 2012</a> in Osnabrück
        belegt!{% endblocktrans %}</p>
-       <p>Hier <a href="{% url pm-20121022 %}">Pressemitteilung</a> und <a
+       <p>Hier <a href="{% url 'pm-20121022' %}">Pressemitteilung</a> und <a
            href="http://mail.openslides.org/pipermail/users-de/2012-October/000065.html">Community-Announcement</a> lesen.
        <p><span class="thumbnail span2" title="innovate!Interaction Award 2012">
        <img src="/static/img/innovateInteractionAward2012.jpg">
@@ -81,7 +81,7 @@
           </span>
         </li>
       </ul>
-      <a class="btn" href="{% url references %}">{% trans 'Weitere Referenzen' %} &raquo;</a>
+      <a class="btn" href="{% url 'references' %}">{% trans 'Weitere Referenzen' %} &raquo;</a>
     </div>
   </div>
 

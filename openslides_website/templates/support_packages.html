@@ -46,24 +46,24 @@ Software Entwicklung.{% endblocktrans %}
             <td class="leftcolumn">{% trans 'Paketpreis' %}
                   <small>{% trans 'einmalig für Ihre Veranstaltung' %}</small></td>
             <td><p class="price">0,- &euro;<small>&nbsp;</small></p>
-                <p class="orderbutton"><a class="btn" href="{% url download %}"><i
-                        class="icon-download"></i> {% trans 'Herunterladen' %}</a></p>
+                <p class="orderbutton"><a class="btn" href="{% url 'download' %}"><i
+                        class="icon-download"></i> {% trans 'Download' %}</a></p>
                 </td>
                 <td><p class="price">
                     80,- &euro;
                     <small>{% trans 'zzgl. MwSt.' %}</small></p>
-                <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '1' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
+                <p class="orderbutton"><a class="btn btn-primary" href="{% url 'orderform' '1' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
             <td><p class="price">
                 800,- &euro;
                 <small>{% trans 'zzgl. MwSt.' %}</small></p>
-                <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '2' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
+                <p class="orderbutton"><a class="btn btn-primary" href="{% url 'orderform' '2' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
             <td><p class="price">
                 2.500,- &euro;
                 <small>{% trans 'zzgl. MwSt.' %}</small></p>
-                <p class="orderbutton"><a class="btn btn-primary" href="{% url orderform '3' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
+                <p class="orderbutton"><a class="btn btn-primary" href="{% url 'orderform' '3' %}"><i class="icon-shopping-cart icon-white"></i> {% trans 'Bestellen' %}</a></p></td>
           </tr>
           <tr>
-            <td class="leftcolumn">{% url license as license_url %}
+            <td class="leftcolumn">{% url 'license' as license_url %}
             {% trans 'Lizenzkostenfreie Nutzung' %}
             <small>{% blocktrans %}OpenSlides ist Freie Software, lizensiert unter 
             der <a href="{{ license_url }}">GNU GPL v2+</a>.{% endblocktrans %}</small></td>
@@ -78,9 +78,18 @@ Software Entwicklung.{% endblocktrans %}
                 Anpassungsarbeiten{% endblocktrans %}
                 </small></td>
             <td>-</td>
-            <td><i class="icon-ok"></i><br>{% trans 'bis zu' %} 0,5 {% trans 'Stunden' %}</td>
-            <td><i class="icon-ok"></i><br>{% trans 'bis zu' %} 5 {% trans 'Stunden' %}</td>
-            <td><i class="icon-ok"></i><br>{% trans 'bis zu' %} 10 {% trans 'Stunden' %}</td>
+            <td><i class="icon-ok"></i><br>
+                <span class="badge badge-success">
+                    {% trans 'bis zu' %} 0,5 {% trans 'Stunden' %}
+                 <span></td>
+            <td><i class="icon-ok"></i><br>
+                <span class="badge badge-success">
+                    {% trans 'bis zu' %} 5 {% trans 'Stunden' %}
+                 <span></td>
+            <td><i class="icon-ok"></i><br>
+                <span class="badge badge-success">
+                    {% trans 'bis zu' %} 10 {% trans 'Stunden' %}
+                 <span></td>
           </tr>
           <tr>
             <td class="leftcolumn">{% trans 'Neuste qualitätsgesicherte Version' %}
@@ -133,7 +142,10 @@ Software Entwicklung.{% endblocktrans %}
             <td>-</td>
             <td>-</td>
             <td>-</td>
-            <td><i class="icon-ok"></i><br>bis zu 10 Nutzer</td>
+            <td><i class="icon-ok"></i><br>
+                <span class="badge badge-success">
+                    {% trans 'bis zu' %} 10 {% trans 'Nutzer' %}
+                 <span></td>
           </tr>
           <tr class="topline">
               <td class="leftcolumn">
@@ -145,8 +157,8 @@ Software Entwicklung.{% endblocktrans %}
                   </small></td>
             <td>-</td>
             <td>-</td>
-            <td>{% trans 'Auf Anfrage' %}</td>
-            <td>{% trans 'Auf Anfrage' %}</td>
+            <td><i>{% trans 'Auf Anfrage' %}</i></td>
+            <td><i>{% trans 'Auf Anfrage' %}</i></td>
           </tr>
           <tr>
             <td class="leftcolumn">{% trans 'Verleih eines Xirrus-WLAN-Arrays' %}
@@ -156,8 +168,8 @@ Software Entwicklung.{% endblocktrans %}
                    Abstimmungssystem {% endblocktrans %}</small></td>
             <td>-</td>
             <td>-</td>
-            <td>{% trans 'Auf Anfrage' %}</td>
-            <td>{% trans 'Auf Anfrage' %}</td>
+            <td><i>{% trans 'Auf Anfrage' %}</i></td>
+            <td><i>{% trans 'Auf Anfrage' %}</i></td>
           </tr>
           <tr>
             <td class="leftcolumn">{% trans 'Namenskarten mit Barcode' %} <span class="label
@@ -166,8 +178,8 @@ Software Entwicklung.{% endblocktrans %}
                 inkl. Verleih eines Barcodescanners{% endblocktrans %}</small></td>
             <td>-</td>
             <td>-</td>
-            <td>{% trans 'Auf Anfrage' %}</td>
-            <td>{% trans 'Auf Anfrage' %}</td>
+            <td><i>{% trans 'Auf Anfrage' %}</i></td>
+            <td><i>{% trans 'Auf Anfrage' %}</i></td>
           </tr>
         </tbody>
       </table>
