@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:OpenSlides Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-07 21:51+0100\n"
+"POT-Creation-Date: 2013-03-08 10:07+0100\n"
 "PO-Revision-Date: 2012-07-31 11:44+0200\n"
 "Last-Translator: Oskar Hahn <mail@oshahn.de>\n"
 "Language-Team: Deutsch <mail@oshahn.de>\n"
@@ -242,7 +242,7 @@ msgid ""
 msgstr ""
 "At the end of 2010 <b>Oskar Hahn</b> and <b>Emanuel Schütze</b> started a "
 "completely new development in Python/Django and created together with "
-"<b>Norman Jäckel</b> a free software project called \"OpenSlides\"."
+"<b>Norman Jäckel</b> a Free Software project called \"OpenSlides\"."
 
 #: templates/about.html:76
 msgid ""
@@ -263,23 +263,40 @@ msgstr ""
 msgid "Autoren"
 msgstr "Authors"
 
-#: templates/authors.html:12
+#: templates/authors.html:9
+msgid ""
+"OpenSlides ist Freie Software. JedeR ist eingeladen\n"
+"mitzumachen!"
+msgstr "OpenSlides is Free Software. Everybody is invited to contribute!"
+
+#: templates/authors.html:17
 msgid "OpenSlides ist eine Software von:"
-msgstr "OpenSlides is a software from:"
+msgstr "OpenSlides is a software created by:"
 
-#: templates/authors.html:18
-msgid "Mit Unterstützung von:"
-msgstr "With support from:"
+#: templates/authors.html:23
+msgid "Bis zur Version 1.3.1 haben außerdem beigetragen:"
+msgstr "Up to version 1.3.1 there are also more contributors:"
 
-#: templates/authors.html:28
+#: templates/authors.html:31
+msgid ""
+"Einen aktuellen Überblick über die neusten\n"
+"        Autoren gibt es in der \n"
+"        <a href=\"https://github.com/OpenSlides/OpenSlides/blob/master/"
+"AUTHORS\">AUTHORS-Datei</a>."
+msgstr ""
+"A current overview about the latest authors can be found in the <a href="
+"\"https://github.com/OpenSlides/OpenSlides/blob/master/AUTHORS\">AUTHORS "
+"file</a>."
+
+#: templates/authors.html:38
 msgid "Freie Software Komponenten"
 msgstr "Free Software components"
 
-#: templates/authors.html:29
+#: templates/authors.html:39
 msgid "OpenSlides baut auf folgenden Freien Software Projekten auf:"
 msgstr "OpenSlides builds on the following Free Software projects:"
 
-#: templates/authors.html:39
+#: templates/authors.html:49
 msgid ""
 "Einen aktuellen Überblick aller verwendeter Komponenten mit ihren Lizenzen "
 "gibt es in der <a href=\"https://github.com/OpenSlides/OpenSlides/blob/"
@@ -288,6 +305,14 @@ msgstr ""
 "A current overview about all used components with their licenses can be "
 "found in the <a href=\"https://github.com/OpenSlides/OpenSlides/blob/master/"
 "THANKS\">THANKS file</a>."
+
+#: templates/base.html:7
+msgid "Freies webbasiertes Präsentations- und Versammlungssystem"
+msgstr "free web based presentation and assembly system"
+
+#: templates/base.html:8
+msgid "OpenSlides, Tagesordnung, Anträge, Wahlen, Teilnehmer, Versammlung"
+msgstr "OpenSlides, agenda, motions, elections, participants, assembly"
 
 #: templates/base.html:35 templates/base.html.py:90 templates/home.html:24
 #: templates/support_packages.html:50
@@ -421,15 +446,38 @@ msgstr "Contact form"
 
 #: templates/contact-form.html:11
 msgid ""
-"Haben Sie Fragen oder Anregungen zu OpenSlides? \n"
+"Haben Sie Fragen, Anregungen oder Rückmeldungen zu OpenSlides? \n"
 "Sie können hier das Kernentwicklerteam direkt kontaktieren.\n"
-"Wir freuen uns auf Ihre Anfrage!"
+"Wir freuen uns über Ihre Nachricht!"
 msgstr ""
-"Do you have questions or suggestions regarding OpenSlides? Here you can "
-"directly contact the core development team. We are looking forward to your "
-"enquiry!"
+"Do you have any questions, suggestions or feedback regarding OpenSlides? "
+"Here you can directly contact the core development team. We are looking "
+"forward to your enquiry!"
 
-#: templates/contact-form.html:22
+#: templates/contact-form.html:19
+#, python-format
+msgid ""
+"Ihre Nachricht wird an <a\n"
+"href=\"mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#111;&#112;"
+"&#101;&#110;&#115;&#108;&#105;&#100;&#101;&#115;&#046;&#111;&#114;&#103;"
+"\">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#111;&#112;&#101;&#110;"
+"&#115;&#108;&#105;&#100;&#101;&#115;&#046;&#111;&#114;&#103;</a>\n"
+"gesendet und erreicht die drei Kernentwickler Oskar Hahn, Norman\n"
+"Jäckel und Emanuel Schütze. Wollen Sie mit Ihrer Nachricht einen\n"
+"größeren Kreis an OpenSlides-Interessierten erreichen, nutzen Sie\n"
+"besser unsere öffentlichen \n"
+"<a href=\"%(contact_url)s\">Mailinglisten</a>."
+msgstr ""
+"Your message will be sent to<a\n"
+"href=\"mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#111;&#112;"
+"&#101;&#110;&#115;&#108;&#105;&#100;&#101;&#115;&#046;&#111;&#114;&#103;"
+"\">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#111;&#112;&#101;&#110;"
+"&#115;&#108;&#105;&#100;&#101;&#115;&#046;&#111;&#114;&#103;</a>and will be "
+"reached the three core developer Oskar Hahn, NormanJäckel and Emanuel "
+"Schütze. If you want to reach a wider audience with your messageplease use "
+"the public <a href=\"%(contact_url)s\">mailing lists</a>."
+
+#: templates/contact-form.html:33
 msgid "Senden"
 msgstr "Submit"
 
@@ -1240,7 +1288,7 @@ msgid ""
 "als Serveranwendung überall dort, wo Python verfügbar ist (u.a. Windows,\n"
 "MacOSX, GNU/Linux)."
 msgstr ""
-"OpenSlides is free software licensed under the GNU GPL v2+ and can be "
+"OpenSlides is Free Software licensed under the GNU GPL v2+ and can be "
 "downloaded from the web page with the full source code free of charge. "
 "OpenSlides is platform independet and runs as a server application anywhere "
 "that has Python available (e.g. on Windows, MacOSX, GNU/Linux)."
@@ -1436,18 +1484,18 @@ msgstr ""
 msgid "Diese Seite ist noch im Aufbau."
 msgstr "This page is still under construction."
 
-#: templates/support_faq.html:17
+#: templates/support_faq.html:18
+#, python-format
 msgid ""
-"Helfen Sie uns und schreiben Sie uns Ihre wichtigsten Fragen zu \n"
-"    OpenSlides an <a href=\"support@openslides.org\">support@openslides.org</"
-"a>! \n"
-"    Wir werden dann demnächst hier eine hilfreiche Auswahl an FAQs "
-"zusammenstellen.\n"
+"Helfen Sie uns und \n"
+"    <a href=\"%(contactform_url)s\">schreiben Sie uns</a> Ihre\n"
+"    wichtigsten Fragen zu OpenSlides! Wir werden dann demnächst hier\n"
+"    eine hilfreiche Auswahl an FAQs zusammenstellen.\n"
 "    "
 msgstr ""
-"Help us and write your most important questions about OpenSlides to <a href="
-"\"support@openslides.org\">support@openslides.org</a>! Then we can compile a "
-"helpful selection of FAQs here soon."
+"Help us and <a href=\"%(contactform_url)s\">write us</a>your most important "
+"questions about OpenSlides! Then we can compile a helpful selection of FAQs "
+"here soon."
 
 #: templates/support_manual.html:11
 msgid ""
@@ -1617,8 +1665,8 @@ msgid "Alle Preisangaben gelten zuzüglich der gesetzlich gültigen MwSt."
 msgstr "All prices are plus the statutory VAT."
 
 #: templates/support_packages.html:245
-msgid "Stand: 07.03.2013"
-msgstr "As of: 2013-03-07"
+msgid "Stand: 08.03.2013"
+msgstr "As of: 2013-03-08"
 
 #: templates/support_packages.html:249
 msgid ""
@@ -1669,5 +1717,3 @@ msgstr ""
 msgid "Sollten Sie noch Fragen haben, melden Sie sich gerne!"
 msgstr "If you have further questions don't hesitate to contact us!"
 
-#~ msgid "Herunterladen"
-#~ msgstr "Download"
