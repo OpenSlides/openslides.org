@@ -14,9 +14,11 @@
 {% block content %}
   <div class="row">
     <div class="span6">
-    <p>{% blocktrans %}Helfen Sie uns und schreiben Sie uns Ihre wichtigsten Fragen zu 
-    OpenSlides an <a href="support@openslides.org">support@openslides.org</a>! 
-    Wir werden dann demnächst hier eine hilfreiche Auswahl an FAQs zusammenstellen.
+    {% url 'contactform' as contactform_url %}
+    <p>{% blocktrans %}Helfen Sie uns und 
+    <a href="{{ contactform_url }}">schreiben Sie uns</a> Ihre
+    wichtigsten Fragen zu OpenSlides! Wir werden dann demnächst hier
+    eine hilfreiche Auswahl an FAQs zusammenstellen.
     {% endblocktrans %}
     </p>
     </div>

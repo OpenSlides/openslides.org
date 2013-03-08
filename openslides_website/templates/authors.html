@@ -5,6 +5,11 @@
 {% block title %}{{ block.super }} - {% trans "Autoren" %}{% endblock %}
 {% block headline %}{% trans "Autoren" %}{% endblock %}
 
+{% block lead %}
+{% blocktrans %}OpenSlides ist Freie Software. JedeR ist eingeladen
+mitzumachen!{% endblocktrans %}
+{% endblock %}
+
 {% block content %}
 <div class="row">
 	<div class="span6">
@@ -12,18 +17,23 @@
             {% blocktrans %}OpenSlides ist eine Software von:{% endblocktrans %}
             <ul>
                 <li>Emanuel Schütze</li>
-                <li>Norman Jäckel</li>
                 <li>Oskar Hahn</li>
+                <li>Norman Jäckel</li>
             </ul>
-            {% blocktrans %}Mit Unterstützung von:{% endblocktrans %}
+            {% blocktrans %}Bis zur Version 1.3.1 haben außerdem beigetragen:{% endblocktrans %}
             <ul>
-                <li>Andy Kittner</li>
                 <li>René Köcher</li>
+                <li>Andy Kittner</li>
+                <li>Moira Brülisauer</li>
+                <li>Alexis Roussel</li>
             </ul>
         </p>
+        <p>{% blocktrans %}Einen aktuellen Überblick über die neusten
+        Autoren gibt es in der 
+        <a href="https://github.com/OpenSlides/OpenSlides/blob/master/AUTHORS">AUTHORS-Datei</a>.{% endblocktrans %}</p> 
 	</div>
 	<div class="span6">
-    <div class="well">
+        <div class="well">
             <h2><img class="os-icon" src="/static/img/icons/glyphicons_354_vases.png">
 	        {% trans 'Freie Software Komponenten' %}</h2>
             <p>{% blocktrans %}OpenSlides baut auf folgenden Freien Software Projekten auf:{% endblocktrans %}</p>
@@ -37,7 +47,7 @@
                 <li><a href="http://font.ubuntu.com/">Ubuntu TrueType Font</a></li>
             </ul>   
             <p>{% blocktrans %}Einen aktuellen Überblick aller verwendeter Komponenten mit ihren Lizenzen gibt es in der <a href="https://github.com/OpenSlides/OpenSlides/blob/master/THANKS">THANKS-Datei</a>.{% endblocktrans %}</p> 
-    </div>
+        </div>
 	</div>
 </div>
 {% endblock %}
