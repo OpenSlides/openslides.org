@@ -8,17 +8,28 @@
 {% block mainmenu_contact %}active{% endblock %}
 
 {% block lead %}
-{% blocktrans %}Haben Sie Fragen oder Anregungen zu OpenSlides? 
-Sie können hier das Hauptentwicklerteam direkt kontaktieren.
-Wir freuen uns auf Ihre Anfrage!{% endblocktrans %}
+{% blocktrans %}Haben Sie Fragen, Anregungen oder Rückmeldungen zu OpenSlides? 
+Sie können hier das Kernentwicklerteam direkt kontaktieren.
+Wir freuen uns über Ihre Nachricht!{% endblocktrans %}
 {% endblock %}
 
 {% block content %}
 
+{% url 'contact' as contact_url %}
+<p>{% blocktrans %}Ihre Nachricht wird an <a
+href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#111;&#112;&#101;&#110;&#115;&#108;&#105;&#100;&#101;&#115;&#046;&#111;&#114;&#103;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#111;&#112;&#101;&#110;&#115;&#108;&#105;&#100;&#101;&#115;&#046;&#111;&#114;&#103;</a>
+gesendet und erreicht die drei Kernentwickler Oskar Hahn, Norman
+Jäckel und Emanuel Schütze. Wollen Sie mit Ihrer Nachricht einen
+größeren Kreis an OpenSlides-Interessierten erreichen, nutzen Sie
+besser unsere öffentlichen 
+<a href="{{ contact_url }}">Mailinglisten</a>.{% endblocktrans %}
+</p>
+
+
 <form action="" method="post">{% csrf_token %}
 {{ form.name_of_field.errors }}
 {{ form.as_p }}
-<button class="btn btn-large btn-primary" type="submit">
+<button class="btn btn-primary" type="submit">
     {% trans 'Senden' %}</span>
 </button><br>
 </form>

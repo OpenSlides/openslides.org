@@ -2,14 +2,14 @@
 
 {% load i18n %}
 
-{% block title %}{{ block.super }} - {% trans "Die virtuelle Mitgliederversammlung  im Verein" %}{% endblock %}
+{% block title %}{{ block.super }} - {% trans "Die virtuelle Mitgliederversammlung im Verein" %}{% endblock %}
 {% block headline %}{% trans "News" %}{% endblock %}
 
 {% block submenu_press %}active{% endblock %}
 
 
 {% block content %}
-<p><i><a href="{% url press %}">&laquo; Zurück</a></i></p>
+<p><i><a href="{% url 'press' %}">&laquo; Zurück</a></i></p>
 
 <h3>{% trans 'Die virtuelle Mitgliederversammlung im Verein' %}</h3>
 <br>

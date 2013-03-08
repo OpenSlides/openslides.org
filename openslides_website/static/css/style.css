@@ -1,11 +1,11 @@
 /**
  * OpenSlides website style
  *
- * :copyright: 2012 by OpenSlides team, see AUTHORS.
+ * :copyright: 2012-2013 by OpenSlides team, see AUTHORS.
  * :license: GNU GPL, see LICENSE for more details.
  */
 body {
-    padding-top: 85px;
+    padding-top: 80px;
 }
 .navbar .nav > li > a {
     color: #cccccc;
@@ -13,6 +13,15 @@ body {
 }
 .navbar .nav.pull-right > li > a {
     font-size: 11px;
+}
+.navbar .nav .active a, .navbar .nav .active a:hover {
+    background-color: #525252;
+}
+.navbar .brand {
+    padding: 4px 20px !important;
+}
+.brand img {
+    height: 31px;
 }
 .hero-unit {
     margin-top: -15px;
@@ -48,6 +57,8 @@ body {
 .btn-large small {
     font-size: 14px;
 }
+
+/* sub navigation */
 .subnav {
     background-color: #EEEEEE;
     background-image: -moz-linear-gradient(center top , #F5F5F5 0%, #EEEEEE 100%);
@@ -62,7 +73,6 @@ body {
 }
 .subnav .nav > li > a {
     border-left: 1px solid #F5F5F5;
-    border-radius: 0 0 0 0;
     border-right: 1px solid #E5E5E5;
     margin: 0;
     padding-bottom: 11px;
@@ -81,35 +91,27 @@ body {
 }
 .subnav .nav > li:first-child > a, .subnav .nav > li:first-child > a:hover {
     border-left: 0 none;
-    border-radius: 4px 0 0 4px;
     padding-left: 12px;
 }
 .subnav .nav > li:last-child > a {
     border-right: 0 none;
 }
-.subnav .dropdown-menu {
-    border-radius: 0 0 4px 4px;
-}
-.subnav-fixed {
+.subnav.navbar-fixed-top {
+    top: 40px;
     border-color: #D5D5D5;
-    border-radius: 0 0 0 0;
     border-width: 0 0 1px;
     box-shadow: 0 1px 0 #FFFFFF inset, 0 1px 5px rgba(0, 0, 0, 0.1);
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 40px;
-    z-index: 1020;
+    z-index: 100;
 }
-.subnav-fixed .nav {
-    margin: 0 auto;
-    padding: 0 1px;
-    width: 938px;
+/* for sticky footer */
+#wrap {
+    height: auto !important;
+    margin: 0 auto -60px;
+    min-height: 100%;
 }
-.subnav .nav > li:first-child > a, .subnav .nav > li:first-child > a:hover {
-    border-radius: 0 0 0 0;
+#wrap > .container {
+    padding-top: 60px;
 }
-
 footer {
     background: none repeat scroll 0 0 #252525;
     border-top: 0 none;
@@ -174,6 +176,9 @@ form .error input, form .error textarea {
 .packagetable td.leftcolumn {
     text-align: left;
 }
+.packagetable .topline td {
+    border-top: 1px solid #5E5E5E;
+}
 .box small, .packagetable small {
     color: #999999;
     display: block;
@@ -208,6 +213,12 @@ input, textarea {
     margin: 7px 10px 0 0;
     opacity: 0.8;
 }
+.logo-right {
+    float: right;
+    margin: 0 0 10px 10px;
+    text-align: right;
+    font-size: 12px;
+}
 h2 {
     font-size: 22px;
     font-weight: 300;
@@ -221,7 +232,7 @@ h3 {
 }
 
 .license {
-    margin-top: 70px;
+    margin-top: 40px;
     font-size: 11px;
 }
 .page-header .pager:before, .page-header .pager:after {

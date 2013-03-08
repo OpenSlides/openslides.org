@@ -4,26 +4,20 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Agenda presentation system" />
-    <meta name="keywords" content="OpenSlides, agenda, application" />
+    <meta name="description" content="{% trans 'Freies webbasiertes Präsentations- und Versammlungssystem' %}" />
+    <meta name="keywords" content="{% trans 'OpenSlides, Tagesordnung, Anträge, Wahlen, Teilnehmer, Versammlung' %}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}OpenSlides{% endblock %}</title>
-    <link type="text/css" href="/static/css/bootstrap.css" rel="stylesheet" />
+    <link type="text/css" href="/static/css/bootstrap.min.css" rel="stylesheet" />
     <link type="text/css" href="/static/css/style.css" rel="stylesheet" />
+    <link type="text/css" href="/static/css/bootstrap-responsive.min.css" rel="stylesheet" />
     <link href="/static/img/favicon.ico" rel="shortcut icon" />
-    <script type="text/javascript" src="/static/js/jquery.js"></script>
-    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
-
-    <!-- for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 </head>
 
 <body>
 
 {% block mainmenu %}
-  <div class="navbar navbar-fixed-top">
+  <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -31,35 +25,34 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="{% url home %}" style="padding: 4px 20px;" title="Home">
-        <img src="/static/img/openslides-logo_wide-light.png" height="31px">
+        <a class="brand" href="{% url 'home' %}" title="Home">
+          <img src="/static/img/openslides-logo_wide-light.png">
         </a>
-        <div class="nav-collapse">
           <ul class="nav">
             <li class="{% block mainmenu_about %}{% endblock %}"><a
-                href="{% url about %}">{% trans "Über OpenSlides" %}</a></li>
+                href="{% url 'about' %}">{% trans "Über OpenSlides" %}</a></li>
             <li class="{% block mainmenu_download %}{% endblock %}"><a
-                href="{% url download %}">{% trans "Download" %}</a></li>
+                href="{% url 'download' %}">{% trans "Download" %}</a></li>
             <li class="{% block mainmenu_support %}{% endblock %}"><a
-                href="{% url support %}">{% trans "Support" %}</a></li>
-            <li class="{% block mainmenu_manual %}{% endblock %}"><a
-                href="{% url manual %}">{% trans "Handbuch" %}</a></li>
-            <li class="{% block mainmenu_development %}{% endblock %}"><a href="{% url development %}">{% trans "Entwicklung" %}</a></li>
+                href="{% url 'support_overview' %}">{% trans "Support" %}</a></li>
+            <li class="{% block mainmenu_development %}{% endblock %}"><a 
+                href="{% url 'development' %}">{% trans "Entwicklung" %}</a></li>
           </ul>
+        <div class="nav-collapse collapse">
           <ul class="nav pull-right">
             <li class="{% block mainmenu_contact %}{% endblock %}"><a
-                href="{% url contact %}">{% trans "Kontakt" %}</a></li>
+                href="{% url 'contact' %}">{% trans "Kontakt" %}</a></li>
             <li class="divider-vertical"></li>
             {% get_available_languages as languages %}
             {% for lang_code, lang_name in languages %}
                 {% language lang_code %}
                 <li {% if LANGUAGE_CODE == lang_code %}class="active"{% endif %}>
-                  <a href="{% url home %}"><img title="{{ lang_name }}" alt="{{ lang_name }}"
+                  <a href="{% url 'home' %}"><img title="{{ lang_name }}" alt="{{ lang_name }}"
                       src="/static/img/icons/{{lang_code}}.png"> {{ lang_name }}</a>
                 </li>
                 {% endlanguage %}
             {% endfor %}
-        </ul>
+          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
@@ -69,11 +62,11 @@
 
 <div class="container">
 {% block container %}
+    {% block submenu %}{% endblock %}
     {% block header %}
     <header id="overview" class="jumbotron subhead">
       <h1>{% block headline %}{% endblock %}</h1>
       <p class="lead">{% block lead %}{% endblock %}</p>
-      {% block submenu %}{% endblock %}
     </header>
     {% endblock %}
     {% block content %}{% endblock %}
@@ -89,57 +82,68 @@
            <div class="span2">
              <h4>{% trans 'Produkt' %}</h4>
              <ul class="unstyled">
-               <li><a href="{% url about %}">{% trans 'Was ist OpenSlides?' %}</a></li>
-               <li><a href="{% url features %}">{% trans 'Funktionen' %}</a></li>
-               <li><a href="{% url references %}">{% trans 'Referenzen' %}</a></li>
-               <li><a href="{% url press %}">{% trans 'Presse' %}</a></li>
-               <li><a href="{% url license %}">{% trans 'Lizenz' %}</a></li>
-               <li><a href="{% url download %}">{% trans 'Download' %}</a></li>
-               <li><a href="{% url demo %}">{% trans 'Demo' %}</a> <span class="label label-important">{% trans 'Tipp' %}</span></li>
+               <li><a href="{% url 'about' %}">{% trans 'Was ist OpenSlides?' %}</a></li>
+               <li><a href="{% url 'features' %}">{% trans 'Funktionen' %}</a></li>
+               <li><a href="{% url 'references' %}">{% trans 'Referenzen' %}</a></li>
+               <li><a href="{% url 'press' %}">{% trans 'Presse' %}</a></li>
+               <li><a href="{% url 'license' %}">{% trans 'Lizenz' %}</a></li>
+               <li><a href="{% url 'download' %}">{% trans 'Download' %}</a></li>
+               <li><a href="{% url 'demo' %}">{% trans 'Demo' %}</a> <span class="label label-important">{% trans 'Tipp' %}</span></li>
              </ul>
            </div>
            <div class="span2">
              <h4>{% trans 'Support' %}</h4>
              <ul class="unstyled">
-                 <li><a href="{% url support %}">{% trans 'Supportpreise' %}</a></li>
-                 <li><a href="{% url manual %}">{% trans 'Handbuch' %}</a></li>
-                 <li><a href="{% url faq %}">{% trans 'FAQ' %}</a></li>
+                 <li><a href="{% url 'support_overview' %}">{% trans 'Übersicht' %}</a></li>
+                 <li><a href="{% url 'support_packages' %}">{% trans 'Supportpakete' %}</a></li>
+                 <li><a href="{% url 'support_community' %}">{% trans 'Community' %}</a></li>
+                 <li><a href="{% url 'support_manual' %}">{% trans 'Handbuch' %}</a></li>
+                 <li><a href="{% url 'support_faq' %}">{% trans 'FAQ' %}</a></li>
              </ul>
            </div>
            <div class="span2">
              <h4>{% trans 'Entwicklung' %}</h4>
              <ul class="unstyled">
-                 <li><a href="{% url authors %}">{% trans 'Autoren' %}</a></li>
-                 <li><a href="http://dev.openslides.org">{% trans 'Wiki' %}</a></li>
-                 <li><a href="http://dev.openslides.org/roadmap">{% trans 'Roadmap' %}</a></li>
-                 <li><a href="http://dev.openslides.org/report/3">{% trans 'Tickets' %}</a></li>
+                 <li><a href="{% url 'development' %}">{% trans 'Übersicht' %}</a></li>
+                 <li><a href="https://github.com/OpenSlides/OpenSlides/wiki">{% trans 'Wiki' %}</a></li>
+                 <li><a href="https://github.com/OpenSlides/OpenSlides/issues/milestones">{% trans 'Roadmap' %}</a></li>
+                 <li><a href="https://github.com/OpenSlides/OpenSlides/issues">{% trans 'Tickets' %}</a></li>
                  <li><a href="https://github.com/OpenSlides/OpenSlides">{% trans 'Quellcode' %}</a></li>
              </ul>
            </div>
            <div class="span2">
-             <h4>Mehr</h4>
+             <h4>{% trans 'Mehr' %}</h4>
              <ul class="unstyled">
-               <li><a href="{% url donate %}">{% trans 'Spenden' %}</a></li>
-               <li><a href="{% url contact %}">{% trans 'Kontakt' %}</a></li>
-               <li><a href="{% url impressum %}">{% trans 'Impressum' %}</a></li>
+               <li><a href="{% url 'authors' %}">{% trans 'Autoren' %}</a></li>
+               <li><a href="{% url 'contact' %}">{% trans 'Kontakt' %}</a></li>
              </ul>
            </div>
            <div class="span4">
              <p>
+             <a href="{% url 'donate' %}" class="btn btn-primary">
+               <i class="icon-heart icon-white"></i> {% trans 'Spenden' %}
+             </a>
+             </p>
+             <p>
              <a href="https://twitter.com/intent/follow?screen_name=openslides" target="_blank" class="btn">
-               <img src="/static/img/icons/glyphicons_391_twitter_t_18px.png">
+               <img src="/static/img/icons/glyphicons_411_twitter_18px.png">
                <b>{% trans '@openslides folgen' %}</b></span>
              </a>
              </p>
              <p>
-             <a href="{% url donate %}" class="btn btn-primary">
-               <i class="icon-heart icon-white"></i> {% trans 'Spenden' %}
+             <a href="https://github.com/OpenSlides" target="_blank" class="btn">
+               <img src="/static/img/icons/glyphicons_401_github.png">
+               <b>{% trans 'OpenSlides auf GitHub' %}</b></span>
              </a>
              </p>
+             <p>
              <div class="license">
-              <p>OpenSlides is licensed under the <a href="{% url license %}">GNU GPL v2+</a>.<br>
+              <p>&copy; 2013 | 
+                <a href="{% url 'impressum' %}">{% trans 'Impressum' %}</a>
+                <br>
+              OpenSlides is Free Software licensed under <a href="{% url 'license' %}">GNU GPL v2+</a>.<br>
                 Icons from <a href="http://glyphicons.com">Glyphicons
-                 Free</a>, licensed under <a
+                 Free</a> licensed under <a
                  href="http://creativecommons.org/licenses/by/3.0/">CC
                  BY 3.0</a>.</p>
              </div>
@@ -149,6 +153,15 @@
      </div>
   </div>
 </footer>
+
+<!-- JavaScript (Placed at the end of the document so the pages load faster) -->
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+
+<!-- for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
 </body>
 </html>
