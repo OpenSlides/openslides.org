@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:OpenSlides Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-08 10:07+0100\n"
+"POT-Creation-Date: 2013-04-10 15:48+0200\n"
 "PO-Revision-Date: 2012-07-31 11:44+0200\n"
 "Last-Translator: Oskar Hahn <mail@oshahn.de>\n"
 "Language-Team: Deutsch <mail@oshahn.de>\n"
@@ -320,7 +320,7 @@ msgid "Download"
 msgstr "Download"
 
 #: templates/base.html:37 templates/base.html.py:95
-#: templates/support_overview.html:6
+#: templates/support_overview.html:5 templates/support_overview.html.py:6
 msgid "Support"
 msgstr "Support"
 
@@ -344,7 +344,7 @@ msgstr "Product"
 msgid "Funktionen"
 msgstr "Features"
 
-#: templates/base.html:87 templates/base_about.html:13 templates/home.html:60
+#: templates/base.html:87 templates/base_about.html:13 templates/home.html:63
 #: templates/references.html:5 templates/references.html.py:6
 msgid "Referenzen"
 msgstr "References"
@@ -816,11 +816,11 @@ msgstr ""
 "We thank you for your donation and will publish your name or the name of "
 "your organization here (if desired):"
 
-#: templates/donate.html:62
+#: templates/donate.html:66
 msgid "Spendenbarometer"
 msgstr "Donation barometer"
 
-#: templates/donate.html:64
+#: templates/donate.html:68
 msgid "Bisheriger Spendeneingang"
 msgstr "Previous donations"
 
@@ -923,21 +923,19 @@ msgstr "More efficiency."
 msgid "Die Lösung für Ihre Versammlung!"
 msgstr "The solution for your assembly!"
 
-#: templates/home.html:48
-msgid ""
-"OpenSlides hat am 17.10.2012 den 1. Platz beim\n"
-"       <a href=\"http://innovate-os.de\">innovate!Interaction Award 2012</a> "
-"in Osnabrück\n"
-"       belegt!"
-msgstr ""
-"OpenSlides took the first place of the <a href=\"http://innovate-os.de"
-"\">innovate!Interaction Award 2012</a> on 2012-10-17 in Osnabrück/Germany."
+#: templates/home.html:47
+msgid "Auszeichnungen"
+msgstr "Awards"
 
-#: templates/home.html:61
+#: templates/home.html:48
+msgid "OpenSlides wurde bereits mehrfach als innovatives Produkt ausgezeichnet"
+msgstr "OpenSlides was already won serveral awards as innovative product"
+
+#: templates/home.html:64
 msgid "OpenSlides war bereits erfolgreich im Einsatz bei:"
 msgstr "OpenSlides was already successfully in use by:"
 
-#: templates/home.html:84
+#: templates/home.html:87
 msgid "Weitere Referenzen"
 msgstr "Further References"
 
@@ -1716,4 +1714,3 @@ msgstr ""
 #: templates/thanks-order.html:18
 msgid "Sollten Sie noch Fragen haben, melden Sie sich gerne!"
 msgstr "If you have further questions don't hesitate to contact us!"
-
