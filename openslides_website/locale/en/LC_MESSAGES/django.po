@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:OpenSlides Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-10 15:48+0200\n"
+"POT-Creation-Date: 2013-04-12 08:30+0200\n"
 "PO-Revision-Date: 2012-07-31 11:44+0200\n"
 "Last-Translator: Oskar Hahn <mail@oshahn.de>\n"
 "Language-Team: Deutsch <mail@oshahn.de>\n"
@@ -739,19 +739,21 @@ msgid ""
 msgstr "The current OpenSlides source code can be reviewed directly on GitHub."
 
 #: templates/development.html:69
-#, python-format
 msgid ""
-"Hast Du Änderungen vor, forke Dir OpenSlides und sende uns \n"
+"Hast Du Änderungen vor, \n"
+"        <a href=\"https://help.github.com/articles/fork-a-repo\">forke</a> "
+"Dir OpenSlides und sende uns \n"
 "        Deine Anpassungen am Code per Pull Request. Bei Rückfragen, wende "
 "Dich am besten\n"
 "        an die  <a href=\"%(contact_url)s\">Mailingliste</a>. Wir weisen "
 "Dich gerne ein."
 msgstr ""
-"Fork OpenSlides for your changes and send us your contributions as pull "
+"<a href=\"https://help.github.com/articles/fork-a-repo\">Fork</a> "
+"OpenSlides for your changes and send us your contributions as pull "
 "request. For questions please ask on our <a href=\"%(contact_url)s\">Mailing "
 "lists</a>. We will help you."
 
-#: templates/development.html:72
+#: templates/development.html:73
 msgid "Quellcode durchsuchen"
 msgstr "Browse source code"
 
