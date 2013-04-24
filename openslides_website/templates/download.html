@@ -5,12 +5,18 @@
 {% block title %}{{ block.super }} - Download{% endblock %}
 {% block headline %}Download{% endblock %}
 
+{% block lead %}
+    {% url 'license' as license_url %}
+    {% blocktrans %}OpenSlides ist Freie Software,
+    lizensiert unter der <a href="{{ license_url }}">GNU GPL v2+</a>.{% endblocktrans %}
+{% endblock %}
+
 {% block mainmenu_download %}active{% endblock %}
 
 
 {% block content %}
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
-{% trans 'Aktuelle Version' %}: OpenSlides 1.3.1 
+{% trans 'Aktuelle stabile Version' %}: OpenSlides 1.3.1
 ({% trans 'veröffentlicht am' %} 9.1.2013)</h2>
 <div class="row">
     <div class="span6">
@@ -44,8 +50,49 @@
     </div>
     </div>
 </div>
-<p>OpenSlides ist Freie Software, lizensiert unter der <a href="{% url 'license' %}">GNU GPL v2+</a>.</p>
 <br>
+
+
+<h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
+{% trans 'Letzte Entwicklungsversion' %}: OpenSlides 1.4-alpha1
+({% trans 'veröffentlicht am' %} 24.4.2013)</h2>
+<div class="row">
+    <div class="span6">
+    <div class="well">
+    <h3>{% trans 'Für Windows' %}</h3>
+      <p>
+      <a class="jumbotron btn btn-primary btn-large"
+      href="http://files.openslides.org/Beta/openslides-1.4a1-portable.zip">
+      {% trans 'Download OpenSlides' %}<br>
+      <small>v1.4a1 | .zip | 12 MB</small></a>
+      </p>
+      <p>{% blocktrans %}Dies ist eine <strong>portable Version</strong>.
+      OpenSlides muss nicht installiert werden. Einfach herunterladen, entpacken und openslides.exe starten!{% endblocktrans %}</p>
+    </div>
+    </div>
+    <div class="span6">
+    <div class="well">
+      <h3>{% trans 'Für Linux/MacOS' %}</h3>
+      <p>
+      <a class="jumbotron btn btn-primary btn-large"
+      href="http://files.openslides.org/Beta/openslides-1.4a1.tar.gz">
+      {% trans 'Download OpenSlides' %}<br>
+      <small>v1.4a1 | .tar.gz | 2 MB</small></a>
+      </p>
+      <p>{% trans 'Nach Download das Paket in einer virtualenv-Umgebung installieren' %}:</p>
+      <p><code>pip install openslides-1.4a1.tar.gz</code></p>
+      </p>
+      <p>
+      {% with version="1.4a1" %}
+      {% blocktrans %}Details in der <a
+      href="http://files.openslides.org/Beta/INSTALL-{{version}}.txt">Installationsanleitung</a>.{% endblocktrans %}
+      {% endwith %}
+      </p>
+
+    </div>
+    </div>
+</div>
+
 
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_066_tags.png">
 {% trans 'Alle Versionen' %}</h2>

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:OpenSlides Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-12 08:30+0200\n"
+"POT-Creation-Date: 2013-04-24 17:00+0200\n"
 "PO-Revision-Date: 2012-07-31 11:44+0200\n"
 "Last-Translator: Oskar Hahn <mail@oshahn.de>\n"
 "Language-Team: Deutsch <mail@oshahn.de>\n"
@@ -414,7 +414,7 @@ msgid "Tickets"
 msgstr "Tickets"
 
 #: templates/base.html:111 templates/development.html:65
-#: templates/download.html:58
+#: templates/download.html:105
 msgid "Quellcode"
 msgstr "Source code"
 
@@ -739,6 +739,7 @@ msgid ""
 msgstr "The current OpenSlides source code can be reviewed directly on GitHub."
 
 #: templates/development.html:69
+#, python-format
 msgid ""
 "Hast Du Änderungen vor, \n"
 "        <a href=\"https://help.github.com/articles/fork-a-repo\">forke</a> "
@@ -748,10 +749,10 @@ msgid ""
 "        an die  <a href=\"%(contact_url)s\">Mailingliste</a>. Wir weisen "
 "Dich gerne ein."
 msgstr ""
-"<a href=\"https://help.github.com/articles/fork-a-repo\">Fork</a> "
-"OpenSlides for your changes and send us your contributions as pull "
-"request. For questions please ask on our <a href=\"%(contact_url)s\">Mailing "
-"lists</a>. We will help you."
+"<a href=\"https://help.github.com/articles/fork-a-repo\">Fork</a> OpenSlides "
+"for your changes and send us your contributions as pull request. For "
+"questions please ask on our <a href=\"%(contact_url)s\">Mailing lists</a>. "
+"We will help you."
 
 #: templates/development.html:73
 msgid "Quellcode durchsuchen"
@@ -826,23 +827,32 @@ msgstr "Donation barometer"
 msgid "Bisheriger Spendeneingang"
 msgstr "Previous donations"
 
-#: templates/download.html:13
-msgid "Aktuelle Version"
-msgstr "Current version"
+#: templates/download.html:10
+msgid ""
+"OpenSlides ist Freie Software,\n"
+"    lizensiert unter der <a href=\"%(license_url)s\">GNU GPL v2+</a>."
+msgstr ""
+"OpenSlides is Free Software, licensed under <a href=\"%(license_url)s\">GNU "
+"GPL v2+</a>."
 
-#: templates/download.html:14
+#: templates/download.html:19
+msgid "Aktuelle stabile Version"
+msgstr "Current stable version"
+
+#: templates/download.html:20 templates/download.html.py:58
 msgid "veröffentlicht am"
 msgstr "released on"
 
-#: templates/download.html:18
+#: templates/download.html:24 templates/download.html.py:62
 msgid "Für Windows"
 msgstr "For Windows"
 
-#: templates/download.html:22
+#: templates/download.html:28 templates/download.html.py:66
+#: templates/download.html:79
 msgid "Download OpenSlides"
 msgstr "Download OpenSlides"
 
-#: templates/download.html:25
+#: templates/download.html:31 templates/download.html.py:69
 msgid ""
 "Dies ist eine <strong>portable Version</strong>.\n"
 "      OpenSlides muss nicht installiert werden. Einfach herunterladen, "
@@ -851,15 +861,15 @@ msgstr ""
 "This is a <strong>portable version</strong>. OpenSlides doesn't have to be "
 "installed. Just download, unpack and run openslides.exe!"
 
-#: templates/download.html:31
+#: templates/download.html:37 templates/download.html.py:75
 msgid "Für Linux/MacOS"
 msgstr "For Linux/MacOS"
 
-#: templates/download.html:32
+#: templates/download.html:38
 msgid "Download und Installation aus dem Python Package Index (PyPI)"
 msgstr "Download and installation from Python Package Index (PyPI)"
 
-#: templates/download.html:36
+#: templates/download.html:42
 #, python-format
 msgid ""
 "Alternativ kann auch das aktuelle \n"
@@ -871,7 +881,7 @@ msgstr ""
 "files.openslides.org/openslides-%(version)s.tar.gz\">source code package</a> "
 "of OpenSlides. "
 
-#: templates/download.html:39
+#: templates/download.html:45
 #, python-format
 msgid ""
 "Details in der <a\n"
@@ -881,15 +891,32 @@ msgstr ""
 "Read more in <a href=\"http://files.openslides.org/INSTALL-%(version)s.txt"
 "\">installation instructions</a>."
 
-#: templates/download.html:51
+#: templates/download.html:57
+msgid "Letzte Entwicklungsversion"
+msgstr "Last development version"
+
+#: templates/download.html:82
+msgid "Nach Download das Paket in einer virtualenv-Umgebung installieren"
+msgstr "After download install the package in a vitualenv environment"
+
+#: templates/download.html:87
+msgid ""
+"Details in der <a\n"
+"      href=\"http://files.openslides.org/Beta/INSTALL-%(version)s.txt"
+"\">Installationsanleitung</a>."
+msgstr ""
+"Read more in <a href=\"http://files.openslides.org/Beta/INSTALL-%(version)s.txt"
+"\">installation instructions</a>."
+
+#: templates/download.html:98
 msgid "Alle Versionen"
 msgstr "All versions"
 
-#: templates/download.html:52
+#: templates/download.html:99
 msgid "Ältere Versionen sowie die SHA1-Prüfsummen finden Sie unter"
 msgstr "You can find all older versions and the SHA1 checksums under"
 
-#: templates/download.html:59
+#: templates/download.html:106
 msgid ""
 "Der aktuelle Entwicklungstand von OpenSlides kann im öffentlichen\n"
 "<a href=\"https://github.com/OpenSlides/OpenSlides\">Quellcode-Repository "
@@ -899,7 +926,7 @@ msgstr ""
 "href=\"https://github.com/OpenSlides/OpenSlides\">source code repositoryon "
 "GitHub</a>."
 
-#: templates/download.html:62
+#: templates/download.html:109
 msgid "Zum Auschecken des OpenSlides-Quellcodes nutzen Sie:"
 msgstr "To check out the source code of OpenSlides use:"
 
