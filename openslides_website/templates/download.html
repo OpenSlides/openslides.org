@@ -36,7 +36,8 @@
     <div class="well">
       <h3>{% trans 'Für Linux/MacOS' %}</h3>
       <p>{% trans 'Download und Installation aus dem Python Package Index (PyPI)' %}:</p>
-      <p><code>pip install openslides</code><br><br></p>
+      <p><code>pip install django==1.4.5</code><small>({% trans 'Achtung: Nicht lauffähig mit django 1.5.x!' %})</small><br>
+      <code>pip install openslides</code><br><br></p>
       <p>
       {% with version="1.3.1" %}
       {% blocktrans %}Alternativ kann auch das aktuelle 
