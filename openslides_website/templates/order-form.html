@@ -7,7 +7,7 @@
 
 
 {% block lead %}
-Supportpaket 
+{% trans 'Supportpaket' %}
 <strong>OpenSlides
 {% if package == '1' %}Starter{% endif %}
 {% if package == '2' %}Business{% endif %}
@@ -48,7 +48,7 @@ Supportpaket
         <li class="next"><a href="{% url 'support_packages' %}">&larr; {% trans "Zurück zur Paketübersicht" %}</a></li>
     </ul>
     <div class="well box">
-        <div class="header">  
+        <div class="header">
             <h3>OpenSlides
             {% if package == '1' %}Starter{% endif %}
             {% if package == '2' %}Business{% endif %}
@@ -64,7 +64,7 @@ Supportpaket
         <ul class="unstyled">
             <li>{% url 'license' as license_url %}
             {% trans 'Lizenzkostenfreie Nutzung' %}
-            <small>{% blocktrans %}OpenSlides ist Freie Software, lizensiert unter 
+            <small>{% blocktrans %}OpenSlides ist Freie Software, lizensiert unter
             der <a href="{{ license_url }}">GNU GPL v2+</a>.{% endblocktrans %}</small></li>
             <li>{% trans 'Individueller Support' %}<sup>1</sup> mit bis zu <strong>
                 {% if package == '1' %}0,5{% endif %}
