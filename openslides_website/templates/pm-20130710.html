@@ -1,0 +1,145 @@
+{% extends "base_about.html" %}
+
+{% load i18n %}
+
+{% block title %}{{ block.super }} - {% trans "Pressemitteilung" %}{% endblock %}
+{% block headline %}{% trans "Presse" %}{% endblock %}
+
+{% block submenu_press %}active{% endblock %}
+
+
+{% block content %}
+<p><i><a href="{% url 'press' %}">&laquo; Zurück</a></i></p>
+
+<h3>{% trans 'Pressemitteilung' %}</h3>
+<h4>+++ Versammlungen effizienter und papierlos durchführen -
+OpenSlides 1.4 mit Rednerliste und verbesserter Antragsverwaltung +++</h4>
+<br>
+<p><em>Osnabrück, 10. Juli 2013</em></p>
+
+
+<p>OpenSlides, das freie Präsentations- und Versammlungssystem,
+ist am 10. Juli 2013 nach 7-monatiger Entwicklungsarbeit in der Version 1.4
+erschienen. Die Software kann auf der Website <a
+    href="http://www.openslides.org/">http://www.openslides.org/</a>
+kostenlos heruntergeladen werden.</p><br>
+
+<h3>Was ist neu in OpenSlides 1.4?</h3>
+
+<p>Einer neue interaktive Rednerliste, eine überarbeitete Antragsverwaltung mit
+Sachgebieten und HTML-Editor, ein neues Templatedesign sowie ein Frontend für
+die portable Windowsversion sind die markantesten Neuerungen in OpenSlides 1.4.</p>
+
+<p>Die wichtigsten neuen Funktionen im Überblick:</p>
+
+<b>Tagesordnung</b>
+<ul>
+<li>Jeder Tagesordnungspunkt enthält nun eine unabhängige Rednerliste.
+Jeder Teilnehmer kann sich z.B. per Smartphone selbst auf diese Liste setzen
+und sehen, wer vor ihm redet. Die Rednerliste lässt sich zentral von der
+Versammlungsleitung verwalten und projizieren.
+<li>Zur Unterstützung des organisatorischen Ablaufs einer Versammlung lassen sich
+neben Tagesordnungspunkten auch organisatorische Einträge (z.B. Mittagspause)
+in die Tagesordnung einfügen.
+<li>Zu jedem Eintrag in der Tagesordnung kann nun die geplante Dauer angegeben werden.
+Daraus berechnet sich die Veranstaltungsdauer und das voraussichtliche Ende der Veranstaltung.
+</ul>
+
+<b>Anträge</b>
+<ul>
+<li>Integration eines HTML-Editors (CKEditor) zur Formatierung von Antragstexten
+<li>Unterstützung mehrerer Antragsteller pro Antrag
+<li>Sachgebiete zur thematischen Gruppierung von Anträgen
+<li>Neues Workflow-Konzept: zwei voreingestellte Arbeitsabläufe mit vordefinierten 
+Zuständen, die ein Antrag einnehmen kann (z.B. einfacher Arbeitsablauf:
+„eingereicht → angenommen“ vs. komplexer Arbeitsablauf: 
+„veröffentlicht → zugelassen → angenommen“)
+<li>Automatische oder manuelle Nummerierung von Anträgen
+<li>Änderungen zwischen zwei Versionen eines Antrags vergleichen
+</ul>
+
+<b>Teilnehmer</b>
+<ul>
+<li>QR-Code mit Login-URL auf generierten Erstpasswortzetteln (PDF)
+<li>Neues Teilnehmer-Feld: Titel
+<li>Voreingestellten Gruppen und Rechte überarbeitet
+</ul>
+
+<b>Allgemein</b>
+<ul>
+<li>Responsive Design mit neuem Bootstrap-Template
+<li>Neues grafisches Frontend für die portable Windowsversion mit komfortabler
+<li>Einrichtung einer automatischen Backupfunktion der SQLite-Datenbank
+<li>Upload und Download von Dateien (z.B. als gemeinsame Dokumentenablage
+für alle Teilnehmer während der Versammlung)
+<li>Integration des leistungsfähigen Tornado Webservers
+<li>Verbesserte Übersichtstabelle zum Sortieren/Filtern (jQuery-Plugin DataTables)
+<li>Aktualisiert auf Django 1.5
+<li>Deutsches Handbuch überarbeitet
+<li>Viele weitere Fehlerbehebungen und Verbesserungen
+</ul>
+
+<p>Eine umfangreiche Liste aller Neuerungen ist im 
+<a href="https://github.com/OpenSlides/OpenSlides/blob/master/CHANGELOG">Changelog</a>
+zu finden.</p><br>
+
+<h3>Professionelle Unterstützung – jetzt mit Hosting</h3>
+<p>Die Intevation GmbH, Spezialist für Freie Software, unterstützt die
+Weiterentwicklung von OpenSlides und bietet mit OpenSlides 1.4 neu abgestimmte
+Supportpakete für Veranstalter an, die OpenSlides professionell einsetzen wollen.
+Neu ist z.B. das Angebot, OpenSlides-Installationen zu hosten, um verteilt eine
+Versammlung vorzubereiten. Außerdem ist der Verleih eines elektronischen
+Abstimmungssystems möglich. Dadurch lassen sich Anträge effizient und (bei
+Bedarf namentlich) abstimmen und die Ergebnisse direkt in OpenSlides dokumentieren.
+Auch Schulung und Unterstützung vor Ort durch die OpenSlides-Kernentwickler sind
+Bestandteil der neuen Supportpakete für einen zuverlässigen Einsatz der
+Open-Source-Versammlungssoftware.</p><br>
+
+<h3>Was ist OpenSlides?</h3>
+<p>OpenSlides ist ein freies, webbasiertes Präsentations- und Versammlungssystem
+zur professionellen Darstellung und Steuerung von Tagesordnung, Anträgen und
+Wahlen auf Veranstaltungen wie Mitgliederversammlungen und Parteitagen.
+
+<h5>Die Vorteile</h5>
+<p>Die besondere Stärke von OpenSlides liegt im Bereich der Transparenz und
+Interaktion: Jeder Teilnehmer im Plenum kann mit dem eigenen Mobilgerät z.B.
+Anträge, Wahlergebnisse und die aktuelle Tagesordnung nachlesen, sich zu Wort
+melden, Anträge einreichen oder für eine Wahl kandidieren. „OpenSlides bietet
+damit neue Möglichkeiten, um demokratische Prozesse auf Versammlungen
+interaktiver und transparenter zu gestalten“, sagt Emanuel Schütze, Mitbegründer
+von OpenSlides und Mitarbeiter der Intevation GmbH.
+
+<p>Mit OpenSlides lässt sich eine Versammlung effizienter durchführen. Mit der
+digitale Antrags- und Teilnehmerverwaltung ist eine papierlose Versammlung
+möglich. Ein weiterer Vorteil gegenüber herkömmlichen Präsentationssystemen ist
+die Bearbeitung der Folien über ein Redaktionssystem während der
+Präsentationsmodus läuft.
+
+<p>OpenSlides liegt derzeit in drei Sprachen vor: Deutsch, Englisch und
+Französisch.
+
+<h5>Referenzen</h5>
+<p>Neben den GRÜNEN, der Piratenpartei und der SPD haben auch Vereine und
+kirchliche Verbände OpenSlides bereits erfolgreich im Einsatz. Die Sächsische
+Landesärztekammer hat die Umsetzung der Rednerliste ermöglicht und plant
+OpenSlides auf der nächsten Kammerversammlung einzusetzen.
+
+<h5>Freie Software</h5>
+<p>OpenSlides ist Freie Software, lizensiert unter der GNU GPL v2+. Der
+vollständigen Quellcode kann auf der Webseite kostenlos heruntergeladen werden.
+OpenSlides ist eine Django-Applikation und läuft plattformunabhängig als
+Python-Serveranwendung (u.a. Windows, MacOSX, GNU/Linux).
+
+<p>Download, Demo und weitere Informationen auf der offiziellen Website:
+<a href="http://openslides.org">http://openslides.org</a></p><br>
+
+
+<h5>Ansprechpartner:</h5
+<p>Emanuel Schütze<br>
+Intevation GmbH<br>
+Neuer Graben 17<br>
+49074 Osnabrück<br>
+E-Mail: emanuel.schuetze@intevation.de<br>
+Telefon: 0541-335083-746</p>
+
+{% endblock %}

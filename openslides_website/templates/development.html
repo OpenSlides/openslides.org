@@ -13,19 +13,17 @@ frei zugänglich ist auch die Entwicklung. Nutze diese Möglichkeit und unterst�
 OpenSlides!{% endblocktrans %}
 {% endblock %}
 
-
 {% block content %}
 <p>
 {% blocktrans %}OpenSlides ist auf <a href="https://github.com/OpenSlides">GitHub</a>!
 Wir pflegen dort Git-Repository, Issuesystem und Wiki.{% endblocktrans %}
 
-{% blocktrans %}Jede Mitarbeit ist dabei sehr willkommen:
-z.B. durch Erstellen von Bugreports oder Hilfe bei der Weiterentwicklung, Übersetzungen oder 
-Templatedesign. Wir freuen
-uns über jede Form der Unterstützung!{% endblocktrans %}
+{% blocktrans %}Jede Mitarbeit ist dabei sehr willkommen: z.B. durch Erstellen
+von Bugreports oder Hilfe bei der Weiterentwicklung, Übersetzungen oder
+Templatedesign. Wir freuen uns über jede Form der Unterstützung!{% endblocktrans %}
 {% url 'contact' as contact_url %}
-{% blocktrans %}<a href="{{ contact_url }}">Kontaktiere</a> uns einfach! Wir finden sicher interessante
-Aufgaben für Dich.{% endblocktrans %}
+{% blocktrans %}<a href="{{ contact_url }}">Kontaktiere</a> uns einfach!
+Wir finden sicher interessante Aufgaben für Dich.{% endblocktrans %}
 </p>
 <br>
 <div class="row">
@@ -66,7 +64,7 @@ Aufgaben für Dich.{% endblocktrans %}
         <p>{% blocktrans %}Der aktuelle OpenSlides-Quellcode kann direkt bei GitHub 
         eingesehen werden.{% endblocktrans %}</p>
         
-        <p>{% blocktrans %}Hast Du Änderungen vor, 
+        <p>{% blocktrans %}Hast Du Änderungen vor,
         <a href="https://help.github.com/articles/fork-a-repo">forke</a> Dir OpenSlides und sende uns 
         Deine Anpassungen am Code per Pull Request. Bei Rückfragen, wende Dich am besten
         an die  <a href="{{ contact_url }}">Mailingliste</a>. Wir weisen Dich gerne ein.{% endblocktrans %}</p>

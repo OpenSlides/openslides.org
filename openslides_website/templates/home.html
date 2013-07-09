@@ -15,23 +15,51 @@
   <div class="hero-unit">
     <div class="row">
     <div class="span5">
-    <h1>OpenSlides</h1>
-    <br>
-    <p>{% trans 'Mehr Transparenz.' %}<br> {% trans 'Mehr Flexibilität.' %}<br> {% trans 'Mehr Effizienz.' %}<br>
-    <strong>{% trans 'Die Lösung für Ihre Versammlung!' %}</strong></p>
-    <br>
-    <a class="jumbotron btn btn-primary btn-large" href="{% url 'download' %}">
-    {% trans 'Download' %}
-    </a>
+        <h1>OpenSlides</h1>
+        <br>
+        <p>{% trans 'Mehr Transparenz.' %}<br> {% trans 'Mehr Flexibilität.' %}<br> {% trans 'Mehr Effizienz.' %}<br>
+        <strong>{% trans 'Die Lösung für Ihre Versammlung!' %}</strong></p>
+        <br>
+        <a class="jumbotron btn btn-primary btn-large" href="{% url 'download' %}">
+        {% trans 'Download' %}
+        </a>
 
-    <a class="jumbotron btn btn-large" href="{% url 'demo' %}">
-    {% trans 'Demo' %}
-    </a>
-    </p>
+        <a class="jumbotron btn btn-large" href="{% url 'demo' %}">
+        {% trans 'Demo' %}
+        </a>
+        </p>
     </div>
-    <div class="span5">
-        <div class="thumbnail">
-          <img src="/static/img/agenda-overview_{{LANGUAGE_CODE}}.png" alt="Screenshot">
+    <div class="span6">
+        <div id="screens" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#screens" data-slide-to="0" class="active"></li>
+                <li data-target="#screens" data-slide-to="1"></li>
+                <li data-target="#screens" data-slide-to="2"></li>
+                <li data-target="#screens" data-slide-to="3"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item">
+                    <img src="/static/img/screenshots/agenda-list_{{LANGUAGE_CODE}}.png" alt="">
+                    <div class="carousel-caption"><p>{% trans 'Tagesordnung organisieren' %}</p></div>
+                </div>
+                <div class="item">
+                    <img src="/static/img/screenshots/motion-list_{{LANGUAGE_CODE}}.png" alt="">
+                    <div class="carousel-caption"><p>{% trans 'Anträge papierlos verwalten' %}</p></div>
+                </div>
+                <div class="item">
+                    <img src="/static/img/screenshots/election-ballot_{{LANGUAGE_CODE}}.png" alt="">
+                    <div class="carousel-caption"><p>{% trans 'Wahlen mit personalisierten Stimmzetteln' %}</p></div>
+                </div>
+                <div class="item">
+                    <img src="/static/img/screenshots/portable-gui.png" alt="">
+                    <div class="carousel-caption"><p>{% trans 'Frontend der portablen Windowsversion' %}</p></div>
+                </div>
+
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#screens" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#screens" data-slide="next">&rsaquo;</a>
         </div>
     </div>
     </div>
@@ -46,12 +74,12 @@
       <h2><img class="os-icon" src="/static/img/icons/glyphicons_074_cup.png">
       {% trans 'Auszeichnungen' %}</h2>
         <p>{% trans 'OpenSlides wurde bereits mehrfach als innovatives Produkt ausgezeichnet' %}:</p>
-        <ul><li>1. Platz beim innovate!Interaction Award 2012 
-        (<a href="http://mail.openslides.org/pipermail/users-de/2012-October/000065.html">mehr</a>)</li>
-        <li>2. Platz beim IT-Innovationspreis 2013 
-        (<a href="http://mail.openslides.org/pipermail/users-de/2013-March/000124.html">mehr</a>)</li>
-        <li>2. Platz bei domainFACTORY-Leserwahl zur besten OpenSource-Software
-        (<a href="http://mail.openslides.org/pipermail/users-de/2013-February/000118.html">mehr</a>)</li>
+        <ul><li>{% trans '1. Platz beim innovate!Interaction Award 2012' %}
+        (<a href="http://mail.openslides.org/pipermail/users-de/2012-October/000065.html">{% trans 'mehr' %}</a>)</li>
+        <li>{% trans '2. Platz beim IT-Innovationspreis 2013' %}
+        (<a href="http://mail.openslides.org/pipermail/users-de/2013-March/000124.html">{% trans 'mehr</a>)</li>
+        <li>{% trans '2. Platz bei domainFACTORY-Leserwahl zur besten OpenSource-Software' %}
+        (<a href="http://mail.openslides.org/pipermail/users-de/2013-February/000118.html">{% trans 'mehr' %}</a>)</li>
         </ul>
        <p><span class="thumbnail span2" title="innovate!Interaction Award 2012">
        <img src="/static/img/innovateInteractionAward2012.jpg">
@@ -87,5 +115,4 @@
       <a class="btn" href="{% url 'references' %}">{% trans 'Weitere Referenzen' %} &raquo;</a>
     </div>
   </div>
-
 {% endblock %}

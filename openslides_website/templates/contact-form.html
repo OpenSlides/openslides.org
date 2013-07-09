@@ -8,7 +8,7 @@
 {% block mainmenu_contact %}active{% endblock %}
 
 {% block lead %}
-{% blocktrans %}Haben Sie Fragen, Anregungen oder Rückmeldungen zu OpenSlides? 
+{% blocktrans %}Haben Sie Fragen, Anregungen oder Rückmeldungen zu OpenSlides?
 Sie können hier das Kernentwicklerteam direkt kontaktieren.
 Wir freuen uns über Ihre Nachricht!{% endblocktrans %}
 {% endblock %}
@@ -25,13 +25,11 @@ besser unsere öffentlichen
 <a href="{{ contact_url }}">Mailinglisten</a>.{% endblocktrans %}
 </p>
 
-
 <form action="" method="post">{% csrf_token %}
-{{ form.name_of_field.errors }}
-{{ form.as_p }}
-<button class="btn btn-primary" type="submit">
-    {% trans 'Senden' %}</span>
-</button><br>
+    {{ form.name_of_field.errors }}
+    {{ form.as_p }}
+    <button class="btn btn-primary" type="submit">
+        {% trans 'Senden' %}</span>
+    </button><br>
 </form>
-
 {% endblock %}
