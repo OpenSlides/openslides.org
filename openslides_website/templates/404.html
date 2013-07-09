@@ -1,13 +1,12 @@
 {% extends "base.html" %}
-
 {% load i18n %}
 
 {% block headline %}{% trans "Seite nicht gefunden." %}{% endblock %}
 
 {% block lead %}
-    404 {% trans "Fehler" %}
+    {% trans "404 Fehler" %}
 {% endblock %}
 
 {% block content %}
-<div style="margin-top:100px">&nbsp;</div>
+    <div style="margin-top:100px">&nbsp;</div>
 {% endblock %}

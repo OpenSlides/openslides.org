@@ -47,40 +47,36 @@ Lesen Sie, was die Pressestimmen über OpenSlides berichten.{% endblocktrans %}{
     <h2><img class="os-icon" src="/static/img/icons/glyphicons_029_notes_2.png">
     {% trans 'Pressemitteilungen' %}</h2>
     <ul>
-    <li>2012-12-11: 
-    <a href="{% url 'pm-20121211' %}">OpenSlides 1.3 - Neue Dashboard-Widgets und verbesserte Teilnehmerverwaltung</a></li>
-    <li>2012-10-22: 
-    <a href="{% url 'pm-20121022' %}">OpenSlides gewinnt innovate!Interaction 
-        Award 2012</a></li>
+    <li>2013-07-10:
+    <a href="{% url 'pm-20130710' %}">{% trans 'OpenSlides 1.4 mit Rednerliste und verbesserter Antragsverwaltung' %}</a></li>
+    <li>2012-12-11:
+    <a href="{% url 'pm-20121211' %}">{% trans 'OpenSlides 1.3 - Neue Dashboard-Widgets und verbesserte Teilnehmerverwaltung' %}</a></li>
+    <li>2012-10-22:
+    <a href="{% url 'pm-20121022' %}">{% trans 'OpenSlides gewinnt innovate!Interaction Award 2012' %}</a></li>
     <li>2012-07-26:
-    <a href="{% url 'pm-20120726' %}">OpenSlides 1.2 - Präsentations- und Versammlungssystem mit
-        verbesserter Installation und Projektorsteuerung</a></li>
+    <a href="{% url 'pm-20120726' %}">{% trans 'OpenSlides 1.2 - Präsentations- und Versammlungssystem mit
+        verbesserter Installation und Projektorsteuerung' %}</a></li>
     <li>2012-04-16:
-    <a href="{% url 'pm-20120416' %}">Intevation veranstaltet
-        OpenSlides-Entwicklertreffen</a></li>
+    <a href="{% url 'pm-20120416' %}">{% trans 'Intevation veranstaltet OpenSlides-Entwicklertreffen' %}</a></li>
     <li>2011-09-15:
     <a href="{% url 'pm-20110915' %}">{% blocktrans %}OpenSlides 1.0 - Neues
         Präsentationssystem für Veranstaltungen mit Tagesordnungen,
         Anträgen und Wahlen{% endblocktrans %}</a></li>
     </ul>
 </div>
-
 <div class="span4">
-    <h2><img class="os-icon" src="/static/img/icons/glyphicons_061_keynote.png">
-    {% trans 'Vorträge' %}</h2>
-    <ul>
-    <li>2012-09-27: 
-    <a href="http://prezi.com/03ww7vfzfcyp/openslides/">"Wie OpenSlides
-        Ihre Versammluing unterstützen kann"</a>; Vortrag auf dem
-    <a
-        href="http://verbaende.com/hintergruende/verbaende-com_infotag.php">verbaende.com-INFOTAG</a> in Berlin, von Emanuel Schütze</li>
-    <li>2012-10-17:
-    <a href="http://prezi.com/yvxoum6id6d7/openslides-neue-moglichkeiten-fur-versammlungen/">"OpenSlides
-        - Neue Möglichkeiten für Versammlungen und Tagungen"</a>;
-    Kurzvorstellung für den <a
-        href="http://innovate-os.de">innovate!Interaction Award
-        2012</a> in Osnabrück, von Emanuel Schütze</li>
-    </ul>
+    {% include "news.html" %}
+    <p>
+     <div class="btn-group" data-toggle="buttons-checkbox">
+     <button type="button" class="btn btn-small" data-toggle="collapse" data-target="#archive">
+         {% trans 'Ältere News anzeigen' %}
+     </button>
+     </div>
+     <div id="archive" class="collapse out">
+        {% include "newsarchiv.html" %}
+     </div>
+     </p>
+    
 </div>
 </div>
 
@@ -97,7 +93,21 @@ Lesen Sie, was die Pressestimmen über OpenSlides berichten.{% endblocktrans %}{
     <strong>Tel: +49-541-335083-746</strong></p>
 </div>
 <div class="span4">
-    {% include "news.html" %}
+    <h2><img class="os-icon" src="/static/img/icons/glyphicons_061_keynote.png">
+    {% trans 'Vorträge' %}</h2>
+    <ul>
+    <li>2012-09-27: 
+    <a href="http://prezi.com/03ww7vfzfcyp/openslides/">"Wie OpenSlides
+        Ihre Versammluing unterstützen kann"</a>; Vortrag auf dem
+    <a
+        href="http://verbaende.com/hintergruende/verbaende-com_infotag.php">verbaende.com-INFOTAG</a> in Berlin, von Emanuel Schütze</li>
+    <li>2012-10-17:
+    <a href="http://prezi.com/yvxoum6id6d7/openslides-neue-moglichkeiten-fur-versammlungen/">"OpenSlides
+        - Neue Möglichkeiten für Versammlungen und Tagungen"</a>;
+    Kurzvorstellung für den <a
+        href="http://innovate-os.de">innovate!Interaction Award
+        2012</a> in Osnabrück, von Emanuel Schütze</li>
+    </ul>
 </div>
 <div class="span4">
     <h2><img class="os-icon" src="/static/img/icons/glyphicons_062_attach.png">

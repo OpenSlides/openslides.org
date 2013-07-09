@@ -43,15 +43,32 @@
             <li class="{% block mainmenu_contact %}{% endblock %}"><a
                 href="{% url 'contact' %}">{% trans "Kontakt" %}</a></li>
             <li class="divider-vertical"></li>
-            {% get_available_languages as languages %}
-            {% for lang_code, lang_name in languages %}
-                {% language lang_code %}
-                <li {% if LANGUAGE_CODE == lang_code %}class="active"{% endif %}>
-                  <a href="{% url 'home' %}"><img title="{{ lang_name }}" alt="{{ lang_name }}"
-                      src="/static/img/icons/{{lang_code}}.png"> {{ lang_name }}</a>
-                </li>
-                {% endlanguage %}
-            {% endfor %}
+ 
+            <!-- Language drop down button -->
+            <div class="btn-group">
+                {% get_available_languages as languages %}
+                {% for lang_code, lang_name in languages %}
+                    {% language lang_code %}
+                    {% if LANGUAGE_CODE == lang_code %}
+                        <a class="btn  btn-small dropdown-toggle" data-toggle="dropdown" href="#">
+                            <img title="{{ lang_name }}" alt="{{ lang_name }}"
+                            src="/static/img/icons/{{lang_code}}.png"> {{ lang_name }}
+                            <span class="caret"></span>
+                        </a>
+                    {% endif %}
+                    {% endlanguage %}
+                {% endfor %}
+                <ul class="dropdown-menu">
+                {% for lang_code, lang_name in languages %}
+                    {% language lang_code %}
+                    <li {% if LANGUAGE_CODE == lang_code %}class="active"{% endif %}>
+                        <a href="{% url 'home' %}"><img title="{{ lang_name }}" alt="{{ lang_name }}"
+                        src="/static/img/icons/{{lang_code}}.png"> {{ lang_name }}</a>
+                    </li>
+                    {% endlanguage %}
+                {% endfor %}
+                </ul>
+            </div>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -88,6 +105,7 @@
                <li><a href="{% url 'press' %}">{% trans 'Presse' %}</a></li>
                <li><a href="{% url 'license' %}">{% trans 'Lizenz' %}</a></li>
                <li><a href="{% url 'download' %}">{% trans 'Download' %}</a></li>
+               <li><a href="{% url 'plugins' %}">{% trans 'Plugins' %}</a></li>
                <li><a href="{% url 'demo' %}">{% trans 'Demo' %}</a> <span class="label label-important">{% trans 'Tipp' %}</span></li>
              </ul>
            </div>
@@ -138,14 +156,12 @@
              </p>
              <p>
              <div class="license">
-              <p>&copy; 2013 | 
+              <p>&copy; 2011-2013 | 
                 <a href="{% url 'impressum' %}">{% trans 'Impressum' %}</a>
                 <br>
-              OpenSlides is Free Software licensed under <a href="{% url 'license' %}">GNU GPL v2+</a>.<br>
-                Icons from <a href="http://glyphicons.com">Glyphicons
-                 Free</a> licensed under <a
-                 href="http://creativecommons.org/licenses/by/3.0/">CC
-                 BY 3.0</a>.</p>
+                OpenSlides is Free Software licensed under <a href="{% url 'license' %}">GNU GPL v2+</a>.<br>
+                Icons from <a href="http://glyphicons.com">Glyphicons Free</a> licensed 
+                under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
              </div>
            </div>
          </div>

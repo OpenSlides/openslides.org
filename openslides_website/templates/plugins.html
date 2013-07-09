@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ block.super }} - {% trans 'Plugins' %}{% endblock %}
+{% block headline %}{% trans 'Plugins' %}{% endblock %}
+
+{% block lead %}
+    {% url 'license' as license_url %}
+    {% blocktrans %}OpenSlides mit Plugins erweitern{% endblocktrans %}
+{% endblock %}
+
+{% block mainmenu_download %}active{% endblock %}
+
+{% block content %}
+<p>
+{% blocktrans %}OpenSlides 1.4 besitzt eine Schnittstelle für externe Plugins.
+Plugins für OpenSlides sind in Python geschriebene Django-Applikationen.
+Sie können durch spezielle Funktionen in OpenSlides integriert werden.{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}Eine Anleitung für Entwickler zum Erstellen eigener Plugins gibt es im 
+<a href="https://github.com/OpenSlides/OpenSlides/wiki/De%3APlugins">Wiki</a>.{% endblocktrans %}
+</p>
+
+<h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
+Verfügbare Plugins</h2>
+<br>
+
+<ul>
+<li><b>CSV Export Plugin</b>
+<p>URL: <a href="https://github.com/OpenSlides/openslides-csv-export">https://github.com/OpenSlides/openslides-csv-export</a><br>
+{% trans 'Lizenz' %}: <br>
+{% trans 'Autoren' %}: Oskar Hahn, Norman Jäckel
+</p>
+<p>{% blocktrans %}Dieses Plugin bietet einen CSV-Export der Rednerliste.
+Es soll außerdem als Beispiel dienen zum Schreiben von Plugins für OpenSlides.{% endblocktrans %}
+</p>
+</li>
+
+<li><b>VoteCollector Plugin</b>
+<p>URL: <a href="https://github.com/OpenSlides/openslides-votecollector">https://github.com/OpenSlides/openslides-votecollector</a><br>
+{% trans 'Lizenz' %}: GPL v2+<br>
+{% trans 'Autoren' %}: Oskar Hahn, Emanuel Schütze
+</p>
+<p>{% blocktrans %}Dieses Plugin ermöglicht die Anbindung von OpenSlides an das elektronische Abstimmungssystem
+<a href="http://www.keypaddepot.de/de/Wahlen/VoteCollector-App-nur-Plug-In-zu-OpenSlides.html">VoteCollector</a>.{% endblocktrans %}
+</p>
+</li>
+
+<li><b>Topic Voting Plugin</b>
+<p>URL: <a href="https://github.com/normanjaeckel/openslides-topicvoting">https://github.com/normanjaeckel/openslides-topicvoting</a><br>
+{% trans 'Lizenz' %}: <br>
+{% trans 'Autoren' %}: Norman Jäckel
+</p>
+<p>{% blocktrans %}Dieses Plugin bietet eine strukturierte Abstimmung
+über Themen unter Verwendung der Sainte-Laguë-Methode.{% endblocktrans %}
+</p>
+</li>
+</ul>
+
+
+<br>
+<h2><img class="os-icon" src="/static/img/icons/glyphicons_066_tags.png">
+{% trans 'Alle Plugins' %}</h2>
+<p>{% trans 'Ältere Versionen sowie die SHA1-Prüfsummen finden Sie unter' %}
+<a href="http://files.openslides.org/plugins">files.openslides.org/plugins/</a>.
+</p>
+<p>{% blocktrans %}Ausgewählte Plugins sind auch direkt im
+<a href="https://github.com/OpenSlides/">Quellcode-Repository bei GitHub</a>
+zu finden.{% endblocktrans %}
+</p>
+{% endblock %}

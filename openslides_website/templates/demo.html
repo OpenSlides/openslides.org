@@ -1,21 +1,17 @@
 {% extends "base.html" %}
-
 {% load i18n %}
 
 {% block title %}{{ block.super }} - {% trans 'Demo' %}{% endblock %}
 {% block headline %}{% trans 'Demo' %}{% endblock %}
 
-
 {% block lead %}
 {% trans 'Entdecken Sie die Funktionen von OpenSlides in dieser Online-Demo.' %}
 {% endblock %}
 
-
 {% block content %}
-
 <p>
-    <a class="btn btn-primary btn-large" href="http://demo.openslides.org/login">
-    OpenSlides Demo starten &raquo;
+    <a class="btn btn-primary btn-large" href="http://{{LANGUAGE_CODE}}.demo.openslides.org/login">
+    {% trans 'OpenSlides Demo starten' %} &raquo;
     </a>
 </p>
 
@@ -28,12 +24,13 @@
 
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_003_user.png">
 {% trans 'Delegierter' %}</h2>
-<p>{% trans 'Nutzername' %}: delegierter<br>
+<p>{% trans 'Nutzername' %}: {% if LANGUAGE_CODE == 'de' %}delegierter{% else %}delegate{% endif %}<br>
     {% trans 'Passwort' %}: demo</p>
 
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_003_user_grey.png">
 {% trans 'Gast' %}</h2>
 <p>{% trans 'ohne Zugangsdaten' %}</p>
 
-<p><span class="label label-warning">{% trans 'Achtung' %}:</span> {% trans 'Die Demo wird täglich zurückgesetzt!' %}</p>
+<p><span class="label label-warning">{% trans 'Achtung' %}:</span>
+{% trans 'Die Demo wird täglich zurückgesetzt!' %}</p>
 {% endblock %}

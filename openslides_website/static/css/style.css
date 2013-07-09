@@ -25,7 +25,10 @@ body {
 }
 .hero-unit {
     margin-top: -15px;
-    padding: 40px 60px;
+    padding: 30px;
+}
+.hero-unit h1 {
+    font-size: 3em;
 }
 .subhead {
     margin-bottom: 9px;
@@ -163,7 +166,6 @@ form .error input, form .error textarea {
 .discount {
     color: #CC0000;
 }
-
 .orderbutton {
     white-space: nowrap;
 }
@@ -197,7 +199,30 @@ form .error input, form .error textarea {
 .box ul li {
     list-style-image: url("/static/img/icons/ok.png");
 }
+.well h2, .well h3 {
+    margin-top: 0px;
+}
 
+/* Home */
+.carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.carousel-indicators .active {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*Feature page*/
+.page-header {
+    margin-bottom: 0;
+}
+.greytext h5 {
+    font-size: 14px;
+    margin: 25px 0 0 0;
+}
+.greytext p {
+    color: #6D7581;
+    font-size: 14px;
+}
 
 
 .references .thumbnail {
@@ -236,5 +261,8 @@ h3 {
     font-size: 11px;
 }
 .page-header .pager:before, .page-header .pager:after {
-    display: inline !important;
+    margin-top: -60px;
+}
+.page-header h1 {
+    margin-bottom: 0px;
 }

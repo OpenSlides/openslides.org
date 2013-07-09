@@ -18,37 +18,7 @@ uns Ihre Rückmeldung!{% endblocktrans %}
 <br>
 <div class="row">
     <div class="span4">
-        <div class="well box">
-        <h2><img class="os-icon" src="/static/img/icons/glyphicons_399_e-mail.png">
-        {% trans 'Mailinglisten' %}</h2>
-        <p>{% blocktrans %}OpenSlides bietet öffentliche Mailinglisten zur Koordination der Entwicklung
-        sowie Diskussion von Tickets, Anwenderfragen und speziellen Anwendungsfällen. 
-        Bei Problemen und Fragen zu OpenSlides schreiben Sie an die 
-        OpenSlides-users-Mailingliste in Ihrer Sprache:{% endblocktrans %} 
-
-        <p>
-        <strong>announcement@openslides.org</strong>
-        <small>{% trans 'Offizielle Ankündigungen' %}</small>
-        <a class="btn btn-primary btn-small" href="http://mail.openslides.org/listinfo/announcement/ ">{% trans 'Abonnieren' %} &raquo;</a>
-        <a class="btn btn-small" href="http://mail.openslides.org/pipermail/announcement/ ">{% trans 'Archiv' %} &raquo;</a>
-        </p>
-
-        <p>
-        <strong>users-de@openslides.org</strong>
-        <small>{% trans 'für Anwender und Entwickler (nur deutschsprachig)' %}</small>
-        <a class="btn btn-primary btn-small" href="http://mail.openslides.org/listinfo/users-de/ ">{% trans 'Abonnieren' %} &raquo;</a>
-        <a class="btn btn-small" href="http://mail.openslides.org/pipermail/users-de/ ">{% trans 'Archiv' %} &raquo;</a>
-        </p>
-
-        <p>
-        <strong>users-en@openslides.org</strong>
-        <small>{% trans 'für Anwender und Entwickler (nur englischsprachig)' %}</small>
-        <a class="btn btn-primary btn-small" href="http://mail.openslides.org/listinfo/users-en/">{% trans 'Abonnieren' %} &raquo;</a>
-        <a class="btn btn-small" href="http://mail.openslides.org/pipermail/users-en/">{% trans 'Archiv' %} &raquo;</a>
-        </p>
-
-        <small>{% trans 'Hinweis: Bitte abonnieren Sie eine Mailingliste bevor Sie an diese schreiben!' %}</small>
-        </div>
+        {% include "contact-mailinglist.html" %}
     </div>
 
     <div class="span4">
@@ -71,44 +41,12 @@ uns Ihre Rückmeldung!{% endblocktrans %}
         <strong>Tel: +49-541-335083-746</strong></p>
         </div>
 
-        <div class="well">
-        <h2><img class="os-icon" src="/static/img/icons/glyphicons_411_twitter.png">
-        {% trans 'Twitter' %}</h2>
-        <p>{% blocktrans %}Twittern Sie Ihre OpenSlides-Erfahrung und erwähnen Sie <b>#openslides</b>. 
-        Oder stellen Sie direkte Fragen an das Entwicklerteam (<b>@openslides</b>).{% endblocktrans %}
-        </p>
-        <p>
-        <a class="btn btn-small"
-            href="https://twitter.com/openslides">Alle Tweets von @openslides &raquo;</a></p>
-        </p>
-        </div>
+        {% include "contact-twitter.html" %}
     </div>
 
     <div class="span4">
-        <div class="well">
-        <h2><img class="os-icon" src="/static/img/icons/glyphicons_245_chat.png">
-        IRC</h2>
-        <p>{% blocktrans %}Für den direkten Kontakt zwischen interessierten OpenSlides-Anwendern 
-        und -Entwicklern nutzen Sie IRC (ein textbasierter Chat):{% endblocktrans %}</p>
-        
-        <h3>{% trans 'Netzwerk' %}: freenode<br>
-        {% trans 'Kanal' %}: #openslides</h3>
-        <a class="btn btn-small"
-            href="http://webchat.freenode.net?channels=openslides&uio=d4s">IRC Web-Chat starten &raquo;</a>
-        </div>
-        
-        <div class="well">
-        <h2><img class="os-icon" src="/static/img/icons/glyphicons_043_group.png">
-        {% trans 'Kernentwickler' %}</h2>
-        {% url 'contactform' as contactform_url %}
-        <p>{% blocktrans %}Direktkontakt zu den drei Gründern und Kernentwicklern von OpenSlides gibt
-        es über das <a href="{{ contactform_url }}">Kontaktformular</a>.{% endblocktrans %}
-        </p>
-
-        <p>{% blocktrans %}OpenSlides ist eine Freie Software
-        Initiative von engagierten, freiwilligen {% endblocktrans %}
-        <a href="{% url 'authors' %}">{% trans 'Autoren' %}</a>.</p>
-        </div>
-    </div>    
+        {% include "contact-irc.html" %}
+        {% include "contact-coreteam.html" %}
+    </div>
 </div>
 {% endblock %}
