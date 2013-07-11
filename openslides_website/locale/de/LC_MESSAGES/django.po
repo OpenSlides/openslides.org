@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-11 21:34+0200\n"
+"POT-Creation-Date: 2013-07-11 22:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1453,7 +1453,7 @@ msgstr ""
 msgid "Bericht vom Entwicklertreffen"
 msgstr ""
 
-#: templates/newsarchiv.html:13 templates/press.html:55
+#: templates/newsarchiv.html:13 templates/press.html:69
 msgid "OpenSlides gewinnt innovate!Interaction Award 2012"
 msgstr ""
 
@@ -1778,125 +1778,141 @@ msgid "OpenSlides in der Presse"
 msgstr ""
 
 #: templates/press.html:20
-msgid "Artikel aus iX 2/2013 zu OpenSlides 1.3.1"
+msgid "Pro-Linux-Meldung zu OpenSlides 1.4"
 msgstr ""
 
 #: templates/press.html:21
-msgid "Linux-Magazin-Meldung zu OpenSlides 1.3"
+msgid "Linux-Magazin-Meldung zu OpenSlides 1.4"
 msgstr ""
 
 #: templates/press.html:22
-msgid "Pro-Linux-Meldung zu OpenSlides 1.3"
+msgid "Heise-Meldung zu OpenSlides 1.4"
 msgstr ""
 
 #: templates/press.html:23
-msgid "Heise-Meldung zu OpenSlides 1.3"
+msgid "Artikel aus iX 2/2013 zu OpenSlides 1.3.1"
+msgstr ""
+
+#: templates/press.html:24
+msgid "Linux-Magazin-Meldung zu OpenSlides 1.3"
 msgstr ""
 
 #: templates/press.html:25
-msgid "Artikel im IHK Magazin 11/2012 (Seite 36) zum innovate! Award 2012"
+msgid "Pro-Linux-Meldung zu OpenSlides 1.3"
 msgstr ""
 
-#: templates/press.html:27
-msgid "Artikel im Weser Ems Manager 9/2012 zum innovate! Award 2012"
-msgstr ""
-
-#: templates/press.html:29
-msgid ""
-"Artikel der Neuen Osnabrücker Zeitung (20.12.2012, Autorin: Claudia "
-"Sarrazin) zum innovate! Award 2012"
+#: templates/press.html:26
+msgid "Heise-Meldung zu OpenSlides 1.3"
 msgstr ""
 
 #: templates/press.html:31
-msgid "Artikel aus AV-views 2012/4 zu OpenSlides 1.2"
-msgstr ""
-
-#: templates/press.html:33
-msgid "Meldung in iX 9/2012 zu OpenSlides 1.2"
-msgstr ""
-
-#: templates/press.html:35
-msgid "ubuntuusers: Ein Interview mit einem Entwickler"
+msgid "Ältere Meldungen anzeigen"
 msgstr ""
 
 #: templates/press.html:37
-msgid "Linux-Magazin-Meldung zu OpenSlides 1.2"
-msgstr ""
-
-#: templates/press.html:38
-msgid "Heise-Meldung zu OpenSlides 1.2"
+msgid "Artikel im IHK Magazin 11/2012 (Seite 36) zum innovate! Award 2012"
 msgstr ""
 
 #: templates/press.html:39
-msgid "Pro-Linux-Meldung zu OpenSlides 1.2"
-msgstr ""
-
-#: templates/press.html:40
-msgid "Artikel aus c't 26/2011 zu OpenSlides 1.1"
+msgid "Artikel im Weser Ems Manager 9/2012 zum innovate! Award 2012"
 msgstr ""
 
 #: templates/press.html:41
-msgid "Artikel aus AV-views 2011/5 zu OpenSlides 1.1"
+msgid ""
+"Artikel der Neuen Osnabrücker Zeitung (20.10.2012, Autorin: Claudia "
+"Sarrazin) zum innovate! Award 2012"
 msgstr ""
 
-#: templates/press.html:42
-msgid "Pro-Linux-Meldung zu OpenSlides 1.0"
+#: templates/press.html:43
+msgid "Artikel aus AV-views 2012/4 zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:48
-msgid "Pressemitteilungen"
+#: templates/press.html:45
+msgid "Meldung in iX 9/2012 zu OpenSlides 1.2"
+msgstr ""
+
+#: templates/press.html:47
+msgid "ubuntuusers: Ein Interview mit einem Entwickler"
+msgstr ""
+
+#: templates/press.html:49
+msgid "Linux-Magazin-Meldung zu OpenSlides 1.2"
+msgstr ""
+
+#: templates/press.html:50
+msgid "Heise-Meldung zu OpenSlides 1.2"
 msgstr ""
 
 #: templates/press.html:51
-msgid "OpenSlides 1.4 mit Rednerliste und verbesserter Antragsverwaltung"
+msgid "Pro-Linux-Meldung zu OpenSlides 1.2"
+msgstr ""
+
+#: templates/press.html:52
+msgid "Artikel aus c't 26/2011 zu OpenSlides 1.1"
 msgstr ""
 
 #: templates/press.html:53
+msgid "Artikel aus AV-views 2011/5 zu OpenSlides 1.1"
+msgstr ""
+
+#: templates/press.html:54
+msgid "Pro-Linux-Meldung zu OpenSlides 1.0"
+msgstr ""
+
+#: templates/press.html:62
+msgid "Pressemitteilungen"
+msgstr ""
+
+#: templates/press.html:65
+msgid "OpenSlides 1.4 mit Rednerliste und verbesserter Antragsverwaltung"
+msgstr ""
+
+#: templates/press.html:67
 msgid ""
 "OpenSlides 1.3 - Neue Dashboard-Widgets und verbesserte Teilnehmerverwaltung"
 msgstr ""
 
-#: templates/press.html:57
+#: templates/press.html:71
 msgid ""
 "OpenSlides 1.2 - Präsentations- und Versammlungssystem mit verbesserter "
 "Installation und Projektorsteuerung"
 msgstr ""
 
-#: templates/press.html:59
+#: templates/press.html:73
 msgid "Intevation veranstaltet OpenSlides-Entwicklertreffen"
 msgstr ""
 
-#: templates/press.html:61
+#: templates/press.html:75
 msgid ""
 "OpenSlides 1.0 - Neues\n"
 "        Präsentationssystem für Veranstaltungen mit Tagesordnungen,\n"
 "        Anträgen und Wahlen"
 msgstr ""
 
-#: templates/press.html:71
+#: templates/press.html:85
 msgid "Ältere News anzeigen"
 msgstr ""
 
-#: templates/press.html:87
+#: templates/press.html:101
 msgid "Pressekontakt"
 msgstr ""
 
-#: templates/press.html:96
+#: templates/press.html:110
 msgid "Vorträge"
 msgstr ""
 
-#: templates/press.html:113
+#: templates/press.html:127
 msgid "Logos"
 msgstr ""
 
-#: templates/press.html:114
+#: templates/press.html:128
 msgid ""
 "Das Motiv von OpenSlides stellt ein Overheadprojektor (auch Polylux oder "
 "Tageslichtprojektor) dar und symbolisiert damit ein flexibles \"Auflegen\" "
 "und freies \"Entwerfen\" der Folien."
 msgstr ""
 
-#: templates/press.html:115
+#: templates/press.html:129
 msgid "Alle Größen und Varianten des OpenSlides Logos"
 msgstr ""
 
@@ -1968,14 +1984,18 @@ msgid ""
 "in unser Handbuch!"
 msgstr ""
 
-#: templates/support_manual.html:18
-msgid ""
-"Das deutschsprachige OpenSlides-Handbuch ist noch im Aufbau.\n"
-"    Eine aktuelle Version finden Sie hier:"
+#: templates/support_manual.html:20
+msgid "Deutschsprachige Dokumentation:"
 msgstr ""
 
-#: templates/support_manual.html:23
+#: templates/support_manual.html:24 templates/support_manual.html.py:30
 msgid "OpenSlides-Handbuch"
+msgstr ""
+
+#: templates/support_manual.html:33
+msgid ""
+"Beachten Sie: Dieses OpenSlides-Handbuch ist noch im Aufbau. Einige "
+"Abschnitte sind noch nicht vollständig."
 msgstr ""
 
 #: templates/support_overview.html:11
