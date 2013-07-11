@@ -15,12 +15,24 @@ in unser Handbuch!{% endblocktrans %}
 {% block content %}
   <div class="row">
     <div class="span6">
-    <p>{% blocktrans %}Das deutschsprachige OpenSlides-Handbuch ist noch im Aufbau.
-    Eine aktuelle Version finden Sie hier:{% endblocktrans %}</p>
-      <a class="btn btn-primary btn-large"
-      href="http://docs.openslides.org/de">
-      <i class="icon-question-sign icon-white"></i>
-      {% trans 'OpenSlides-Handbuch' %}  &raquo;</a>
+
+    <div class="well">
+        <h3>{% trans 'Deutschsprachige Dokumentation:' %}</h3>
+        <p>
+        <a class="jumbotron btn btn-primary btn-large"
+        href="http://docs.openslides.org/de/">
+        {% trans 'OpenSlides-Handbuch' %} 1.4<br>
+        <small>HTML-Ansicht</small></a>
+        </p>
+        <p>
+        <a class="jumbotron btn btn-large"
+        href="http://files.openslides.org/docs/OpenSlides-Handbuch-1.4.pdf">
+        {% trans 'OpenSlides-Handbuch' %} 1.4<br>
+        <small>PDF | 8 MB</small></a>
+        </p>
+        <p><small>{% blocktrans %}Beachten Sie: Dieses OpenSlides-Handbuch ist noch im Aufbau. Einige Abschnitte sind noch nicht vollständig.{% endblocktrans %}</p>
+    </div>
+
     </div>
   </div>
   <p><br></p>
