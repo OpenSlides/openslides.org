@@ -27,11 +27,11 @@ Lesen Sie, was die Pressestimmen über OpenSlides berichten.{% endblocktrans %}{
     </ul>
     <p>
         <div class="btn-group" data-toggle="buttons-checkbox">
-        <button type="button" class="btn btn-small" data-toggle="collapse" data-target="#archive">
+        <button type="button" class="btn btn-small" data-toggle="collapse" data-target="#archive_press">
             {% trans 'Ältere Meldungen anzeigen' %}
         </button>
         </div>
-        <div id="archive" class="collapse out">
+        <div id="archive_press" class="collapse out">
         <ul>
             <li>2012-11:<br><a href="http://www.osnabrueck.ihk24.de/linkableblob/2127140/.3./data/ihk_mag_1112-data.pdf"
                 >{% trans 'Artikel im IHK Magazin 11/2012 (Seite 36) zum innovate! Award 2012' %}</a></li>
@@ -81,11 +81,11 @@ Lesen Sie, was die Pressestimmen über OpenSlides berichten.{% endblocktrans %}{
     {% include "news.html" %}
     <p>
         <div class="btn-group" data-toggle="buttons-checkbox">
-        <button type="button" class="btn btn-small" data-toggle="collapse" data-target="#archive">
+        <button type="button" class="btn btn-small" data-toggle="collapse" data-target="#archive_news">
             {% trans 'Ältere News anzeigen' %}
         </button>
         </div>
-        <div id="archive" class="collapse out">
+        <div id="archive_news" class="collapse out">
             {% include "newsarchiv.html" %}
         </div>
     </p>
