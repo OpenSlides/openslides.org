@@ -1,14 +1,12 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Language file of openSlides.org used by transifex:
+# https://www.transifex.com/projects/p/openslidesorg/
+# Copyright (C) 2011–2013 by OpenSlides team
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-11 22:47+0200\n"
+"POT-Creation-Date: 2013-07-19 23:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,14 +78,6 @@ msgstr ""
 
 #: forms.py:35
 msgid "E-Mail"
-msgstr ""
-
-#: settings.py:25
-msgid "Deutsch"
-msgstr ""
-
-#: settings.py:26
-msgid "Englisch"
 msgstr ""
 
 #: templates/404.html:4
@@ -1028,6 +1018,14 @@ msgstr ""
 msgid "HTML-Editor"
 msgstr ""
 
+#: templates/features.html:182
+msgid ""
+"Für einfache Formatierung von Antragstexten und -begründung ist ein HTML-"
+"Editor (\"CKEditor\")\n"
+"        integriert. Die Formatierungen werden auch in der PDF-Fassung "
+"unterstützt."
+msgstr ""
+
 #: templates/features.html:189
 msgid "Versionshistorie und Log"
 msgstr ""
@@ -1354,7 +1352,7 @@ msgstr ""
 msgid "1. Platz beim innovate!Interaction Award 2012"
 msgstr ""
 
-#: templates/home.html:78 templates/home.html.py:82
+#: templates/home.html:78 templates/home.html.py:80 templates/home.html:82
 msgid "mehr"
 msgstr ""
 
@@ -1647,11 +1645,10 @@ msgid ""
 msgstr ""
 
 #: templates/plugins.html:22
-#, python-format
 msgid ""
 "Eine Anleitung für Entwickler zum Erstellen eigener Plugins gibt es im \n"
-"<a href=\"https://github.com/OpenSlides/OpenSlides/wiki/De%%3APlugins"
-"\">Wiki</a>."
+"<a href=\"https://github.com/OpenSlides/OpenSlides/wiki/De:Plugins\">Wiki</"
+"a>."
 msgstr ""
 
 #: templates/plugins.html:36
@@ -1928,8 +1925,9 @@ msgstr ""
 
 #: templates/references.html:24 templates/references.html.py:31
 #: templates/references.html:38 templates/references.html.py:45
-#: templates/references.html:54 templates/references.html.py:62
-#: templates/references.html:69 templates/references.html.py:75
+#: templates/references.html:52 templates/references.html.py:61
+#: templates/references.html:69 templates/references.html.py:76
+#: templates/references.html:82
 msgid "Erstmaliger Einsatz von OpenSlides"
 msgstr ""
 
@@ -1937,11 +1935,11 @@ msgstr ""
 msgid "weitere Einsätze"
 msgstr ""
 
-#: templates/references.html:56
+#: templates/references.html:63
 msgid "Ein erster Prototyp von OpenSlides wurde bereits seit 2005 verwendet."
 msgstr ""
 
-#: templates/references.html:76
+#: templates/references.html:83
 msgid "weiterer Einsatz"
 msgstr ""
 
