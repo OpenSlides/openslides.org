@@ -23,6 +23,9 @@ body {
 .brand img {
     height: 31px;
 }
+.dropdown-menu {
+    min-width: 0px !important;
+}
 .hero-unit {
     margin-top: -15px;
     padding: 30px;

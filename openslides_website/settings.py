@@ -1,4 +1,6 @@
-# Django settings for website project.
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# Django settings for openslides.org website.
 import os
 
 DEBUG = False
@@ -18,12 +20,13 @@ TIME_ZONE = 'Europe/Berlin'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'de'
+LANGUAGE_CODE = 'en'
 
 ugettext = lambda s: s
 LANGUAGES = (
-    ('de', ugettext('Deutsch')),
-    ('en', ugettext('Englisch')),
+    ('de', 'German'),
+    ('en', 'English'),
+    ('fr', 'French'),
 )
 
 LOCALE_PATHS = (
