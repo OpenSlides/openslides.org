@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-19 23:55+0200\n"
+"POT-Creation-Date: 2013-07-19 23:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1645,11 +1645,10 @@ msgid ""
 msgstr ""
 
 #: templates/plugins.html:22
-#, python-format
 msgid ""
 "Eine Anleitung für Entwickler zum Erstellen eigener Plugins gibt es im \n"
-"<a href=\"https://github.com/OpenSlides/OpenSlides/wiki/De%%3APlugins"
-"\">Wiki</a>."
+"<a href=\"https://github.com/OpenSlides/OpenSlides/wiki/De:Plugins\">Wiki</"
+"a>."
 msgstr ""
 
 #: templates/plugins.html:36
