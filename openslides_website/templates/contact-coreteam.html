@@ -8,7 +8,8 @@
     es über das <a href="{{ contactform_url }}">Kontaktformular</a>.{% endblocktrans %}
     </p>
 
+    {% url 'authors' as authors_url %}
     <p>{% blocktrans %}OpenSlides ist eine Freie Software
-    Initiative von engagierten, freiwilligen {% endblocktrans %}
-    <a href="{% url 'authors' %}">{% trans 'Autoren' %}</a>.</p>
+    Initiative von engagierten, freiwilligen
+    <a href="{{ authors_url }}">{% trans 'Autoren' %}</a>.{% endblocktrans %}</p>
 </div>
