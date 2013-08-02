@@ -65,23 +65,52 @@ Wahlen einer Veranstaltung.{% endblocktrans %}
         <p><a class="btn btn-primary" href="{% url 'features' %}">{% trans 'Alle Funktionen im Überblick' %} &raquo;</a></p>
     </div>
     <div class="span4">
-    <div class="well">
-        <h2><img class="os-icon" src="/static/img/icons/glyphicons_057_history.png">
-        {% trans 'Historie' %}</h2>
+    <div class="well quote">
+        <h2><img class="os-icon" src="/static/img/icons/glyphicons_245_chat.png">
+        {% trans 'Zitate über OpenSlides' %}</h2>
+            <blockquote>"{% blocktrans %}Wir begleiten die Entwicklung von OpenSlides seit 
+            den ersten Versionen und haben OpenSlides schon mehrfach auf unseren
+            Landesmitgliederversammlungen erfolgreich eingesetzt. Sehr zufrieden
+            sind wir mit dem <b>Kontakt zur Entwicklergemeinschaft</b> der Freien Software
+            Initiative. Mit unseren Rückmeldungen können wir die Weiterentwicklung
+            von OpenSlides nach unseren Vorstellungen mitgestalten.
+            Wir sehen in OpenSlides ein <b>innovatives Open Source Produkt</b>, das dabei
+            hilft, unsere demokratischen, innerparteilichen Strukturen in das
+            digitale Zeitalter zu transportieren.{% endblocktrans %}"</blockquote>
+            <p class="logo"><img alt="Grüne HH" src="/static/img/references/gruene-logo.png"></p>
+            <p class="author"><i><small>Christian Schmid<br>(BÜNDNIS 90/DIE GRÜNEN, Landesverband Hamburg)</small></i></p>
+    </div>
+    </div>
+</div>
+
+<hr>
+<div class="row">
+        <div class="span12">
+            <h2><img class="os-icon" src="/static/img/icons/glyphicons_057_history.png">
+            {% trans 'Historie' %}</h2>
+        </div>
+</div>
+<div class="row">
+        <div class="span4">
             <p>{% blocktrans %}Im Jahre 2005 wurde ein interner PHP-Prototyp von OpenSlides
             speziell für den Einsatz auf der Bundesversammlung der
             <a href="http://www.bundes-esg.de">Evangelischen StudentInnengemeinde
             (Bundes-ESG)</a> durch Emanuel Schütze entwickelt.{% endblocktrans %}</p>
+        </div>
+        <div class="span4">
             <p>{% blocktrans %}Ende 2010 begannen <b>Oskar Hahn</b> und
             <b>Emanuel Schütze</b> mit einer kompletten
             Neuentwicklung in Python/Django und bauten gemeinsam mit <b>Norman Jäckel</b>
             ein Freies Software Produkt mit dem Namen "OpenSlides" auf.{% endblocktrans %}</p>
+        </div>
+        <div class="span4">
             <p>{% blocktrans %}OpenSlides wurde im August 2011 unter
             der GNU GPL v2+ veröffentlicht. Version 1.0 ist am 12. September 2011
             erschienen. Der erste produktive Einsatz von OpenSlides fand Mitte
             September auf der ESG-Bundesversammlung 2011 in Hannover statt.{% endblocktrans %}
             </p>
-    </div>
-    </div>
+        </div>
 </div>
+
+
 {% endblock %}

@@ -269,3 +269,20 @@ h3 {
 .page-header h1 {
     margin-bottom: 0px;
 }
+
+/* About page */
+.quote blockquote {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.25;
+}
+.quote .logo {
+    float: left;
+    padding-right: 10px;
+}
+.quote .logo img {
+    height: 50px;
+}
+.quote .author {
+    line-height:14px;
+}
