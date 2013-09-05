@@ -4,9 +4,18 @@
 
 {% block title %}{{ block.super }} - Home{% endblock %}
 {% block header %}
- <style type="text/css">
-   #headline { height: 350px;}
- </style>
+    <style type="text/css">
+        #headline { height: 350px;}
+    </style>
+{% endblock %}
+{% block javascript %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 3000
+            });
+        });
+    </script>
 {% endblock %}
 
 {% block mainmenu_home %}active{% endblock %}

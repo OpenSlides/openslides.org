@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-19 23:59+0200\n"
+"POT-Creation-Date: 2013-09-05 09:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,7 +96,7 @@ msgstr ""
 msgid "Was ist OpenSlides?"
 msgstr ""
 
-#: templates/about.html:9
+#: templates/about.html:10
 msgid ""
 "OpenSlides ist ein freies, webbasiertes Präsentations- und\n"
 "Versammlungssystem zur Darstellung und Steuerung von Tagesordnung, Anträgen "
@@ -104,11 +104,11 @@ msgid ""
 "Wahlen einer Veranstaltung."
 msgstr ""
 
-#: templates/about.html:19
+#: templates/about.html:20
 msgid "Inhalte projizieren"
 msgstr ""
 
-#: templates/about.html:20
+#: templates/about.html:21
 msgid ""
 "Mit OpenSlides können alle Inhalte einer Veranstaltung (wie\n"
 "        Tagesordnung, Anträge, Rednerlisten, Kandidaten und Wahlergebnisse) "
@@ -120,11 +120,11 @@ msgid ""
 "        Mobilgeräten."
 msgstr ""
 
-#: templates/about.html:27
+#: templates/about.html:28
 msgid "Eleganter präsentieren"
 msgstr ""
 
-#: templates/about.html:28
+#: templates/about.html:29
 msgid ""
 "Ein weiterer Vorteil gegenüber herkömmlichen\n"
 "        Office-Präsentations-Systemen ist die Bearbeitung der Folien über "
@@ -134,11 +134,11 @@ msgid ""
 "        werden und zeigt stets die aktuelle Folie an."
 msgstr ""
 
-#: templates/about.html:35
+#: templates/about.html:36
 msgid "Einsatz vor Ort"
 msgstr ""
 
-#: templates/about.html:36
+#: templates/about.html:37
 msgid ""
 "OpenSlides ist konzipiert für den Einsatz auf\n"
 "        Veranstaltungen wie Delegierten- oder Mitgliederversammlungen, "
@@ -146,11 +146,11 @@ msgid ""
 "        Hauptversammlungen. Eine Teilnehmerbeschränkung gibt es nicht."
 msgstr ""
 
-#: templates/about.html:43
+#: templates/about.html:44
 msgid "Transparenz"
 msgstr ""
 
-#: templates/about.html:44
+#: templates/about.html:45
 msgid ""
 "Neuartig ist vor allem die Funktion, das Plenum mit einzubeziehen:\n"
 "        Teilnehmer einer Veranstaltung können jederzeit mit dem eigenen\n"
@@ -159,11 +159,11 @@ msgid ""
 "        nachlesen."
 msgstr ""
 
-#: templates/about.html:50
+#: templates/about.html:51
 msgid "Interaktion"
 msgstr ""
 
-#: templates/about.html:51
+#: templates/about.html:52
 msgid ""
 "Interaktiv wird es dann, wenn Teilnehmer über OpenSlides\n"
 "        sich selbst auf die Rednerliste setzen, Anträge einreichen, für eine "
@@ -171,11 +171,11 @@ msgid ""
 "        kandidieren oder andere Kandidaten vorschlagen."
 msgstr ""
 
-#: templates/about.html:57
+#: templates/about.html:58
 msgid "Teilnehmer verwalten"
 msgstr ""
 
-#: templates/about.html:58
+#: templates/about.html:59
 msgid ""
 "OpenSlides verwaltet die anwesenden Teilnehmer,\n"
 "        um leichter Kandidaten für anstehende Wahlen aufzustellen,\n"
@@ -184,15 +184,48 @@ msgid ""
 "        Auch die Überprüfung der Beschlussfähigkeit ist einfach möglich."
 msgstr ""
 
-#: templates/about.html:65
+#: templates/about.html:66
 msgid "Alle Funktionen im Überblick"
 msgstr ""
 
-#: templates/about.html:70
+#: templates/about.html:71
+msgid "Zitate über OpenSlides"
+msgstr ""
+
+#: templates/about.html:81
+msgid ""
+"Wir begleiten die Entwicklung von OpenSlides seit \n"
+"                    den ersten Versionen und haben OpenSlides schon mehrfach "
+"auf unseren\n"
+"                    Landesmitgliederversammlungen erfolgreich eingesetzt. "
+"Sehr zufrieden\n"
+"                    sind wir mit dem <b>Kontakt zur Entwicklergemeinschaft</"
+"b> \n"
+"                    der Freien Software Initiative. Mit unseren\n"
+"                    Rückmeldungen können wir die Weiterentwicklung von\n"
+"                    OpenSlides nach unseren Vorstellungen\n"
+"                    mitgestalten.\n"
+"                    Wir sehen in OpenSlides ein <b>innovatives Open\n"
+"                    Source Produkt</b>, das dabei hilft, unsere\n"
+"                    demokratischen, innerparteilichen Strukturen in das\n"
+"                    digitale Zeitalter zu transportieren."
+msgstr ""
+
+#: templates/about.html:100
+msgid ""
+"OpenSlides unterstützt uns schon\n"
+"                    bei der Planung unserer Kreissynoden durch die\n"
+"                    strukturierte Eingabe der Tagesordnung, der\n"
+"                    Anträge und Wahlen. Während der Veranstaltung\n"
+"                    bleiben wir immer flexibel und können\n"
+"                    situationsbedingt 'Folien' ein- und ausblenden."
+msgstr ""
+
+#: templates/about.html:126
 msgid "Historie"
 msgstr ""
 
-#: templates/about.html:71
+#: templates/about.html:131
 msgid ""
 "Im Jahre 2005 wurde ein interner PHP-Prototyp von OpenSlides\n"
 "            speziell für den Einsatz auf der Bundesversammlung der\n"
@@ -201,7 +234,7 @@ msgid ""
 "            (Bundes-ESG)</a> durch Emanuel Schütze entwickelt."
 msgstr ""
 
-#: templates/about.html:75
+#: templates/about.html:137
 msgid ""
 "Ende 2010 begannen <b>Oskar Hahn</b> und\n"
 "            <b>Emanuel Schütze</b> mit einer kompletten\n"
@@ -210,7 +243,7 @@ msgid ""
 "            ein Freies Software Produkt mit dem Namen \"OpenSlides\" auf."
 msgstr ""
 
-#: templates/about.html:79
+#: templates/about.html:143
 msgid ""
 "OpenSlides wurde im August 2011 unter\n"
 "            der GNU GPL v2+ veröffentlicht. Version 1.0 ist am 12. September "
@@ -221,9 +254,8 @@ msgid ""
 msgstr ""
 
 #: templates/authors.html:4 templates/authors.html.py:5
-#: templates/base.html:135 templates/contact-coreteam.html:13
-#: templates/plugins.html:34 templates/plugins.html.py:44
-#: templates/plugins.html:54
+#: templates/base.html:135 templates/plugins.html:34
+#: templates/plugins.html.py:44 templates/plugins.html:54
 msgid "Autoren"
 msgstr ""
 
@@ -269,7 +301,7 @@ msgstr ""
 msgid "OpenSlides, Tagesordnung, Anträge, Wahlen, Teilnehmer, Versammlung"
 msgstr ""
 
-#: templates/base.html:35 templates/base.html.py:107 templates/home.html:24
+#: templates/base.html:35 templates/base.html.py:107 templates/home.html:33
 #: templates/support_packages.html:50
 msgid "Download"
 msgstr ""
@@ -299,8 +331,9 @@ msgstr ""
 msgid "Funktionen"
 msgstr ""
 
-#: templates/base.html:104 templates/base_about.html:12 templates/home.html:91
-#: templates/references.html:5 templates/references.html.py:6
+#: templates/base.html:104 templates/base_about.html:12
+#: templates/home.html:100 templates/references.html:5
+#: templates/references.html.py:6
 msgid "Referenzen"
 msgstr ""
 
@@ -325,7 +358,7 @@ msgid "Plugins"
 msgstr ""
 
 #: templates/base.html:109 templates/demo.html:4 templates/demo.html.py:5
-#: templates/home.html:28
+#: templates/home.html:37
 msgid "Demo"
 msgstr ""
 
@@ -380,7 +413,7 @@ msgstr ""
 msgid "Quellcode"
 msgstr ""
 
-#: templates/base.html:133 templates/home.html:71
+#: templates/base.html:133 templates/home.html:80
 #: templates/support_overview.html:24 templates/support_overview.html.py:33
 #: templates/support_overview.html:42 templates/support_overview.html.py:51
 msgid "Mehr"
@@ -413,10 +446,12 @@ msgid ""
 "    es über das <a href=\"%(contactform_url)s\">Kontaktformular</a>."
 msgstr ""
 
-#: templates/contact-coreteam.html:11
+#: templates/contact-coreteam.html:12
+#, python-format
 msgid ""
 "OpenSlides ist eine Freie Software\n"
-"    Initiative von engagierten, freiwilligen "
+"    Initiative von engagierten, freiwilligen\n"
+"    <a href=\"%(authors_url)s\">Autoren</a>."
 msgstr ""
 
 #: templates/contact-form.html:5 templates/contact-form.html.py:6
@@ -1002,7 +1037,7 @@ msgid ""
 "        anzeigen."
 msgstr ""
 
-#: templates/features.html:172 templates/home.html:48
+#: templates/features.html:172 templates/home.html:57
 msgid "Anträge papierlos verwalten"
 msgstr ""
 
@@ -1312,63 +1347,63 @@ msgid ""
 "        eine zentrale HTML- und CSS-Datei."
 msgstr ""
 
-#: templates/home.html:20
+#: templates/home.html:29
 msgid "Mehr Transparenz."
 msgstr ""
 
-#: templates/home.html:20
+#: templates/home.html:29
 msgid "Mehr Flexibilität."
 msgstr ""
 
-#: templates/home.html:20
+#: templates/home.html:29
 msgid "Mehr Effizienz."
 msgstr ""
 
-#: templates/home.html:21
+#: templates/home.html:30
 msgid "Die Lösung für Ihre Versammlung!"
 msgstr ""
 
-#: templates/home.html:44
+#: templates/home.html:53
 msgid "Tagesordnung organisieren"
 msgstr ""
 
-#: templates/home.html:52
+#: templates/home.html:61
 msgid "Wahlen mit personalisierten Stimmzetteln"
 msgstr ""
 
-#: templates/home.html:56
+#: templates/home.html:65
 msgid "Frontend der portablen Windowsversion"
 msgstr ""
 
-#: templates/home.html:75
+#: templates/home.html:84
 msgid "Auszeichnungen"
 msgstr ""
 
-#: templates/home.html:76
+#: templates/home.html:85
 msgid "OpenSlides wurde bereits mehrfach als innovatives Produkt ausgezeichnet"
 msgstr ""
 
-#: templates/home.html:77
+#: templates/home.html:86
 msgid "1. Platz beim innovate!Interaction Award 2012"
 msgstr ""
 
-#: templates/home.html:78 templates/home.html.py:80 templates/home.html:82
+#: templates/home.html:87 templates/home.html.py:89 templates/home.html:91
 msgid "mehr"
 msgstr ""
 
-#: templates/home.html:79
+#: templates/home.html:88
 msgid "2. Platz beim IT-Innovationspreis 2013"
 msgstr ""
 
-#: templates/home.html:81
+#: templates/home.html:90
 msgid "2. Platz bei domainFACTORY-Leserwahl zur besten OpenSource-Software"
 msgstr ""
 
-#: templates/home.html:92
+#: templates/home.html:101
 msgid "OpenSlides war bereits erfolgreich im Einsatz bei:"
 msgstr ""
 
-#: templates/home.html:115
+#: templates/home.html:124
 msgid "Weitere Referenzen"
 msgstr ""
 
@@ -1434,16 +1469,16 @@ msgid ""
 msgstr ""
 
 #: templates/news.html:7 templates/news.html.py:9 templates/news.html.py:11
-#: templates/news.html:13 templates/news.html.py:15
+#: templates/news.html:13 templates/news.html.py:15 templates/news.html:17
 #: templates/newsarchiv.html:5 templates/newsarchiv.html.py:9
 msgid "veröffentlicht"
 msgstr ""
 
-#: templates/news.html:20
+#: templates/news.html:22
 msgid "OpenSlides belegt 2. Platz bei Leserwahl-Aktion"
 msgstr ""
 
-#: templates/news.html:22
+#: templates/news.html:24
 msgid "OpenSlides in der iX 2/2013"
 msgstr ""
 
@@ -1451,7 +1486,7 @@ msgstr ""
 msgid "Bericht vom Entwicklertreffen"
 msgstr ""
 
-#: templates/newsarchiv.html:13 templates/press.html:69
+#: templates/newsarchiv.html:13 templates/press.html:70
 msgid "OpenSlides gewinnt innovate!Interaction Award 2012"
 msgstr ""
 
@@ -1775,141 +1810,145 @@ msgid "OpenSlides in der Presse"
 msgstr ""
 
 #: templates/press.html:20
-msgid "Pro-Linux-Meldung zu OpenSlides 1.4"
+msgid "Artikel aus AV-views 2013/4 zu OpenSlides 1.4"
 msgstr ""
 
 #: templates/press.html:21
-msgid "Linux-Magazin-Meldung zu OpenSlides 1.4"
+msgid "Pro-Linux-Meldung zu OpenSlides 1.4"
 msgstr ""
 
 #: templates/press.html:22
-msgid "Heise-Meldung zu OpenSlides 1.4"
+msgid "Linux-Magazin-Meldung zu OpenSlides 1.4"
 msgstr ""
 
 #: templates/press.html:23
-msgid "Artikel aus iX 2/2013 zu OpenSlides 1.3.1"
+msgid "Heise-Meldung zu OpenSlides 1.4"
 msgstr ""
 
 #: templates/press.html:24
-msgid "Linux-Magazin-Meldung zu OpenSlides 1.3"
+msgid "Artikel aus iX 2/2013 zu OpenSlides 1.3.1"
 msgstr ""
 
 #: templates/press.html:25
-msgid "Pro-Linux-Meldung zu OpenSlides 1.3"
+msgid "Linux-Magazin-Meldung zu OpenSlides 1.3"
 msgstr ""
 
 #: templates/press.html:26
+msgid "Pro-Linux-Meldung zu OpenSlides 1.3"
+msgstr ""
+
+#: templates/press.html:27
 msgid "Heise-Meldung zu OpenSlides 1.3"
 msgstr ""
 
-#: templates/press.html:31
+#: templates/press.html:32
 msgid "Ältere Meldungen anzeigen"
 msgstr ""
 
-#: templates/press.html:37
+#: templates/press.html:38
 msgid "Artikel im IHK Magazin 11/2012 (Seite 36) zum innovate! Award 2012"
 msgstr ""
 
-#: templates/press.html:39
+#: templates/press.html:40
 msgid "Artikel im Weser Ems Manager 9/2012 zum innovate! Award 2012"
 msgstr ""
 
-#: templates/press.html:41
+#: templates/press.html:42
 msgid ""
 "Artikel der Neuen Osnabrücker Zeitung (20.10.2012, Autorin: Claudia "
 "Sarrazin) zum innovate! Award 2012"
 msgstr ""
 
-#: templates/press.html:43
+#: templates/press.html:44
 msgid "Artikel aus AV-views 2012/4 zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:45
+#: templates/press.html:46
 msgid "Meldung in iX 9/2012 zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:47
+#: templates/press.html:48
 msgid "ubuntuusers: Ein Interview mit einem Entwickler"
 msgstr ""
 
-#: templates/press.html:49
+#: templates/press.html:50
 msgid "Linux-Magazin-Meldung zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:50
+#: templates/press.html:51
 msgid "Heise-Meldung zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:51
+#: templates/press.html:52
 msgid "Pro-Linux-Meldung zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:52
+#: templates/press.html:53
 msgid "Artikel aus c't 26/2011 zu OpenSlides 1.1"
 msgstr ""
 
-#: templates/press.html:53
+#: templates/press.html:54
 msgid "Artikel aus AV-views 2011/5 zu OpenSlides 1.1"
 msgstr ""
 
-#: templates/press.html:54
+#: templates/press.html:55
 msgid "Pro-Linux-Meldung zu OpenSlides 1.0"
 msgstr ""
 
-#: templates/press.html:62
+#: templates/press.html:63
 msgid "Pressemitteilungen"
 msgstr ""
 
-#: templates/press.html:65
+#: templates/press.html:66
 msgid "OpenSlides 1.4 mit Rednerliste und verbesserter Antragsverwaltung"
 msgstr ""
 
-#: templates/press.html:67
+#: templates/press.html:68
 msgid ""
 "OpenSlides 1.3 - Neue Dashboard-Widgets und verbesserte Teilnehmerverwaltung"
 msgstr ""
 
-#: templates/press.html:71
+#: templates/press.html:72
 msgid ""
 "OpenSlides 1.2 - Präsentations- und Versammlungssystem mit verbesserter "
 "Installation und Projektorsteuerung"
 msgstr ""
 
-#: templates/press.html:73
+#: templates/press.html:74
 msgid "Intevation veranstaltet OpenSlides-Entwicklertreffen"
 msgstr ""
 
-#: templates/press.html:75
+#: templates/press.html:76
 msgid ""
 "OpenSlides 1.0 - Neues\n"
 "        Präsentationssystem für Veranstaltungen mit Tagesordnungen,\n"
 "        Anträgen und Wahlen"
 msgstr ""
 
-#: templates/press.html:85
+#: templates/press.html:86
 msgid "Ältere News anzeigen"
 msgstr ""
 
-#: templates/press.html:101
+#: templates/press.html:102
 msgid "Pressekontakt"
 msgstr ""
 
-#: templates/press.html:110
+#: templates/press.html:111
 msgid "Vorträge"
 msgstr ""
 
-#: templates/press.html:127
+#: templates/press.html:128
 msgid "Logos"
 msgstr ""
 
-#: templates/press.html:128
+#: templates/press.html:129
 msgid ""
 "Das Motiv von OpenSlides stellt ein Overheadprojektor (auch Polylux oder "
 "Tageslichtprojektor) dar und symbolisiert damit ein flexibles \"Auflegen\" "
 "und freies \"Entwerfen\" der Folien."
 msgstr ""
 
-#: templates/press.html:129
+#: templates/press.html:130
 msgid "Alle Größen und Varianten des OpenSlides Logos"
 msgstr ""
 
@@ -1923,23 +1962,23 @@ msgid ""
 "<a href=\"%(contactform_url)s\">Schreiben Sie uns</a>!"
 msgstr ""
 
-#: templates/references.html:24 templates/references.html.py:31
-#: templates/references.html:38 templates/references.html.py:45
-#: templates/references.html:52 templates/references.html.py:61
-#: templates/references.html:69 templates/references.html.py:76
-#: templates/references.html:82
+#: templates/references.html:25 templates/references.html.py:32
+#: templates/references.html:39 templates/references.html.py:46
+#: templates/references.html:53 templates/references.html.py:62
+#: templates/references.html:70 templates/references.html.py:77
+#: templates/references.html:83
 msgid "Erstmaliger Einsatz von OpenSlides"
 msgstr ""
 
-#: templates/references.html:25
+#: templates/references.html:26
 msgid "weitere Einsätze"
 msgstr ""
 
-#: templates/references.html:63
+#: templates/references.html:64
 msgid "Ein erster Prototyp von OpenSlides wurde bereits seit 2005 verwendet."
 msgstr ""
 
-#: templates/references.html:83
+#: templates/references.html:84
 msgid "weiterer Einsatz"
 msgstr ""
 
