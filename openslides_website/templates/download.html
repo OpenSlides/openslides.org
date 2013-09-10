@@ -16,17 +16,18 @@
 
 {% block content %}
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
-{% trans 'Aktuelle stabile Version' %}: OpenSlides 1.4.1
-({% trans 'veröffentlicht am' %} 29.7.2013)</h2>
+{% with version="1.4.2" %}
+{% trans 'Aktuelle stabile Version' %}: OpenSlides {{version}}
+({% trans 'veröffentlicht am' %} 10.9.2013)</h2>
 <div class="row">
     <div class="span6">
     <div class="well">
     <h3>{% trans 'Für Windows' %}</h3>
       <p>
       <a class="jumbotron btn btn-primary btn-large"
-      href="http://files.openslides.org/openslides-1.4.1-portable.zip">
+      href="http://files.openslides.org/openslides-{{version}}-portable.zip">
       {% trans 'Download OpenSlides' %}<br>
-      <small>v1.4.1 | .zip | 15 MB</small></a>
+      <small>v{{version}} | .zip | 16 MB</small></a>
       </p>
       <p>{% blocktrans %}Dies ist eine <strong>portable Version</strong>.
       OpenSlides muss nicht installiert werden. Einfach herunterladen, entpacken und openslides.exe starten!{% endblocktrans %}</p>
@@ -38,19 +39,18 @@
       <p>{% trans 'Download und Installation aus dem Python Package Index (PyPI)' %}:</p>
       <p><code>pip install openslides</code><br><br></p>
       <p>
-      {% with version="1.4.1" %}
       {% blocktrans %}Alternativ kann auch das aktuelle 
       <a href="http://files.openslides.org/openslides-{{version}}.tar.gz">tar.gz-Paket</a> von OpenSlides
       heruntergeladen und installiert werden.{% endblocktrans %}
       {% blocktrans %}Details in der <a
       href="http://files.openslides.org/INSTALL-{{version}}.txt">Installationsanleitung</a>.{% endblocktrans %}
-      {% endwith %}
       </p>
       </p>
     </div>
     </div>
 </div>
 <br>
+{% endwith %}
 
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
 {% trans 'Plugins' %}</h2>
