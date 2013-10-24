@@ -41,8 +41,6 @@ urlpatterns = i18n_patterns('',
 
 # permanent redirect patterns
 urlpatterns += patterns('',
-    # redirect old download files to new download directory
-    (r'^download/(.*)$', RedirectView.as_view(url='http://files.openslides.org')),
     # redirect old web pages to new pages
     (r'^(de|en)/index.html$', RedirectView.as_view(url='/')),
     (r'^(de|en)/about.html$', RedirectView.as_view(url='/about/')),
