@@ -67,6 +67,12 @@
       </p>
       <p>{% blocktrans %}Dies ist eine <strong>portable Version</strong>.
       OpenSlides muss nicht installiert werden. Einfach herunterladen, entpacken und openslides.exe starten!{% endblocktrans %}</p>
+      <p>
+      {% with version="1.5b1" %}
+      {% blocktrans %}Details in der <a
+      href="https://github.com/OpenSlides/OpenSlides/blob/{{version}}/README.rst">README</a>.{% endblocktrans %}
+      {% endwith %}
+      </p>
     </div>
     </div>
     <div class="span6">
@@ -78,13 +84,13 @@
       {% trans 'Download OpenSlides' %}<br>
       <small>v1.5b1 | .tar.gz | 3 MB</small></a>
       </p>
-      <p>{% trans 'Nach Download das Paket in einer virtualenv-Umgebung installieren' %}:</p>
-      <p><code>pip install openslides-1.5b1.tar.gz</code></p>
+      <p>{% trans 'Nach Download das Paket in einer virtualenv-Umgebung installieren' %}:
+      <br><code>pip install openslides-1.5b1.tar.gz</code></p>
       </p>
       <p>
       {% with version="1.5b1" %}
       {% blocktrans %}Details in der <a
-      href="http://files.openslides.org/Beta/README-{{version}}.rst">README</a>.{% endblocktrans %}
+      href="https://github.com/OpenSlides/OpenSlides/blob/{{version}}/README.rst">README</a>.{% endblocktrans %}
       {% endwith %}
       </p>
     </div>
