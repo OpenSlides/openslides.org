@@ -4,7 +4,7 @@
 
 
 This is the GitHub repository of the website http://www.openslides.org of OpenSlides only!
-The sofware project OpenSlides is managed in an own `repository <https://github.com/OpenSlides/OpenSlides/>`_
+The software project OpenSlides is managed in an own `repository <https://github.com/OpenSlides/OpenSlides/>`_.
 
 
 Setup website locally
@@ -31,22 +31,21 @@ Use command line on GNU/Linux or MacOS X. For using on Windows see general hints
 1. Get source code of openslides.org
 
    Clone current master version from `openslides.org GitHub repository
-   <https://github.com/OpenSlides/openslides.org>`_. This requires `Git
-   <http://git-scm.com/>`_.
+   <https://github.com/OpenSlides/openslides.org>`_::
 
        $ git clone https://github.com/OpenSlides/openslides.org.git
        $ cd openslides.org
 
-2. Setup a virtual environment with Virtual Python Environment builder
+2. Setup a virtual environment with Virtual Python Environment builder::
 
        $ virtualenv .virtualenv
        $ source .virtualenv/bin/activate
 
-3. Install all required python packages
+3. Install all required python packages::
 
        $ pip install -r requirements.txt
 
-4. Run openslides.org server
+4. Run openslides.org server::
 
        $ python manage.py runserver
 
