@@ -8,7 +8,7 @@
 {% block lead %}
     {% url 'license' as license_url %}
     {% blocktrans %}OpenSlides ist Freie Software,
-    lizensiert unter der <a href="{{ license_url }}">GNU GPL v2+</a>.{% endblocktrans %}
+    lizensiert unter der <a href="{{ license_url }}">MIT</a>.{% endblocktrans %}
 {% endblock %}
 
 {% block mainmenu_download %}active{% endblock %}
@@ -16,21 +16,23 @@
 
 {% block content %}
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
-{% with version="1.4.2" %}
+{% with version="1.5" %}
 {% trans 'Aktuelle stabile Version' %}: OpenSlides {{version}}
-({% trans 'veröffentlicht am' %} 10.9.2013)</h2>
+({% trans 'veröffentlicht am' %} 25.11.2013)</h2>
 <div class="row">
     <div class="span6">
     <div class="well">
     <h3>{% trans 'Für Windows' %}</h3>
       <p>
       <a class="jumbotron btn btn-primary btn-large"
-      href="http://files.openslides.org/openslides-{{version}}-portable.zip">
+      href="http://files.openslides.org/releases/{{version}}/openslides-{{version}}-portable.zip">
       {% trans 'Download OpenSlides' %}<br>
-      <small>v{{version}} | .zip | 16 MB</small></a>
+      <small>v{{version}} | .zip | 17 MB</small></a>
       </p>
       <p>{% blocktrans %}Dies ist eine <strong>portable Version</strong>.
       OpenSlides muss nicht installiert werden. Einfach herunterladen, entpacken und openslides.exe starten!{% endblocktrans %}</p>
+      {% blocktrans %}Details in der <a
+      href="https://github.com/OpenSlides/OpenSlides/blob/{{version}}/README.rst">README</a>.{% endblocktrans %}
     </div>
     </div>
     <div class="span6">
@@ -40,10 +42,10 @@
       <p><code>pip install openslides</code><br><br></p>
       <p>
       {% blocktrans %}Alternativ kann auch das aktuelle 
-      <a href="http://files.openslides.org/openslides-{{version}}.tar.gz">tar.gz-Paket</a> von OpenSlides
+      <a href="http://files.openslides.org//releases/{{version}}/openslides-{{version}}.tar.gz">tar.gz-Paket</a> von OpenSlides
       heruntergeladen und installiert werden.{% endblocktrans %}
       {% blocktrans %}Details in der <a
-      href="http://files.openslides.org/INSTALL-{{version}}.txt">Installationsanleitung</a>.{% endblocktrans %}
+      href="https://github.com/OpenSlides/OpenSlides/blob/{{version}}/README.rst">README</a>.{% endblocktrans %}
       </p>
       </p>
     </div>
@@ -51,51 +53,6 @@
 </div>
 <br>
 {% endwith %}
-
-<h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
-{% trans 'Letzte Entwicklungsversion' %}: OpenSlides 1.5-beta2
-({% trans 'veröffentlicht am' %} 10.11.2013)</h2>
-<div class="row">
-    <div class="span6">
-    <div class="well">
-    <h3>{% trans 'Für Windows' %}</h3>
-      <p>
-      <a class="jumbotron btn btn-primary btn-large"
-      href="http://files.openslides.org/Beta/openslides-1.5b2-portable.zip">
-      {% trans 'Download OpenSlides' %}<br>
-      <small>v1.5b2 | .zip | 17 MB</small></a>
-      </p>
-      <p>{% blocktrans %}Dies ist eine <strong>portable Version</strong>.
-      OpenSlides muss nicht installiert werden. Einfach herunterladen, entpacken und openslides.exe starten!{% endblocktrans %}</p>
-      <p>
-      {% with version="1.5b2" %}
-      {% blocktrans %}Details in der <a
-      href="https://github.com/OpenSlides/OpenSlides/blob/{{version}}/README.rst">README</a>.{% endblocktrans %}
-      {% endwith %}
-      </p>
-    </div>
-    </div>
-    <div class="span6">
-    <div class="well">
-      <h3>{% trans 'Für Linux/MacOS' %}</h3>
-      <p>
-      <a class="jumbotron btn btn-primary btn-large"
-      href="http://files.openslides.org/Beta/openslides-1.5b2.tar.gz">
-      {% trans 'Download OpenSlides' %}<br>
-      <small>v1.5b2 | .tar.gz | 3 MB</small></a>
-      </p>
-      <p>{% trans 'Nach Download das Paket in einer virtualenv-Umgebung installieren' %}:
-      <br><code>pip install openslides-1.5b2.tar.gz</code></p>
-      </p>
-      <p>
-      {% with version="1.5b2" %}
-      {% blocktrans %}Details in der <a
-      href="https://github.com/OpenSlides/OpenSlides/blob/{{version}}/README.rst">README</a>.{% endblocktrans %}
-      {% endwith %}
-      </p>
-    </div>
-    </div>
-</div>
 
 
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
@@ -108,8 +65,8 @@
 
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_066_tags.png">
 {% trans 'Alle Versionen' %}</h2>
-<p>{% trans 'Ältere Versionen sowie die SHA1-Prüfsummen finden Sie unter' %}
-<a href="http://files.openslides.org/">files.openslides.org</a>.
+<p>{% trans 'Ältere Versionen sowie die OpenPGP-Signaturen finden Sie unter' %}
+<a href="http://files.openslides.org/releases/">http://files.openslides.org/releases/</a>.
 </p>
 <br>
 
