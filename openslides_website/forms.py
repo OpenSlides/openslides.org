@@ -17,19 +17,28 @@ class ContactForm(FormMixin, forms.Form):
 
 
 class OrderEventForm(FormMixin, forms.Form):
-    event_name = forms.CharField(label=ugettext_lazy("Veranstaltungsname"))
-    event_description = forms.CharField(
-        max_length=100, label=ugettext_lazy("Kurzbeschreibung der Veranstaltung"))
-    event_date = forms.CharField(label=ugettext_lazy("Veranstaltungszeitraum"))
-    event_location = forms.CharField(label=ugettext_lazy("Veranstaltungsort"))
-    event_participants = forms.CharField(label=ugettext_lazy("Erwartete Teilnehmer"))
+    event_name = forms.CharField(required=False,
+                                 label=ugettext_lazy("Veranstaltungsname"))
+    event_date = forms.CharField(required=False,
+                                 label=ugettext_lazy("Veranstaltungszeitraum"))
+    event_location = forms.CharField(required=False,
+                                     label=ugettext_lazy("Veranstaltungsort"))
+    event_participants = forms.CharField(required=False,
+                                         label=ugettext_lazy("Erwartete Teilnehmer"))
 
 
 class OrderContactForm(FormMixin, forms.Form):
     contact_organisation = forms.CharField(label=ugettext_lazy("Organisation"))
-    contact_street = forms.CharField(label=ugettext_lazy("Strasse"))
-    contact_postcode = forms.CharField(label=ugettext_lazy("PLZ"))
-    contact_location = forms.CharField(label=ugettext_lazy("Ort"))
     contact_name = forms.CharField(label=ugettext_lazy("Ansprechpartner"))
     contact_phone = forms.CharField(label=ugettext_lazy("Telefon"))
     contact_email = forms.EmailField(label=ugettext_lazy("E-Mail"))
+    contact_street = forms.CharField(required=False,
+                                     label=ugettext_lazy("Strasse"))
+    contact_postcode = forms.CharField(required=False,
+                                       widget=forms.TextInput(attrs={'class': 'input-small'}),
+                                       label=ugettext_lazy("PLZ"))
+    contact_location = forms.CharField(required=False,
+                                       label=ugettext_lazy("Ort / Land"))
+    message = forms.CharField(required=False,
+                              widget=forms.Textarea(),
+                              label=ugettext_lazy("Nachricht"))

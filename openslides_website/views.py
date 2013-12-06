@@ -33,39 +33,40 @@ def orderform(request, package):
         if form_event.is_valid() and form_contact.is_valid():
             # event
             event_name = form_event.cleaned_data['event_name']
-            event_description = form_event.cleaned_data['event_description']
             event_date = form_event.cleaned_data['event_date']
             event_location = form_event.cleaned_data['event_location']
             event_participants = form_event.cleaned_data['event_participants']
             # contact
             contact_organisation = form_contact.cleaned_data['contact_organisation']
-            contact_street = form_contact.cleaned_data['contact_street']
-            contact_postcode = form_contact.cleaned_data['contact_postcode']
-            contact_location = form_contact.cleaned_data['contact_location']
             contact_name = form_contact.cleaned_data['contact_name']
             contact_phone = form_contact.cleaned_data['contact_phone']
             contact_email = form_contact.cleaned_data['contact_email']
+            contact_street = form_contact.cleaned_data['contact_street']
+            contact_postcode = form_contact.cleaned_data['contact_postcode']
+            contact_location = form_contact.cleaned_data['contact_location']
+            message = form_contact.cleaned_data['message']
             # mail
             recipients = ['emanuel@intevation.de']
-            message = "Neue Bestellung: OpenSlides Paket #%s\n\n"\
+            message = "Neue Anfrage: OpenSlides Paket #%s\n\n"\
                 "Veranstaltungsname: %s\n"\
-                "Kurzbeschreibung der Veranstaltung: %s\n"\
                 "Veranstaltungszeitraum: %s\n"\
                 "Veranstaltungsort: %s\n"\
                 "Erwartete Teilnehmer: %s\n\n"\
                 "Organisation: %s\n"\
-                "Strasse: %s\n"\
-                "PLZ: %s\n"\
-                "Ort: %s\n"\
                 "Ansprechpartner: %s\n"\
                 "Telefon: %s\n"\
                 "E-Mail: %s\n"\
-                % (package, event_name, event_description, event_date, event_location,
-                    event_participants, contact_organisation, contact_street,
-                    contact_postcode, contact_location, contact_name, contact_phone,
-                    contact_email)
+                "Strasse: %s\n"\
+                "PLZ: %s\n"\
+                "Ort: %s\n\n"\
+                "Nachricht: %s\n"\
+                % (package, event_name, event_date, event_location,
+                    event_participants,
+                    contact_organisation, contact_name, contact_phone, contact_email,
+                    contact_street, contact_postcode, contact_location,
+                    message)
             from django.core.mail import send_mail
-            send_mail("Bestellung OpenSlides-Supportpaket", message, contact_email, recipients)
+            send_mail("Anfrage OpenSlides-Supportpaket", message, contact_email, recipients)
             return HttpResponseRedirect(reverse('thanksorder'))
 
     else:
