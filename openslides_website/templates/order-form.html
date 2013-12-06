@@ -3,7 +3,7 @@
 {% load i18n %}
 
 {% block title %}{{ block.super }} - {% trans "Bestellformular" %}{% endblock %}
-{% block headline %}{% trans "Bestellformular" %}{% endblock %}
+{% block headline %}{% trans "Anfrageformular" %}{% endblock %}
 
 
 {% block lead %}
@@ -19,12 +19,13 @@
 
 <div class="row">
     <div class="span7">
-        <p>{% trans "Hiermit bestelle ich das Supportpaket" %}
+        <p>{% trans "Ich habe Interesse an dem Supportpaket" %}
 <strong>OpenSlides
 {% if package == '1' %}Starter{% endif %}
 {% if package == '2' %}Business{% endif %}
 {% if package == '3' %}Premium{% endif %}
-</strong> {% trans "zu den rechts angegebenen Leistungen und Kosten" %}.</p>
+</strong>. {% trans "Bitte nehmen Sie unverbindlich Kontakt zu mir auf." %}</p>
+<p>{% trans "Die folgenden Angaben helfen uns bei der Kontaktaufnahmen und der Einschätzung Ihre Veranstaltung." %}</p>
 
     <form action="" method="post">{% csrf_token %}
         <fieldset>
@@ -38,7 +39,7 @@
             {{ form_contact.as_p }}
         </fieldset>
         <button class="btn btn-large btn-primary" type="submit">
-            {% trans "Kostenpflichtig bestellen" %}</span>
+            {% trans "Anfrage senden" %}</span>
        </button><br>
     </form>
     </div>
