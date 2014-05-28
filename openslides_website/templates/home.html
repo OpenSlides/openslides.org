@@ -29,13 +29,16 @@
         <p>{% trans 'Mehr Transparenz.' %}<br> {% trans 'Mehr Flexibilität.' %}<br> {% trans 'Mehr Effizienz.' %}<br>
         <strong>{% trans 'Die Lösung für Ihre Versammlung!' %}</strong></p>
         <br>
-        <a class="jumbotron btn btn-primary btn-large" href="{% url 'download' %}">
+        <a class="jumbotron btn btn-large" href="{% url 'download' %}">
         {% trans 'Download' %}
         </a>
 
         <a class="jumbotron btn btn-large" href="{% url 'demo' %}">
         {% trans 'Demo' %}
         </a>
+        </p>
+        <p><a class="jumbotron btn btn-large btn-primary"
+             href="{% url 'features' %}">{% trans 'Funktionen' %}</a>
         </p>
     </div>
     <div class="span6">
