@@ -9,10 +9,19 @@
 {% block lead %}
 {% blocktrans %}OpenSlides ist ein freies, webbasiertes Präsentations- und
 Versammlungssystem zur Darstellung und Steuerung von Tagesordnung, Anträgen und
-Wahlen einer Veranstaltung.{% endblocktrans %}
+Wahlen einer Veranstaltung. - Diese Seite stellt die Grundidee von
+OpenSlides vor.{% endblocktrans %}
 {% endblock %}
 
 {% block content %}
+
+<p><a class="btn btn-large btn-primary"
+    href="{% url 'features' %}">{% trans 'Alle Funktionen entdecken' %}</a>
+
+<a class="btn btn-large" href="{% url 'demo' %}">
+{% trans 'Online-Demo ausprobieren' %}
+</a>
+</p>
 
 <div class="row">
     <div class="span4">
@@ -63,22 +72,23 @@ Wahlen einer Veranstaltung.{% endblocktrans %}
         Auch die Überprüfung der Beschlussfähigkeit ist einfach möglich.{% endblocktrans %}
         </p>
 
-        <p><a class="btn btn-primary" href="{% url 'features' %}">{% trans 'Alle Funktionen im Überblick' %} &raquo;</a></p>
     </div>
     <div class="span4">
     <div class="well">
-        <h2><img class="os-icon" src="/static/img/icons/glyphicons_245_chat.png">
-        {% trans 'Zitate über OpenSlides' %}</h2>
-        <div id="quotes" class="carousel slide" style="padding-top:50px;">
-            <ol class="carousel-indicators" style="top: -45px; right:0;">
+        <h2 style="text-align: center; margin-top: 15px;">{% trans 'Zitate' %}</h2>
+        <div id="quotes" class="carousel slide" style="padding-top: 25px;">
+            <ol class="carousel-indicators" style="top: -60px; right:0;">
                 <li data-target="#quotes" data-slide-to="0" class="active"></li>
                 <li data-target="#quotes" data-slide-to="1"></li>
+                <li data-target="#quotes" data-slide-to="2"></li>
             </ol>
             <!-- Carousel items -->
             <div class="carousel-inner">
                 <div class="active item">
-                    <blockquote style="font-size: 14px; font-weight: 300; line-height: 1.25"
-                    >"{% blocktrans %}Wir begleiten die Entwicklung von OpenSlides seit 
+                    <p class="logo">
+                        <img alt="Grüne HH" src="/static/img/references/gruene-logo.png">
+                    </p>
+                    <blockquote>{% blocktrans %}»Wir begleiten die Entwicklung von OpenSlides seit 
                     den ersten Versionen und haben OpenSlides schon mehrfach auf unseren
                     Landesmitgliederversammlungen erfolgreich eingesetzt. Sehr zufrieden
                     sind wir mit dem <b>Kontakt zur Entwicklergemeinschaft</b> 
@@ -89,31 +99,50 @@ Wahlen einer Veranstaltung.{% endblocktrans %}
                     Wir sehen in OpenSlides ein <b>innovatives Open
                     Source Produkt</b>, das dabei hilft, unsere
                     demokratischen, innerparteilichen Strukturen in das
-                    digitale Zeitalter zu transportieren.{% endblocktrans %}"</blockquote>
-                    <p style="float: left;"><img alt="Grüne HH" style="height: 50px;"
-                    src="/static/img/references/gruene-logo.png"></p>
-                    <p style="line-height:14px;"><i><small>Christian Schmid<br>
-                    (BÜNDNIS 90/DIE GRÜNEN, Landesverband Hamburg)</small></i></p>
+                    digitale Zeitalter zu transportieren.«{% endblocktrans %}</blockquote>
+                    <p class="author"><i>Christian Schmid<br>
+                    (BÜNDNIS 90/DIE GRÜNEN, Landesverband Hamburg)</i></p>
                 </div>
                 <div class="item">
-                    <blockquote style="font-size: 14px; font-weight: 300; line-height: 1.25"
-                    >"{% blocktrans %}OpenSlides unterstützt uns schon
+                    <p class="logo">
+                        <img alt="Ev. Kirchenkreis Krefeld-Viersen" src="/static/img/references/ev-kirche-krefeld-viersen-logo.png">
+                    </p>
+                    <blockquote>{% blocktrans %}»OpenSlides unterstützt uns schon
                     bei der Planung unserer Kreissynoden durch die
                     strukturierte Eingabe der Tagesordnung, der
-                    Anträge und Wahlen. Während der Veranstaltung
-                    bleiben wir immer flexibel und können
-                    situationsbedingt 'Folien' ein- und ausblenden.{% endblocktrans %}"
+                    Anträge und Wahlen. <b>Während der Veranstaltung
+                    bleiben wir immer flexibel</b> und können
+                    situationsbedingt 'Folien' ein- und ausblenden.«{% endblocktrans %}
                     </blockquote>
-                    <p style="float: left;"><img alt="Ev. Kirchenkreis
-                    Krefeld-Viersen" style="height: 50px;"
-                    src="/static/img/references/ev-kirche-krefeld-viersen-logo.png"></p>
-                    <p style="line-height:14px;"><i><small>Wolf-Dieter Langenhorst<br>
-                    (Evangelischer Kirchenkreis Krefeld-Viersen)</small></i></p>
+                    <p class="author"><i>Wolf-Dieter Langenhorst<br>
+                    (Evangelischer Kirchenkreis Krefeld-Viersen)</i></p>
+                </div>
+                <div class="item">
+                    <p class="logo">
+                        <img alt="Sächsische Landesärztekammer" src="/static/img/references/slaek-logo.png">
+                    </p>
+                    <blockquote>{% blocktrans %}»Die Hauptgeschäftsstelle der Sächsischen Landesärztekammer organisiert
+                    und unterstützt die Tagungen der Kammerversammlungen. Dabei liegt das
+                    Hauptaugenmerk auf der reibungslosen Durchführung der Tagungen. Hierzu
+                    gehören die Bearbeitung von Beschlussanträgen, die Verwaltung der
+                    Teilnehmer und das Führen von Rednerlisten. Dazu bedarf es einer
+                    qualitativ hochwertigen, fehlerfrei funktionierenden und
+                    bedienerfreundlichen Software. OpenSlides haben wir mit Erfolg
+                    erstmalig zur 49. Tagung der Kammersammlung (2013) eingesetzt. Wir
+                    beabsichtigen den Einsatz von OpenSlides weiter auszudehnen und z. B.
+                    für Abstimmungen und Wahlen einzusetzen. <b>Eine Software ist auf Dauer
+                    nur so gut wie seine Entwickler.</b> Wir gehen davon aus, mit der Fa.
+                    Intevation und Herrn Schütze auf Dauer einen kompetenten und
+                    verlässlichen Partner an unserer Seite zu haben.«
+                    {% endblocktrans %}
+                    </blockquote>
+                    <p class="author"><i>Bernd Kögler<br>
+                    (Sächsische Landesärztekammer)</i></p>
                 </div>
             </div>
             <!-- Carousel nav -->
-            <a class="carousel-control left" style="top: 15px; left:0;" href="#quotes" data-slide="prev">&lsaquo;</a>
-            <a class="carousel-control right" style="top: 15px; right:0;" href="#quotes" data-slide="next">&rsaquo;</a>
+            <a class="carousel-control left" style="top: -20px; left:0;" href="#quotes" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" style="top: -20px; right:0;" href="#quotes" data-slide="next">&rsaquo;</a>
         </div>
     </div>
     </div>

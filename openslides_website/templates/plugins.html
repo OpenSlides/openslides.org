@@ -13,7 +13,7 @@
 
 {% block content %}
 <p>
-{% blocktrans %}OpenSlides 1.4 besitzt eine Schnittstelle für externe Plugins.
+{% blocktrans %}OpenSlides 1.6 besitzt eine Schnittstelle für externe Plugins.
 Plugins für OpenSlides sind in Python geschriebene Django-Applikationen.
 Sie können durch spezielle Funktionen in OpenSlides integriert werden.{% endblocktrans %}
 </p>
@@ -24,7 +24,7 @@ Sie können durch spezielle Funktionen in OpenSlides integriert werden.{% endblo
 </p>
 
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
-Verfügbare Plugins</h2>
+{% trans "Verfügbare Plugins" %}</h2>
 <br>
 
 <ul>
@@ -57,13 +57,22 @@ Es soll außerdem als Beispiel dienen zum Schreiben von Plugins für OpenSlides.
 über Themen unter Verwendung der Sainte-Laguë-Methode.{% endblocktrans %}
 </p>
 </li>
+
+<li><b>Protocol Plugin (Beta)</b>
+<p>URL: <a href="https://github.com/OpenSlides/openslides-protocol">https://github.com/OpenSlides/openslides-protocol</a><br>
+{% trans 'Lizenz' %}: MIT<br>
+{% trans 'Autoren' %}: Norman Jäckel, Emanuel Schütze
+</p>
+<p>{% blocktrans %}Dieses Plugin ermöglicht die Protokollierung von Tagesordnungseinträgen in OpenSlides.{% endblocktrans %}
+</p>
+</li>
 </ul>
 
 
 <br>
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_066_tags.png">
 {% trans 'Alle Plugins' %}</h2>
-<p>{% trans 'Ältere Versionen sowie die SHA1-Prüfsummen finden Sie unter' %}
+<p>{% trans 'Ältere Versionen bestimmter Plugins sowie die OpenPGP-Signaturen finden Sie unter' %}
 <a href="http://files.openslides.org/plugins">files.openslides.org/plugins/</a>.
 </p>
 <p>{% blocktrans %}Ausgewählte Plugins sind auch direkt im

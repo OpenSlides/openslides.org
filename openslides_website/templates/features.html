@@ -8,7 +8,10 @@
 {% block submenu_features %}active{% endblock %}
 
 {% block lead %}
-{% trans "Alle Funktionen von OpenSlides im Überblick." %}
+{% url 'demo' as demo_url %}
+{% blocktrans %}Entdecken Sie die Funktionen von OpenSlides.
+Probieren Sie diese in der <a href='{{demo_url}}'>Online-Demo</a> aus!
+{% endblocktrans %}
 {% endblock %}
 
 {% block content %}
@@ -29,7 +32,7 @@
     <a href="#participants">{% trans "Teilnehmer/innen" %}</a>
     </li>
     <li>
-    <a href="#general">{% trans "Allgemein" %}</a>
+    <a href="#general">{% trans "Allgemeines" %}</a>
     </li>
 </ul>
 
@@ -41,7 +44,7 @@
 <div class="row greytext">
     <div class="span4">
         <h5>{% trans "Projektor aktualisiert sich automatisch" %}</h5>
-        <p>{% blocktrans %}Änderung können vorgenommen werden, ohne den Präsentationsmodus zu beenden.
+        <p>{% blocktrans %}Änderung können vorgenommen werden ohne den Präsentationsmodus zu beenden.
         Eine verkleinerte Projektor-Live-Ansicht zeigt immer die aktuell ausgewählte
         Folie an.{% endblocktrans %}
         </p>
@@ -51,9 +54,9 @@
     </div>
     <div class="span4">
         <h5>{% trans "Dashboard mit Widgets" %}</h5>
-        <p>{% blocktrans %}Alle Inhalte in OpenSlides sind als "Folie" projizierbar und 
-        werden auf dem Dashboard übersichtlich in zusammenklappbaren und fixierbaren
-        Widgets aufgelistet.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Das Dashboard ist die "Projektor-Steuereinheit" für
+        die Versammlungsleitung. Alle Inhalte sind als "Folie" projizierbar und 
+        werden in flexiblen Widgets dargestellt.{% endblocktrans %}</p>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/dashboard_{{LANGUAGE_CODE}}.png">
         </p>
@@ -71,18 +74,18 @@
 <div class="row greytext">
     <div class="span4">
         <h5>{% trans "Eigene Folien erstellen" %}</h5>
-        <p>{% blocktrans %}Benutzerdefinierte Folien eignen sich gut für organisatorische Dinge abseits der
+        <p>{% blocktrans %}Erstellen Sie Folien für organisatorische Dinge abseits der
         formalen Tagesordnung.{% endblocktrans %}</p>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/dashboard-custom-slides_{{LANGUAGE_CODE}}.png">
         </p>
     </div>
     <div class="span4">
-        <h5>{% trans "Widget Rednerliste" %}</h5>
-        <p>{% blocktrans %}Jeder Teilnehmer kann sich selbst auf die Rednerliste setzen und zur
-        aktuellen Rednerliste springen.{% endblocktrans %}</p>
+        <h5>{% trans "Rednerliste einblenden" %}</h5>
+        <p>{% blocktrans %}Rednerlisten eines Tagesordnungspunktes lassen sich projizieren oder
+        dezent in der unteren Ecke einblenden.{% endblocktrans %}</p>
         <p class="thumbnail">
-        <img alt="" src="/static/img/features/dashboard-speakers-widget_{{LANGUAGE_CODE}}.png">
+        <img alt="" src="/static/img/features/projector-list-of-speakers-overlay_{{LANGUAGE_CODE}}.png">
         </p>
     </div>
     <div class="span4">
@@ -107,32 +110,71 @@
 <div class="row greytext">
     <div class="span4">
         <h5>{% trans "Tagesordnung verwalten" %}</h5>
-        <p>{% blocktrans %}Verwalten Sie Ihre Tagesordung komfortabel mit OpenSlides.
-        Einträge lassen sich einfach per Drag&Drop verschieben. Eine hierarchische 
-        Liste mit Unterpunkten ist möglich.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Verwalten Sie Ihre Tagesordung mit OpenSlides.
+        Tagesordnungspunkte lassen sich (per CSV) importieren und
+        leicht per Drag&Drop zu einer hierarchischen Liste mit
+        Unterpunkten verschieben.{% endblocktrans %}</p>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/agenda-list_{{LANGUAGE_CODE}}.png">
         </p>
     </div>
     <div class="span4">
         <h5>{% trans "Einträge projizieren" %}</h5>
-        <p>{% blocktrans %}Jeder Tagesordnungseintrag lässt sich per Mausklick auf dem Projektor anzeigen.
-        Egal in welcher Reihenfolge! Auch Rednerlisten lassen sich so projizieren.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Jeder Tagesordnungspunkt kann per Mausklick
+        auf dem Projektor angezeigt werden. Egal in welcher Reihenfolge!
+        Auch Rednerlisten lassen sich so projizieren.{% endblocktrans %}</p><br>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/agenda-projector_{{LANGUAGE_CODE}}.png">
         </p>
     </div>
     <div class="span4">
         <h5>{% trans "Rednerliste" %}</h5>
-        <p>{% blocktrans %}Jeder Tagesordnungseintrag enthält eine unabhängige Rednerliste,
-        die von der Versammlungsleitung verwaltet wird. Teilnehmer können sich selbst
-        auf diese Liste setzen.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Jeder Tagesordnungspunkt enthält eine unabhängige Rednerliste,
+        die von der Versammlungsleitung verwaltet wird. Teilnehmer können sich auch selbst
+        auf die Liste setzen.{% endblocktrans %}</p>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/agenda-speakers-list_{{LANGUAGE_CODE}}.png">
         </p>
     </div>
 </div>
 <div class="row greytext">
+    <div class="span4">
+        <h5>{% trans "Automatische Nummerierung" %} <span class="label label-important">{% trans "Neu in 1.6" %}</span></h5>
+        <p>{% blocktrans %}Auf Klick lässt sich die Tagesordnung automatisch
+        nummerieren (mit arabischen oder römischen Ziffern); optional mit
+        einstellbarem Präfix (z.B. "TOP 1").{% endblocktrans %}</p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/agenda-auto-numbering_{{LANGUAGE_CODE}}.png">
+        </p>
+    </div>
+    <div class="span4">
+        <h5>{% trans "Zeitplanung" %}</h5>
+        <p>{% blocktrans %}Schätzen Sie die Dauer für jeden Tagesordnungspunkt und erhalten Sie
+        dadurch einen prognostierten Endzeitpunkt der Tagung.{% endblocktrans %}</p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/agenda-duration_{{LANGUAGE_CODE}}.png">
+        </p>
+    </div>
+    <div class="span4">
+        <h5>{% trans "Rednerliste auf zweiten Bildschirm" %} <span class="label label-important">{% trans "Neu in 1.6" %}</span></h5>
+        <p>{% blocktrans %}Behalten Sie die aktuelle Rednerliste über
+        einen zweiten Bildschirm immer im Blick - während der Projektor zeitgleich
+        für das Plenum den zugehörigen TOP anzeigt.{% endblocktrans %}</p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/agenda-projector-list-of-speakers_{{LANGUAGE_CODE}}.png">
+        </p>
+    </div>
+</div>
+<div class="row greytext">
+    <div class="span4">
+        <h5>{% trans "Organisatorische Einträge" %}</h5>
+        <p>{% blocktrans %}Neben formalen Tagesordnungspunkten kann eine
+        Tagesordnung auch organisatorischen Einträge (wie z.B. Pausen
+        oder thematische Blöcke) enthalten.{% endblocktrans %}</p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/agenda-orga-items_{{LANGUAGE_CODE}}.png">
+        </p>
+    </div>
     <div class="span4">
         <h5>{% trans "Erledigt markieren" %}</h5>
         <p>{% blocktrans %}Abgeschlossene Tagesordnungspunkte können als erledigt markiert und
@@ -142,17 +184,9 @@
         </p>
     </div>
     <div class="span4">
-        <h5>{% trans "Zeitplanung" %}</h5>
-        <p>{% blocktrans %}Schätzen Sie für jeden Tagesordnungseintrag eine Dauer und erhalten Sie
-        dadurch einen prognostierten Endzeitpunkt der Veranstaltung.{% endblocktrans %}</p>
-        <p class="thumbnail">
-        <img alt="" src="/static/img/features/agenda-duration_{{LANGUAGE_CODE}}.png">
-        </p>
-    </div>
-    <div class="span4">
         <h5>{% trans "Tagesordnung als PDF" %}</h5>
-        <p>{% blocktrans %}Die vollständige Tagesordnung lässt sich auch als PDF
-        anzeigen.{% endblocktrans %}</p><br>
+        <p>{% blocktrans %}Die vollständige Tagesordnung lässt sich als PDF
+        exportieren.{% endblocktrans %}</p><br>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/agenda-pdf_{{LANGUAGE_CODE}}.png">
         </p>
@@ -179,8 +213,8 @@
     </div>
     <div class="span4">
         <h5>{% trans "HTML-Editor" %}</h5>
-        <p>{% blocktrans %}Für einfache Formatierung von Antragstexten und -begründung ist ein HTML-Editor ("CKEditor")
-        integriert. Die Formatierungen werden auch in der PDF-Fassung unterstützt.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Für einfache Formatierung von Antragstexten ist ein HTML-Editor ("CKEditor")
+        integriert. Die Formatierungen werden zum Großteil auch in der PDF-Fassung unterstützt.{% endblocktrans %}</p>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/motion-editor_{{LANGUAGE_CODE}}.png">
         </p>
@@ -209,30 +243,35 @@
     </div>
     <div class="span4">
         <h5>{% trans "Antragsbuch als PDF" %}</h5>
-        <p>{% blocktrans %}Alle vorhandenen Anträge lassen sich übersichtlich in ein PDF erstellen;
-        inkl. Informationen zu Antragsteller, Abstimmgungsergebnis und Begründung eines Antrags.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Alle Anträge lassen sich übersichtlich zu einem PDF zusammenfassen;
+        inkl. Antragsteller, Abstimmgungsergebnisse und Begründungen.{% endblocktrans %}</p>
     </div>
 </div>
 <div class="row greytext">
+    <div class="span4">
+        <h5>{% trans "Anträge abstimmen" %}</h5>
+        {% url 'support_packages' as supportpackages_url %}
+        <p>{% blocktrans %}Nach Abstimmung eines Antrags im Plenum wird das ausgezählte
+        Ergebnis in OpenSlides eingegeben (mit OpenSlides selbst wird nicht abgestimmt!).
+        Dabei sind auch spezielle Werte für die <i>Mehrheit</i> der
+        Stimmen, oder <i>nicht erfasste</i> Stimmen möglich.
+        Anträge werden immer mit Ja-Nein-Enthaltung abgestimmt. Möglich ist auch ein
+        Stimmzetteldruck für geheime Abstimmungen.
+        Auf Anfrage sind <a href="{{supportpackages_url}}">elektronische Abstimmungen</a> mit dem VoteCollector-Plugin möglich.
+        {% endblocktrans %}</p>
+    </div>
     <div class="span4">
         <h5>{% trans "Anträge in die Tagesordnung" %}</h5>
         <p>{% blocktrans %}Jeder Antrag lässt sich als Referenz zusätzlich in die Tagesordnung
         einsortieren.{% endblocktrans %}</p>
     </div>
     <div class="span4">
-        <h5>{% trans "Anträge abstimmen" %}</h5>
-        <p>{% blocktrans %}Nach Abstimmung eines Antrags im Plenum wird das ausgezählte
-        Ergebnis in OpenSlides eingegeben (mit OpenSlides selbst wird nicht abgestimmt!).
-        Dabei sind auch spezielle Werte für die <i>Mehrheit</i> der Stimmen, oder <i>nicht erfasste</i> Stimmen möglich.
-        Anträge werden immer mit Ja-Nein-Enthaltung abgestimmt. Optional sind die abgegebenen Stimmen.{% endblocktrans %}</p>
-    </div>
-    <div class="span4">
         <h5>{% trans "Arbeitsabläufe und Zustände definieren" %}</h5>
         <p>{% blocktrans %}Jeder Antrag durchläuft verschiedene Phasen in demokratischen Versammlungen.
-        Nutzen Sie einen der zwei voreingestellten Arbeitsablä̈ufe mit vordefinierten
+        Nutzen Sie einen der <a href="http://docs.openslides.org/de/Motion.html#arbeitsablauf-und-status">zwei
+        voreingestellten Arbeitsablä̈ufe</a> mit vordefinierten
         Zuständen, die ein Antrag typischerweise einnehmen kann oder konfigurieren Sie Ihren individuellen
-        Antragsablauf selbst.
-        (Details im <a href="http://docs.openslides.org/de/Motion.html#arbeitsablauf-und-status">Handbuch</a>.){% endblocktrans %}
+        Antragsablauf selbst.{% endblocktrans %}
         </p>
     </div>
 </div>
@@ -249,14 +288,14 @@
     <div class="span4">
         <h5>{% trans "Wahlen verwalten" %}</h5>
         <p>{% blocktrans %}Jede Wahl besteht aus Name und Anzahl der zur Wahl stehenden Posten sowie - optional - aus
-        einer Beschreibung und einem Kommentar für den Stimmzettel.{% endblocktrans %}</p>
+        einer Beschreibung des Amtes und einem Kommentar für den Stimmzettel.{% endblocktrans %}</p>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/election-list_{{LANGUAGE_CODE}}.png">
         </p>
     </div>
     <div class="span4">
         <h5>{% trans "Personalierte Stimmzettel" %}</h5>
-        <p>{% blocktrans %}Geheime Wahlen benötgen Stimmzettel. Und diese können Sie schnell und unkompliziert direkt mit OpenSlides
+        <p>{% blocktrans %}Geheime Wahlen benötgen Stimmzettel. Und diese können Sie unkompliziert direkt mit OpenSlides
         generieren - mit passenden Ankreuzfeldern für jeden Kandidaten.{% endblocktrans %}</p>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/election-ballot_{{LANGUAGE_CODE}}.png">
@@ -265,22 +304,21 @@
     <div class="span4">
         <h5>{% trans "Unterstützte Wahlmethoden" %}</h5>
         <p>{% blocktrans %}OpenSlides unterstützt die Auswahl von 2 Wahlmethoden: "Eine Stimme pro Kandidat/in" oder 
-        "Ja, Nein, Enthaltungs pro Kandidat/in". Eine automatische Zuordnung beider Methoden, abhängig 
+        "Ja, Nein, Enthaltung pro Kandidat/in". Eine automatische Zuordnung beider Methoden, abhängig 
         von der Anzahl der Kandidaten und zu vergebenen Posten, ist die Voreinstellung in OpenSlides.
-        Ungültige und abgegebene Stimmen können zusätzlich immer erfasst werden.{% endblocktrans %}</p>
+        Gültige, ungültige und abgegebene Stimmen können zusätzlich erfasst werden.{% endblocktrans %}</p>
         
     </div>
 </div>
 <div class="row greytext">
     <div class="span4">
-        <h5>{% trans "Kandiatenliste aufstellen" %}</h5>
+        <h5>{% trans "Kandidatenliste aufstellen" %}</h5>
         <p>{% blocktrans %}Kandidaten können für eine Wahl direkt aus der Teilnehmerliste vorgeschlagen werden.
         Angemeldete Teilnehmer können per Mausklick sogar selbst kandidieren - sofern Sie die Berechtigung dazu haben.{% endblocktrans %}</p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/election-candidates_{{LANGUAGE_CODE}}.png">
+        </p>
         <p>
-
-        <h5>{% trans "Mehrere Wahlgänge" %}</h5>
-        <p>{% blocktrans %}Mit OpenSlides können Sie beliebig viele Wahlgänge durchführen - und diese übersichtlich nebeneinander darstellen.
-        Auch Stichwahlen sind leicht damit möglich.{% endblocktrans %}</p>
     </div>
     <div class="span4">
         <h5>{% trans "Wahlergebnisse eingeben und darstellen" %}</h5>
@@ -300,7 +338,17 @@
         </p>
     </div>
 </div>
-
+<div class="row greytext">
+    <div class="span4">
+        <h5>{% trans "Mehrere Wahlgänge" %}</h5>
+        <p>{% blocktrans %}Mit OpenSlides können Sie beliebig viele Wahlgänge durchführen - und diese übersichtlich nebeneinander darstellen.
+        Auch Stichwahlen sind leicht damit möglich.{% endblocktrans %}</p>
+    </div>
+    <div class="span4">
+    </div>
+    <div class="span4">
+    </div>
+</div>
 <a name="participants"></a>
 <br><br><br>
 <div class="page-header">
@@ -313,8 +361,9 @@
     <div class="span4">
         <h5>{% trans "Teilnehmer/innen verwalten" %}</h5>
         <p>{% blocktrans %}Nutzen Sie den <a href="http://dev.openslides.org/wiki/CSVImport">CSV-Import</a>
-        zur Übernahme aus Ihrer Teilnehmerverwaltung.
-        Dabei kann auch die Gliederungsebene, das Amt und ein Kommentar angegeben werden.{% endblocktrans %}
+        zur Übernahme Ihrer vorhandenen Teilnehmerdaten.
+        Dabei kann auch die Gliederungsebene, das Amt, die
+        Benutzergruppe, ein Kommentar u.v.m. angegeben werden.{% endblocktrans %}
         </p>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/participants-list_{{LANGUAGE_CODE}}.png">
@@ -322,17 +371,17 @@
     </div>
     <div class="span4">
         <h5>{% trans "Gruppen und Rechte festlegen" %}</h5>
-        <p>{% blocktrans %}Was jeder Teilnehmer sehen darf und was nicht, definieren Sie mit einzelnen Rechten. Mehrere Rechteeinstellungen
-        können Sie in einer Gruppe zusammenfassen. Auch ein Gast (Anonymous-Nutzer) ist so aktivierbar.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Was jeder Teilnehmer sehen darf und was nicht, definieren Sie mit einzelnen Rechten.
+        Mehrere Rechte können Sie zu einer Gruppe zusammenfassen. Auch ein Gast (Anonymous-Nutzer) ist so aktivierbar.{% endblocktrans %}</p>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/participants-permissions_{{LANGUAGE_CODE}}.png">
         </p>
     </div>
     <div class="span4">
-        <h5>{% trans "Zugangszettel mit Erstpasswort und QR-Code" %}</h5>
-        <p>{% blocktrans %}Verteilen Sie beim Empfang generierte Zettel mit
-        Passwörtern und einem QR-Code zum Abscannen Ihrer OpenSlides-URL
-        an Ihre Teilnehmer.{% endblocktrans %}</p>
+        <h5>{% trans "Zugangszettel für WLAN und OpenSlides" %}</h5>
+        <p>{% blocktrans %}Verteilen Sie Ihren Teilnehmern beim
+        Empfang einen generierte Infozettel mit Zugangsdaten für
+        das WLAN am Veranstaltungsort und OpenSlides, inkl. praktischem QR-Code zum Abscannen.{% endblocktrans %}</p>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/participants-password-pdf_{{LANGUAGE_CODE}}.png">
         </p>
@@ -358,7 +407,7 @@
         </p>
     </div>
     <div class="span4">
-        <h5>{% trans "Upload und Download von Dateien" %}</h5>
+        <h5>{% trans "Dokumentenablage" %}</h5>
         <p>{% blocktrans %}Nutzen Sie während Ihrer Versammlung eine gemeinsame Dokumentenablage für alle Teilnehmer.
         Regeln Sie, welche Gruppen Upload- und Download-Rechte bekommen sollen.{% endblocktrans %}</p>
         <p class="thumbnail">
@@ -366,26 +415,66 @@
         </p>
     </div>
     <div class="span4">
+        <h5>{% trans "PDF-Dokumente präsentieren" %}</h5>
+        <p>{% blocktrans %}PDF-Dateien lassen sich in Vollbild an die
+        Leinwand projizieren und zentral über ein Widget steuern. Damit
+        können Sie nun auch in der letzten Reihe per Mobilgerät die Präsentation verfolgen.{% endblocktrans %}</p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/dashboard-presentation-widget_{{LANGUAGE_CODE}}.png">
+        </p>
+    </div>
+</div>
+<div class="row greytext">
+    <div class="span4">
+        <h5>{% trans "Gruppen-Chat" %} <span class="label label-important">{% trans "Neu in 1.6" %}</span></h5>
+        <p>
+        {% blocktrans %}Nutzen Sie die Chatfunktion für einen
+        reibungslosen Austausch unter den Organisatoren (z.B.
+        Wahlleitung, Versammlungsleitung, Antragskommission und Regie).{% endblocktrans %}
+        </p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/chat.png">
+        </p>
+    </div>
+    <div class="span4">
+        <h5>{% trans "Volltextsuche" %}</h5>
+        <p>{% blocktrans %}Finden Sie schnell den gesuchten Inhalt mit
+        der integrierten (pythonbasierten) Volltextsuche - auch einschränkbar auf bestimmte Module.
+        {% endblocktrans %}</p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/fulltextsearch_{{LANGUAGE_CODE}}.png">
+        </p>
+    </div>
+    <div class="span4">
         <h5>{% trans "Responsive Design mit Bootstrap" %}</h5>
         <p>{% blocktrans %}OpenSlides erscheint im modernen, responsiven Design auf
         Basis von Bootstrap und ist optimiert für unterschiedliche Mobilgeräte.{% endblocktrans %}</p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/responsive-design.png">
+        </p>
     </div>
 </div>
 <div class="row greytext">
     <div class="span4">
         <h5>{% trans "OpenSlides ist mehrsprachig" %}</h5>
         <p>{% blocktrans %}OpenSlides ist vollständig internationalisiert und ist derzeit in Deutsch,
-        Englisch, Französisch, Tschechisch und Portugiesisch verfügbar. (Weitere Sprachen sind gerne willkommen!){% endblocktrans %}</p>
+        Englisch, Französisch, Tschechisch und Portugiesisch verfügbar.
+        Weitere Sprachen können gerne über <a href="https://www.transifex.com/projects/p/openslides/">Transifex</a> eingereicht werden.{% endblocktrans %}</p>
     </div>
     <div class="span4">
-        <h5>{% trans "Tornado Webserver und SQLite" %}</h5>
-        <p>{% blocktrans %}OpenSlides integriert den leistungsfähigen, pythonbasierten Tornado Webserver. Als Datenbank
-        nutzt OpenSlides voreingestellt SQLite.{% endblocktrans %}</p>
+        <h5>{% trans "Plattformunabhängig mit Python" %}</h5>
+        <p>{% blocktrans %}OpenSlides basiert auf dem Python-Webframework Django, ist
+        plattformunabhängig auf Windows, MacOS und Linux lauffähig 
+        und integriert den leistungsfähigen Tornado Webserver.
+        Als Datenbank wird voreingestellt SQLite verwendet (PostgreSQL und MySQL
+        werden auch unterstützt).{% endblocktrans %}</p>
     </div>
     <div class="span4">
         <h5>{% trans "Projektortemplate anpassbar" %}</h5>
         <p>{% blocktrans %}Die Projektoransicht ist leicht an Ihre individuellen Gestaltungsrichtlinien anpassbar; über
-        eine zentrale HTML- und CSS-Datei.{% endblocktrans %}</p>
+        eine zentrale HTML- und CSS-Datei. Logo, Titel und
+        Hintergrundfarbe ist sogar dirkte in der Oberfläche (unter Konfiguration)
+        einstellbar. {% endblocktrans %}</p>
     </div>
 </div>
 {% endblock %}

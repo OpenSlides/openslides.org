@@ -4,14 +4,15 @@
 # 
 # Translators:
 # emanuelschuetze <emanuel.schuetze@intevation.de>, 2013
-# afouillen <afouillen@gmail.com>, 2013
+# afouillen <afouillen@gmail.com>, 2013-2014
 # karmitt <karmitt2@web.de>, 2013
+# Marian <m@qjym.de>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: openslides.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-25 21:47+0100\n"
-"PO-Revision-Date: 2013-11-25 22:29+0000\n"
+"POT-Creation-Date: 2014-06-02 16:39+0200\n"
+"PO-Revision-Date: 2014-06-02 14:40+0000\n"
 "Last-Translator: emanuelschuetze <emanuel.schuetze@intevation.de>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/openslidesorg/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +25,7 @@ msgstr ""
 msgid "Betreff"
 msgstr "Objet"
 
-#: forms.py:13
+#: forms.py:13 forms.py:44
 msgid "Nachricht"
 msgstr "Message"
 
@@ -36,53 +37,49 @@ msgstr "Expéditeur"
 msgid "Kopie an meine Adresse"
 msgstr "Envoyer une copie à mon adresse"
 
-#: forms.py:20
+#: forms.py:21
 msgid "Veranstaltungsname"
 msgstr "Nom de l'assemblée"
-
-#: forms.py:22
-msgid "Kurzbeschreibung der Veranstaltung"
-msgstr "Description rapide de l'assemblée"
 
 #: forms.py:23
 msgid "Veranstaltungszeitraum"
 msgstr "Date et heure de l'assemblée"
 
-#: forms.py:24
+#: forms.py:25
 msgid "Veranstaltungsort"
 msgstr "Lieu de l'assemblée"
 
-#: forms.py:25
+#: forms.py:27
 msgid "Erwartete Teilnehmer"
 msgstr "Participants attendus"
 
-#: forms.py:29
+#: forms.py:31
 msgid "Organisation"
 msgstr "Organisme"
 
-#: forms.py:30
-msgid "Strasse"
-msgstr "Rue"
-
-#: forms.py:31
-msgid "PLZ"
-msgstr "Code postal"
-
-#: forms.py:32
-msgid "Ort"
-msgstr "Ville"
-
-#: forms.py:33 templates/pm-20110915.html:63 templates/pm-20120416.html:50
+#: forms.py:32 templates/pm-20110915.html:63 templates/pm-20120416.html:50
 msgid "Ansprechpartner"
 msgstr "Personne à contacter"
 
-#: forms.py:34 templates/support_packages.html:233
+#: forms.py:33 templates/support_packages.html:233
 msgid "Telefon"
 msgstr "Téléphone"
 
-#: forms.py:35
+#: forms.py:34
 msgid "E-Mail"
 msgstr "E-mail"
+
+#: forms.py:36
+msgid "Strasse"
+msgstr "Rue"
+
+#: forms.py:39
+msgid "PLZ"
+msgstr "Code postal"
+
+#: forms.py:41
+msgid "Ort / Land"
+msgstr ""
 
 #: templates/404.html:4
 msgid "Seite nicht gefunden."
@@ -104,14 +101,23 @@ msgstr "Qu'est-ce qu'OpenSlides ?"
 msgid ""
 "OpenSlides ist ein freies, webbasiertes Präsentations- und\n"
 "Versammlungssystem zur Darstellung und Steuerung von Tagesordnung, Anträgen und\n"
-"Wahlen einer Veranstaltung."
-msgstr "OpenSlides est un logiciel gratuit en ligne de présentation et de planification de réunions. Il offre une vue d'ensemble et un contrôle de l'ordre du jour, des motions et des votes d'une assemblée."
+"Wahlen einer Veranstaltung. - Diese Seite stellt die Grundidee von\n"
+"OpenSlides vor."
+msgstr ""
 
-#: templates/about.html:20
+#: templates/about.html:19
+msgid "Alle Funktionen entdecken"
+msgstr ""
+
+#: templates/about.html:22
+msgid "Demo ausprobieren"
+msgstr ""
+
+#: templates/about.html:29
 msgid "Inhalte projizieren"
 msgstr "Projeter le contenu"
 
-#: templates/about.html:21
+#: templates/about.html:30
 msgid ""
 "Mit OpenSlides können alle Inhalte einer Veranstaltung (wie\n"
 "        Tagesordnung, Anträge, Rednerlisten, Kandidaten und Wahlergebnisse) zeitaktuell\n"
@@ -120,11 +126,11 @@ msgid ""
 "        Mobilgeräten."
 msgstr "Avec OpenSlides, l'ensemble du contenu d'une assemblée (ordre du jour, motions, listes des intervenants, candidats et résultats des votes) est projeté sur l'écran en temps réel. \nLa présidence d'assemblée a l'option de contrôler et modifier ce contenu interactif, même avec des différents appareils mobiles.\nÀ l'aide de différents appareils, les organisateurs de l'événement peuvent interagir avec ce contenu pour le contrôler et le modifier."
 
-#: templates/about.html:28
+#: templates/about.html:37
 msgid "Eleganter präsentieren"
 msgstr "Présenter avec plus d'élégance"
 
-#: templates/about.html:29
+#: templates/about.html:38
 msgid ""
 "Ein weiterer Vorteil gegenüber herkömmlichen\n"
 "        Office-Präsentations-Systemen ist die Bearbeitung der Folien über ein\n"
@@ -132,22 +138,22 @@ msgid ""
 "        werden und zeigt stets die aktuelle Folie an."
 msgstr "Ce logiciel offre un autre avantage par rapport aux solutions traditionnelles de présentation : il est possible de modifier vos diapositives grâce à un système de gestion du contenu. Inutile de quitter le mode de présentation du projecteur, la diapositive en cours peut toujours être affichée."
 
-#: templates/about.html:36
+#: templates/about.html:45
 msgid "Einsatz vor Ort"
 msgstr "Utilisation sur site"
 
-#: templates/about.html:37
+#: templates/about.html:46
 msgid ""
 "OpenSlides ist konzipiert für den Einsatz auf\n"
 "        Veranstaltungen wie Delegierten- oder Mitgliederversammlungen, Parteitagen oder\n"
 "        Hauptversammlungen. Eine Teilnehmerbeschränkung gibt es nicht."
 msgstr "OpenSlides est conçu pour une utilisation au cours d'événements tels que des réunions de membres ou de délégués, des congrès ou des assemblées générales. Le nombre de participants n'est pas limité."
 
-#: templates/about.html:44
+#: templates/about.html:53
 msgid "Transparenz"
 msgstr "Transparence"
 
-#: templates/about.html:45
+#: templates/about.html:54
 msgid ""
 "Neuartig ist vor allem die Funktion, das Plenum mit einzubeziehen:\n"
 "        Teilnehmer einer Veranstaltung können jederzeit mit dem eigenen\n"
@@ -155,22 +161,22 @@ msgid ""
 "        nachlesen."
 msgstr "Importante nouveauté, l'ensemble de la réunion plénière est incluse dans le processus : à tout moment, les participants à l'assemblée peuvent, grâce à leur propre smartphone, consulter les motions, résultats des votes, ordres du jours, etc."
 
-#: templates/about.html:51
+#: templates/about.html:60
 msgid "Interaktion"
 msgstr "Interaction"
 
-#: templates/about.html:52
+#: templates/about.html:61
 msgid ""
 "Interaktiv wird es dann, wenn Teilnehmer über OpenSlides\n"
 "        sich selbst auf die Rednerliste setzen, Anträge einreichen, für eine Wahl\n"
 "        kandidieren oder andere Kandidaten vorschlagen."
 msgstr "L'interaction commence lorsque les participants s'inscrivent via OpenSlides sur la liste des intervenants, déposent des motions, se présentent aux élections ou proposent d'autres candidats."
 
-#: templates/about.html:58
+#: templates/about.html:67
 msgid "Teilnehmer verwalten"
 msgstr "Gérer les participants"
 
-#: templates/about.html:59
+#: templates/about.html:68
 msgid ""
 "OpenSlides verwaltet die anwesenden Teilnehmer,\n"
 "        um leichter Kandidaten für anstehende Wahlen aufzustellen,\n"
@@ -179,17 +185,13 @@ msgid ""
 "        Auch die Überprüfung der Beschlussfähigkeit ist einfach möglich."
 msgstr "OpenSlides gère les participants présents pour simplifier l'organisation des candidats pour les prochaines élections, la préparation des bulletins de vote pré-imprimés et l'affichage des résultats des élections.\nLe contrôle du quorum est également facilité."
 
-#: templates/about.html:66
-msgid "Alle Funktionen im Überblick"
-msgstr "Vue d'ensemble de toutes les fonctionnalités"
-
-#: templates/about.html:71
-msgid "Zitate über OpenSlides"
+#: templates/about.html:78
+msgid "Zitate"
 msgstr ""
 
-#: templates/about.html:81
+#: templates/about.html:91
 msgid ""
-"Wir begleiten die Entwicklung von OpenSlides seit \n"
+"»Wir begleiten die Entwicklung von OpenSlides seit \n"
 "                    den ersten Versionen und haben OpenSlides schon mehrfach auf unseren\n"
 "                    Landesmitgliederversammlungen erfolgreich eingesetzt. Sehr zufrieden\n"
 "                    sind wir mit dem <b>Kontakt zur Entwicklergemeinschaft</b> \n"
@@ -200,24 +202,42 @@ msgid ""
 "                    Wir sehen in OpenSlides ein <b>innovatives Open\n"
 "                    Source Produkt</b>, das dabei hilft, unsere\n"
 "                    demokratischen, innerparteilichen Strukturen in das\n"
-"                    digitale Zeitalter zu transportieren."
+"                    digitale Zeitalter zu transportieren.«"
 msgstr ""
 
-#: templates/about.html:100
+#: templates/about.html:110
 msgid ""
-"OpenSlides unterstützt uns schon\n"
+"»OpenSlides unterstützt uns schon\n"
 "                    bei der Planung unserer Kreissynoden durch die\n"
 "                    strukturierte Eingabe der Tagesordnung, der\n"
-"                    Anträge und Wahlen. Während der Veranstaltung\n"
-"                    bleiben wir immer flexibel und können\n"
-"                    situationsbedingt 'Folien' ein- und ausblenden."
+"                    Anträge und Wahlen. <b>Während der Veranstaltung\n"
+"                    bleiben wir immer flexibel</b> und können\n"
+"                    situationsbedingt 'Folien' ein- und ausblenden.«"
 msgstr ""
 
-#: templates/about.html:126
+#: templates/about.html:124
+msgid ""
+"»Die Hauptgeschäftsstelle der Sächsischen Landesärztekammer organisiert\n"
+"                    und unterstützt die Tagungen der Kammerversammlungen. Dabei liegt das\n"
+"                    Hauptaugenmerk auf der reibungslosen Durchführung der Tagungen. Hierzu\n"
+"                    gehören die Bearbeitung von Beschlussanträgen, die Verwaltung der\n"
+"                    Teilnehmer und das Führen von Rednerlisten. Dazu bedarf es einer\n"
+"                    qualitativ hochwertigen, fehlerfrei funktionierenden und\n"
+"                    bedienerfreundlichen Software. OpenSlides haben wir mit Erfolg\n"
+"                    erstmalig zur 49. Tagung der Kammersammlung (2013) eingesetzt. Wir\n"
+"                    beabsichtigen den Einsatz von OpenSlides weiter auszudehnen und z. B.\n"
+"                    für Abstimmungen und Wahlen einzusetzen. <b>Eine Software ist auf Dauer\n"
+"                    nur so gut wie seine Entwickler.</b> Wir gehen davon aus, mit der Fa.\n"
+"                    Intevation und Herrn Schütze auf Dauer einen kompetenten und\n"
+"                    verlässlichen Partner an unserer Seite zu haben.«\n"
+"                    "
+msgstr ""
+
+#: templates/about.html:155
 msgid "Historie"
 msgstr "Histoire"
 
-#: templates/about.html:131
+#: templates/about.html:160
 msgid ""
 "Im Jahre 2005 wurde ein interner PHP-Prototyp von OpenSlides\n"
 "            speziell für den Einsatz auf der Bundesversammlung der\n"
@@ -225,7 +245,7 @@ msgid ""
 "            (Bundes-ESG)</a> durch Emanuel Schütze entwickelt."
 msgstr "En 2005, un prototype PHP interne d'OpenSlides est conçu par Emanuel Schütze, pour être tout particulièrement utilisé à l'assemblée fédérale allemande de <a href=\"http://www.bundes-esg.de\">la communauté des étudiants évangéliques (Bundes-ESG)</a>."
 
-#: templates/about.html:137
+#: templates/about.html:166
 msgid ""
 "Ende 2010 begannen <b>Oskar Hahn</b> und\n"
 "            <b>Emanuel Schütze</b> mit einer kompletten\n"
@@ -233,7 +253,7 @@ msgid ""
 "            ein Freies Software Produkt mit dem Namen \"OpenSlides\" auf."
 msgstr "Fin 2010, <b>Oskar Hahn</b> et <b>Emanuel Schütze</b> se lancent dans le développement d'un tout nouveau projet en Python/Django et créent, avec <b>Norman Jackel</b>, le logiciel libre « OpenSlides »."
 
-#: templates/about.html:143
+#: templates/about.html:172
 msgid ""
 "OpenSlides wurde im August 2011 unter\n"
 "            der GNU GPL v2+ veröffentlicht. Version 1.0 ist am 12. September 2011\n"
@@ -241,7 +261,7 @@ msgid ""
 "            September auf der ESG-Bundesversammlung 2011 in Hannover statt."
 msgstr "OpenSlides est publié en août 2011 sous la licence GNU GPL v2 +. La version 1.0 paraît le 12 septembre 2011.\nLa première utilisation en production d'OpenSlides a lieu à l'assemblée fédérale de l'ESG mi-septembre 2011, à Hanovre."
 
-#: templates/about.html:148
+#: templates/about.html:177
 msgid ""
 "Mit OpenSlides 1.5 wurde auf die MIT-Lizenz\n"
 "            gewechselt."
@@ -250,44 +270,45 @@ msgstr ""
 #: templates/authors.html:4 templates/authors.html.py:5
 #: templates/base.html:135 templates/plugins.html:34
 #: templates/plugins.html.py:44 templates/plugins.html:54
+#: templates/plugins.html.py:64
 msgid "Autoren"
 msgstr "Auteurs"
 
 #: templates/authors.html:8
 msgid "OpenSlides ist Freie Software. JedeR ist eingeladen mitzumachen!"
-msgstr "OpenSlides est un logiciel libre. Tout le monde est  Bienvenu pour y participer!"
+msgstr "OpenSlides est un logiciel libre. Tout le monde peut y participer !"
 
 #: templates/authors.html:15
 msgid "OpenSlides ist eine Software von:"
-msgstr "OpenSlides est un logiciel réalisée de:"
+msgstr "OpenSlides est un logiciel réalisé par :"
 
 #: templates/authors.html:21
-msgid "Bis zur Version 1.5 haben außerdem beigetragen:"
-msgstr "Jusqu'à la version 1.5 ont également contribué:"
+msgid "Bis zur Version 1.6 haben außerdem beigetragen:"
+msgstr ""
 
 #: templates/authors.html:36
 msgid ""
 "Einen aktuellen Überblick über die neusten Autoren gibt es in der\n"
 "        <a href=\"https://github.com/OpenSlides/OpenSlides/blob/master/AUTHORS\">AUTHORS-Datei</a>."
-msgstr "Un aperçu des derniers auteurs est disponible dans le <a href=\"https://github.com/OpenSlides/OpenSlides/blob/master/AUTHORS\">fichier d'AUTHORS</a>."
+msgstr "Consultez les informations relatives aux derniers auteurs en suivant le lien <a href=\"https://github.com/OpenSlides/OpenSlides/blob/master/AUTHORS\">AUTEURS</a>."
 
 #: templates/authors.html:42
 msgid "Freie Software Komponenten"
-msgstr "Composantes du Logiciel libre "
+msgstr "Composants du logiciel libre "
 
 #: templates/authors.html:43
-msgid "OpenSlides 1.5 baut auf folgenden Freien Software Produkten auf:"
-msgstr "OpenSlides 1.5 est basé sur les logiciels libre suivants:"
+msgid "OpenSlides 1.6 baut auf folgenden Freien Software Produkten auf:"
+msgstr ""
 
-#: templates/authors.html:53
+#: templates/authors.html:54
 msgid "und"
 msgstr "et"
 
-#: templates/authors.html:55
+#: templates/authors.html:56
 msgid "mit weiteren Plugins"
 msgstr ""
 
-#: templates/authors.html:68
+#: templates/authors.html:69
 msgid ""
 "Einen aktuellen Überblick aller verwendeter Komponenten mit ihren Lizenzen "
 "gibt es in der <a "
@@ -297,7 +318,7 @@ msgstr "Un aperçu de tous les composants utilisés avec leurs licences sont dis
 
 #: templates/base.html:7
 msgid "Freies webbasiertes Präsentations- und Versammlungssystem"
-msgstr "Système de Présentation et Assemblée libre et basée sur le Web"
+msgstr "Système de présentation et d'assemblée gratuit en ligne"
 
 #: templates/base.html:8
 msgid "OpenSlides, Tagesordnung, Anträge, Wahlen, Teilnehmer, Versammlung"
@@ -311,7 +332,7 @@ msgstr "Téléchargement"
 #: templates/base.html:37 templates/base.html.py:113
 #: templates/support_overview.html:5 templates/support_overview.html.py:6
 msgid "Support"
-msgstr "Support"
+msgstr "Assistance"
 
 #: templates/base.html:39 templates/base.html.py:123
 #: templates/development.html:5 templates/development.html.py:6
@@ -320,7 +341,7 @@ msgstr "Développement"
 
 #: templates/base.html:44 templates/base.html.py:136 templates/contact.html:5
 #: templates/contact.html.py:6 templates/impressum.html:5
-#: templates/order-form.html:141 templates/support_packages.html:226
+#: templates/order-form.html:142 templates/support_packages.html:226
 msgid "Kontakt"
 msgstr "Contact"
 
@@ -334,7 +355,7 @@ msgid "Funktionen"
 msgstr "Fonctionnalités"
 
 #: templates/base.html:104 templates/base_about.html:12
-#: templates/home.html:100 templates/references.html:5
+#: templates/home.html:103 templates/references.html:5
 #: templates/references.html.py:6
 msgid "Referenzen"
 msgstr "Références"
@@ -350,11 +371,11 @@ msgstr "Presse"
 #: templates/base.html:106 templates/base_about.html:14
 #: templates/license.html:5 templates/license.html.py:6
 #: templates/plugins.html:33 templates/plugins.html.py:43
-#: templates/plugins.html:53
+#: templates/plugins.html:53 templates/plugins.html.py:63
 msgid "Lizenz"
 msgstr "Licence"
 
-#: templates/base.html:108 templates/download.html:59 templates/plugins.html:4
+#: templates/base.html:108 templates/download.html:61 templates/plugins.html:4
 #: templates/plugins.html.py:5
 msgid "Plugins"
 msgstr "Plugins"
@@ -362,11 +383,11 @@ msgstr "Plugins"
 #: templates/base.html:109 templates/demo.html:4 templates/demo.html.py:5
 #: templates/home.html:37
 msgid "Demo"
-msgstr "Demo"
+msgstr "Démo"
 
 #: templates/base.html:109 templates/support_packages.html:120
 msgid "Tipp"
-msgstr "Tuyau"
+msgstr "Conseil"
 
 #: templates/base.html:115 templates/base.html.py:125
 #: templates/base_support.html:11
@@ -377,7 +398,7 @@ msgstr "Index"
 #: templates/support_overview.html:19 templates/support_packages.html:6
 #: templates/support_packages.html.py:7
 msgid "Supportpakete"
-msgstr "Paquets de support"
+msgstr "Kits d'assistance"
 
 #: templates/base.html:117 templates/base_support.html:17
 #: templates/support_overview.html:28
@@ -404,18 +425,18 @@ msgstr "Wiki"
 #: templates/base.html:127 templates/development.html:42
 #: templates/development.html.py:48
 msgid "Roadmap"
-msgstr "Roadmap"
+msgstr "Feuille de route"
 
 #: templates/base.html:128 templates/development.html:52
 msgid "Tickets"
 msgstr "Tickets"
 
 #: templates/base.html:129 templates/development.html:63
-#: templates/download.html:74
+#: templates/download.html:76
 msgid "Quellcode"
 msgstr "Code source"
 
-#: templates/base.html:133 templates/home.html:80
+#: templates/base.html:133 templates/home.html:83
 #: templates/support_overview.html:24 templates/support_overview.html.py:33
 #: templates/support_overview.html:42 templates/support_overview.html.py:51
 msgid "Mehr"
@@ -423,11 +444,11 @@ msgstr "Plus"
 
 #: templates/base.html:142 templates/donate.html:5 templates/donate.html.py:6
 msgid "Spenden"
-msgstr "Donnez"
+msgstr "Faire un don"
 
 #: templates/base.html:149
 msgid "@openslides folgen"
-msgstr "Suivez @openslides"
+msgstr "Suivre @openslides"
 
 #: templates/base.html:155
 msgid "OpenSlides auf GitHub"
@@ -446,7 +467,7 @@ msgstr "Développeurs principaux"
 msgid ""
 "Direktkontakt zu den drei Gründern und Kernentwicklern von OpenSlides gibt\n"
 "    es über das <a href=\"%(contactform_url)s\">Kontaktformular</a>."
-msgstr "Le contact direct avec les trois fondateurs et développeurs principeux d'OpenSlides vous attendez via <a href=\"%(contactform_url)s\">le formulaire de contact</a>."
+msgstr "Contactez directement les trois fondateurs et les développeurs principaux d'OpenSlides en utilisant <a href=\"%(contactform_url)s\">le formulaire de contact</a>."
 
 #: templates/contact-coreteam.html:12
 #, python-format
@@ -487,7 +508,7 @@ msgstr "Envoyer"
 msgid ""
 "Für den direkten Kontakt zwischen interessierten OpenSlides-Anwendern \n"
 "    und -Entwicklern nutzen Sie IRC (ein textbasierter Chat):"
-msgstr "Pour un contact direct entre les utilisateurs intéressés d'OpenSlides\net les développeurs utilisent IRC (une conversation en mode texte):"
+msgstr "Si vous voulez contacter directement les utilisateurs intéressés et les développeurs d'OpenSlides, veuillez utiliser IRC (conversation textuelle) :"
 
 #: templates/contact-irc.html:9
 msgid "Netzwerk"
@@ -499,7 +520,7 @@ msgstr "Canal"
 
 #: templates/contact-mailinglist.html:5
 msgid "Mailinglisten"
-msgstr "Mailing list"
+msgstr "Liste de diffusion"
 
 #: templates/contact-mailinglist.html:6
 msgid ""
@@ -507,7 +528,7 @@ msgid ""
 "    sowie Diskussion von Tickets, Anwenderfragen und speziellen Anwendungsfällen. \n"
 "    Bei Problemen und Fragen zu OpenSlides schreiben Sie an die \n"
 "    OpenSlides-users-Mailingliste in Ihrer Sprache:"
-msgstr "OpenSlides fournit des listes de diffusion publiques pour coordonner l'élaboration et la discussion des tickets, des questions des utilisateurs et des applications spéciales. Pour des problèmes et des questions sur OpenSlides écrire à la liste de diffusion OpenSlides utilisateurs dans votre langue:"
+msgstr "OpenSlides fournit des listes de diffusion publiques pour coordonner l'élaboration et la discussion des tickets, des questions des utilisateurs et des applications spéciales. En cas de problème, ou si vous avez des questions sur OpenSlides, écrivez à la liste de diffusion des utilisateurs d'OpenSlides dans votre langue :"
 
 #: templates/contact-mailinglist.html:13
 msgid "Offizielle Ankündigungen"
@@ -516,26 +537,26 @@ msgstr "Annonces officielles"
 #: templates/contact-mailinglist.html:14 templates/contact-mailinglist.html:21
 #: templates/contact-mailinglist.html:28
 msgid "Abonnieren"
-msgstr "S'abonner au mailing list"
+msgstr "S'abonner à la liste de diffusion"
 
 #: templates/contact-mailinglist.html:15 templates/contact-mailinglist.html:22
 #: templates/contact-mailinglist.html:29
 msgid "Archiv"
-msgstr "Archive"
+msgstr "Archives"
 
 #: templates/contact-mailinglist.html:20
 msgid "Für Anwender und Entwickler (nur deutschsprachig)"
-msgstr "Pour les usager et les développeurs (en allemand seulement)"
+msgstr "Pour les utilisateurs et les développeurs (en allemand seulement)"
 
 #: templates/contact-mailinglist.html:27
 msgid "Für Anwender und Entwickler (nur englischsprachig)"
-msgstr "Pour les usager et les développeurs (en anglais seulement)"
+msgstr "Pour les utilisateurs et les développeurs (en anglais seulement)"
 
 #: templates/contact-mailinglist.html:32
 msgid ""
 "Hinweis: Bitte abonnieren Sie eine Mailingliste bevor Sie an diese "
 "schreiben!"
-msgstr "Note: S'il vous plaît vous abonner au mailing list avant de vous écrire un e-mail!"
+msgstr "Note : avant d'envoyer un e-mail à une liste de diffusion, vous devez vous y abonner."
 
 #: templates/contact-twitter.html:5
 msgid "Twitter"
@@ -545,17 +566,17 @@ msgstr "Twitter"
 msgid ""
 "Twittern Sie Ihre OpenSlides-Erfahrung und erwähnen Sie <b>#openslides</b>.\n"
 "    Oder stellen Sie direkte Fragen an das Entwicklerteam (<b>@openslides</b>)."
-msgstr ""
+msgstr "Twittez sur vos expériences avec OpenSlides en utilisant le mot-dièze <b>#openslides</p>.\nVous pouvez également poser vos questions aux developpeurs (<b>@openslides</b>)."
 
 #: templates/contact-twitter.html:11
 msgid "Alle Tweets von @openslides"
-msgstr "Tous les tweets de @openslides"
+msgstr "Tous les tweets d'@openslides"
 
 #: templates/contact.html:11
 msgid ""
 "Ihnen gefällt OpenSlides? Sie haben Fragen oder Anregungen? Geben Sie\n"
 "uns Ihre Rückmeldung!"
-msgstr ""
+msgstr "OpenSlides vous plaît ? Vous avez des questions ou des suggestions ? Donnez-nous votre avis !"
 
 #: templates/contact.html:17
 msgid "Zum Kontaktformular"
@@ -563,7 +584,7 @@ msgstr "Formulaire de contact"
 
 #: templates/contact.html:27
 msgid "Professionelle Unterstützung"
-msgstr "Support professionnel"
+msgstr "Assistance professionnelle"
 
 #: templates/contact.html:30
 #, python-format
@@ -572,20 +593,20 @@ msgid ""
 "        Veranstaltung nach? Sie suchen dafür professionelle Unterstützung \n"
 "        bei der Vorbereitung? Sie haben Fragen zu unseren \n"
 "        <a href=\"%(support_url)s\">Supportpaketen</a>?"
-msgstr ""
+msgstr "Vous vous intéressez à OpenSlides et envisagez de l'utiliser pour un événement ? Vous y cherchez une assistance professionelle pour votre préparation ? Vous avez des questions sur <a href=\"%(support_url)s\">les kits d'assistance</a> ?"
 
 #: templates/contact.html:34
 msgid "Kontaktieren Sie uns! Wir beraten Sie gerne."
-msgstr "Contactez-nous! Nous vous conseillons volontiers."
+msgstr "Contactez-nous ! Nous vous conseillerons volontiers."
 
-#: templates/contact.html:35 templates/order-form.html:144
+#: templates/contact.html:35 templates/order-form.html:145
 #: templates/support_packages.html:228
 msgid "Ihr Ansprechpartner"
-msgstr "Votre personne de contact"
+msgstr "Votre interlocuteur"
 
 #: templates/demo.html:8
 msgid "Entdecken Sie die Funktionen von OpenSlides in dieser Online-Demo."
-msgstr "Découvrez les fonctionnalités de OpenSlides dans cette démo."
+msgstr "Découvrez les fonctionnalités d'OpenSlides dans cette démo."
 
 #: templates/demo.html:14
 msgid "OpenSlides Demo starten"
@@ -593,23 +614,23 @@ msgstr "Lancer la démo d'OpenSlides"
 
 #: templates/demo.html:18
 msgid "Es sind drei Demo-Nutzer mit unterschiedlichen Rechten eingerichtet:"
-msgstr "Il est créé trois utilisateurs de démonstration avec des droits différents:"
+msgstr "Trois utilisateurs avec des droits différents ont été paramétrés :"
 
 #: templates/demo.html:21
 msgid "Versammlungsleitung"
-msgstr "Présidium d'assemblée"
+msgstr "Président d'assemblée"
 
 #: templates/demo.html:22 templates/demo.html.py:27
 msgid "Nutzername"
-msgstr "nom d'utilisateur"
+msgstr "Nom d'utilisateur"
 
 #: templates/demo.html:23 templates/demo.html.py:28
 msgid "Passwort"
-msgstr "mot de passe"
+msgstr "Mot de passe"
 
 #: templates/demo.html:26
 msgid "Delegierter"
-msgstr "délégué"
+msgstr "Délégué"
 
 #: templates/demo.html:31
 msgid "Gast"
@@ -617,7 +638,7 @@ msgstr "Invité"
 
 #: templates/demo.html:32
 msgid "ohne Zugangsdaten"
-msgstr "sans données d'accès"
+msgstr "Sans données d'accès"
 
 #: templates/demo.html:34
 msgid "Achtung"
@@ -625,7 +646,7 @@ msgstr "Attention"
 
 #: templates/demo.html:35
 msgid "Die Demo wird täglich zurückgesetzt!"
-msgstr "La démo est réinitialisé tous les jours!"
+msgstr "La démo est réinitialisé tous les jours !"
 
 #: templates/development.html:10
 msgid ""
@@ -633,7 +654,7 @@ msgid ""
 "Software-Initiative von Freiwilligen. Entsprechend offen und\n"
 "frei zugänglich ist auch die Entwicklung. Nutze diese Möglichkeit und unterstütze\n"
 "OpenSlides!"
-msgstr "OpenSlides est un logiciel libre initiative de bénévoles dévoués. En conséquence, la développement est également ouvert et accessible. Profitez de cette opportunité et encouragez vous en OpenSlides!"
+msgstr "OpenSlides est un logiciel libre à l'initiative de bénévoles dévoués. En conséquence, son développement est également ouvert et accessible à tous. Profitez de cette opportunité et soutenez OpenSlides !"
 
 #: templates/development.html:18
 msgid ""
@@ -646,7 +667,7 @@ msgid ""
 "Jede Mitarbeit ist dabei sehr willkommen: z.B. durch Erstellen\n"
 "von Bugreports oder Hilfe bei der Weiterentwicklung, Übersetzungen oder\n"
 "Templatedesign. Wir freuen uns über jede Form der Unterstützung!"
-msgstr "Chaque participation est bienvenu: par exemple en créant des rapports de bug ou aider à la conception du développement, de la traduction ou modèle. Nous accueillons tout type de support!"
+msgstr "Toute participation est la bienvenue : vous pouvez par exemple nous aider en envoyant des rapports de bug, ou participer au développement, à la traduction ou à la conception de modèle. Nous accueillons toutes les formes d'aide !"
 
 #: templates/development.html:25
 #, python-format
@@ -660,40 +681,40 @@ msgid ""
 "Das OpenSlides-Wiki dient als technische Dokumentation von\n"
 "        Dingen, die (noch) nicht im Handbuch stehen oder einfach\n"
 "        irgendwo erfasst und nicht vergessen werden sollen."
-msgstr "Le OpenSlides wiki sert de guide technique des choses qui ne sont pas (encore) disponibles dans le manuel ou simplement enregistré quelque part et ne doivent pas être oubliés."
+msgstr "Le Wiki d'OpenSlides est un guide technique des fonctions qui ne sont pas (encore) disponibles dans le manuel ou doivent simplement être enregistrées quelque part pour ne pas être oubliées."
 
 #: templates/development.html:36
 msgid ""
 "Wir freuen uns über Unterstützung beim Erstellen neuer\n"
 "        hilfreicher Seiten."
-msgstr "Nous sommes heureux d'appuyer utile lors de la création de nouvelles pages."
+msgstr "Nous vous sommes reconnaissants pour les nouvelles pages que vous ajouterez."
 
 #: templates/development.html:43
 msgid ""
 "Wann steht eine neue OpenSlides-Version an? Welche Tickets sind\n"
 "        für welchen Meilenstein geplant und welche Tickets sind\n"
 "        bereits erledigt?"
-msgstr "Quand est une nouvelle version de OpenSlides envisagée? Quelle étape importante est prévue pour laquelle les billets sont assignée et quels billets ont déjà été faits?"
+msgstr "Quand proposerons-nous une nouvelle version d'OpenSlides ? Quels tickets annoncent les étapes importantes et lesquels sont clos ?"
 
 #: templates/development.html:46
 msgid ""
 "Diesen Überblick gibt uns die Roadmap und dient zur Planung\n"
 "        und Information über neue OpenSlides-Versionen."
-msgstr "Cette enquête nous donne le cadre et est utilisé pour planifier et informer sur les nouvelles versions de OpenSlides."
+msgstr "Cette vue d'ensemble afiche la feuille de route et donne des informations sur les nouvelles versions d'OpenSlides."
 
 #: templates/development.html:53
 msgid ""
 "Probleme und Wünsche zu OpenSlides erfassen wir in\n"
 "        einzelnen Issues in GitHub. Um ein Problem oder Wunsch zu berichten,\n"
 "        nutze den \"New Issue\" Button auf GitHub."
-msgstr "Problèmes et désideratas à propos d'OpenSlides nous recueillons dans les tickets individuelles dans GitHub. Pour signaler un problème ou une demande, utilisez le bouton \"New Issue\" sur GitHub."
+msgstr "Les problèmes et les demandes à propos d'OpenSlides apparaissent dans GitHub sous forme de tickets individuels. Pour signaler un problème ou formuler une demande, utilisez le bouton « New Issue » sur GitHub."
 
 #: templates/development.html:56
 #, python-format
 msgid ""
 "Alternativ kannst Du Deine Rückmeldung zu OpenSlides auch an die\n"
 "            <a href=\"%(contact_url)s\">Mailingliste</a> senden."
-msgstr "Sinon, tu peux aussi envoye tes commentaires par <a href=\"%(contact_url)s\">la liste de diffusion</a> d'OpenSlides."
+msgstr "Vous pouvez également nous envoyer vos commentaires en utilisant <a href=\"%(contact_url)s\">la liste de diffusion</a> d'OpenSlides."
 
 #: templates/development.html:59
 msgid "Alle offene Tickets"
@@ -703,7 +724,7 @@ msgstr "Tous les tickets ouverts"
 msgid ""
 "Der aktuelle OpenSlides-Quellcode kann direkt bei GitHub \n"
 "        eingesehen werden."
-msgstr "Le code source de OpenSlides courant peut être vu directement dans GitHub."
+msgstr "Le code source actuel d'OpenSlides peut être consulté directement dans GitHub."
 
 #: templates/development.html:67
 #, python-format
@@ -712,37 +733,37 @@ msgid ""
 "        <a href=\"https://help.github.com/articles/fork-a-repo\">forke</a> Dir OpenSlides und sende uns \n"
 "        Deine Anpassungen am Code per Pull Request. Bei Rückfragen, wende Dich am besten\n"
 "        an die  <a href=\"%(contact_url)s\">Mailingliste</a>. Wir weisen Dich gerne ein."
-msgstr ""
+msgstr "Si vous voulez proposer des modifications, <a href=\"https://help.github.com/articles/fork-a-repo\">créez un Fork</a> d'OpenSlides et transmettez-nous un Pull Request. Si vous avez des questions, merci d'utiliser notre <a href=\"%(contact_url)s\">liste de diffusion</a>. Nous ferons notre maximum pour vous aider !"
 
 #: templates/development.html:71
 msgid "Quellcode durchsuchen"
-msgstr "Parcourir le code source"
+msgstr "Consulter le code source"
 
 #: templates/donate.html:11
 msgid ""
 "Sie profitieren vom Einsatz von OpenSlides oder sind einfach von\n"
 "der OpenSlides-Idee begeistert?  Dann unterstützen Sie OpenSlides mit\n"
 "Ihrer Spende!"
-msgstr ""
+msgstr "Que vous utilisiez OpenSlides ou que vous soyez simplement curieux de connaître notre projet, n'hésitez pas à nous envoyer vos dons !"
 
 #: templates/donate.html:21
 msgid "Helfen Sie!"
-msgstr "Encouragez vous!"
+msgstr "Aidez-nous !"
 
 #: templates/donate.html:23
 msgid ""
 "Die Pflege und Weiterentwicklung eines Freien Software Produkts kostet Geld. Mit Ihrer\n"
 "    Spende helfen Sie uns, diese nötigen Ausgaben zu finanzieren und die OpenSlides-Initiative\n"
 "    voranzutreiben."
-msgstr "Le maintien et le développement d'un produit logiciel libre coûte de l'argent. Votre don nous aidera à financer ces dépenses nécessaires et de faire avancer l'initiative OpenSlides."
+msgstr "L'entretien et le développement d'un logiciel libre coûte de l'argent. Vos dons nous aideront à couvrir les dépenses nécessaires à ce projet et à faire avancer l'initiative OpenSlides."
 
 #: templates/donate.html:34
 msgid "Kommentar an das OpenSlides-Entwicklerteam (Lob/Kritik)"
-msgstr "Donnez votre avis sur l'équipe de développement d'OpenSlides (louange / critique)"
+msgstr "Envoyer un commentaire à l'équipe de développement d'OpenSlides (félicitations/critiques)"
 
 #: templates/donate.html:37
 msgid "Veroeffentlichung des Spendernamens zugestimmt?"
-msgstr "Consenti à la publication du nom du donateur?"
+msgstr "Accepter que votre nom soit publié en tant que donateur ?"
 
 #: templates/donate.html:38
 msgid "Nein"
@@ -750,15 +771,15 @@ msgstr "Non"
 
 #: templates/donate.html:41
 msgid "Zurück zu OpenSlides"
-msgstr "Aller au site d'OpenSlides"
+msgstr "Retourner au site d'OpenSlides"
 
 #: templates/donate.html:43
 msgid "Jetzt Spenden (über PayPal)"
-msgstr "Faites un don maintenant (via PayPal)"
+msgstr "Faire un don (via PayPal)"
 
 #: templates/donate.html:45
 msgid "Spendernamen veröffentlichen"
-msgstr "Publier les noms des donateurs"
+msgstr "Publier le nom des donateurs"
 
 #: templates/donate.html:48
 msgid "oder"
@@ -766,7 +787,7 @@ msgstr ""
 
 #: templates/donate.html:56
 msgid "Spender"
-msgstr "Donneur"
+msgstr "Donateur"
 
 #: templates/donate.html:57
 msgid ""
@@ -780,7 +801,7 @@ msgstr "Baromètre des dons"
 
 #: templates/donate.html:72
 msgid "Bisheriger Spendeneingang"
-msgstr "Précédent entrée de dons"
+msgstr "Précédents dons"
 
 #: templates/download.html:10
 #, python-format
@@ -791,7 +812,7 @@ msgstr "OpenSlides est un logiciel libre, sous licence <a href=\"%(license_url)s
 
 #: templates/download.html:20
 msgid "Aktuelle stabile Version"
-msgstr "La version stable actuelle"
+msgstr "Version stable actuelle"
 
 #: templates/download.html:21
 msgid "veröffentlicht am"
@@ -803,495 +824,580 @@ msgstr "pour Windows"
 
 #: templates/download.html:29
 msgid "Download OpenSlides"
-msgstr "Téléchargez OpenSlides"
+msgstr "Télécharger OpenSlides"
 
 #: templates/download.html:32
 msgid ""
 "Dies ist eine <strong>portable Version</strong>.\n"
 "      OpenSlides muss nicht installiert werden. Einfach herunterladen, entpacken und openslides.exe starten!"
-msgstr ""
+msgstr "Il s'agit d'une <strong>version portable</strong>.\nIl n'est pas nécessaire d'installer OpenSlides, il suffit de le télécharger, l'extraire et lancer openslides.exe !"
 
-#: templates/download.html:34 templates/download.html.py:47
+#: templates/download.html:34 templates/download.html.py:49
 #, python-format
 msgid ""
 "Details in der <a\n"
-"      href=\"https://github.com/OpenSlides/OpenSlides/blob/%(version)s/README.rst\">README</a>."
-msgstr "Détails dans <a href=\"https://github.com/OpenSlides/OpenSlides/blob/%(version)s/README.rst\">README</a>."
+"      href=\"https://github.com/OpenSlides/OpenSlides/blob/%(version)s/README.rst\">README</a> und im\n"
+"      <a href=\"https://github.com/OpenSlides/OpenSlides/blob/%(version)s/CHANGELOG\">CHANGELOG</a>."
+msgstr ""
 
-#: templates/download.html:40
+#: templates/download.html:41
 msgid "Für Linux/MacOS"
 msgstr "Pour Linux/MacOS"
 
-#: templates/download.html:41
+#: templates/download.html:42
 msgid "Download und Installation aus dem Python Package Index (PyPI)"
-msgstr "Téléchargez et installez du Python Package Index (PyPI)"
+msgstr "Téléchargement et installation depuis Python Package Index (PyPI)"
 
-#: templates/download.html:44
+#: templates/download.html:45
 #, python-format
 msgid ""
 "Alternativ kann auch das aktuelle \n"
-"      <a href=\"http://files.openslides.org//releases/%(version)s/openslides-%(version)s.tar.gz\">tar.gz-Paket</a> von OpenSlides\n"
+"      <a href=\"http://files.openslides.org/releases/%(version)s/openslides-%(version)s.tar.gz\">tar.gz-Paket</a> von OpenSlides\n"
 "      heruntergeladen und installiert werden."
-msgstr "Sinon le <a href=\"http://files.openslides.org//releases/%(version)s/openslides-%(version)s.tar.gz\">paquet de tar.gz</a> sera téléchargé et installé."
+msgstr ""
 
-#: templates/download.html:61
+#: templates/download.html:63
 #, python-format
 msgid ""
 "Erweitern Sie den Funktionsumfang von OpenSlides mit\n"
 "<a href=\"%(plugins_url)s\">Plugins</a>."
-msgstr "Étendre les fonctionnalités de OpenSlides avec des <a href=\"%(plugins_url)s\">plugins</a>."
+msgstr "Étendre les fonctionnalités d'OpenSlides avec des <a href=\"%(plugins_url)s\">plugins</a>."
 
-#: templates/download.html:67
+#: templates/download.html:69
 msgid "Alle Versionen"
 msgstr "Toutes les versions"
 
-#: templates/download.html:68
+#: templates/download.html:70
 msgid "Ältere Versionen sowie die OpenPGP-Signaturen finden Sie unter"
 msgstr "Les anciennes versions ainsi que les OpenPGP signatures, consultez"
 
-#: templates/download.html:75
+#: templates/download.html:77
 msgid ""
 "Der aktuelle Entwicklungsstand von OpenSlides kann im öffentlichen\n"
 "<a href=\"https://github.com/OpenSlides/OpenSlides\">Quellcode-Repository bei GitHub</a> eingesehen werden."
-msgstr ""
+msgstr "La version actuelle en cours de développement peut être consultée dans les <a href=\"https://github.com/OpenSlides/OpenSlides\">référentiels des codes source de GitHub</a>."
 
-#: templates/download.html:78
+#: templates/download.html:80
 msgid "Zum Auschecken des OpenSlides-Quellcodes nutzen Sie:"
+msgstr "Pour consulter les codes source d'OpenSlides, visitez :"
+
+#: templates/features.html:12
+#, python-format
+msgid ""
+"Entdecken Sie die Funktionen von OpenSlides.\n"
+"Und probieren Sie diese anschließend in der <a href='%(demo_url)s'>Online-Demo</a> aus!\n"
 msgstr ""
 
-#: templates/features.html:11
-msgid "Alle Funktionen von OpenSlides im Überblick."
-msgstr ""
-
-#: templates/features.html:17 templates/features.html.py:39
+#: templates/features.html:20 templates/features.html.py:42
 msgid "Projektor"
-msgstr ""
+msgstr "Projecteur"
 
-#: templates/features.html:20 templates/features.html.py:102
+#: templates/features.html:23 templates/features.html.py:105
 msgid "Tagesordnung"
-msgstr ""
+msgstr "Agenda"
 
-#: templates/features.html:23 templates/features.html.py:165
+#: templates/features.html:26 templates/features.html.py:199
 msgid "Anträge"
-msgstr ""
+msgstr "Motions"
 
-#: templates/features.html:26 templates/features.html.py:243
+#: templates/features.html:29 templates/features.html.py:282
 msgid "Wahlen"
-msgstr ""
-
-#: templates/features.html:29
-msgid "Teilnehmer/innen"
-msgstr ""
+msgstr "Élections"
 
 #: templates/features.html:32
-msgid "Allgemein"
+msgid "Teilnehmer/innen"
+msgstr "Participants"
+
+#: templates/features.html:35 templates/features.html.py:394
+msgid "Allgemeines"
 msgstr ""
 
-#: templates/features.html:43
+#: templates/features.html:46
 msgid "Projektor aktualisiert sich automatisch"
-msgstr ""
+msgstr "Le projecteur est automatiquement mis à jour"
 
-#: templates/features.html:44
+#: templates/features.html:47
 msgid ""
-"Änderung können vorgenommen werden, ohne den Präsentationsmodus zu beenden.\n"
+"Änderung können vorgenommen werden ohne den Präsentationsmodus zu beenden.\n"
 "        Eine verkleinerte Projektor-Live-Ansicht zeigt immer die aktuell ausgewählte\n"
 "        Folie an."
 msgstr ""
 
-#: templates/features.html:53
+#: templates/features.html:56
 msgid "Dashboard mit Widgets"
-msgstr ""
+msgstr "Tableau de bord et gadgets"
 
-#: templates/features.html:54
+#: templates/features.html:57
 msgid ""
-"Alle Inhalte in OpenSlides sind als \"Folie\" projizierbar und \n"
-"        werden auf dem Dashboard übersichtlich in zusammenklappbaren und fixierbaren\n"
-"        Widgets aufgelistet."
+"Das Dashboard ist die \"Projektor-Steuereinheit\" für\n"
+"        die Versammlungsleitung. Alle Inhalte sind als \"Folie\" projizierbar und \n"
+"        werden in flexiblen Widgets dargestellt."
 msgstr ""
 
-#: templates/features.html:62
+#: templates/features.html:65
 msgid "Countdown zur Redezeitbegrenzung"
-msgstr ""
+msgstr "Décompte du temps de parole"
 
-#: templates/features.html:63
+#: templates/features.html:66
 msgid ""
 "Zur Begrenzung der Redezeit lässt sich jederzeit ein konfigurierbarer Countdown\n"
 "        einblenden. Zusätzlich ist stets die aktuelle Uhrzeit auf der Projektoransicht\n"
 "        sichtbar."
-msgstr ""
+msgstr "Vous pouvez configurer un compte à rebours afin de calculer le temps de parole de chaque participant. De plus, l'heure est affichée en permanence sur le projecteur."
 
-#: templates/features.html:73
+#: templates/features.html:76
 msgid "Eigene Folien erstellen"
-msgstr ""
+msgstr "Créez vos propres diapositives"
 
-#: templates/features.html:74
+#: templates/features.html:77
 msgid ""
-"Benutzerdefinierte Folien eignen sich gut für organisatorische Dinge abseits der\n"
+"Erstellen Sie Folien für organisatorische Dinge abseits der\n"
 "        formalen Tagesordnung."
 msgstr ""
 
-#: templates/features.html:81
-msgid "Widget Rednerliste"
+#: templates/features.html:84
+msgid "Rednerliste einblenden"
 msgstr ""
 
-#: templates/features.html:82
+#: templates/features.html:85
 msgid ""
-"Jeder Teilnehmer kann sich selbst auf die Rednerliste setzen und zur\n"
-"        aktuellen Rednerliste springen."
+"Rednerlisten eines Tagesordnungspunktes lassen sich projizieren oder\n"
+"        dezent in der unteren Ecke einblenden."
 msgstr ""
 
-#: templates/features.html:89
+#: templates/features.html:92
 msgid "Überblendungen"
-msgstr ""
+msgstr "Enchaînements"
 
-#: templates/features.html:90
+#: templates/features.html:93
 msgid ""
 "Kurze Meldungen lassen sich auf Folien überblenden. Die aktuelle Folie wird\n"
 "        dabei nicht verlassen."
-msgstr ""
+msgstr "De cours messages peuvent êter affichés sur les diapositives, sans quitter celles-ci."
 
-#: templates/features.html:104 templates/features.html.py:167
-#: templates/features.html:245 templates/features.html.py:309
-#: templates/features.html:347
+#: templates/features.html:107 templates/features.html.py:201
+#: templates/features.html:284 templates/features.html.py:357
+#: templates/features.html:396
 msgid "Nach oben"
-msgstr ""
+msgstr "Haut"
 
-#: templates/features.html:109
+#: templates/features.html:112
 msgid "Tagesordnung verwalten"
 msgstr ""
 
-#: templates/features.html:110
+#: templates/features.html:113
 msgid ""
-"Verwalten Sie Ihre Tagesordung komfortabel mit OpenSlides.\n"
-"        Einträge lassen sich einfach per Drag&Drop verschieben. Eine hierarchische \n"
-"        Liste mit Unterpunkten ist möglich."
+"Verwalten Sie Ihre Tagesordung mit OpenSlides.\n"
+"        Tagesordnungspunkte lassen sich (per CSV) importieren und\n"
+"        leicht per Drag&Drop zu einer hierarchischen Liste mit\n"
+"        Unterpunkten verschieben."
 msgstr ""
 
-#: templates/features.html:118
+#: templates/features.html:122
 msgid "Einträge projizieren"
 msgstr ""
 
-#: templates/features.html:119
+#: templates/features.html:123
 msgid ""
-"Jeder Tagesordnungseintrag lässt sich per Mausklick auf dem Projektor anzeigen.\n"
-"        Egal in welcher Reihenfolge! Auch Rednerlisten lassen sich so projizieren."
+"Jeder Tagesordnungspunkt kann per Mausklick\n"
+"        auf dem Projektor angezeigt werden. Egal in welcher Reihenfolge!\n"
+"        Auch Rednerlisten lassen sich so projizieren."
 msgstr ""
 
-#: templates/features.html:126
+#: templates/features.html:131
 msgid "Rednerliste"
 msgstr ""
 
-#: templates/features.html:127
+#: templates/features.html:132
 msgid ""
-"Jeder Tagesordnungseintrag enthält eine unabhängige Rednerliste,\n"
-"        die von der Versammlungsleitung verwaltet wird. Teilnehmer können sich selbst\n"
-"        auf diese Liste setzen."
+"Jeder Tagesordnungspunkt enthält eine unabhängige Rednerliste,\n"
+"        die von der Versammlungsleitung verwaltet wird. Teilnehmer können sich auch selbst\n"
+"        auf die Liste setzen."
 msgstr ""
 
-#: templates/features.html:137
+#: templates/features.html:142
+msgid "Automatische Nummerierung"
+msgstr ""
+
+#: templates/features.html:142 templates/features.html.py:159
+#: templates/features.html:429
+msgid "Neu in 1.6"
+msgstr ""
+
+#: templates/features.html:143
+msgid ""
+"Auf Klick lässt sich die Tagesordnung automatisch\n"
+"        nummerieren (mit arabischen oder römischen Ziffern); optional mit\n"
+"        einstellbarem Präfix (z.B. \"TOP 1\")."
+msgstr ""
+
+#: templates/features.html:151
+msgid "Zeitplanung"
+msgstr ""
+
+#: templates/features.html:152
+msgid ""
+"Schätzen Sie die Dauer für jeden Tagesordnungspunkt und erhalten Sie\n"
+"        dadurch einen prognostierten Endzeitpunkt der Tagung."
+msgstr ""
+
+#: templates/features.html:159
+msgid "Rednerliste auf 2. Bildschirm"
+msgstr ""
+
+#: templates/features.html:160
+msgid ""
+"Behalten Sie die aktuelle Rednerliste über\n"
+"        einen 2. Bildschirm immer im Blick - während der Projektor zeitgleich\n"
+"        für das Plenum den zugehörigen TOP anzeigt."
+msgstr ""
+
+#: templates/features.html:170
+msgid "Organisatorische Einträge"
+msgstr ""
+
+#: templates/features.html:171
+msgid ""
+"Neben formalen Tagesordnungspunkten kann eine\n"
+"        Tagesordnung auch organisatorischen Einträge (wie z.B. Pausen\n"
+"        oder thematische Blöcke) enthalten."
+msgstr ""
+
+#: templates/features.html:179
 msgid "Erledigt markieren"
 msgstr ""
 
-#: templates/features.html:138
+#: templates/features.html:180
 msgid ""
 "Abgeschlossene Tagesordnungspunkte können als erledigt markiert und\n"
 "        anschließend zur besseren Übersicht ausgeblendet werden."
 msgstr ""
 
-#: templates/features.html:145
-msgid "Zeitplanung"
-msgstr ""
-
-#: templates/features.html:146
-msgid ""
-"Schätzen Sie für jeden Tagesordnungseintrag eine Dauer und erhalten Sie\n"
-"        dadurch einen prognostierten Endzeitpunkt der Veranstaltung."
-msgstr ""
-
-#: templates/features.html:153
+#: templates/features.html:187
 msgid "Tagesordnung als PDF"
 msgstr ""
 
-#: templates/features.html:154
+#: templates/features.html:188
 msgid ""
-"Die vollständige Tagesordnung lässt sich auch als PDF\n"
-"        anzeigen."
+"Die vollständige Tagesordnung lässt sich als PDF\n"
+"        exportieren."
 msgstr ""
 
-#: templates/features.html:172 templates/home.html:57
+#: templates/features.html:206 templates/home.html:60
 msgid "Anträge papierlos verwalten"
 msgstr "Administration digital des motions"
 
-#: templates/features.html:173
+#: templates/features.html:207
 msgid ""
 "Importieren Sie Anträge aus einer CSV-Datei. Legen Sie die automatische\n"
 "        Nummerierungsart fest und bestimmen Sie die Zugriffsrechte für Anträge: Welche Gruppen\n"
 "        dürfen Anträge sehen, erstellen, verwalten und unterstützen?"
 msgstr ""
 
-#: templates/features.html:181
+#: templates/features.html:215
 msgid "HTML-Editor"
 msgstr ""
 
-#: templates/features.html:182
+#: templates/features.html:216
 msgid ""
-"Für einfache Formatierung von Antragstexten und -begründung ist ein HTML-Editor (\"CKEditor\")\n"
-"        integriert. Die Formatierungen werden auch in der PDF-Fassung unterstützt."
+"Für einfache Formatierung von Antragstexten ist ein HTML-Editor (\"CKEditor\")\n"
+"        integriert. Die Formatierungen werden zum Großteil auch in der PDF-Fassung unterstützt."
 msgstr ""
 
-#: templates/features.html:189
+#: templates/features.html:223
 msgid "Versionshistorie und Log"
 msgstr ""
 
-#: templates/features.html:190
+#: templates/features.html:224
 msgid ""
 "Änderungen eines Antrags können als neue Version gespeichert werden und\n"
 "        lassen sich vergleichen. Jede Bearbeitungsaktion wird protokolliert und lässt sich\n"
 "        zur besseren Rückverfolgung in OpenSlides einsehen."
 msgstr ""
 
-#: templates/features.html:200
+#: templates/features.html:234
 msgid "Unterstützen von Anträgen"
 msgstr ""
 
-#: templates/features.html:201
+#: templates/features.html:235
 msgid ""
 "Sie können einstellen, ob Unterstützer nötig sind, um einen Antrag zuzulassen.\n"
 "        Teilnehmer können dann direkt in OpenSlides Ihre Zustimmung für einen Antrag\n"
 "        äußern."
 msgstr ""
 
-#: templates/features.html:206
+#: templates/features.html:240
 msgid "Sachgebiete verwalten"
 msgstr ""
 
-#: templates/features.html:207
+#: templates/features.html:241
 msgid ""
 "Ordnen Sie Sachgebiete Ihren Anträgen zu und vergeben Sie \n"
 "        zusätzlich ein passendes Prefix für die Antragsbezeichner, z.B. \"SA 1\"."
 msgstr ""
 
-#: templates/features.html:211
+#: templates/features.html:245
 msgid "Antragsbuch als PDF"
 msgstr ""
 
-#: templates/features.html:212
+#: templates/features.html:246
 msgid ""
-"Alle vorhandenen Anträge lassen sich übersichtlich in ein PDF erstellen;\n"
-"        inkl. Informationen zu Antragsteller, Abstimmgungsergebnis und Begründung eines Antrags."
+"Alle Anträge lassen sich übersichtlich zu einem PDF zusammenfassen;\n"
+"        inkl. Antragsteller, Abstimmgungsergebnisse und Begründungen."
 msgstr ""
 
-#: templates/features.html:218
+#: templates/features.html:252
+msgid "Anträge abstimmen"
+msgstr ""
+
+#: templates/features.html:254
+#, python-format
+msgid ""
+"Nach Abstimmung eines Antrags im Plenum wird das ausgezählte\n"
+"        Ergebnis in OpenSlides eingegeben (mit OpenSlides selbst wird nicht abgestimmt!).\n"
+"        Dabei sind auch spezielle Werte für die <i>Mehrheit</i> der\n"
+"        Stimmen, oder <i>nicht erfasste</i> Stimmen möglich.\n"
+"        Anträge werden immer mit Ja-Nein-Enthaltung abgestimmt. Möglich ist auch ein\n"
+"        Stimmzetteldruck für geheime Abstimmungen.\n"
+"        Auf Anfrage sind <a href=\"%(supportpackages_url)s\">elektronische Abstimmungen</a> mit dem VoteCollector-Plugin möglich.\n"
+"        "
+msgstr ""
+
+#: templates/features.html:264
 msgid "Anträge in die Tagesordnung"
 msgstr ""
 
-#: templates/features.html:219
+#: templates/features.html:265
 msgid ""
 "Jeder Antrag lässt sich als Referenz zusätzlich in die Tagesordnung\n"
 "        einsortieren."
 msgstr ""
 
-#: templates/features.html:223
-msgid "Anträge abstimmen"
-msgstr ""
-
-#: templates/features.html:224
-msgid ""
-"Nach Abstimmung eines Antrags im Plenum wird das ausgezählte\n"
-"        Ergebnis in OpenSlides eingegeben (mit OpenSlides selbst wird nicht abgestimmt!).\n"
-"        Dabei sind auch spezielle Werte für die <i>Mehrheit</i> der Stimmen, oder <i>nicht erfasste</i> Stimmen möglich.\n"
-"        Anträge werden immer mit Ja-Nein-Enthaltung abgestimmt. Optional sind die abgegebenen Stimmen."
-msgstr ""
-
-#: templates/features.html:230
+#: templates/features.html:269
 msgid "Arbeitsabläufe und Zustände definieren"
 msgstr ""
 
-#: templates/features.html:231
+#: templates/features.html:270
 msgid ""
 "Jeder Antrag durchläuft verschiedene Phasen in demokratischen Versammlungen.\n"
-"        Nutzen Sie einen der zwei voreingestellten Arbeitsablä̈ufe mit vordefinierten\n"
+"        Nutzen Sie einen der <a href=\"http://docs.openslides.org/de/Motion.html#arbeitsablauf-und-status\">zwei\n"
+"        voreingestellten Arbeitsablä̈ufe</a> mit vordefinierten\n"
 "        Zuständen, die ein Antrag typischerweise einnehmen kann oder konfigurieren Sie Ihren individuellen\n"
-"        Antragsablauf selbst.\n"
-"        (Details im <a href=\"http://docs.openslides.org/de/Motion.html#arbeitsablauf-und-status\">Handbuch</a>.)"
+"        Antragsablauf selbst."
 msgstr ""
 
-#: templates/features.html:250
+#: templates/features.html:289
 msgid "Wahlen verwalten"
 msgstr ""
 
-#: templates/features.html:251
+#: templates/features.html:290
 msgid ""
 "Jede Wahl besteht aus Name und Anzahl der zur Wahl stehenden Posten sowie - optional - aus\n"
-"        einer Beschreibung und einem Kommentar für den Stimmzettel."
+"        einer Beschreibung des Amtes und einem Kommentar für den Stimmzettel."
 msgstr ""
 
-#: templates/features.html:258
+#: templates/features.html:297
 msgid "Personalierte Stimmzettel"
 msgstr ""
 
-#: templates/features.html:259
+#: templates/features.html:298
 msgid ""
-"Geheime Wahlen benötgen Stimmzettel. Und diese können Sie schnell und unkompliziert direkt mit OpenSlides\n"
+"Geheime Wahlen benötgen Stimmzettel. Und diese können Sie unkompliziert direkt mit OpenSlides\n"
 "        generieren - mit passenden Ankreuzfeldern für jeden Kandidaten."
 msgstr ""
 
-#: templates/features.html:266
+#: templates/features.html:305
 msgid "Unterstützte Wahlmethoden"
 msgstr ""
 
-#: templates/features.html:267
+#: templates/features.html:306
 msgid ""
 "OpenSlides unterstützt die Auswahl von 2 Wahlmethoden: \"Eine Stimme pro Kandidat/in\" oder \n"
-"        \"Ja, Nein, Enthaltungs pro Kandidat/in\". Eine automatische Zuordnung beider Methoden, abhängig \n"
+"        \"Ja, Nein, Enthaltung pro Kandidat/in\". Eine automatische Zuordnung beider Methoden, abhängig \n"
 "        von der Anzahl der Kandidaten und zu vergebenen Posten, ist die Voreinstellung in OpenSlides.\n"
-"        Ungültige und abgegebene Stimmen können zusätzlich immer erfasst werden."
+"        Gültige, ungültige und abgegebene Stimmen können zusätzlich erfasst werden."
 msgstr ""
 
-#: templates/features.html:276
-msgid "Kandiatenliste aufstellen"
+#: templates/features.html:315
+msgid "Kandidatenliste aufstellen"
 msgstr ""
 
-#: templates/features.html:277
+#: templates/features.html:316
 msgid ""
 "Kandidaten können für eine Wahl direkt aus der Teilnehmerliste vorgeschlagen werden.\n"
 "        Angemeldete Teilnehmer können per Mausklick sogar selbst kandidieren - sofern Sie die Berechtigung dazu haben."
 msgstr ""
 
-#: templates/features.html:281
-msgid "Mehrere Wahlgänge"
-msgstr ""
-
-#: templates/features.html:282
-msgid ""
-"Mit OpenSlides können Sie beliebig viele Wahlgänge durchführen - und diese übersichtlich nebeneinander darstellen.\n"
-"        Auch Stichwahlen sind leicht damit möglich."
-msgstr ""
-
-#: templates/features.html:286
+#: templates/features.html:324
 msgid "Wahlergebnisse eingeben und darstellen"
 msgstr ""
 
-#: templates/features.html:287
+#: templates/features.html:325
 msgid ""
 "Sind die Wahlergebnisse ausgezählt, werden sie in OpenSlides vom Versammlungsleiter eingegeben. \n"
 "        Per Knopfdruck werden die Zahlen auch für alle anderen Teilnehmer sichtbar."
 msgstr ""
 
-#: templates/features.html:294
+#: templates/features.html:332
 msgid "Alle Wahlergebnisse in einem PDF"
 msgstr ""
 
-#: templates/features.html:295
+#: templates/features.html:333
 msgid ""
 "Exportieren Sie alle Wahlen ins PDF und geben Sie am Ende der Versammlung \n"
 "        allen Delegierten eine Zusammenfassung aller gewählten Ämter. Oder nutzen Sie\n"
 "        das PDF sogar als Anhang für Ihr Beschlussprotokoll."
 msgstr ""
 
-#: templates/features.html:307
+#: templates/features.html:343
+msgid "Mehrere Wahlgänge"
+msgstr ""
+
+#: templates/features.html:344
+msgid ""
+"Mit OpenSlides können Sie beliebig viele Wahlgänge durchführen - und diese übersichtlich nebeneinander darstellen.\n"
+"        Auch Stichwahlen sind leicht damit möglich."
+msgstr ""
+
+#: templates/features.html:355
 msgid "Teilnehmer"
 msgstr ""
 
-#: templates/features.html:314
+#: templates/features.html:362
 msgid "Teilnehmer/innen verwalten"
 msgstr ""
 
-#: templates/features.html:315
+#: templates/features.html:363
 msgid ""
 "Nutzen Sie den <a href=\"http://dev.openslides.org/wiki/CSVImport\">CSV-Import</a>\n"
-"        zur Übernahme aus Ihrer Teilnehmerverwaltung.\n"
-"        Dabei kann auch die Gliederungsebene, das Amt und ein Kommentar angegeben werden."
+"        zur Übernahme Ihrer vorhandenen Teilnehmerdaten.\n"
+"        Dabei kann auch die Gliederungsebene, das Amt, die\n"
+"        Benutzergruppe, ein Kommentar u.v.m. angegeben werden."
 msgstr ""
 
-#: templates/features.html:324
+#: templates/features.html:373
 msgid "Gruppen und Rechte festlegen"
 msgstr ""
 
-#: templates/features.html:325
+#: templates/features.html:374
 msgid ""
-"Was jeder Teilnehmer sehen darf und was nicht, definieren Sie mit einzelnen Rechten. Mehrere Rechteeinstellungen\n"
-"        können Sie in einer Gruppe zusammenfassen. Auch ein Gast (Anonymous-Nutzer) ist so aktivierbar."
+"Was jeder Teilnehmer sehen darf und was nicht, definieren Sie mit einzelnen Rechten.\n"
+"        Mehrere Rechte können Sie zu einer Gruppe zusammenfassen. Auch ein Gast (Anonymous-Nutzer) ist so aktivierbar."
 msgstr ""
 
-#: templates/features.html:332
-msgid "Zugangszettel mit Erstpasswort und QR-Code"
+#: templates/features.html:381
+msgid "Zugangszettel für WLAN und OpenSlides"
 msgstr ""
 
-#: templates/features.html:333
+#: templates/features.html:382
 msgid ""
-"Verteilen Sie beim Empfang generierte Zettel mit\n"
-"        Passwörtern und einem QR-Code zum Abscannen Ihrer OpenSlides-URL\n"
-"        an Ihre Teilnehmer."
+"Verteilen Sie Ihren Teilnehmern beim\n"
+"        Empfang einen generierte Infozettel mit Zugangsdaten für\n"
+"        das WLAN am Veranstaltungsort und OpenSlides, inkl. praktischem QR-Code zum Abscannen."
 msgstr ""
 
-#: templates/features.html:345
-msgid "Allgemeines"
-msgstr ""
-
-#: templates/features.html:352
+#: templates/features.html:401
 msgid "Portable Version für Windows"
 msgstr ""
 
-#: templates/features.html:353
+#: templates/features.html:402
 msgid ""
 "OpenSlides ist für Windows als portable Version verfügbar. Seit 1.4 mit grafischem\n"
 "        Frontend und komfortabler Einrichtung einer automatischen Backupfunktion der SQLite-Datenbank."
 msgstr ""
 
-#: templates/features.html:361
-msgid "Upload und Download von Dateien"
+#: templates/features.html:410
+msgid "Dokumentenablage"
 msgstr ""
 
-#: templates/features.html:362
+#: templates/features.html:411
 msgid ""
 "Nutzen Sie während Ihrer Versammlung eine gemeinsame Dokumentenablage für alle Teilnehmer.\n"
 "        Regeln Sie, welche Gruppen Upload- und Download-Rechte bekommen sollen."
 msgstr "Utilisez vous un stockage des documentes partagé avec tous les participantes. Réglez vous, qui sont des groupes pour obtenir upload et download droits."
 
-#: templates/features.html:369
+#: templates/features.html:418
+msgid "PDF-Dokumente präsentieren"
+msgstr ""
+
+#: templates/features.html:419
+msgid ""
+"PDF-Dateien lassen sich in Vollbild an die\n"
+"        Leinwand projizieren und zentral über ein Widget steuern. Damit\n"
+"        können Sie nun auch in der letzten Reihe per Mobilgerät die Präsentation verfolgen."
+msgstr ""
+
+#: templates/features.html:429
+msgid "Gruppen-Chat"
+msgstr ""
+
+#: templates/features.html:431
+msgid ""
+"Nutzen Sie die Chatfunktion für einen\n"
+"        reibungslosen Austausch unter den Organisatoren (z.B.\n"
+"        Wahlleitung, Versammlungsleitung, Antragskommission und Regie)."
+msgstr ""
+
+#: templates/features.html:440
+msgid "Volltextsuche"
+msgstr ""
+
+#: templates/features.html:441
+msgid ""
+"Finden Sie schnell den gesuchten Inhalt mit\n"
+"        der integrierten (pythonbasierten) Volltextsuche - auch einschränkbar auf bestimmte Module.\n"
+"        "
+msgstr ""
+
+#: templates/features.html:449
 msgid "Responsive Design mit Bootstrap"
 msgstr ""
 
-#: templates/features.html:370
+#: templates/features.html:450
 msgid ""
 "OpenSlides erscheint im modernen, responsiven Design auf\n"
 "        Basis von Bootstrap und ist optimiert für unterschiedliche Mobilgeräte."
 msgstr ""
 
-#: templates/features.html:376
+#: templates/features.html:459
 msgid "OpenSlides ist mehrsprachig"
 msgstr ""
 
-#: templates/features.html:377
+#: templates/features.html:460
 msgid ""
 "OpenSlides ist vollständig internationalisiert und ist derzeit in Deutsch,\n"
-"        Englisch und Französisch verfügbar. (Weitere Sprachen sind gerne willkommen!)"
+"        Englisch, Französisch, Tschechisch und Portugiesisch verfügbar.\n"
+"        Weitere Sprachen können gerne über <a href=\"https://www.transifex.com/projects/p/openslides/\">Transifex</a> eingereicht werden."
 msgstr ""
 
-#: templates/features.html:381
-msgid "Tornado Webserver und SQLite"
+#: templates/features.html:465
+msgid "Plattformunabhängig mit Python"
 msgstr ""
 
-#: templates/features.html:382
+#: templates/features.html:466
 msgid ""
-"OpenSlides integriert den leistungsfähigen, pythonbasierten Tornado Webserver. Als Datenbank\n"
-"        nutzt OpenSlides voreingestellt SQLite."
+"OpenSlides basiert auf dem Python-Webframework Django, ist\n"
+"        plattformunabhängig auf Windows, MacOS und Linux lauffähig \n"
+"        und integriert den leistungsfähigen Tornado Webserver.\n"
+"        Als Datenbank wird voreingestellt SQLite verwendet (PostgreSQL und MySQL\n"
+"        werden auch unterstützt)."
 msgstr ""
 
-#: templates/features.html:386
+#: templates/features.html:473
 msgid "Projektortemplate anpassbar"
 msgstr ""
 
-#: templates/features.html:387
+#: templates/features.html:474
 msgid ""
 "Die Projektoransicht ist leicht an Ihre individuellen Gestaltungsrichtlinien anpassbar; über\n"
-"        eine zentrale HTML- und CSS-Datei."
+"        eine zentrale HTML- und CSS-Datei. Logo, Titel und\n"
+"        Hintergrundfarbe ist sogar dirkte in der Oberfläche (unter Konfiguration)\n"
+"        einstellbar. "
 msgstr ""
 
 #: templates/home.html:29
 msgid "Mehr Transparenz."
-msgstr "Plus de trancparence."
+msgstr "Plus de transparence."
 
 #: templates/home.html:29
 msgid "Mehr Flexibilität."
@@ -1303,58 +1409,62 @@ msgstr "Plus d'efficacité."
 
 #: templates/home.html:30
 msgid "Die Lösung für Ihre Versammlung!"
-msgstr "La solution pour votre assemblée."
+msgstr "La solution pour votre assemblée !"
 
-#: templates/home.html:53
+#: templates/home.html:41
+msgid "Alle Funktionen im Überblick"
+msgstr "Vue d'ensemble de toutes les fonctionnalités"
+
+#: templates/home.html:56
 msgid "Tagesordnung organisieren"
 msgstr "Organisation de l'agenda"
 
-#: templates/home.html:61
+#: templates/home.html:64
 msgid "Wahlen mit personalisierten Stimmzetteln"
-msgstr "Des èlections avec des bulletins personnalisée"
+msgstr "Des élections avec des bulletins personnalisés"
 
-#: templates/home.html:65
+#: templates/home.html:68
 msgid "Frontend der portablen Windowsversion"
-msgstr "Frontend de la version portable de Windows"
+msgstr "Interface de la version portable de Windows"
 
-#: templates/home.html:84
+#: templates/home.html:87
 msgid "Auszeichnungen"
 msgstr "Distinctions"
 
-#: templates/home.html:85
+#: templates/home.html:88
 msgid ""
 "OpenSlides wurde bereits mehrfach als innovatives Produkt ausgezeichnet"
-msgstr "OpenSlides a déjà remporté plusieurs prix comme un produit innovant."
+msgstr "OpenSlides a déjà remporté plusieurs prix comme produit innovant."
 
-#: templates/home.html:86
+#: templates/home.html:89
 msgid "1. Platz beim innovate!Interaction Award 2012"
-msgstr "1ère place d'Award innovate!Interaction 2012"
+msgstr "1re place au concours innovate!Interaction Award 2012"
 
-#: templates/home.html:87 templates/home.html.py:89 templates/home.html:91
+#: templates/home.html:90 templates/home.html.py:92 templates/home.html:94
 msgid "mehr"
-msgstr "plus"
+msgstr "en savoir plus"
 
-#: templates/home.html:88
+#: templates/home.html:91
 msgid "2. Platz beim IT-Innovationspreis 2013"
-msgstr "2ème place du Prix Innovation d'IT 2013"
+msgstr "2e place au concours IT-Innovationspreis 2013"
 
-#: templates/home.html:90
+#: templates/home.html:93
 msgid "2. Platz bei domainFACTORY-Leserwahl zur besten OpenSource-Software"
-msgstr "2ème Place d'élection lecteurs de domainFACTORY pour le meilleur logicil OpenSource "
+msgstr "2e place du choix des lecteurs de domainFACTORY pour le meilleur logiciel OpenSource"
 
-#: templates/home.html:101
+#: templates/home.html:104
 msgid "OpenSlides war bereits erfolgreich im Einsatz bei:"
-msgstr "OpenSlides était déjà utilisé avec succès avec:"
+msgstr "OpenSlides était déjà utilisé avec succès avec :"
 
-#: templates/home.html:124
+#: templates/home.html:127
 msgid "Weitere Referenzen"
-msgstr "Plus des références"
+msgstr "Plus de références"
 
 #: templates/impressum.html:12
 msgid ""
 "Verantwortlich für den Inhalt dieser Seiten in Vertretung für die "
 "OpenSlides-Initiative"
-msgstr ""
+msgstr "Responsable du contenu de ces pages en tant que représentant de l'initiative OpenSlides"
 
 #: templates/impressum.html:24
 msgid ""
@@ -1372,7 +1482,7 @@ msgstr ""
 
 #: templates/license.html:11
 msgid "ist"
-msgstr ""
+msgstr "Responsable :"
 
 #: templates/license.html:17
 msgid ""
@@ -1390,13 +1500,13 @@ msgid ""
 msgstr ""
 
 #: templates/news-20121119.html:5 templates/news-20121119.html.py:14
-#: templates/newsarchiv.html:32
+#: templates/newsarchiv.html:38
 msgid "Die virtuelle Mitgliederversammlung im Verein"
-msgstr ""
+msgstr "L'assemblée générale virtuelle dans les associations"
 
 #: templates/news-20121119.html:6 templates/news.html:4
 msgid "News"
-msgstr ""
+msgstr "Nouveautés"
 
 #: templates/news-20121119.html:16
 msgid ""
@@ -1410,215 +1520,231 @@ msgid ""
 msgstr ""
 
 #: templates/news.html:7 templates/news.html.py:9 templates/news.html.py:11
-#: templates/newsarchiv.html:5 templates/newsarchiv.html.py:7
-#: templates/newsarchiv.html:9 templates/newsarchiv.html.py:11
-#: templates/newsarchiv.html:13 templates/newsarchiv.html.py:15
-#: templates/newsarchiv.html:17 templates/newsarchiv.html.py:26
-#: templates/newsarchiv.html:30
+#: templates/news.html:13 templates/newsarchiv.html:5
+#: templates/newsarchiv.html.py:7 templates/newsarchiv.html:9
+#: templates/newsarchiv.html.py:11 templates/newsarchiv.html:13
+#: templates/newsarchiv.html.py:15 templates/newsarchiv.html:17
+#: templates/newsarchiv.html.py:19 templates/newsarchiv.html:21
+#: templates/newsarchiv.html.py:23 templates/newsarchiv.html:32
+#: templates/newsarchiv.html.py:36
 msgid "veröffentlicht"
-msgstr ""
+msgstr "Publié le "
 
-#: templates/newsarchiv.html:22
-msgid "OpenSlides belegt 2. Platz bei Leserwahl-Aktion"
-msgstr ""
-
-#: templates/newsarchiv.html:24
-msgid "OpenSlides in der iX 2/2013"
+#: templates/news.html:15
+msgid "OpenSlides-Artikel im Verbändereport 1/2014 erschienen"
 msgstr ""
 
 #: templates/newsarchiv.html:28
+msgid "OpenSlides belegt 2. Platz bei Leserwahl-Aktion"
+msgstr "OpenSlides a remporté la 2e place de la campagne du choix des lecteurs."
+
+#: templates/newsarchiv.html:30
+msgid "OpenSlides in der iX 2/2013"
+msgstr "OpenSlides au iX 2/2013"
+
+#: templates/newsarchiv.html:34
 msgid "Bericht vom Entwicklertreffen"
-msgstr ""
+msgstr "Compte rendu de la rencontre des développeurs"
 
-#: templates/newsarchiv.html:34 templates/press.html:72
+#: templates/newsarchiv.html:40 templates/press.html:82
 msgid "OpenSlides gewinnt innovate!Interaction Award 2012"
-msgstr ""
+msgstr "OpenSlides a gagné le prix innovate!Interaction Award 2012"
 
-#: templates/order-form.html:5 templates/order-form.html.py:6
+#: templates/order-form.html:5
 msgid "Bestellformular"
+msgstr "Formulaire de commande"
+
+#: templates/order-form.html:6
+msgid "Anfrageformular"
 msgstr ""
 
 #: templates/order-form.html:10
 msgid "Supportpaket"
-msgstr ""
+msgstr "Kits d'assistance"
 
 #: templates/order-form.html:22
-msgid "Hiermit bestelle ich das Supportpaket"
+msgid "Ich habe Interesse an dem Supportpaket"
 msgstr ""
 
 #: templates/order-form.html:27
-msgid "zu den rechts angegebenen Leistungen und Kosten"
+msgid "Bitte nehmen Sie unverbindlich Kontakt zu mir auf."
 msgstr ""
 
-#: templates/order-form.html:31
+#: templates/order-form.html:28
+msgid ""
+"Die folgenden Angaben helfen uns bei der Kontaktaufnahmen und der "
+"Einschätzung Ihre Veranstaltung."
+msgstr ""
+
+#: templates/order-form.html:32
 msgid "Ihre Veranstaltung"
-msgstr ""
+msgstr "Vos événements"
 
-#: templates/order-form.html:37
+#: templates/order-form.html:38
 msgid "Ihre Kontaktdaten"
+msgstr "Vos coordonnées"
+
+#: templates/order-form.html:42
+msgid "Anfrage senden"
 msgstr ""
 
-#: templates/order-form.html:41
-msgid "Kostenpflichtig bestellen"
-msgstr ""
-
-#: templates/order-form.html:48
+#: templates/order-form.html:49
 msgid "Zurück zur Paketübersicht"
-msgstr ""
+msgstr "Retourner aux kits"
 
-#: templates/order-form.html:62 templates/support_packages.html:54
+#: templates/order-form.html:63 templates/support_packages.html:54
 #: templates/support_packages.html.py:58 templates/support_packages.html:62
 #: templates/support_packages.html:193
 msgid "zzgl. MwSt."
-msgstr ""
+msgstr "Prix hors TVA"
 
-#: templates/order-form.html:66 templates/support_packages.html:67
+#: templates/order-form.html:67 templates/support_packages.html:67
 msgid "Lizenzkostenfreie Nutzung"
-msgstr ""
+msgstr "Utilisation sans frais de licence"
 
-#: templates/order-form.html:67
+#: templates/order-form.html:68
 #, python-format
 msgid ""
 "OpenSlides ist Freie Software, lizensiert unter\n"
-"            der <a href=\"%(license_url)s\">GNU GPL v2+</a>."
+"            der <a href=\"%(license_url)s\">MIT</a>."
 msgstr ""
 
-#: templates/order-form.html:69 templates/support_packages.html:76
+#: templates/order-form.html:70 templates/support_packages.html:76
 msgid "Individueller Support"
-msgstr ""
+msgstr "Assistance individuelle"
 
-#: templates/order-form.html:74 templates/support_packages.html:77
+#: templates/order-form.html:75 templates/support_packages.html:77
 msgid ""
 "für Unterstützung, Beratung und \n"
 "                Anpassungsarbeiten"
-msgstr ""
+msgstr "Pour tout conseil, assistance ou demande particulière"
 
-#: templates/order-form.html:77
+#: templates/order-form.html:78
 msgid "Neuste qualitätsgesicherte Version"
-msgstr ""
+msgstr "Dernière version dont la qualité a été contrôlée"
 
-#: templates/order-form.html:78 templates/support_packages.html:97
+#: templates/order-form.html:79 templates/support_packages.html:97
 msgid ""
 "mit Update auf aktuellsten Entwicklungsstand\n"
 "                (einmalig)"
-msgstr ""
+msgstr "avec mise à jour (unique) à la version actuelle en développement"
 
-#: templates/order-form.html:80 templates/support_packages.html:107
+#: templates/order-form.html:81 templates/support_packages.html:107
 msgid "Portable Version auf USB-Stick"
-msgstr ""
+msgstr "Version portable sur support USB"
 
-#: templates/order-form.html:81 templates/support_packages.html:108
+#: templates/order-form.html:82 templates/support_packages.html:108
 msgid ""
 "OpenSlides direkt vom USB-Stick startbar;\n"
 "                    vorkonfiguriert mit Ihren Veranstaltungsdaten;\n"
 "                    inkl. Werkzeug zum Datenexport<sup>2</sup> ins CSV-Format"
 msgstr ""
 
-#: templates/order-form.html:86 templates/support_packages.html:119
+#: templates/order-form.html:87 templates/support_packages.html:119
 msgid "Anpassung des Projektortemplates"
-msgstr ""
+msgstr "Configuration du format du projecteur"
 
-#: templates/order-form.html:87 templates/support_packages.html:121
+#: templates/order-form.html:88 templates/support_packages.html:121
 msgid "nach Vorlage; mit Ihrem Logo"
-msgstr ""
+msgstr "selon votre présentation ; avec votre logo"
 
-#: templates/order-form.html:92 templates/support_packages.html:128
+#: templates/order-form.html:93 templates/support_packages.html:128
 msgid "OpenSlides-Schulung vor Ort"
-msgstr ""
+msgstr "Formation à domicile à OpenSlides"
 
-#: templates/order-form.html:93 templates/support_packages.html:129
+#: templates/order-form.html:94 templates/support_packages.html:129
 #: templates/support_packages.html:197
 msgid "Tag"
-msgstr ""
-
-#: templates/order-form.html:95
-msgid "für bis zu 10 Nutzer"
-msgstr ""
+msgstr "Jour"
 
 #: templates/order-form.html:96
+msgid "für bis zu 10 Nutzer"
+msgstr "Jusqu'à 10 utilisateurs"
+
+#: templates/order-form.html:97
 msgid ""
 "nur in der Vorbereitungsphase; \n"
 "                anschließend Download der Datenbank für eigene OpenSlides-Installation \n"
 "                vor Ort"
-msgstr "seulement dans la phase préparatoire, puis télécharger la base de leur propre installation OpenSlides local"
+msgstr "uniquement en la phase préparatoire ; ensuite, le téléchargement de la base de données est nécessaire pour l'installation d'OpenSlides sur site"
 
-#: templates/order-form.html:103
+#: templates/order-form.html:104
 msgid "Im Paketpreis nicht enthalten"
-msgstr ""
+msgstr "non inclus dans le prix du kit"
 
-#: templates/order-form.html:104 templates/order-form.html.py:111
-#: templates/order-form.html:119 templates/support_packages.html:159
+#: templates/order-form.html:105 templates/order-form.html.py:112
+#: templates/order-form.html:120 templates/support_packages.html:159
 #: templates/support_packages.html:160 templates/support_packages.html:170
 #: templates/support_packages.html:171 templates/support_packages.html:180
 #: templates/support_packages.html:181 templates/support_packages.html:202
 msgid "Auf Anfrage"
-msgstr ""
+msgstr "sur demande"
 
-#: templates/order-form.html:105 templates/support_packages.html:151
+#: templates/order-form.html:106 templates/support_packages.html:151
 msgid "Einsatz eines elektronischen Abstimmungssystems"
-msgstr ""
+msgstr "Utilisation d'un système de vote électronique"
 
-#: templates/order-form.html:106 templates/support_packages.html:153
+#: templates/order-form.html:107 templates/support_packages.html:153
 msgid ""
 "Verleih oder Verkauf von Keypads von der Firma \n"
 "                      <a href=\"http://www.keypaddepot.de/de/Wahlen/Mitglieder-Versammlungen/VoteCollector-App-nur-Plug-In-zu-OpenSlides.html\">Voteworks</a>\n"
 "                      mit Anbindung an OpenSlides"
 msgstr ""
 
-#: templates/order-form.html:112 templates/support_packages.html:163
+#: templates/order-form.html:113 templates/support_packages.html:163
 msgid "Verleih eines Xirrus-WLAN-Arrays"
-msgstr ""
+msgstr "Location d'un réseau sans fil Xirrus"
 
-#: templates/order-form.html:113 templates/support_packages.html:164
+#: templates/order-form.html:114 templates/support_packages.html:164
 msgid ""
 "bis zu 1000 gleichzeitige Benutzer pro\n"
 "                   Array; leichte Installation ohne Verkabelung;\n"
 "                   erprobt mit OpenSlides und elektronischem\n"
 "                   Abstimmungssystem "
-msgstr ""
+msgstr "Jusqu'à 1 000 utilisateurs simultanés par réseau ; installation facile et sans câbles ; testé avec OpenSlides et les systèmes de vote électronique"
 
-#: templates/order-form.html:120 templates/support_packages.html:174
+#: templates/order-form.html:121 templates/support_packages.html:174
 msgid "Namenskarten mit Barcode"
-msgstr ""
+msgstr "Étiquettes nominatives avec code barre"
 
-#: templates/order-form.html:121
+#: templates/order-form.html:122
 msgid ""
 "Für schnelle Anwesenheitserfassung der Teilnehmer; \n"
 "                inkl. Verleih eines Barcodescanners"
-msgstr ""
-
-#: templates/order-form.html:129
-msgid "Lieferung und Zahlung"
-msgstr ""
+msgstr "Pour la vérification rapide de la présence des participants ;\nlocation d'une scanneuse de code barre incluse"
 
 #: templates/order-form.html:130
+msgid "Lieferung und Zahlung"
+msgstr "Livraison et paiement"
+
+#: templates/order-form.html:131
 msgid ""
 "Nach Bestelleingang wird Ihr persönlicher\n"
 "        <strong>USB-Stick</strong> mit OpenSlides zusammengestellt und\n"
 "        gemeinsam mit der <strong>Rechnung</strong> an Sie per Post\n"
 "        verschickt."
-msgstr ""
+msgstr "Après réception de votre commande, nous configurerons votre <strong>support USB</strong> personnel avec OpenSlides et nous vous l'enverrons par la poste, accompagné de la <strong>facture</strong>."
 
-#: templates/order-form.html:134
+#: templates/order-form.html:135
 msgid ""
 " Ihre Zahlung wird nach Erhalt der Rechnung\n"
 "        innerhalb von 14 Tagen gefordert."
-msgstr ""
+msgstr "Vous avez ensuite 14 jours après réception de la facture pour effectuer le réglement."
 
-#: templates/order-form.html:143 templates/support_packages.html:227
+#: templates/order-form.html:144 templates/support_packages.html:227
 msgid "Haben Sie noch Fragen? Wir beraten Sie gerne."
-msgstr ""
+msgstr "N'hésitez pas à nous contacter si vous avez d'autres questions."
 
 #: templates/plugins.html:9
 msgid "OpenSlides mit Plugins erweitern"
-msgstr ""
+msgstr "Installer des plugins dans OpenSlides"
 
 #: templates/plugins.html:16
 msgid ""
 "OpenSlides 1.4 besitzt eine Schnittstelle für externe Plugins.\n"
 "Plugins für OpenSlides sind in Python geschriebene Django-Applikationen.\n"
 "Sie können durch spezielle Funktionen in OpenSlides integriert werden."
-msgstr ""
+msgstr "OpenSlides 1.4 permet l'installation de plugins externes. Les plugins d'OpenSlides sont des applications Django codées en Python. Elles peuvent être intégrées à OpenSlides grâce à des fonctions spéciales."
 
 #: templates/plugins.html:22
 msgid ""
@@ -1626,11 +1752,15 @@ msgid ""
 "<a href=\"https://github.com/OpenSlides/OpenSlides/wiki/De:Plugins\">Wiki</a>."
 msgstr ""
 
+#: templates/plugins.html:27
+msgid "Verfügbare Plugins"
+msgstr ""
+
 #: templates/plugins.html:36
 msgid ""
 "Dieses Plugin bietet einen CSV-Export der Rednerliste.\n"
 "Es soll außerdem als Beispiel dienen zum Schreiben von Plugins für OpenSlides."
-msgstr ""
+msgstr "Ce plugin permet l'exportation au format CSV de la liste des orateurs. De plus, il est un bon exemple de la manière de coder des plugins pour OpenSlides."
 
 #: templates/plugins.html:46
 msgid ""
@@ -1642,17 +1772,23 @@ msgstr ""
 msgid ""
 "Dieses Plugin bietet eine strukturierte Abstimmung\n"
 "über Themen unter Verwendung der Sainte-Laguë-Methode."
-msgstr ""
-
-#: templates/plugins.html:65
-msgid "Alle Plugins"
-msgstr ""
+msgstr "Ce plugin permet d'établir un résultat structuré selon la méthode de Sainte-Laguë."
 
 #: templates/plugins.html:66
-msgid "Ältere Versionen sowie die SHA1-Prüfsummen finden Sie unter"
-msgstr "Les anciennes versions ainsi que les SHA1 algorithme, consultez"
+msgid ""
+"Dieses Plugin ermöglicht die Protokollierung von Tagesordnungseinträgen in "
+"OpenSlides."
+msgstr ""
 
-#: templates/plugins.html:69
+#: templates/plugins.html:74
+msgid "Alle Plugins"
+msgstr "Tous les plugins"
+
+#: templates/plugins.html:75
+msgid "Ältere Versionen sowie die SHA1-Prüfsummen finden Sie unter"
+msgstr "Les anciennes versions et les algorithmes SHA1sont disponibles"
+
+#: templates/plugins.html:78
 msgid ""
 "Ausgewählte Plugins sind auch direkt im\n"
 "<a href=\"https://github.com/OpenSlides/\">Quellcode-Repository bei GitHub</a>\n"
@@ -1666,17 +1802,17 @@ msgstr ""
 #: templates/pm-20121211.html:5 templates/pm-20121211.html.py:14
 #: templates/pm-20130710.html:5 templates/pm-20130710.html.py:14
 msgid "Pressemitteilung"
-msgstr ""
+msgstr "Publications dans la presse"
 
 #: templates/pm-20110915.html:15
 msgid ""
 "OpenSlides 1.0 - Neues Präsentationssystem für Veranstaltungen mit "
 "Tagesordnungen, Anträgen und Wahlen"
-msgstr ""
+msgstr "OpenSlides 1.0 - Nouveau système de présentation pour assemblées générales, incluant agenda, motions et élections"
 
 #: templates/pm-20110915.html:17
 msgid "15. September 2011"
-msgstr ""
+msgstr "15 septembre 2011"
 
 #: templates/pm-20110915.html:20
 msgid ""
@@ -1750,153 +1886,185 @@ msgid "OpenSlides in der Presse"
 msgstr ""
 
 #: templates/press.html:20
-msgid "Meldung zu OpenSlides 1.4"
+msgid "Artikel aus Verbändereport 1/2014 zu OpenSlides"
 msgstr ""
 
 #: templates/press.html:21
-msgid "Interview mit Emanuel Schütze"
+msgid "Meldung aus iX 1/2014 zu OpenSlides"
 msgstr ""
 
 #: templates/press.html:22
-msgid "Artikel aus AV-views 2013/4 zu OpenSlides 1.4"
+msgid "Meldung zu OpenSlides"
 msgstr ""
 
 #: templates/press.html:23
-msgid "Pro-Linux-Meldung zu OpenSlides 1.4"
+msgid "AV-views-Meldung zu OpenSlides"
 msgstr ""
 
 #: templates/press.html:24
-msgid "Linux-Magazin-Meldung zu OpenSlides 1.4"
+msgid "Heise-Meldung zu OpenSlides"
 msgstr ""
 
 #: templates/press.html:25
-msgid "Heise-Meldung zu OpenSlides 1.4"
+msgid "Pro-Linux-Meldung zu OpenSlides"
 msgstr ""
 
-#: templates/press.html:26
-msgid "Artikel aus iX 2/2013 zu OpenSlides 1.3.1"
-msgstr ""
-
-#: templates/press.html:27
-msgid "Linux-Magazin-Meldung zu OpenSlides 1.3"
-msgstr ""
-
-#: templates/press.html:28
-msgid "Pro-Linux-Meldung zu OpenSlides 1.3"
-msgstr ""
-
-#: templates/press.html:29
-msgid "Heise-Meldung zu OpenSlides 1.3"
-msgstr ""
-
-#: templates/press.html:34
+#: templates/press.html:30
 msgid "Ältere Meldungen anzeigen"
 msgstr ""
 
+#: templates/press.html:35
+msgid "Meldung zu OpenSlides 1.4"
+msgstr ""
+
+#: templates/press.html:36
+msgid "Interview mit Emanuel Schütze"
+msgstr ""
+
+#: templates/press.html:37
+msgid "Artikel aus AV-views 2013/4 zu OpenSlides 1.4"
+msgstr ""
+
+#: templates/press.html:38
+msgid "Pro-Linux-Meldung zu OpenSlides 1.4"
+msgstr ""
+
+#: templates/press.html:39
+msgid "Linux-Magazin-Meldung zu OpenSlides 1.4"
+msgstr ""
+
 #: templates/press.html:40
-msgid "Artikel im IHK Magazin 11/2012 (Seite 36) zum innovate! Award 2012"
+msgid "Heise-Meldung zu OpenSlides 1.4"
+msgstr ""
+
+#: templates/press.html:41
+msgid "Artikel aus iX 2/2013 zu OpenSlides 1.3.1"
 msgstr ""
 
 #: templates/press.html:42
-msgid "Artikel im Weser Ems Manager 9/2012 zum innovate! Award 2012"
+msgid "Linux-Magazin-Meldung zu OpenSlides 1.3"
+msgstr ""
+
+#: templates/press.html:43
+msgid "Pro-Linux-Meldung zu OpenSlides 1.3"
 msgstr ""
 
 #: templates/press.html:44
+msgid "Heise-Meldung zu OpenSlides 1.3"
+msgstr ""
+
+#: templates/press.html:46
+msgid "Artikel im IHK Magazin 11/2012 (Seite 36) zum innovate! Award 2012"
+msgstr ""
+
+#: templates/press.html:48
+msgid "Artikel im Weser Ems Manager 9/2012 zum innovate! Award 2012"
+msgstr ""
+
+#: templates/press.html:50
 msgid ""
 "Artikel der Neuen Osnabrücker Zeitung (20.10.2012, Autorin: Claudia "
 "Sarrazin) zum innovate! Award 2012"
 msgstr ""
 
-#: templates/press.html:46
+#: templates/press.html:52
 msgid "Artikel aus AV-views 2012/4 zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:48
+#: templates/press.html:54
 msgid "Meldung in iX 9/2012 zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:50
+#: templates/press.html:56
 msgid "ubuntuusers: Ein Interview mit einem Entwickler"
 msgstr ""
 
-#: templates/press.html:52
+#: templates/press.html:58
 msgid "Linux-Magazin-Meldung zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:53
+#: templates/press.html:59
 msgid "Heise-Meldung zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:54
+#: templates/press.html:60
 msgid "Pro-Linux-Meldung zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:55
+#: templates/press.html:61
 msgid "Artikel aus c't 26/2011 zu OpenSlides 1.1"
 msgstr ""
 
-#: templates/press.html:56
+#: templates/press.html:62
 msgid "Artikel aus AV-views 2011/5 zu OpenSlides 1.1"
 msgstr ""
 
-#: templates/press.html:57
+#: templates/press.html:63
 msgid "Pro-Linux-Meldung zu OpenSlides 1.0"
 msgstr ""
 
-#: templates/press.html:65
+#: templates/press.html:71
 msgid "Pressemitteilungen"
 msgstr ""
 
-#: templates/press.html:68
+#: templates/press.html:74
+msgid "OpenSlides 1.6: Keine stille Post auf Versammlungen mehr nötig"
+msgstr ""
+
+#: templates/press.html:76
+msgid "OpenSlides 1.5: Auch in der letzten Reihe wissen was läuft"
+msgstr ""
+
+#: templates/press.html:78
 msgid "OpenSlides 1.4 mit Rednerliste und verbesserter Antragsverwaltung"
 msgstr ""
 
-#: templates/press.html:70
+#: templates/press.html:80
 msgid ""
 "OpenSlides 1.3 - Neue Dashboard-Widgets und verbesserte Teilnehmerverwaltung"
 msgstr ""
 
-#: templates/press.html:74
+#: templates/press.html:84
 msgid ""
 "OpenSlides 1.2 - Präsentations- und Versammlungssystem mit verbesserter "
 "Installation und Projektorsteuerung"
 msgstr ""
 
-#: templates/press.html:76
+#: templates/press.html:86
 msgid "Intevation veranstaltet OpenSlides-Entwicklertreffen"
 msgstr ""
 
-#: templates/press.html:78
+#: templates/press.html:88
 msgid ""
 "OpenSlides 1.0 - Neues\n"
 "        Präsentationssystem für Veranstaltungen mit Tagesordnungen,\n"
 "        Anträgen und Wahlen"
 msgstr ""
 
-#: templates/press.html:88
+#: templates/press.html:98
 msgid "Ältere News anzeigen"
 msgstr ""
 
-#: templates/press.html:104
+#: templates/press.html:114
 msgid "Pressekontakt"
 msgstr ""
 
-#: templates/press.html:113
+#: templates/press.html:123
 msgid "Vorträge"
 msgstr ""
 
-#: templates/press.html:130
+#: templates/press.html:140
 msgid "Logos"
 msgstr ""
 
-#: templates/press.html:131
+#: templates/press.html:141
 msgid ""
 "Das Motiv von OpenSlides stellt ein Overheadprojektor (auch Polylux oder "
 "Tageslichtprojektor) dar und symbolisiert damit ein flexibles \"Auflegen\" "
 "und freies \"Entwerfen\" der Folien."
 msgstr ""
 
-#: templates/press.html:132
+#: templates/press.html:142
 msgid "Alle Größen und Varianten des OpenSlides Logos"
 msgstr ""
 
@@ -1909,11 +2077,11 @@ msgid ""
 msgstr ""
 
 #: templates/references.html:25 templates/references.html.py:32
-#: templates/references.html:39 templates/references.html.py:46
-#: templates/references.html:52 templates/references.html.py:59
-#: templates/references.html:68 templates/references.html.py:76
-#: templates/references.html:83 templates/references.html.py:89
-#: templates/references.html:96
+#: templates/references.html:41 templates/references.html.py:48
+#: templates/references.html:54 templates/references.html.py:61
+#: templates/references.html:70 templates/references.html.py:78
+#: templates/references.html:85 templates/references.html.py:91
+#: templates/references.html:98
 msgid "Erstmaliger Einsatz von OpenSlides"
 msgstr ""
 
@@ -1921,11 +2089,15 @@ msgstr ""
 msgid "weitere Einsätze"
 msgstr ""
 
-#: templates/references.html:70
+#: templates/references.html:34
+msgid "Artikel im Verbändereport 1/2014"
+msgstr ""
+
+#: templates/references.html:72
 msgid "Ein erster Prototyp von OpenSlides wurde bereits seit 2005 verwendet."
 msgstr ""
 
-#: templates/references.html:97
+#: templates/references.html:99
 msgid "weiterer Einsatz"
 msgstr ""
 
@@ -2166,7 +2338,7 @@ msgid "Vielen Dank für Ihre Nachricht!"
 msgstr ""
 
 #: templates/thanks-order.html:5
-msgid "Bestellbestätigung"
+msgid "Versandbestätigung"
 msgstr ""
 
 #: templates/thanks-order.html:6
@@ -2175,12 +2347,10 @@ msgstr ""
 
 #: templates/thanks-order.html:11
 msgid ""
-"Vielen Dank für die Bestellung Ihres OpenSlides-Supportpakets!\n"
-"Ihre Bestellung wird bearbeitet. Sie erhalten in Kürze eine Antwort.\n"
-"Ein USB-Stick mit Ihrer individuell OpenSlides-Installation wird\n"
-"erstellt und Ihnen per Post zugeschickt."
+"Vielen Dank für Ihr Interesse an unseren OpenSlides-Supportpaketen!\n"
+"Ihre Anfrage wird bearbeitet. Sie erhalten in Kürze eine Antwort."
 msgstr ""
 
-#: templates/thanks-order.html:18
+#: templates/thanks-order.html:16
 msgid "Sollten Sie noch Fragen haben, melden Sie sich gerne!"
 msgstr ""

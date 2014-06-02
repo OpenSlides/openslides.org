@@ -16,9 +16,9 @@
 
 {% block content %}
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
-{% with version="1.5.1" %}
+{% with version="1.6" %}
 {% trans 'Aktuelle stabile Version' %}: OpenSlides {{version}}
-({% trans 'veröffentlicht am' %} 31.03.2014)</h2>
+({% trans 'veröffentlicht am' %} {% trans "3. Juni 2014" %})</h2>
 <div class="row">
     <div class="span6">
     <div class="well">
@@ -43,7 +43,7 @@
       <p><code>pip install openslides</code><br><br></p>
       <p>
       {% blocktrans %}Alternativ kann auch das aktuelle 
-      <a href="http://files.openslides.org//releases/{{version}}/openslides-{{version}}.tar.gz">tar.gz-Paket</a> von OpenSlides
+      <a href="http://files.openslides.org/releases/{{version}}/openslides-{{version}}.tar.gz">tar.gz-Paket</a> von OpenSlides
       heruntergeladen und installiert werden.{% endblocktrans %}
       </p>
       <p>{% blocktrans %}Details in der <a
@@ -56,48 +56,6 @@
 <br>
 {% endwith %}
 
-<h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
-{% trans 'Letzte Entwicklungsversion' %}: OpenSlides 1.6-beta2
-({% trans 'veröffentlicht am' %} 19.5.2014)</h2>
-{% with version="1.6b2" %}
-<div class="row">
-    <div class="span6">
-    <div class="well">
-    <h3>{% trans 'Für Windows' %}</h3>
-      <p>
-      <a class="jumbotron btn btn-primary btn-large"
-      href="http://files.openslides.org/releases/{{version}}/openslides-{{version}}-portable.zip">
-      {% trans 'Download OpenSlides' %}<br>
-      <small>v{{version}} | .zip | 17 MB</small></a>
-      </p>
-      <p>{% blocktrans %}Dies ist eine <strong>portable Version</strong>.
-      OpenSlides muss nicht installiert werden. Einfach herunterladen, entpacken und openslides.exe starten!{% endblocktrans %}</p>
-      <p>
-      {% blocktrans %}Details in der <a
-      href="https://github.com/OpenSlides/OpenSlides/blob/{{version}}/README.rst">README</a>.{% endblocktrans %}
-      </p>
-    </div>
-    </div>
-    <div class="span6">
-    <div class="well">
-      <h3>{% trans 'Für Linux/MacOS' %}</h3>
-      <p>
-      <a class="jumbotron btn btn-primary btn-large"
-      href="http://files.openslides.org/releases/{{version}}/openslides-{{version}}.tar.gz">
-      {% trans 'Download OpenSlides' %}<br>
-      <small>v{{version}} | .tar.gz | 3 MB</small></a>
-      </p>
-      <p>{% trans 'Nach Download das Paket in einer virtualenv-Umgebung installieren' %}:
-      <br><code>pip install openslides-{{version}}.tar.gz</code></p>
-      </p>
-      <p>
-      {% blocktrans %}Details in der <a
-      href="https://github.com/OpenSlides/OpenSlides/blob/{{version}}/README.rst">README</a>.{% endblocktrans %}
-      </p>
-    </div>
-    </div>
-</div>
-{% endwith %}
 
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
 {% trans 'Plugins' %}</h2>

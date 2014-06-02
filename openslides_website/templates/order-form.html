@@ -60,13 +60,13 @@
             {% if package == '2' %}800,-{% endif %}
             {% if package == '3' %}2500,-{% endif %}
             &euro;
-            <small>{% trans 'zzgl. MwSt.' %}</small></p>
+            <small>{% trans 'zzgl. USt.' %}</small></p>
         </div>
         <ul class="unstyled">
             <li>{% url 'license' as license_url %}
             {% trans 'Lizenzkostenfreie Nutzung' %}
             <small>{% blocktrans %}OpenSlides ist Freie Software, lizensiert unter
-            der <a href="{{ license_url }}">GNU GPL v2+</a>.{% endblocktrans %}</small></li>
+            der <a href="{{ license_url }}">MIT</a>.{% endblocktrans %}</small></li>
             <li>{% trans 'Individueller Support' %}<sup>1</sup> mit bis zu <strong>
                 {% if package == '1' %}0,5{% endif %}
                 {% if package == '2' %}5{% endif %}
