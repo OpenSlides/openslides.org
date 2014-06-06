@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-02 21:16+0200\n"
+"POT-Creation-Date: 2014-06-06 08:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1035,7 +1035,7 @@ msgstr ""
 
 #: templates/features.html:113
 msgid ""
-"Verwalten Sie Ihre Tagesordung mit OpenSlides.\n"
+"Verwalten Sie Ihre Tagesordnung mit OpenSlides.\n"
 "        Tagesordnungspunkte lassen sich (per CSV) importieren und\n"
 "        leicht per Drag&Drop zu einer hierarchischen Liste mit\n"
 "        Unterpunkten verschieben."
@@ -1087,7 +1087,7 @@ msgstr ""
 #: templates/features.html:152
 msgid ""
 "Schätzen Sie die Dauer für jeden Tagesordnungspunkt und erhalten Sie\n"
-"        dadurch einen prognostierten Endzeitpunkt der Tagung."
+"        dadurch einen prognostizierten Endzeitpunkt der Tagung."
 msgstr ""
 
 #: templates/features.html:159
@@ -1189,7 +1189,7 @@ msgstr ""
 #: templates/features.html:241
 msgid ""
 "Ordnen Sie Sachgebiete Ihren Anträgen zu und vergeben Sie \n"
-"        zusätzlich ein passendes Prefix für die Antragsbezeichner, z.B. \"SA "
+"        zusätzlich ein passendes Präfix für die Antragsbezeichner, z.B. \"SA "
 "1\"."
 msgstr ""
 
@@ -1200,7 +1200,7 @@ msgstr ""
 #: templates/features.html:246
 msgid ""
 "Alle Anträge lassen sich übersichtlich zu einem PDF zusammenfassen;\n"
-"        inkl. Antragsteller, Abstimmgungsergebnisse und Begründungen."
+"        inkl. Antragsteller, Abstimmungsergebnisse und Begründungen."
 msgstr ""
 
 #: templates/features.html:252
@@ -1261,7 +1261,7 @@ msgid ""
 msgstr ""
 
 #: templates/features.html:297
-msgid "Personalierte Stimmzettel"
+msgid "Personalisierte Stimmzettel"
 msgstr ""
 
 #: templates/features.html:298
@@ -1635,7 +1635,7 @@ msgstr ""
 msgid "Bericht vom Entwicklertreffen"
 msgstr ""
 
-#: templates/newsarchiv.html:40 templates/press.html:82
+#: templates/newsarchiv.html:40 templates/press.html:85
 msgid "OpenSlides gewinnt innovate!Interaction Award 2012"
 msgstr ""
 
@@ -1985,185 +1985,189 @@ msgid "OpenSlides in der Presse"
 msgstr ""
 
 #: templates/press.html:20
-msgid "Artikel aus Verbändereport 1/2014 zu OpenSlides"
+msgid "Linux-Magazin-Meldung zu OpenSlides"
 msgstr ""
 
-#: templates/press.html:21
-msgid "Meldung aus iX 1/2014 zu OpenSlides"
-msgstr ""
-
-#: templates/press.html:22
-msgid "Meldung zu OpenSlides"
-msgstr ""
-
-#: templates/press.html:23
-msgid "AV-views-Meldung zu OpenSlides"
-msgstr ""
-
-#: templates/press.html:24
-msgid "Heise-Meldung zu OpenSlides"
-msgstr ""
-
-#: templates/press.html:25
+#: templates/press.html:21 templates/press.html.py:28
 msgid "Pro-Linux-Meldung zu OpenSlides"
 msgstr ""
 
-#: templates/press.html:30
+#: templates/press.html:22 templates/press.html.py:27
+msgid "Heise-Meldung zu OpenSlides"
+msgstr ""
+
+#: templates/press.html:23
+msgid "Artikel aus Verbändereport 1/2014 zu OpenSlides"
+msgstr ""
+
+#: templates/press.html:24
+msgid "Meldung aus iX 1/2014 zu OpenSlides"
+msgstr ""
+
+#: templates/press.html:25
+msgid "Meldung zu OpenSlides"
+msgstr ""
+
+#: templates/press.html:26
+msgid "AV-views-Meldung zu OpenSlides"
+msgstr ""
+
+#: templates/press.html:33
 msgid "Ältere Meldungen anzeigen"
 msgstr ""
 
-#: templates/press.html:35
+#: templates/press.html:38
 msgid "Meldung zu OpenSlides 1.4"
 msgstr ""
 
-#: templates/press.html:36
+#: templates/press.html:39
 msgid "Interview mit Emanuel Schütze"
 msgstr ""
 
-#: templates/press.html:37
+#: templates/press.html:40
 msgid "Artikel aus AV-views 2013/4 zu OpenSlides 1.4"
 msgstr ""
 
-#: templates/press.html:38
+#: templates/press.html:41
 msgid "Pro-Linux-Meldung zu OpenSlides 1.4"
 msgstr ""
 
-#: templates/press.html:39
+#: templates/press.html:42
 msgid "Linux-Magazin-Meldung zu OpenSlides 1.4"
 msgstr ""
 
-#: templates/press.html:40
+#: templates/press.html:43
 msgid "Heise-Meldung zu OpenSlides 1.4"
 msgstr ""
 
-#: templates/press.html:41
+#: templates/press.html:44
 msgid "Artikel aus iX 2/2013 zu OpenSlides 1.3.1"
 msgstr ""
 
-#: templates/press.html:42
+#: templates/press.html:45
 msgid "Linux-Magazin-Meldung zu OpenSlides 1.3"
 msgstr ""
 
-#: templates/press.html:43
+#: templates/press.html:46
 msgid "Pro-Linux-Meldung zu OpenSlides 1.3"
 msgstr ""
 
-#: templates/press.html:44
+#: templates/press.html:47
 msgid "Heise-Meldung zu OpenSlides 1.3"
 msgstr ""
 
-#: templates/press.html:46
+#: templates/press.html:49
 msgid "Artikel im IHK Magazin 11/2012 (Seite 36) zum innovate! Award 2012"
 msgstr ""
 
-#: templates/press.html:48
+#: templates/press.html:51
 msgid "Artikel im Weser Ems Manager 9/2012 zum innovate! Award 2012"
 msgstr ""
 
-#: templates/press.html:50
+#: templates/press.html:53
 msgid ""
 "Artikel der Neuen Osnabrücker Zeitung (20.10.2012, Autorin: Claudia "
 "Sarrazin) zum innovate! Award 2012"
 msgstr ""
 
-#: templates/press.html:52
+#: templates/press.html:55
 msgid "Artikel aus AV-views 2012/4 zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:54
+#: templates/press.html:57
 msgid "Meldung in iX 9/2012 zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:56
+#: templates/press.html:59
 msgid "ubuntuusers: Ein Interview mit einem Entwickler"
 msgstr ""
 
-#: templates/press.html:58
+#: templates/press.html:61
 msgid "Linux-Magazin-Meldung zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:59
+#: templates/press.html:62
 msgid "Heise-Meldung zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:60
+#: templates/press.html:63
 msgid "Pro-Linux-Meldung zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:61
+#: templates/press.html:64
 msgid "Artikel aus c't 26/2011 zu OpenSlides 1.1"
 msgstr ""
 
-#: templates/press.html:62
+#: templates/press.html:65
 msgid "Artikel aus AV-views 2011/5 zu OpenSlides 1.1"
 msgstr ""
 
-#: templates/press.html:63
+#: templates/press.html:66
 msgid "Pro-Linux-Meldung zu OpenSlides 1.0"
 msgstr ""
 
-#: templates/press.html:71
+#: templates/press.html:74
 msgid "Pressemitteilungen"
 msgstr ""
 
-#: templates/press.html:74
+#: templates/press.html:77
 msgid "OpenSlides 1.6: Keine stille Post auf Versammlungen mehr nötig"
 msgstr ""
 
-#: templates/press.html:76
+#: templates/press.html:79
 msgid "OpenSlides 1.5: Auch in der letzten Reihe wissen was läuft"
 msgstr ""
 
-#: templates/press.html:78
+#: templates/press.html:81
 msgid "OpenSlides 1.4 mit Rednerliste und verbesserter Antragsverwaltung"
 msgstr ""
 
-#: templates/press.html:80
+#: templates/press.html:83
 msgid ""
 "OpenSlides 1.3 - Neue Dashboard-Widgets und verbesserte Teilnehmerverwaltung"
 msgstr ""
 
-#: templates/press.html:84
+#: templates/press.html:87
 msgid ""
 "OpenSlides 1.2 - Präsentations- und Versammlungssystem mit verbesserter "
 "Installation und Projektorsteuerung"
 msgstr ""
 
-#: templates/press.html:86
+#: templates/press.html:89
 msgid "Intevation veranstaltet OpenSlides-Entwicklertreffen"
 msgstr ""
 
-#: templates/press.html:88
+#: templates/press.html:91
 msgid ""
 "OpenSlides 1.0 - Neues\n"
 "        Präsentationssystem für Veranstaltungen mit Tagesordnungen,\n"
 "        Anträgen und Wahlen"
 msgstr ""
 
-#: templates/press.html:98
+#: templates/press.html:101
 msgid "Ältere News anzeigen"
 msgstr ""
 
-#: templates/press.html:114
+#: templates/press.html:117
 msgid "Pressekontakt"
 msgstr ""
 
-#: templates/press.html:123
+#: templates/press.html:126
 msgid "Vorträge"
 msgstr ""
 
-#: templates/press.html:140
+#: templates/press.html:143
 msgid "Logos"
 msgstr ""
 
-#: templates/press.html:141
+#: templates/press.html:144
 msgid ""
 "Das Motiv von OpenSlides stellt ein Overheadprojektor (auch Polylux oder "
 "Tageslichtprojektor) dar und symbolisiert damit ein flexibles \"Auflegen\" "
 "und freies \"Entwerfen\" der Folien."
 msgstr ""
 
-#: templates/press.html:142
+#: templates/press.html:145
 msgid "Alle Größen und Varianten des OpenSlides Logos"
 msgstr ""
 
