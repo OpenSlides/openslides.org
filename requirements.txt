@@ -1,2 +1,2 @@
 # Requirements for openslides.org
-Django==1.6.1
+Django>=1.6,<1.7
