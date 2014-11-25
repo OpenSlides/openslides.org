@@ -37,6 +37,7 @@ urlpatterns = i18n_patterns('',
     url(r'^about/press/20130710/$', TemplateView.as_view(template_name="pm-20130710.html"), name='pm-20130710'),
     url(r'^authors/$', TemplateView.as_view(template_name="authors.html"), name='authors'),
     url(r'^news/20121119/virtuelle-mitgliederversammlung/$', TemplateView.as_view(template_name="news-20121119.html"), name='news-20121119'),
+    url(r'^news/20141125/papierlose-versammlung/$', TemplateView.as_view(template_name="news-20141125.html"), name='news-20141125'),
 )
 
 # permanent redirect patterns

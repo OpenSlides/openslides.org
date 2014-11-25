@@ -122,7 +122,7 @@ footer {
     background: none repeat scroll 0 0 #252525;
     border-top: 0 none;
     margin-top: 19px;
-    padding: 19px 0;
+    padding: 19px 20px;
 }
 footer h4 {
     color: #999999;
@@ -271,7 +271,7 @@ h3 {
 }
 
 /* About page */
-#quotes blockquote {
+#quotes {
     line-height: 1.25;
 }
 #quotes .logo {
@@ -284,4 +284,16 @@ h3 {
 }
 #quotes .author {
     line-height: 14px;
+}
+
+
+/* News */
+.intro {
+    margin-bottom: 20px;
+}
+.intro p {
+    font-weight: bold;
+}
+h3 {
+    margin-top: 20px;
 }
