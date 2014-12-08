@@ -106,8 +106,7 @@ Software Entwicklung.{% endblocktrans %}
           <tr>
             <td class="leftcolumn">{% trans 'Portable Version auf USB-Stick' %}
                 <small>{% blocktrans %}OpenSlides direkt vom USB-Stick startbar;
-                    vorkonfiguriert mit Ihren Veranstaltungsdaten;
-                    inkl. Werkzeug zum Datenexport<sup>2</sup> ins CSV-Format{% endblocktrans %}
+                    vorkonfiguriert mit Ihren Anforderungen{% endblocktrans %}
                 </small></td>
             <td>-</td>
             <td><i class="icon-ok"></i></td>
@@ -132,26 +131,20 @@ Software Entwicklung.{% endblocktrans %}
             <td>-</td>
             <td><i class="icon-ok"></i></td>
           </tr>
-          <tr>
-            <td class="leftcolumn">{% trans 'Hosting Ihrer OpenSlides-Installation' %}
-                <span class="label label-important">{% trans 'Neu' %}</span>
-                <small>{% blocktrans %}nur in der Vorbereitungsphase; 
-                anschließend Download der Datenbank für eigene OpenSlides-Installation
-                vor Ort{% endblocktrans %}</small></td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td><i class="icon-ok"></i><br>
-                <span class="badge badge-success">
-                    {% trans 'bis zu' %} 10 {% trans 'Nutzer' %}
-                 <span></td>
-          </tr>
           <tr class="topline">
+            <td class="leftcolumn">{% trans 'Hosting Ihrer OpenSlides-Installation' %}
+                <small>{% blocktrans %}abhängig von Nutzeranzahl und Zeitraum{% endblocktrans %}</small></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td><i>{% trans 'Auf Anfrage' %}</i></td>
+          </tr>
+          <tr>
               <td class="leftcolumn">
                   {% trans 'Einsatz eines elektronischen Abstimmungssystems' %}
                   <span class="label label-important">{% trans 'Profi-Tipp' %}</span>
                   <small>{% blocktrans %}Verleih oder Verkauf von Keypads von der Firma 
-                      <a href="http://www.keypaddepot.de/de/Wahlen/Mitglieder-Versammlungen/VoteCollector-App-nur-Plug-In-zu-OpenSlides.html">Voteworks</a>
+                      <a href="http://www.voteworks.de">Voteworks</a>
                       mit Anbindung an OpenSlides{% endblocktrans %}
                   </small></td>
             <td>-</td>
@@ -161,18 +154,18 @@ Software Entwicklung.{% endblocktrans %}
           </tr>
           <tr>
             <td class="leftcolumn">{% trans 'Verleih eines Xirrus-WLAN-Arrays' %}
-                <small>{% blocktrans %}bis zu 1000 gleichzeitige Benutzer pro
+                <small>{% blocktrans %}in Zusammenarbeit mit der Firma <a
+href="http://www.brainworks.de/xirrus/konkurrenzlose-wlan-hochtechnologie-zukunftssichere-netzwerkanbindung-mobiler-devices.html">brainworks</a>; bis zu 1000 gleichzeitige Benutzer pro
                    Array; leichte Installation ohne Verkabelung;
                    erprobt mit OpenSlides und elektronischem
-                   Abstimmungssystem {% endblocktrans %}</small></td>
+                   Abstimmungssystem{% endblocktrans %}</small></td>
             <td>-</td>
             <td>-</td>
             <td><i>{% trans 'Auf Anfrage' %}</i></td>
             <td><i>{% trans 'Auf Anfrage' %}</i></td>
           </tr>
           <tr>
-            <td class="leftcolumn">{% trans 'Namenskarten mit Barcode' %} <span class="label
-                    label-important">{% trans 'Neu' %}</span>
+            <td class="leftcolumn">{% trans 'Namenskarten mit Barcode' %} 
                <small>{% blocktrans %}Für schnelle Anwesenheitserfassung der Teilnehmer;
                 inkl. Verleih eines Barcodescanners{% endblocktrans %}</small></td>
             <td>-</td>
@@ -241,16 +234,12 @@ Software Entwicklung.{% endblocktrans %}
     <p>
         <strong>
         {% trans 'Alle Preisangaben gelten zuzüglich der gesetzlich gültigen USt.' %}
-        | {% trans 'Stand: 08.03.2013' %}
+        | {% trans 'Stand: 08.12.2014' %}
         </strong>
     </p>
     <p>
         {% blocktrans %}<sup>1</sup> Zeitkontingent; Zählung pro angefangene 15-Minuten.
-        Supportlaufzeit begrenzt bis Veranstaltungsende. Enthält keinen Vor-Ort-Support.{% endblocktrans %}
-        <br>
-        {% blocktrans %}<sup>2</sup> Export anhand der sqlite-Datenbank; enthält
-        Grunddaten aus Tagesordnung, Anträge, Wahlen und Teilnehmer.
-        Weiterverarbeitung möglich.{% endblocktrans %}
+        Supportlaufzeit begrenzt bis Veranstaltungsende bzw. max 12 Monate. Enthält keinen Vor-Ort-Support.{% endblocktrans %}
     </p>
     </small>
 {% endblock %}

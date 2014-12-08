@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-23 20:56+0200\n"
+"POT-Creation-Date: 2014-12-08 13:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,7 +56,7 @@ msgstr ""
 msgid "Ansprechpartner"
 msgstr ""
 
-#: forms.py:33 templates/support_packages.html:233
+#: forms.py:33 templates/support_packages.html:226
 msgid "Telefon"
 msgstr ""
 
@@ -193,7 +193,7 @@ msgstr ""
 msgid "Zitate"
 msgstr ""
 
-#: templates/about.html:91
+#: templates/about.html:92
 msgid ""
 "»Wir begleiten die Entwicklung von OpenSlides seit \n"
 "                    den ersten Versionen und haben OpenSlides schon mehrfach "
@@ -212,7 +212,7 @@ msgid ""
 "                    digitale Zeitalter zu transportieren.«"
 msgstr ""
 
-#: templates/about.html:110
+#: templates/about.html:111
 msgid ""
 "»OpenSlides unterstützt uns schon\n"
 "                    bei der Planung unserer Kreissynoden durch die\n"
@@ -222,7 +222,7 @@ msgid ""
 "                    situationsbedingt 'Folien' ein- und ausblenden.«"
 msgstr ""
 
-#: templates/about.html:124
+#: templates/about.html:125
 msgid ""
 "»Die Hauptgeschäftsstelle der Sächsischen Landesärztekammer organisiert\n"
 "                    und unterstützt die Tagungen der Kammerversammlungen. "
@@ -251,11 +251,21 @@ msgid ""
 "                    "
 msgstr ""
 
-#: templates/about.html:155
+#: templates/about.html:147
+msgid ""
+"»Uns hat besonders fasziniert, wie\n"
+"                    Freie Software genutzt wird, um Kernelemente einer "
+"lebendigen Demokratie\n"
+"                    mit modernen technischen Mitteln zu vereinfachen und "
+"transparenter zu\n"
+"                    gestalten.«"
+msgstr ""
+
+#: templates/about.html:167
 msgid "Historie"
 msgstr ""
 
-#: templates/about.html:160
+#: templates/about.html:172
 msgid ""
 "Im Jahre 2005 wurde ein interner PHP-Prototyp von OpenSlides\n"
 "            speziell für den Einsatz auf der Bundesversammlung der\n"
@@ -264,7 +274,7 @@ msgid ""
 "            (Bundes-ESG)</a> durch Emanuel Schütze entwickelt."
 msgstr ""
 
-#: templates/about.html:166
+#: templates/about.html:178
 msgid ""
 "Ende 2010 begannen <b>Oskar Hahn</b> und\n"
 "            <b>Emanuel Schütze</b> mit einer kompletten\n"
@@ -273,7 +283,7 @@ msgid ""
 "            ein Freies Software Produkt mit dem Namen \"OpenSlides\" auf."
 msgstr ""
 
-#: templates/about.html:172
+#: templates/about.html:184
 msgid ""
 "OpenSlides wurde im August 2011 unter\n"
 "            der GNU GPL v2+ veröffentlicht. Version 1.0 ist am 12. September "
@@ -283,7 +293,7 @@ msgid ""
 "            September auf der ESG-Bundesversammlung 2011 in Hannover statt."
 msgstr ""
 
-#: templates/about.html:177
+#: templates/about.html:189
 msgid ""
 "Mit OpenSlides 1.5 wurde auf die MIT-Lizenz\n"
 "            gewechselt."
@@ -363,7 +373,7 @@ msgstr ""
 
 #: templates/base.html:44 templates/base.html.py:136 templates/contact.html:5
 #: templates/contact.html.py:6 templates/impressum.html:5
-#: templates/order-form.html:142 templates/support_packages.html:226
+#: templates/order-form.html:142 templates/support_packages.html:219
 msgid "Kontakt"
 msgstr ""
 
@@ -408,7 +418,7 @@ msgstr ""
 msgid "Demo"
 msgstr ""
 
-#: templates/base.html:109 templates/support_packages.html:120
+#: templates/base.html:109 templates/support_packages.html:119
 msgid "Tipp"
 msgstr ""
 
@@ -628,7 +638,7 @@ msgid "Kontaktieren Sie uns! Wir beraten Sie gerne."
 msgstr ""
 
 #: templates/contact.html:35 templates/order-form.html:145
-#: templates/support_packages.html:228
+#: templates/support_packages.html:221
 msgid "Ihr Ansprechpartner"
 msgstr ""
 
@@ -1593,11 +1603,12 @@ msgid ""
 msgstr ""
 
 #: templates/news-20121119.html:5 templates/news-20121119.html.py:14
-#: templates/newsarchiv.html:38
+#: templates/newsarchiv.html:47
 msgid "Die virtuelle Mitgliederversammlung im Verein"
 msgstr ""
 
-#: templates/news-20121119.html:6 templates/news.html:4
+#: templates/news-20121119.html:6 templates/news-20141125.html:6
+#: templates/news.html:4
 msgid "News"
 msgstr ""
 
@@ -1613,34 +1624,42 @@ msgid ""
 "    gestellt."
 msgstr ""
 
-#: templates/news.html:9 templates/news.html.py:11 templates/news.html:13
-#: templates/news.html.py:15 templates/newsarchiv.html:5
+#: templates/news-20141125.html:5
+msgid "Papierlose Versammlungen kein Wunschdenken mehr"
+msgstr ""
+
+#: templates/news-20141125.html:14
+msgid "Papierlose Versammlungen sind kein Wunschdenken mehr"
+msgstr ""
+
+#: templates/news.html:14 templates/newsarchiv.html:5
 #: templates/newsarchiv.html.py:7 templates/newsarchiv.html:9
-#: templates/newsarchiv.html.py:11 templates/newsarchiv.html:13
-#: templates/newsarchiv.html.py:15 templates/newsarchiv.html:17
-#: templates/newsarchiv.html.py:19 templates/newsarchiv.html:21
-#: templates/newsarchiv.html.py:23 templates/newsarchiv.html:32
-#: templates/newsarchiv.html.py:36
+#: templates/newsarchiv.html.py:14 templates/newsarchiv.html:16
+#: templates/newsarchiv.html.py:18 templates/newsarchiv.html:20
+#: templates/newsarchiv.html.py:22 templates/newsarchiv.html:24
+#: templates/newsarchiv.html.py:26 templates/newsarchiv.html:28
+#: templates/newsarchiv.html.py:30 templates/newsarchiv.html:32
+#: templates/newsarchiv.html.py:41 templates/newsarchiv.html:45
 msgid "veröffentlicht"
 msgstr ""
 
-#: templates/news.html:17
+#: templates/newsarchiv.html:11
 msgid "OpenSlides-Artikel im Verbändereport 1/2014 erschienen"
 msgstr ""
 
-#: templates/newsarchiv.html:28
+#: templates/newsarchiv.html:37
 msgid "OpenSlides belegt 2. Platz bei Leserwahl-Aktion"
 msgstr ""
 
-#: templates/newsarchiv.html:30
+#: templates/newsarchiv.html:39
 msgid "OpenSlides in der iX 2/2013"
 msgstr ""
 
-#: templates/newsarchiv.html:34
+#: templates/newsarchiv.html:43
 msgid "Bericht vom Entwicklertreffen"
 msgstr ""
 
-#: templates/newsarchiv.html:40 templates/press.html:86
+#: templates/newsarchiv.html:49 templates/press.html:88
 msgid "OpenSlides gewinnt innovate!Interaction Award 2012"
 msgstr ""
 
@@ -1688,7 +1707,7 @@ msgstr ""
 
 #: templates/order-form.html:63 templates/support_packages.html:54
 #: templates/support_packages.html.py:58 templates/support_packages.html:62
-#: templates/support_packages.html:193
+#: templates/support_packages.html:186
 msgid "zzgl. USt."
 msgstr ""
 
@@ -1727,27 +1746,27 @@ msgstr ""
 msgid "Portable Version auf USB-Stick"
 msgstr ""
 
-#: templates/order-form.html:82 templates/support_packages.html:108
+#: templates/order-form.html:82
 msgid ""
 "OpenSlides direkt vom USB-Stick startbar;\n"
 "                    vorkonfiguriert mit Ihren Veranstaltungsdaten;\n"
 "                    inkl. Werkzeug zum Datenexport<sup>2</sup> ins CSV-Format"
 msgstr ""
 
-#: templates/order-form.html:87 templates/support_packages.html:119
+#: templates/order-form.html:87 templates/support_packages.html:118
 msgid "Anpassung des Projektortemplates"
 msgstr ""
 
-#: templates/order-form.html:88 templates/support_packages.html:121
+#: templates/order-form.html:88 templates/support_packages.html:120
 msgid "nach Vorlage; mit Ihrem Logo"
 msgstr ""
 
-#: templates/order-form.html:93 templates/support_packages.html:128
+#: templates/order-form.html:93 templates/support_packages.html:127
 msgid "OpenSlides-Schulung vor Ort"
 msgstr ""
 
-#: templates/order-form.html:94 templates/support_packages.html:129
-#: templates/support_packages.html:197
+#: templates/order-form.html:94 templates/support_packages.html:128
+#: templates/support_packages.html:190
 msgid "Tag"
 msgstr ""
 
@@ -1768,18 +1787,19 @@ msgid "Im Paketpreis nicht enthalten"
 msgstr ""
 
 #: templates/order-form.html:105 templates/order-form.html.py:112
-#: templates/order-form.html:120 templates/support_packages.html:159
-#: templates/support_packages.html:160 templates/support_packages.html:170
-#: templates/support_packages.html:171 templates/support_packages.html:180
-#: templates/support_packages.html:181 templates/support_packages.html:202
+#: templates/order-form.html:120 templates/support_packages.html:140
+#: templates/support_packages.html:152 templates/support_packages.html:153
+#: templates/support_packages.html:164 templates/support_packages.html:165
+#: templates/support_packages.html:173 templates/support_packages.html:174
+#: templates/support_packages.html:195
 msgid "Auf Anfrage"
 msgstr ""
 
-#: templates/order-form.html:106 templates/support_packages.html:151
+#: templates/order-form.html:106 templates/support_packages.html:144
 msgid "Einsatz eines elektronischen Abstimmungssystems"
 msgstr ""
 
-#: templates/order-form.html:107 templates/support_packages.html:153
+#: templates/order-form.html:107
 msgid ""
 "Verleih oder Verkauf von Keypads von der Firma \n"
 "                      <a href=\"http://www.keypaddepot.de/de/Wahlen/"
@@ -1788,11 +1808,11 @@ msgid ""
 "                      mit Anbindung an OpenSlides"
 msgstr ""
 
-#: templates/order-form.html:113 templates/support_packages.html:163
+#: templates/order-form.html:113 templates/support_packages.html:156
 msgid "Verleih eines Xirrus-WLAN-Arrays"
 msgstr ""
 
-#: templates/order-form.html:114 templates/support_packages.html:164
+#: templates/order-form.html:114
 msgid ""
 "bis zu 1000 gleichzeitige Benutzer pro\n"
 "                   Array; leichte Installation ohne Verkabelung;\n"
@@ -1800,7 +1820,7 @@ msgid ""
 "                   Abstimmungssystem "
 msgstr ""
 
-#: templates/order-form.html:121 templates/support_packages.html:174
+#: templates/order-form.html:121 templates/support_packages.html:168
 msgid "Namenskarten mit Barcode"
 msgstr ""
 
@@ -1828,7 +1848,7 @@ msgid ""
 "        innerhalb von 14 Tagen gefordert."
 msgstr ""
 
-#: templates/order-form.html:144 templates/support_packages.html:227
+#: templates/order-form.html:144 templates/support_packages.html:220
 msgid "Haben Sie noch Fragen? Wir beraten Sie gerne."
 msgstr ""
 
@@ -1990,193 +2010,201 @@ msgid "OpenSlides in der Presse"
 msgstr ""
 
 #: templates/press.html:20
-msgid "Artikel aus AV-views 4/2014 zu OpenSlides 1.6"
+msgid "Pro-Linux-Meldung zum OSBAR 2014"
 msgstr ""
 
 #: templates/press.html:21
+msgid "Linux-Magazin-Meldung zum OSBAR 2014"
+msgstr ""
+
+#: templates/press.html:22
+msgid "Artikel aus AV-views 4/2014 zu OpenSlides 1.6"
+msgstr ""
+
+#: templates/press.html:23
 msgid "Linux-Magazin-Meldung zu OpenSlides"
 msgstr ""
 
-#: templates/press.html:22 templates/press.html.py:38
+#: templates/press.html:24 templates/press.html.py:40
 msgid "Pro-Linux-Meldung zu OpenSlides"
 msgstr ""
 
-#: templates/press.html:23 templates/press.html.py:37
+#: templates/press.html:25 templates/press.html.py:39
 msgid "Heise-Meldung zu OpenSlides"
 msgstr ""
 
-#: templates/press.html:24
+#: templates/press.html:26
 msgid "Artikel aus Verbändereport 1/2014 zu OpenSlides"
 msgstr ""
 
-#: templates/press.html:29
+#: templates/press.html:31
 msgid "Ältere Meldungen anzeigen"
 msgstr ""
 
-#: templates/press.html:34
+#: templates/press.html:36
 msgid "Meldung aus iX 1/2014 zu OpenSlides"
 msgstr ""
 
-#: templates/press.html:35
+#: templates/press.html:37
 msgid "Meldung zu OpenSlides"
 msgstr ""
 
-#: templates/press.html:36
+#: templates/press.html:38
 msgid "AV-views-Meldung zu OpenSlides"
 msgstr ""
 
-#: templates/press.html:39
+#: templates/press.html:41
 msgid "Meldung zu OpenSlides 1.4"
 msgstr ""
 
-#: templates/press.html:40
+#: templates/press.html:42
 msgid "Interview mit Emanuel Schütze"
 msgstr ""
 
-#: templates/press.html:41
+#: templates/press.html:43
 msgid "Artikel aus AV-views 2013/4 zu OpenSlides 1.4"
 msgstr ""
 
-#: templates/press.html:42
+#: templates/press.html:44
 msgid "Pro-Linux-Meldung zu OpenSlides 1.4"
 msgstr ""
 
-#: templates/press.html:43
+#: templates/press.html:45
 msgid "Linux-Magazin-Meldung zu OpenSlides 1.4"
 msgstr ""
 
-#: templates/press.html:44
+#: templates/press.html:46
 msgid "Heise-Meldung zu OpenSlides 1.4"
 msgstr ""
 
-#: templates/press.html:45
+#: templates/press.html:47
 msgid "Artikel aus iX 2/2013 zu OpenSlides 1.3.1"
 msgstr ""
 
-#: templates/press.html:46
+#: templates/press.html:48
 msgid "Linux-Magazin-Meldung zu OpenSlides 1.3"
 msgstr ""
 
-#: templates/press.html:47
+#: templates/press.html:49
 msgid "Pro-Linux-Meldung zu OpenSlides 1.3"
 msgstr ""
 
-#: templates/press.html:48
+#: templates/press.html:50
 msgid "Heise-Meldung zu OpenSlides 1.3"
 msgstr ""
 
-#: templates/press.html:50
+#: templates/press.html:52
 msgid "Artikel im IHK Magazin 11/2012 (Seite 36) zum innovate! Award 2012"
 msgstr ""
 
-#: templates/press.html:52
+#: templates/press.html:54
 msgid "Artikel im Weser Ems Manager 9/2012 zum innovate! Award 2012"
 msgstr ""
 
-#: templates/press.html:54
+#: templates/press.html:56
 msgid ""
 "Artikel der Neuen Osnabrücker Zeitung (20.10.2012, Autorin: Claudia "
 "Sarrazin) zum innovate! Award 2012"
 msgstr ""
 
-#: templates/press.html:56
+#: templates/press.html:58
 msgid "Artikel aus AV-views 2012/4 zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:58
+#: templates/press.html:60
 msgid "Meldung in iX 9/2012 zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:60
+#: templates/press.html:62
 msgid "ubuntuusers: Ein Interview mit einem Entwickler"
 msgstr ""
 
-#: templates/press.html:62
+#: templates/press.html:64
 msgid "Linux-Magazin-Meldung zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:63
+#: templates/press.html:65
 msgid "Heise-Meldung zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:64
+#: templates/press.html:66
 msgid "Pro-Linux-Meldung zu OpenSlides 1.2"
 msgstr ""
 
-#: templates/press.html:65
+#: templates/press.html:67
 msgid "Artikel aus c't 26/2011 zu OpenSlides 1.1"
 msgstr ""
 
-#: templates/press.html:66
+#: templates/press.html:68
 msgid "Artikel aus AV-views 2011/5 zu OpenSlides 1.1"
 msgstr ""
 
-#: templates/press.html:67
+#: templates/press.html:69
 msgid "Pro-Linux-Meldung zu OpenSlides 1.0"
 msgstr ""
 
-#: templates/press.html:75
+#: templates/press.html:77
 msgid "Pressemitteilungen"
 msgstr ""
 
-#: templates/press.html:78
+#: templates/press.html:80
 msgid "OpenSlides 1.6: Keine stille Post auf Versammlungen mehr nötig"
 msgstr ""
 
-#: templates/press.html:80
+#: templates/press.html:82
 msgid "OpenSlides 1.5: Auch in der letzten Reihe wissen was läuft"
 msgstr ""
 
-#: templates/press.html:82
+#: templates/press.html:84
 msgid "OpenSlides 1.4 mit Rednerliste und verbesserter Antragsverwaltung"
 msgstr ""
 
-#: templates/press.html:84
+#: templates/press.html:86
 msgid ""
 "OpenSlides 1.3 - Neue Dashboard-Widgets und verbesserte Teilnehmerverwaltung"
 msgstr ""
 
-#: templates/press.html:88
+#: templates/press.html:90
 msgid ""
 "OpenSlides 1.2 - Präsentations- und Versammlungssystem mit verbesserter "
 "Installation und Projektorsteuerung"
 msgstr ""
 
-#: templates/press.html:90
+#: templates/press.html:92
 msgid "Intevation veranstaltet OpenSlides-Entwicklertreffen"
 msgstr ""
 
-#: templates/press.html:92
+#: templates/press.html:94
 msgid ""
 "OpenSlides 1.0 - Neues\n"
 "        Präsentationssystem für Veranstaltungen mit Tagesordnungen,\n"
 "        Anträgen und Wahlen"
 msgstr ""
 
-#: templates/press.html:102
+#: templates/press.html:104
 msgid "Ältere News anzeigen"
 msgstr ""
 
-#: templates/press.html:118
+#: templates/press.html:120
 msgid "Pressekontakt"
 msgstr ""
 
-#: templates/press.html:127
+#: templates/press.html:129
 msgid "Vorträge"
 msgstr ""
 
-#: templates/press.html:144
+#: templates/press.html:150
 msgid "Logos"
 msgstr ""
 
-#: templates/press.html:145
+#: templates/press.html:151
 msgid ""
 "Das Motiv von OpenSlides stellt ein Overheadprojektor (auch Polylux oder "
 "Tageslichtprojektor) dar und symbolisiert damit ein flexibles \"Auflegen\" "
 "und freies \"Entwerfen\" der Folien."
 msgstr ""
 
-#: templates/press.html:146
+#: templates/press.html:152
 msgid "Alle Größen und Varianten des OpenSlides Logos"
 msgstr ""
 
@@ -2351,7 +2379,7 @@ msgid ""
 msgstr ""
 
 #: templates/support_packages.html:83 templates/support_packages.html.py:87
-#: templates/support_packages.html:91 templates/support_packages.html:146
+#: templates/support_packages.html:91
 msgid "bis zu"
 msgstr ""
 
@@ -2364,94 +2392,99 @@ msgstr ""
 msgid "Neueste qualitätsgesicherte Version"
 msgstr ""
 
-#: templates/support_packages.html:136
+#: templates/support_packages.html:108
+msgid ""
+"OpenSlides direkt vom USB-Stick startbar;\n"
+"                    vorkonfiguriert mit Ihren Anforderungen"
+msgstr ""
+
+#: templates/support_packages.html:135
 msgid "Hosting Ihrer OpenSlides-Installation"
 msgstr ""
 
-#: templates/support_packages.html:137 templates/support_packages.html:175
-msgid "Neu"
+#: templates/support_packages.html:136
+msgid "abhängig von Nutzeranzahl und Zeitraum"
 msgstr ""
 
-#: templates/support_packages.html:138
-msgid ""
-"nur in der Vorbereitungsphase; \n"
-"                anschließend Download der Datenbank für eigene OpenSlides-"
-"Installation\n"
-"                vor Ort"
-msgstr ""
-
-#: templates/support_packages.html:146
-msgid "Nutzer"
-msgstr ""
-
-#: templates/support_packages.html:152
+#: templates/support_packages.html:145
 msgid "Profi-Tipp"
 msgstr ""
 
-#: templates/support_packages.html:176
+#: templates/support_packages.html:146
+msgid ""
+"Verleih oder Verkauf von Keypads von der Firma \n"
+"                      <a href=\"http://www.voteworks.de\">Voteworks</a>\n"
+"                      mit Anbindung an OpenSlides"
+msgstr ""
+
+#: templates/support_packages.html:157
+msgid ""
+"in Zusammenarbeit mit der Firma <a\n"
+"href=\"http://www.brainworks.de/xirrus/konkurrenzlose-wlan-hochtechnologie-"
+"zukunftssichere-netzwerkanbindung-mobiler-devices.html\">brainworks</a>; bis "
+"zu 1000 gleichzeitige Benutzer pro\n"
+"                   Array; leichte Installation ohne Verkabelung;\n"
+"                   erprobt mit OpenSlides und elektronischem\n"
+"                   Abstimmungssystem"
+msgstr ""
+
+#: templates/support_packages.html:169
 msgid ""
 "Für schnelle Anwesenheitserfassung der Teilnehmer;\n"
 "                inkl. Verleih eines Barcodescanners"
 msgstr ""
 
-#: templates/support_packages.html:190
+#: templates/support_packages.html:183
 msgid "Zusatzleistungen"
 msgstr ""
 
-#: templates/support_packages.html:192
+#: templates/support_packages.html:185
 msgid "zusätzliche Supportstunde"
 msgstr ""
 
-#: templates/support_packages.html:193
+#: templates/support_packages.html:186
 msgid "Stunde"
 msgstr ""
 
-#: templates/support_packages.html:195
+#: templates/support_packages.html:188
 msgid "Vor-Ort-Service (z.B.: Beratung, Schulung, technische Durchführung)"
 msgstr ""
 
-#: templates/support_packages.html:197
+#: templates/support_packages.html:190
 msgid "zzgl. USt. und Spesen"
 msgstr ""
 
-#: templates/support_packages.html:200
+#: templates/support_packages.html:193
 msgid "Weiterentwicklung von OpenSlides"
 msgstr ""
 
-#: templates/support_packages.html:203
+#: templates/support_packages.html:196
 msgid ""
 "Ihnen fehlen bestimmte Funktionen in OpenSlides? Wir erstellen Ihnen ein "
 "individuelles Weiterentwicklungsangebot."
 msgstr ""
 
-#: templates/support_packages.html:213
+#: templates/support_packages.html:206
 msgid "USB-Stick mit eingraviertem OpenSlides-Logo"
 msgstr ""
 
-#: templates/support_packages.html:219
+#: templates/support_packages.html:212
 msgid "Keypads zur elektronischen Abstimmung von Anträgen mit OpenSlides"
 msgstr ""
 
-#: templates/support_packages.html:243
+#: templates/support_packages.html:236
 msgid "Alle Preisangaben gelten zuzüglich der gesetzlich gültigen USt."
 msgstr ""
 
-#: templates/support_packages.html:244
-msgid "Stand: 08.03.2013"
+#: templates/support_packages.html:237
+msgid "Stand: 08.12.2014"
 msgstr ""
 
-#: templates/support_packages.html:248
+#: templates/support_packages.html:241
 msgid ""
 "<sup>1</sup> Zeitkontingent; Zählung pro angefangene 15-Minuten.\n"
-"        Supportlaufzeit begrenzt bis Veranstaltungsende. Enthält keinen Vor-"
-"Ort-Support."
-msgstr ""
-
-#: templates/support_packages.html:251
-msgid ""
-"<sup>2</sup> Export anhand der sqlite-Datenbank; enthält\n"
-"        Grunddaten aus Tagesordnung, Anträge, Wahlen und Teilnehmer.\n"
-"        Weiterverarbeitung möglich."
+"        Supportlaufzeit begrenzt bis Veranstaltungsende bzw. max 12 Monate. "
+"Enthält keinen Vor-Ort-Support."
 msgstr ""
 
 #: templates/thanks-contact.html:5 templates/thanks-contact.html.py:6
