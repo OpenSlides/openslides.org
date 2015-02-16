@@ -16,9 +16,9 @@
 
 {% block content %}
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
-{% with version="1.6.1" %}
+{% with version="1.7" %}
 {% trans 'Aktuelle stabile Version' %}: OpenSlides {{version}}
-({% trans 'veröffentlicht am' %} {% trans "8. Dezember 2014" %})</h2>
+({% trans 'veröffentlicht am' %} {% trans "16. Februar 2015" %})</h2>
 <div class="row">
     <div class="span6">
     <div class="well">
@@ -27,7 +27,7 @@
       <a class="jumbotron btn btn-primary btn-large"
       href="http://files.openslides.org/releases/{{version}}/openslides-{{version}}-portable.zip">
       {% trans 'Download OpenSlides' %}<br>
-      <small>v{{version}} | .zip | 17 MB</small></a>
+      <small>v{{version}} | .zip | 18 MB</small></a>
       </p>
       <p>{% blocktrans %}Dies ist eine <strong>portable Version</strong>.
       OpenSlides muss nicht installiert werden. Einfach herunterladen, entpacken und openslides.exe starten!{% endblocktrans %}</p>
@@ -56,6 +56,7 @@
 <br>
 {% endwith %}
 
+{% comment %}
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
 {% trans 'Letzte Entwicklungsversion' %}: OpenSlides 1.7-beta1
 ({% trans 'veröffentlicht am' %} 21.1.2015)</h2>
@@ -98,6 +99,7 @@ href="https://github.com/OpenSlides/OpenSlides/blob/{{version}}/README.rst">READ
 </div>
 </div>
 {% endwith %}
+{% endcomment %}
 
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
 {% trans 'Plugins' %}</h2>
