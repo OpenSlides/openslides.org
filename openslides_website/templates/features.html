@@ -139,7 +139,7 @@ Probieren Sie diese in der <a href='{{demo_url}}'>Online-Demo</a> aus!
 </div>
 <div class="row greytext">
     <div class="span4">
-        <h5>{% trans "Automatische Nummerierung" %} <span class="label label-important">{% trans "Neu in 1.6" %}</span></h5>
+        <h5>{% trans "Automatische Nummerierung" %}</h5>
         <p>{% blocktrans %}Auf Klick lässt sich die Tagesordnung automatisch
         nummerieren (mit arabischen oder römischen Ziffern); optional mit
         einstellbarem Präfix (z.B. "TOP 1").{% endblocktrans %}</p>
@@ -156,7 +156,7 @@ Probieren Sie diese in der <a href='{{demo_url}}'>Online-Demo</a> aus!
         </p>
     </div>
     <div class="span4">
-        <h5>{% trans "Rednerliste auf zweiten Bildschirm" %} <span class="label label-important">{% trans "Neu in 1.6" %}</span></h5>
+        <h5>{% trans "Rednerliste auf zweiten Bildschirm" %}</h5>
         <p>{% blocktrans %}Behalten Sie die aktuelle Rednerliste über
         einen zweiten Bildschirm immer im Blick - während der Projektor zeitgleich
         für das Plenum den zugehörigen TOP anzeigt.{% endblocktrans %}</p>
@@ -247,6 +247,38 @@ Probieren Sie diese in der <a href='{{demo_url}}'>Online-Demo</a> aus!
         inkl. Antragsteller, Abstimmungsergebnisse und Begründungen.{% endblocktrans %}</p>
     </div>
 </div>
+<div class="row greytext">
+    <div class="span4">
+        <h5>{% trans "Änderungsanträge erstellen" %} 
+            <span class="label label-important">{% trans "Neu in 1.7" %}</span>
+        </h5>
+        <p>{% blocktrans %}Zu einem Hauptantrag lässt sich auf Knopfdruck ein Änderungsantrag
+        einreichen. Der Bezug zum Hauptantrag ist stets gegeben. Eine automatische Nummerierung
+        hilft beim Filtern und Verwalten von Änderungsanträgen
+        (z.B.: Hauptantrag L1 und zugehöriger Änderungsantrag L1 Ä1).{% endblocktrans %}</p>
+    </div>
+    <div class="span4">
+        <h5>{% trans "Sichtbarkeit von Anträgen einschränken" %}
+            <span class="label label-important">{% trans "Neu in 1.7" %}</span>
+        </h5>
+        <p>{% blocktrans %}Anträge lassen sich für bestimmte
+        Teilnehmergruppen erst ab einem definierbaren Status
+        öffentlich einsehen. D.h. normale Nutzer im Plenum sehen Anträge beispielsweise erst
+        nach erfolgter Freigabe durch die Organisatoren.
+        {% endblocktrans %}</p>
+    </div>
+    <div class="span4">
+        <h5>{% trans "Schlagwörter zur Verwaltung" %}
+            <span class="label label-important">{% trans "Neu in 1.7" %}</span>
+        </h5>
+        <p>{% blocktrans %}Versammlungsleiter können „Tags“
+        zur Verschlagwortung von Einträgen vergeben, um leichter inhaltlich
+        zusammengehörige Elemente zu verwalten. Beispielsweise kann ein Antrag, ein
+        Tagesordnungspunkt und eine Wahl mit dem gleichen Schlagwort versehen werden.
+        {% endblocktrans %}</p>
+    </div>
+</div>
+
 <div class="row greytext">
     <div class="span4">
         <h5>{% trans "Anträge abstimmen" %}</h5>
@@ -426,7 +458,7 @@ Probieren Sie diese in der <a href='{{demo_url}}'>Online-Demo</a> aus!
 </div>
 <div class="row greytext">
     <div class="span4">
-        <h5>{% trans "Gruppen-Chat" %} <span class="label label-important">{% trans "Neu in 1.6" %}</span></h5>
+        <h5>{% trans "Gruppen-Chat" %}</h5>
         <p>
         {% blocktrans %}Nutzen Sie die Chatfunktion für einen
         reibungslosen Austausch unter den Organisatoren (z.B.
