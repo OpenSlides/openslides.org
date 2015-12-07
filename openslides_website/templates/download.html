@@ -57,9 +57,9 @@
 {% endwith %}
 
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
-{% trans 'Letzte Entwicklungsversion' %}: OpenSlides 2.0-alpha1
-({% trans 'veröffentlicht am' %} 29.6.2015)</h2>
-{% with version="2.0a1" %}
+{% trans 'Letzte Entwicklungsversion' %}: OpenSlides 2.0-beta1
+({% trans 'veröffentlicht am' %} 7.12.2015)</h2>
+{% with version="2.0b1" %}
 <div class="row">
 <div class="span6">
 <div class="well">
@@ -68,7 +68,7 @@
 <a class="jumbotron btn btn-primary btn-large"
 href="http://files.openslides.org/releases/{{version}}/openslides-{{version}}-portable.zip">
 {% trans 'Download OpenSlides' %}<br>
-<small>v{{version}} | .zip | 20 MB</small></a>
+<small>v{{version}} | .zip | 25 MB</small></a>
 </p>
 <p>{% blocktrans %}Dies ist eine <strong>portable Version</strong>.
 OpenSlides muss nicht installiert werden. Einfach herunterladen, entpacken und openslides.exe starten!{% endblocktrans %}</p>
@@ -85,7 +85,7 @@ href="https://github.com/OpenSlides/OpenSlides/blob/{{version}}/README.rst">READ
 <a class="jumbotron btn btn-primary btn-large"
 href="http://files.openslides.org/releases/{{version}}/openslides-{{version}}.tar.gz">
 {% trans 'Download OpenSlides' %}<br>
-<small>v{{version}} | .tar.gz | 2 MB</small></a>
+<small>v{{version}} | .tar.gz | 7 MB</small></a>
 </p>
 <p>{% trans 'Nach Download das Paket in einer virtualenv-Umgebung installieren' %}:
 <br><code>pip install openslides-{{version}}.tar.gz</code></p>
