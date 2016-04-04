@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html ng-app="openslides-website" ng-controller="LanguageCtrl" lang="{{ selectedLangCode }}" class="no-js">
+  <head >
+    <title>OpenSlides</title>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <!-- Favicon -->
+    <link rel="icon" href="static/img/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/libs/css/openslides-libs.css"/>
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <!-- JS -->
+    <script src="static/libs/js/openslides-libs.js"></script>
+    <!-- Our application file -->
+    <script src="static/js/main.js"></script>
+  </head>
+
+  <body>
+
+  <!-- *** HEADER *** -->
+  <header id="header" class="header">
+    <div class="container">
+      <!-- logo -->
+      <div class="logo pull-left">
+        <a href="/#promo" du-smooth-scroll>
+          <img src="static/img/openslides-logo-dark.png" alt="OpenSlides logo">
+        </a>
+      </div>
+
+      <!-- language switcher -->
+      <div class="nav-lang pull-right">
+        <div class="btn-group" uib-dropdown>
+          <img uib-dropdown-toggle ng-src="static/img/flags/{{ selectedLangCode }}.png" alt="flag-{{ selectedLangCode }}">
+          <ul uib-dropdown-menu role="menu" class="pull-right">
+            <li ng-repeat="language in languages">
+              <a href="" ng-click="switchLanguage(language.code)">
+                <img ng-src="static/img/flags/{{ language.code }}.png">
+                {{ language.name }}
+                <i ng-if="language.selected" class="fa fa-check"></i>
+              </a>
+          </ul>
+        </div>
+      </div>
+
+      <!-- menu -->
+      <div ng-controller="MenuCtrl">
+      <nav id="main-nav" class="main-nav navbar-right" role="navigation" >
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" ng-click="isMenuOpen = !isMenuOpen" ng-class="{active: isMenuOpen}">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="navbar navbar-collapse" ng-class="{collapse: !isMenuOpen}">
+          <ul class="nav navbar-nav">
+            <li class="nav-item" du-scrollspy="about">
+              <a href="/#about" ng-click="closeMenu()" du-smooth-scroll translate>About</a>
+            <li class="nav-item" du-scrollspy="features">
+              <a href="/#features" ng-click="closeMenu()" du-smooth-scroll translate>Features</a>
+            <li class="nav-item" du-scrollspy="download">
+              <a href="/#download" ng-click="closeMenu()" du-smooth-scroll translate>Download</a>
+            <li class="nav-item" du-scrollspy="contact">
+              <a href="/#contact" ng-click="closeMenu()" du-smooth-scroll translate>Contact</a>
+            <li class="nav-item">
+              <a class="crosspromotion" href="https://openslides.com">Services</a>
+            </ul>
+        </div>
+      </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Main Container (uses by ui-router) -->
+  <div ui-view></div>
+
+
+  <!-- *** Footer *** -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12 text-left">
+          <ul class="list-inline">
+            <li><a ui-sref="press" translate>Press</a></li>
+            <li><a ui-sref="references" translate>References</a></li>
+            <li><a ui-sref="legalnotice" translate>Legal notice</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-xs-12 text-right">
+          <translate>OpenSlides is Free Software, licensed under <a href="https://github.com/OpenSlides/OpenSlides/blob/master/LICENSE">MIT</a>.</translate><br>
+          &copy; 2011–2016 OpenSlides-Team
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+
+

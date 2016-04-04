@@ -10,25 +10,19 @@ The software project OpenSlides is managed in an own `repository <https://github
 Setup website locally
 =====================
 
-Requirements: Python, setuptools and virtualenv should be installed.
-Follow `OpenSlides README <https://github.com/OpenSlides/OpenSlides/blob/master/README.rst>`_
-for general install instructions of python stack.
-
-If you want to help improving this website, please contact us via our
-`mailing lists <http://openslides.org/contact/>`_.
-
-If you want to help translating openslides.org into your language you can use our
-`transifex project <https://www.transifex.com/projects/p/openslidesorg/>`_. Currently,
-German is our source language.
+If you want to help translating openslides.org into your language contribute to our
+`transifex project <https://www.transifex.com/openslides/>`_.
 
 
 Installation and start of the current website
 ---------------------------------------------
-Use command line on GNU/Linux or MacOS X. For using on Windows see general hints in
-`OpenSlides' README <https://github.com/OpenSlides/OpenSlides/blob/master/README.rst>`_.
 
+1. Check requirements
 
-1. Get source code of openslides.org
+   You need to have `Node.js (>=0.10) <https://nodejs.org/>`_ and `Git <http://git-scm.com/>`_
+   installed.
+
+2. Get source code of openslides.org
 
    Clone current master version from `openslides.org GitHub repository
    <https://github.com/OpenSlides/openslides.org>`_::
@@ -36,35 +30,31 @@ Use command line on GNU/Linux or MacOS X. For using on Windows see general hints
        $ git clone https://github.com/OpenSlides/openslides.org.git
        $ cd openslides.org
 
-2. Setup a virtual environment with Virtual Python Environment builder::
+3. Install all npm and bower packages::
 
-       $ virtualenv .virtualenv
-       $ source .virtualenv/bin/activate
+       $ npm install
 
-3. Install all required python packages::
+4. Start http server::
 
-       $ pip install -r requirements.txt
+       $ npm start
 
-4. Run openslides.org server::
-
-       $ python manage.py runserver
-
-   To get help on the command line options run::
-
-       $ python manage.py runserver --help
-
-Open browser at http://127.0.0.1:8000/
+Open browser at http://localhost:8080/
 
 
 Used software
 =============
 
-openslides.org uses the following projects or parts of them:
+openslides.org uses the following JavaScript packages (see bower.json):
 
-* `Django <https://www.djangoproject.com>`_, License: BSD
-
-* `Twitter Bootstrap <http://getbootstrap.com/2.3.2/>`_, License: Apache
-  License v2.0
+* `angular <http://angularjs.org>`_, License: MIT
+* `angular-bootstrap <http://angular-ui.github.io/bootstrap>`_, License: MIT
+* `angular-gettext <http://angular-gettext.rocketeer.be/>`_, License: MIT
+* `angular-scroll <https://github.com/oblador/angular-scroll/>`_, License: MIT
+* `angular-ui-router <http://angular-ui.github.io/ui-router/>`_, License: MIT
+* `bootstrap <http://getbootstrap.com>`_, License: MIT
+* `font-awesome-bower <https://github.com/tdg5/font-awesome-bower>`_, License: MIT
+* `open-sans-fontface <https://github.com/FontFaceKit/open-sans>`_, License: Apache License version 2.0
+* `roboto-condensed <https://github.com/davidcunningham/roboto-condensed>`_, License: Apache 2.0
 
 
 License and authors

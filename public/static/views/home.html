@@ -1,0 +1,509 @@
+  <!-- *** Promo *** -->
+  <section id="promo" class="promo section">
+    <div class="container text-center">
+      <img src="static/img/openslides-logo-dark.png" height="130px">
+      <p class="intro" translate>OpenSlides is a free, web based presentation and assembly system
+      for managing and projecting agenda, motions and elections of an assembly.</p>
+
+      <a class="btn btn-primary" href="https://demo.openslides.org/login" target="_blank" translate>Try now</a>
+
+      <div class="meta">
+        <ul class="list-inline">
+          <li>
+            <a href="https://github.com/OpenSlides/OpenSlides" target="_blank">
+              <i class="fa fa-github"></i>
+              GitHub
+            </a>
+          <li>
+            <a href="https://twitter.com/openslides" target="_blank">
+              <i class="fa fa-twitter"></i>
+              Twitter
+            </a>
+          <li>
+            <a href="https://docs.openslides.org/de/" target="_blank">
+              <i class="fa fa-book"></i>
+              <translate>Manual</translate>
+            </a>
+        </ul>
+      </div>
+    </div>
+    <div id="news" class="blue text-center">
+      <a href="http://mail.openslides.org/pipermail/announcement/2016-April/000022.html"
+          target="_blank">
+        <i class="fa fa-lg fa-bullhorn"></i> &nbsp;
+       OpenSlides 2.0 <translate>released</translate>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- *** About *** -->
+  <section id="about" class="bright section">
+    <div class="container">
+      <h1 class="text-center" translate>What is OpenSlides?</h1>
+
+      <p class="lead text-center" translate>OpenSlides helps to prepare and performe your assembly.
+      You can manage agenda items, motions, elections, lists of speakers, documents and participants.
+      Everything can be projected to the screen.</p>
+
+      <p class="lead text-center bluetext"
+        translate>Project, control, participate – Everything for your paperless assembly in one software!</p>
+
+      <div class="row text-center">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="icon-holder">
+            <img src="static/img/projector-icon.svg" class="projector-icon">
+          </div>
+          <div class="content">
+            <p translate>Motions, elections or simply a list of speakers:
+            Everything can be projected on a canvas. All you need is a browser.
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="icon-holder">
+            <i class="fa fa-laptop"></i>
+          </div>
+          <div class="content">
+            <p translate>Our backend enables you to manage your slides on-the-fly
+            while assembly sees the projector in fullscreen.
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="icon-holder">
+            <i class="fa fa-mobile"></i>
+          </div>
+          <div class="content">
+            <p translate>Integrate the plenum! Give access to participants on their own devices
+            (to submit motions or recall voting results).
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- References -->
+    <div class="references blue text-center" ng-controller="ReferenceCtrl">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1 controls">
+            <a href="" ng-click="moveLeft()">
+              <i class="fa fa-chevron-left"></i>
+            </a>
+          </div>
+          <img ng-repeat="logo in logos | limitTo: numberPerPage : page*numberPerPage" class="col-xs-2 logo"
+              ng-src="static/img/references/{{ logo.src }}" alt="{{ logo.name }}" title="{{ logo.name }}">
+          <div class="col-xs-1 controls">
+            <a href="" ng-click="moveRight()">
+              <i class="fa fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="text-center">
+          <a ui-sref="references" class="accent">
+            <translate>all references</translate>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- *** FEATURES *** -->
+  <section id="features" class="bright">
+    <div class="container">
+      <h1 class="text-center" translate>Features</h1>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>
+            <i class="fa fa-lg fa-calendar-o"></i>
+            <translate>Agenda</translate>
+          </h2>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <p class="lead" translate>Be flexible: Add, modify or move agenda items during operation.</p>
+          <ul>
+            <li translate>List of speakers for each agenda item.
+            <li translate>Use countdowns to restrict speaking times.
+            <li translate>Automatic numbering of items.
+            <li translate>Scheduling: estimate duration of each agenda item.
+            <li translate>Integrate unofficial items (e.g. breaks) into agenda.
+            <li translate>Mark and hide closed agenda items.
+            <li translate>Export agenda as PDF.
+            <li translate>Control projector from sidebar.
+            <li translate>Sort agenda by drag and drop.
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <a class="thumbnail">
+            <uib-carousel active="0" interval>
+              <uib-slide index="0">
+                <img src="static/img/features/agenda-list_de.png">
+              </uib-slide>
+              <uib-slide index="1">
+                <img src="static/img/features/agenda-list-of-speakers_de.png">
+              </uib-slide>
+              <uib-slide index="2">
+                <img src="static/img/features/agenda-list-of-speakers-projector_de.png">
+              </uib-slide>
+              <uib-slide index="3">
+                <img src="static/img/features/agenda-projector_de.png">
+              </uib-slide>
+              <uib-slide index="4">
+                <img src="static/img/features/agenda-edit_de.png">
+              </uib-slide>
+            </uib-carousel>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>
+            <i class="fa fa-lg fa-file-text"></i>
+            <translate>Motions</translate>
+          </h2>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <p class="lead" translate>Save paper: Submit and manage motions and voting results digitally.</p>
+          <ul>
+            <li translate>Show/hide each motion in agenda.
+            <li translate>Customizable motion states and workflows.
+            <li translate>Manage categories and tags.
+            <li translate>Define required supporters per motion.
+            <li translate>Version history to maintain modifications.
+            <li translate>HTML editor to format motion text and reason.
+            <li translate>Record voting results.
+            <li translate>Import motions from CSV.
+            <li translate>Export motions as PDF.
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <a class="thumbnail">
+            <uib-carousel active="0" interval>
+              <uib-slide index="0">
+                <img src="static/img/features/motions-list_de.png">
+              </uib-slide>
+              <uib-slide index="1">
+                <img src="static/img/features/motions-detail_de.png">
+              </uib-slide>
+              <uib-slide index="2">
+                <img src="static/img/features/motions-projector_de.png">
+              </uib-slide>
+              <uib-slide index="3">
+                <img src="static/img/features/motions-pdf_de.png">
+              </uib-slide>
+            </uib-carousel>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>
+            <i class="fa fa-lg fa-pie-chart"></i>
+            <translate>Elections</translate>
+          </h2>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <p class="lead"
+              translate>Accelerate the procedure: Generate ad hoc ballots for your secret elections.</p>
+          <ul>
+            <li translate>Nominate candidates from list of participants.
+            <li translate>Print personalized ballot papers for secret elections.
+            <li translate>Supported vote options: Yes/No/Abstain or one vote per candidate.
+            <li translate>Several ballots.
+            <li translate>Enter and project election results as diagram.
+            <li translate>Export elections (with all results) as PDF.
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <a class="thumbnail">
+            <uib-carousel active="0" interval>
+              <uib-slide index="0">
+                <img src="static/img/features/elections-list_de.png">
+              </uib-slide>
+              <uib-slide index="1">
+                <img src="static/img/features/elections-detail_de.png">
+              </uib-slide>
+              <uib-slide index="2">
+                <img src="static/img/features/elections-projector_de.png">
+              </uib-slide>
+              <uib-slide index="3">
+                <img src="static/img/features/elections-ballot-pdf_de.png">
+              </uib-slide>
+            </uib-carousel>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>
+            <i class="fa fa-search"></i>
+            <translate>More features</translate>
+          </h2>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <ul>
+            <li translate>Manage participants, groups and permissions.
+            <li translate>Document filing with PDF projection.
+            <li translate>Group chat.
+            <li translate>Customizeable front page.
+            <li translate>Portable Version for Windows.
+            <li translate>Full text search.
+            <li translate>Customizeable projector template.
+            <li translate>Responsive design.
+            <li translate>Multilingual (English, German, French, Czech, Portuguese and Spanish).
+            <li translate>OpenSlides is a plattform independet web application based on Python 3 and AngularJS with a REST-API.
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <a class="thumbnail">
+            <uib-carousel active="0" interval>
+              <uib-slide index="0">
+                <img src="static/img/features/general-users-list_de.png">
+              </uib-slide>
+              <uib-slide index="1">
+                <img src="static/img/features/general-files-list_de.png">
+              </uib-slide>
+              <uib-slide index="2">
+                <img src="static/img/features/general-chat-frontpage_de.png">
+              </uib-slide>
+              <uib-slide index="3">
+                <img src="static/img/features/general-windows-portable.png">
+              </uib-slide>
+            </uib-carousel>
+          </a>
+        </div>
+      </div>
+
+    </div><!--//container-->
+
+    <div class="blue why">
+      <div class="container">
+        <h2 class="whitetext text-center" translate>Why should I use OpenSlides?</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <h3>
+              <i class="fa fa-check-square-o"></i>
+              <translate>More transparency and interaction for your plenum.</translate>
+            </h3>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <h3>
+              <i class="fa fa-check-square-o"></i>
+              <translate>Make your assembly paperless and modern.</translate>
+            </h3>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <h3>
+              <i class="fa fa-check-square-o"></i>
+              <translate>Use OpenSlides already for the preparation phase.</translate>
+            </h3>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <h3>
+              <i class="fa fa-check-square-o"></i>
+              <translate>OpenSlides helps to create a protocol with all resolutions.</translate>
+            </h3>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <h3>
+              <i class="fa fa-check-square-o"></i>
+              <translate>Get professional support from developer team.</translate>
+            </h3>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <h3>
+              <i class="fa fa-check-square-o"></i>
+              <translate>OpenSlides is Free & Open Source Sofware.</translate>
+            </h3>
+          </div>
+        </div><!--//row-->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- *** Download *** -->
+  <section id="download" class="dark" ng-controller="DownloadCtrl">
+    <div class="container text-center">
+      <h1 translate>Download</h1>
+      <h3><translate>Current stable version</translate>: OpenSlides {{stableVersion}} ({{stableDate}})</h3>
+        <div class="btns">
+          <a class="btn btn-secondary col"
+              href="https://files.openslides.org/releases/{{stableVersion}}/openslides-{{stableVersion}}-portable.zip">
+            <i class="fa fa-2x fa-windows"></i><br>
+            Windows Portable<br>
+            <small>openslides-{{stableVersion}}-portable.zip</small>
+          </a>
+          <a class="btn btn-secondary col"
+              href="https://files.openslides.org/releases/{{stableVersion}}/openslides-{{stableVersion}}.tar.gz">
+            <i class="fa fa-2x fa-codepen"></i><br>
+            <translate>Source package</translate><br>
+            <small>openslides-{{stableVersion}}.tar.gz</small>
+          </a>
+        </div>
+
+        <p class="grey">
+          <i class="fa fa-windows"></i> Windows:
+          <translate>Unzip portable version and run openslides.exe.</translate><br>
+          <i class="fa fa-apple"></i> MacOS &middot; <i class="fa fa-linux"></i> Linux:
+          <translate>See</translate>
+          <a href="https://github.com/OpenSlides/OpenSlides/blob/{{stableVersion}}/README.rst#iii-installation"
+              class="nobr">
+            <i class="fa fa-book"></i>
+            <translate>install instructions</translate>.
+          </a>
+
+        <div ng-if="betaVersion">
+          <h3 class="spacer"><translate>Latest beta version</translate>: OpenSlides {{betaVersion}} ({{betaDate}})</h3>
+          <div class="btns">
+            <a class="btn btn-secondary btn-outline col"
+                href="https://files.openslides.org/releases/{{betaVersion}}/openslides-{{betaVersion}}-portable.zip">
+              <i class="fa fa-2x fa-windows"></i><br>
+              Windows Portable<br>
+              <small>openslides-{{betaVersion}}-portable.zip</small>
+            </a>
+            <a class="btn btn-secondary btn-outline col"
+                href="https://files.openslides.org/releases/{{betaVersion}}/openslides-{{betaVersion}}.tar.gz">
+              <i class="fa fa-2x fa-codepen"></i><br>
+              <translate>Source package</translate><br>
+              <small>openslides-{{betaVersion}}.tar.gz</small>
+            </a>
+          </div>
+
+          <p class="grey">
+            <i class="fa fa-windows"></i> Windows:
+            <translate>Unzip portable version and run openslides.exe.</translate><br>
+            <i class="fa fa-apple"></i> MacOS &middot; <i class="fa fa-linux"></i> Linux:
+            <translate>See</translate>
+            <a href="https://github.com/OpenSlides/OpenSlides/blob/{{betaVersion}}/README.rst#iii-installation"
+                class="nobr">
+              <i class="fa fa-book"></i>
+              <translate>install instructions</translate>.
+            </a>
+        </div>
+
+        <ul class="list-inline spacer">
+          <li>
+            <a href="https://files.openslides.org/releases/">
+              <i class="fa fa-archive"></i>
+              <translate>Previous releases and OpenPGP signatures</translate>
+            </a>
+          <li>
+            <a href="https://github.com/OpenSlides/OpenSlides/">
+              <i class="fa fa-github"></i>
+              <translate>GitHub repository</translate>
+            </a>
+
+
+    </div><!--//container-->
+
+    <div class="blue text-center" ng-controller="PluginCtrl">
+      <div class="container">
+        <h2 class="text-center" translate>Available Plugins</h2>
+
+        <a ng-repeat="plugin in plugins" href="{{ plugin.url }}" target="_blank"
+            class="btn btn-secondary btn-outline col plugin">
+          <h4>{{ plugin.name }}</h4>
+          <div class="tags">
+            <span ng-repeat="tag in plugin.tags" class="label"
+                ng-class="tag == '1.7' ? 'label-warning' : 'label-success'">{{ tag }}</span>
+          </div>
+          <div class="desc">{{ plugin.desc | translate }}</div>
+        </a>
+
+        <p>
+        <small><span class="label label-success">2.0</span>
+        <translate>Compatible with</translate> OpenSlides 2.0</small>
+        &nbsp;
+        <small><span class="label label-warning">1.7</span>
+        <translate>Compatible with</translate> OpenSlides 1.7</small>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- *** CONTACT *** -->
+  <section id="contact" class="bright">
+    <div class="container">
+      <h1 class="text-center" translate>Contact</h1>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h3><i class="fa fa-paper-plane"></i> Mailing lists</h3>
+          <dl>
+            <dt>announcement@openslides.org
+            <dd><translate>Official announcements</translate><br>
+              <a href="http://mail.openslides.org/listinfo/announcement/" class="accent" translate>Subscribe</a> &nbsp;
+              <a href="http://mail.openslides.org/pipermail/announcement/" class="accent" translate>Archive</a>
+
+            <dt>users-de@openslides.org</dt>
+            <dd><translate>For users and developers (German)</translate><br>
+              <a href="http://mail.openslides.org/listinfo/users-de/" class="accent" translate>Subscribe</a> &nbsp;
+              <a href="http://mail.openslides.org/pipermail/users-de/" class="accent" translate>Archive</a>
+
+            <dt>users-en@openslides.org</dt>
+            <dd><translate>For users and developers (English)</translate><br>
+              <a href="http://mail.openslides.org/listinfo/users-en/" class="accent" translate>Subscribe</a> &nbsp;
+              <a href="http://mail.openslides.org/pipermail/users-en/" class="accent" translate>Archive</a>
+          </dl>
+
+          <h3><i class="fa fa-comment"></i> IRC</h3>
+          <p translate>Chat with our OpenSlides developers via IRC network
+          <code>freenode</code>.
+          <p>
+            <translate>Channel</translate>:<br>
+            <a href="http://webchat.freenode.net/?channels=openslides&uio=d4s" target="_blank">
+              <code>#openslides</code>
+            </a>
+            (<translate>English</translate>)<br>
+            <a href="http://webchat.freenode.net/?channels=openslides&uio=d4s">
+              <code>#openslides.de</code>
+            </a>
+            (<translate>German</translate>)
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h3><i class="fa fa-twitter"></i> Twitter</h3>
+          <p translate>Tweet your experience with OpenSlides and mention
+            <a href="https://twitter.com/openslides" target="_blank">@openslides</a>.
+
+          <h3><i class="fa fa-github"></i> GitHub</h3>
+          <p translate>Get source code, report issues or read wiki pages on
+            <a href="https://github.com/OpenSlides/OpenSlides" target="_blank">GitHub</a>.
+
+          <h3><i class="fa fa-language"></i> Transifex</h3>
+          <p translate>Help translating the UI or website of OpenSlides by using
+            <a href="https://www.transifex.com/openslides/">Transifex</a>.
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h3><i class="fa fa-users"></i> <translate>Core developer team</translate></h3>
+          <p><translate>Contact the three founder and core developers of OpenSlides:</translate>
+          Oskar Hahn, Norman Jäckel <translate>and</translate> Emanuel Schütze.<br>
+          <a href="mailto:support@openslides.org"><i class="fa  fa-envelope"></i> support@openslides.org</a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h3><i class="fa fa-black-tie"></i> <translate>Professional Support</translate></h3>
+          <p translate>You are looking for customisations and support for OpenSlides?
+          Look at our <a href="https://openslides.com">service page</a> and request our
+          contact person:</p>
+          <p>
+          <b>Emanuel Schütze</b><br>
+          Intevation GmbH<br>
+          Neuer Graben 17<br>
+          D-49074 Osnabrück<br>
+          <a href="mailto:emanuel.schuetze@intevation.de"><i class="fa fa-envelope"></i> emanuel.schuetze@intevation.de</a><br>
+          <i class="fa fa-phone"></i> +49 541 335083-746
+        </div>
+
+      </div><!--//row-->
+    </div>
+  </section>
