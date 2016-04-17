@@ -1,4 +1,11 @@
-*.pyc
-.venv/*
+*.swl
+*.swm
+*.swn
+*.swo
 *.swp
 .DS_Store
+
+node_modules/*
+bower_components/*
+public/static/i18n/*
+public/static/libs/*

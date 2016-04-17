@@ -1,0 +1,491 @@
+# 
+# Translators:
+# Emanuel Schütze <emanuel.schuetze@intevation.de>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenSlides\n"
+"PO-Revision-Date: 2016-04-14 08:52+0000\n"
+"Last-Translator: Emanuel Schütze <emanuel.schuetze@intevation.de>\n"
+"Language-Team: German (http://www.transifex.com/openslides/openslides/language/de/)\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: press.html:80 press.html:82
+msgid "2nd place"
+msgstr "2. Platz"
+
+#: index.html:58
+msgid "About"
+msgstr "Über"
+
+#: home.html:209
+msgid ""
+"Accelerate the procedure: Generate ad hoc ballots for your secret elections."
+msgstr "Beschleunigen Sie das Prozedere: Generieren Sie ad-hoc Stimmzettel für Ihre geheime Wahlen."
+
+#: home.html:120
+msgid "Agenda"
+msgstr "Tagesordnung"
+
+#: home.html:439 home.html:444 home.html:449
+msgid "Archive"
+msgstr "Archiv"
+
+#: press.html:45
+msgid "Articles and Publications"
+msgstr "Artikel und Publikationen"
+
+#: home.html:128
+msgid "Automatic numbering of items."
+msgstr "Automatische Nummerierung von Tagesordnungspunkten."
+
+#: home.html:403
+msgid "Available Plugins"
+msgstr "Verfügbare Plugins"
+
+#: press.html:10 press.html:46 press.html:96
+msgid "Available in German only!"
+msgstr "Nur in Deutsch verfügbar!"
+
+#: press.html:65
+msgid "Awards"
+msgstr "Auszeichnungen"
+
+#: home.html:124
+msgid "Be flexible: Add, modify or move agenda items during operation."
+msgstr "Bleiben Sie flexibel: Ergänzen, ändern oder verschieben Sie Tagesordnungspunkte im laufenden Betrieb."
+
+#: home.html:456
+msgid "Channel"
+msgstr "Kanal"
+
+#: home.html:453
+msgid ""
+"Chat with our OpenSlides developers via IRC network\n"
+"          <code>freenode</code>."
+msgstr "Chat mit unseren OpenSlides-Entwicklern über IRC Netzwerk\n<code>freenode</code>"
+
+#: home.html:417 home.html:420
+msgid "Compatible with"
+msgstr "Kompatibel mit"
+
+#: main.js:255
+msgid "Connects OpenSlides with the electronic voting system VoteCollector."
+msgstr "Verbindet OpenSlides mit dem elektronischen Abstimmungssystem VoteCollector."
+
+#: home.html:430 index.html:64
+msgid "Contact"
+msgstr "Kontakt"
+
+#: home.html:483
+msgid "Contact the three founder and core developers of OpenSlides:"
+msgstr "Kontaktieren Sie die drei Gründer und Kernentwickler von OpenSlides:"
+
+#: home.html:133
+msgid "Control projector from sidebar."
+msgstr "Projektor über die Seitenleiste steuern."
+
+#: home.html:482
+msgid "Core developer team"
+msgstr "Kernentwickler-Team"
+
+#: home.html:334
+msgid "Current stable version"
+msgstr "Aktuelle stabile Version"
+
+#: home.html:171
+msgid "Customizable motion states and workflows."
+msgstr "Anpassbare Antrag-Statusmeldungen und -Arbeitsabläufe."
+
+#: home.html:252
+msgid "Customizeable front page."
+msgstr "Anpassbare Startseite."
+
+#: home.html:255
+msgid "Customizeable projector template."
+msgstr "Anpassbares Projektor-Template."
+
+#: home.html:173
+msgid "Define required supporters per motion."
+msgstr "Angabe von erforderlichen Unterstützern pro Antrag."
+
+#: legalnotice.html:14
+msgid "Design by"
+msgstr "Design von"
+
+#: home.html:250
+msgid "Document filing with PDF projection."
+msgstr "Dokumentenablage mit PDF-Projektion."
+
+#: home.html:333 index.html:62
+msgid "Download"
+msgstr "Download"
+
+#: home.html:205
+msgid "Elections"
+msgstr "Wahlen"
+
+#: home.html:460
+msgid "English"
+msgstr "Englisch"
+
+#: home.html:216
+msgid "Enter and project election results as diagram."
+msgstr "Wahlergebnisse eingeben und mit Diagramm projizieren."
+
+#: home.html:132
+msgid "Export agenda as PDF."
+msgstr "Tagesordnung als PDF exportieren."
+
+#: home.html:217
+msgid "Export elections (with all results) as PDF."
+msgstr "Wahlen (mit allen Ergebnissen) als PDF exportieren."
+
+#: home.html:178
+msgid "Export motions as PDF."
+msgstr "Anträge als PDF exportieren."
+
+#: main.js:250
+msgid "Exports OpenSlides data in several formats (e.g. ODT, HTML, CSV)."
+msgstr "Exportiert OpenSlides-Daten in verschiedene Formate (z. B. ODT, HTML, CSV)."
+
+#: home.html:114 index.html:60
+msgid "Features"
+msgstr "Funktionen"
+
+#: home.html:447
+msgid "For users and developers (English)"
+msgstr "Für Anwender und Entwickler (Englisch)"
+
+#: home.html:442
+msgid "For users and developers (German)"
+msgstr "Für Anwender und Entwickler (Deutsch)"
+
+#: home.html:254
+msgid "Full text search."
+msgstr "Volltextsuche."
+
+#: home.html:464
+msgid "German"
+msgstr "Deutsch"
+
+#: home.html:314
+msgid "Get professional support from developer team."
+msgstr "Erhalten Sie professionelle Unterstützung vom Entwicklerteam."
+
+#: home.html:473
+msgid ""
+"Get source code, report issues or read wiki pages on\n"
+"            <a href=\"https://github.com/OpenSlides/OpenSlides\" target=\"_blank\">GitHub</a>."
+msgstr "Quellcode bekommen, Probleme berichten oder Wikiseiten lesen auf\n<a href=\"https://github.com/OpenSlides/OpenSlides\" target=\"_blank\">GitHub</a>."
+
+#: home.html:395
+msgid "GitHub repository"
+msgstr "GitHub-Repository"
+
+#: home.html:251
+msgid "Group chat."
+msgstr "Gruppenchat."
+
+#: home.html:175
+msgid "HTML editor to format motion text and reason."
+msgstr "HTML-Editor zum Formatieren von Antragstext und -begründung."
+
+#: home.html:477
+msgid ""
+"Help translating the UI or website of OpenSlides by using\n"
+"            <a href=\"https://www.transifex.com/openslides/\">Transifex</a>."
+msgstr "Hilf uns beim Übersetzen der UI oder der Website von OpenSlides über\n<a href=\"https://www.transifex.com/openslides/\">Transifex</a>."
+
+#: home.html:177
+msgid "Import motions from CSV."
+msgstr "Anträge von CSV importieren."
+
+#: home.html:77
+msgid ""
+"Integrate the plenum! Give access to participants on their own devices\n"
+"            (to submit motions or recall voting results)."
+msgstr "Beziehen Sie das Plenum mit ein! Geben Sie den Teilnehmenden mit ihren eigenen Geräten Zugriff (zum Einreichen von Anträgen oder Abrufen von Wahlergebnissen)."
+
+#: home.html:130
+msgid "Integrate unofficial items (e.g. breaks) into agenda."
+msgstr "Inoffizielle Tagesordnungspunkte (z. B. Pause) in die Tagesordnung integrieren."
+
+#: home.html:360
+msgid "Latest beta version"
+msgstr "Letzte Beta-Version"
+
+#: index.html:87 legalnotice.html:3
+msgid "Legal notice"
+msgstr "Impressum"
+
+#: home.html:126
+msgid "List of speakers for each agenda item."
+msgstr "Redelisten für jeden Tagesordnungspunkt."
+
+#: home.html:296
+msgid "Make your assembly paperless and modern."
+msgstr "Machen Sie Ihre Versammlung papierlos und modern."
+
+#: home.html:172
+msgid "Manage categories and tags."
+msgstr "Sachgebiete und Schlagwörter verwalten."
+
+#: home.html:249
+msgid "Manage participants, groups and permissions."
+msgstr "Teilnehmende, Gruppen und Berechtigungen verwalten."
+
+#: home.html:25
+msgid "Manual"
+msgstr "Handbuch"
+
+#: home.html:131
+msgid "Mark and hide closed agenda items."
+msgstr "Abgeschlossene Tagesordnungspunkte markieren und verstecken."
+
+#: press.html:78
+msgid "More Awards"
+msgstr "Mehr Auszeichnungen"
+
+#: home.html:244
+msgid "More features"
+msgstr "Weitere Funktionen"
+
+#: home.html:290
+msgid "More transparency and interaction for your plenum."
+msgstr "Mehr Transparenz und Interaktion für Ihr Plenum."
+
+#: home.html:164
+msgid "Motions"
+msgstr "Anträge"
+
+#: home.html:57
+msgid ""
+"Motions, elections or simply a list of speakers:\n"
+"            Everything can be projected on a canvas. All you need is a browser."
+msgstr "Anträge, Wahlen oder einfach eine Redeliste: Alles kann auf eine Leinwand projiziert werden. Alles was Sie brauchen ist ein Browser."
+
+#: home.html:257
+msgid "Multilingual (English, German, French, Czech, Portuguese and Spanish)."
+msgstr "Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, Portugiesisch und Spanisch)."
+
+#: home.html:212
+msgid "Nominate candidates from list of participants."
+msgstr "Kandidaten aus der Teilnehmenden-Liste vorschlagen."
+
+#: home.html:437
+msgid "Official announcements"
+msgstr "Offizielle Ankündigungen"
+
+#: references.html:4
+msgid ""
+"OpenSildes was already successfully in use on numerous events. Here is a "
+"selection of references. We would be glad if we where allowed to mention "
+"your organization here."
+msgstr "OpenSlides war bereits auf zahlreichen Veranstaltungen erfolgreich im Einsatz. Hier eine Auswahl an Referenzen. Wir würden freuen uns, wenn wir auch Ihre Organisation hier nennen dürfen. "
+
+#: home.html:308
+msgid "OpenSlides helps to create a protocol with all resolutions."
+msgstr "OpenSlides hilft Ihnen beim Erstellen eines Beschlussprotokolls."
+
+#: home.html:44
+msgid ""
+"OpenSlides helps to prepare and performe your assembly.\n"
+"      You can manage agenda items, motions, elections, lists of speakers, documents and participants.\n"
+"      Everything can be projected to the screen."
+msgstr "OpenSlides hilft Ihnen beim Vorbereiten und Durchführen Ihrer Versammlung.\nSie können Tagesordnungspunkte, Anträge, Wahlen, Redelisten, Dokumente und Teilnehmende verwalten.\nAlles kann auf die Leinwand projiziert werden."
+
+#: press.html:95
+msgid "OpenSlides in the press"
+msgstr "OpenSlides in der Presse"
+
+#: home.html:320
+msgid "OpenSlides is Free & Open Source Sofware."
+msgstr "OpenSlides ist Freie & Open Source Software."
+
+#: index.html:91
+msgid ""
+"OpenSlides is Free Software, licensed under <a "
+"href=\"https://github.com/OpenSlides/OpenSlides/blob/master/LICENSE\">MIT</a>."
+msgstr "OpenSlides ist Freie Software, lizenziert unter der <a href=\"https://github.com/OpenSlides/OpenSlides/blob/master/LICENSE\">MIT</a>."
+
+#: home.html:5
+msgid ""
+"OpenSlides is a free, web based presentation and assembly system\n"
+"      for managing and projecting agenda, motions and elections of an assembly."
+msgstr "OpenSlides ist ein freies, webbasiertes Präsentations- und Versammlungssystem zur Verwaltung und Projizierung von Tagesordnung, Anträgen und Wahlen einer Versammlung."
+
+#: home.html:258
+msgid ""
+"OpenSlides is a plattform independet web application based on Python 3 and "
+"AngularJS with a REST-API."
+msgstr "OpenSlides ist eine plattformunabhängige Webanwendung basierend auf Python 3 und AngularJS mit einer REST-API."
+
+#: home.html:67
+msgid ""
+"Our backend enables you to manage your slides on-the-fly\n"
+"            while assembly sees the projector in fullscreen."
+msgstr "Das Backend erlaubt Ihnen die Folien zu bearbeiten während der Projektor für die  Versammlung im Vollbild läuft."
+
+#: news-20121119.html:4 news-20141125.html:5
+msgid "Overview"
+msgstr "Übersicht"
+
+#: home.html:253
+msgid "Portable Version for Windows."
+msgstr "Portable Version für Windows."
+
+#: index.html:85 press.html:3
+msgid "Press"
+msgstr "Presse"
+
+#: press.html:184
+msgid "Press contact"
+msgstr "Pressekontakt"
+
+#: press.html:9
+msgid "Press releases"
+msgstr "Pressemitteilungen"
+
+#: home.html:390
+msgid "Previous releases and OpenPGP signatures"
+msgstr "Frühere Versionen und OpenPGP-Signaturen"
+
+#: home.html:213
+msgid "Print personalized ballot papers for secret elections."
+msgstr "Personalisierte Wahlscheine für geheime Wahlen drucken."
+
+#: home.html:489
+msgid "Professional Support"
+msgstr "Professionelle Unterstützung"
+
+#: home.html:48
+msgid ""
+"Project, control, participate – Everything for your paperless assembly in "
+"one software!"
+msgstr "Projizieren, steuern, partizipieren – Alles für Ihre papierlose Versammlung in einer Software!"
+
+#: main.js:260
+msgid "Provides protocolling of agenda items in OpenSlides."
+msgstr "Ermöglicht das Protokollieren von Tagesordnungspunkten in OpenSlides."
+
+#: home.html:176
+msgid "Record voting results."
+msgstr "Abstimmungsergebnisse erfassen."
+
+#: index.html:86 references.html:3
+msgid "References"
+msgstr "Referenzen"
+
+#: legalnotice.html:4
+msgid ""
+"Responsible for the content of these pages as representative\n"
+"    of the OpenSlides initiative:"
+msgstr "Verantwortlich für den Inhalt dieser Seiten in Vertretung für die OpenSlides-Initiative:"
+
+#: home.html:256
+msgid "Responsive design."
+msgstr "Responsive Design."
+
+#: home.html:168
+msgid "Save paper: Submit and manage motions and voting results digitally."
+msgstr "Sparen Sie Papier: Erfassen und verwalten Sie Anträge und Abstimmungsergebnisse digital."
+
+#: home.html:129
+msgid "Scheduling: estimate duration of each agenda item."
+msgstr "Zeitplanung: Dauer pro Tagesordnungspunkt schätzen."
+
+#: home.html:354 home.html:380
+msgid "See"
+msgstr "Siehe"
+
+#: home.html:215
+msgid "Several ballots."
+msgstr "Mehrere Wahlgänge."
+
+#: home.html:170
+msgid "Show/hide each motion in agenda."
+msgstr "Anzeigen/Verstecken von Anträgen in der Tagesordnung."
+
+#: home.html:134
+msgid "Sort agenda by drag and drop."
+msgstr "Tagesordnung per Drag'n'Drop sortieren."
+
+#: home.html:345 home.html:371
+msgid "Source package"
+msgstr "Quellcode-Paket"
+
+#: home.html:438 home.html:443 home.html:448
+msgid "Subscribe"
+msgstr "Abonnieren"
+
+#: home.html:214
+msgid "Supported vote options: Yes/No/Abstain or one vote per candidate."
+msgstr "Unterstützte Wahlverfahren: Ja/Nein/Enthaltung oder eine Stimme pro Kandidat."
+
+#: home.html:8
+msgid "Try now"
+msgstr "Jetzt ausprobieren"
+
+#: home.html:469
+msgid ""
+"Tweet your experience with OpenSlides and mention\n"
+"            <a href=\"https://twitter.com/openslides\" target=\"_blank\">@openslides</a>."
+msgstr "Twittern Sie Ihre OpenSlides-Erfahrung und erwähnen Sie \n<a href=\"https://twitter.com/openslides\" target=\"_blank\">@openslides</a>."
+
+#: home.html:352 home.html:378
+msgid "Unzip portable version and run openslides.exe."
+msgstr "ZIP-Archiv entpacken und openslides.exe starten."
+
+#: home.html:302
+msgid "Use OpenSlides already for the preparation phase."
+msgstr "Verwenden Sie OpenSlides bereits in der Vorbereitungsphase."
+
+#: home.html:127
+msgid "Use countdowns to restrict speaking times."
+msgstr "Countdowns zur Redezeitbeschränkung."
+
+#: home.html:174
+msgid "Version history to maintain modifications."
+msgstr "Versionshistorie zur Verwaltung der Antragsänderungen."
+
+#: home.html:42
+msgid "What is OpenSlides?"
+msgstr "Was ist OpenSlides?"
+
+#: home.html:285
+msgid "Why should I use OpenSlides?"
+msgstr "Warum sollte ich OpenSlides einsetzen?"
+
+#: home.html:490
+msgid ""
+"You are looking for customisations and support for OpenSlides?\n"
+"          Look at our <a href=\"https://openslides.com\">service page</a> and request our\n"
+"          contact person:"
+msgstr "Sie benötigen Anpassungen und Unterstützung für den Einsatz von OpenSlides? Schauen Sie auf unsere <a href=\"https://openslides.com\">Service-Seite</a> und fragen Sie unsere Kontaktperson an:"
+
+#: home.html:103
+msgid "all references"
+msgstr "alle Referenzen"
+
+#: home.html:484
+msgid "and"
+msgstr "und"
+
+#: press.html:82
+msgid "domainFACTORY readers choice for the best Open Source Software"
+msgstr "domainFACTORY-Leserwahl zur besten OpenSource-Software"
+
+#: home.html:357 home.html:383
+msgid "install instructions"
+msgstr "Installationsanleitung"
+
+#: press.html:70 press.html:75 press.html:81 press.html:83
+msgid "more"
+msgstr "mehr"
+
+#: home.html:33
+msgid "released"
+msgstr "veröffentlicht"

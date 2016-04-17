@@ -1,0 +1,19 @@
+<section id="referencepage" class="bright section" ng-controller="ReferenceCtrl">
+  <div class="container" ng-controller="ScrollCtrl">
+    <h1 class="text-center" translate>References</h1>
+    <p class="lead" translate>OpenSildes was already successfully in use on numerous events. Here is a selection of references. We would be glad if we where allowed to mention your organization here.</p>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3 reference" ng-repeat="logo in logos">
+        <a href="" class="thumbnail" ng-mouseover="ref$index=1" ng-mouseleave="ref$index=0" ng-init="ref$index=0">
+          <div class="logo">
+            <img ng-src="static/img/references/{{ logo.src }}" alt="{{ logo.name }}" title="{{ logo.name }}">
+          </div>
+          <div class="caption" ng-if="ref$index==1">
+            <h4>{{ logo.name }}</h4>
+            <small>{{ logo.event }}</small>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

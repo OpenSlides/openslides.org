@@ -1,0 +1,16 @@
+{
+  "name": "openslides.org",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.3",
+    "angular-animate": "~1.5.3",
+    "angular-bootstrap": "~1.2.5",
+    "angular-gettext": "~2.2.1",
+    "angular-scroll": "~1.0.0",
+    "angular-ui-router": "~0.2.18",
+    "bootstrap-css-only": "~3.3.6",
+    "font-awesome-bower": "~4.5.0",
+    "open-sans-fontface": "https://github.com/OpenSlides/open-sans.git#1.4.2.post1",
+    "roboto-condensed": "~0.3.0"
+  }
+}
