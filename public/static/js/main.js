@@ -233,7 +233,7 @@ angular.module('openslides-website', [
     '$scope',
     function ($scope) {
         $scope.stableVersion = '2.0';
-        $scope.stableDate = '2015-04-18';
+        $scope.stableDate = '2016-04-18';
         //$scope.betaVersion = '2.0b5';
         //$scope.betaDate = '2016-03-21';
     }
@@ -256,7 +256,7 @@ angular.module('openslides-website', [
             },
             { name: 'Protocol Plugin (Beta)',
               desc: gettext('Provides protocolling of agenda items in OpenSlides.'),
-              url:  '"https://github.com/OpenSlides/openslides-protocol',
+              url:  'https://github.com/OpenSlides/openslides-protocol',
               tags: ['1.7']
             }
         ];
