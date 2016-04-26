@@ -244,6 +244,11 @@ angular.module('openslides-website', [
     'gettext',
     function ($scope, gettext) {
         $scope.plugins = [
+            { name: 'CSV Export Plugin',
+              desc: gettext('Provides a CSV export of the lists of speakers. It is also useful as an example how to write plugins for OpenSlides.'),
+              url:  'https://github.com/OpenSlides/openslides-csv-export',
+              tags: ['2.0']
+            },
             { name: 'Export Plugin',
               desc: gettext('Exports OpenSlides data in several formats (e.g. ODT, HTML, CSV).'),
               url:  'https://github.com/OpenSlides/openslides-export',
