@@ -208,6 +208,9 @@ angular.module('openslides-website', [
             { name: 'Evangelischer Kirchenkreis Krefeld-Viersen',
               event: 'Kreissynode',
               src:  'ev-kirche-krefeld-viersen-logo.png' },
+            { name: 'Mensa in Deutschland e.V.',
+              event: 'Mitgliederversammlung',
+              src:  'mensa-logo.png' },
         ];
         $scope.maxpage = Math.ceil($scope.logos.length / $scope.numberPerPage) - 1;
 
@@ -220,7 +223,7 @@ angular.module('openslides-website', [
         };
         $scope.moveRight = function () {
             var nextLogoIndex = ($scope.page + 1) * $scope.numberPerPage + 1;
-            if (nextLogoIndex < $scope.logos.length) {
+            if (nextLogoIndex <= $scope.logos.length) {
                 $scope.page++;
             } else {
                 $scope.page = 0;
