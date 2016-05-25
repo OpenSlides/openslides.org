@@ -72,7 +72,9 @@ angular.module('openslides-website', [
                 var languages = [
                     { code: 'en', name: 'English' },
                     { code: 'de', name: 'Deutsch' },
+                    { code: 'es', name: 'Español' },
                     { code: 'pt', name: 'Português' },
+                    { code: 'cs', name: 'Český' },
                 ];
                 angular.forEach(languages, function (language) {
                     if (language.code == current)
