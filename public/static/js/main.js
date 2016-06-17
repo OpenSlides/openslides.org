@@ -213,6 +213,9 @@ angular.module('openslides-website', [
             { name: 'Mensa in Deutschland e.V.',
               event: 'Mitgliederversammlung',
               src:  'mensa-logo.png' },
+            { name: 'Bund der Pfadfinderinnen und Pfadfinder e.V.',
+              event: 'Bundesversammlung',
+              src:  'bdp-logo.png' },
         ];
         $scope.maxpage = Math.ceil($scope.logos.length / $scope.numberPerPage) - 1;
 
