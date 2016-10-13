@@ -216,6 +216,9 @@ angular.module('openslides-website', [
             { name: 'Bund der Pfadfinderinnen und Pfadfinder e.V.',
               event: 'Bundesversammlung',
               src:  'bdp-logo.png' },
+            { name: 'Berufsverband der Kinder- und Jugendärzte e.V.',
+              event: 'Delegiertenversammlung',
+              src:  'bvkj-logo.png' },
         ];
         $scope.maxpage = Math.ceil($scope.logos.length / $scope.numberPerPage) - 1;
 
