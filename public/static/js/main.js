@@ -169,7 +169,7 @@ angular.module('openslides-website', [
               event: 'Landes-AK "Digitale Gesellschaft"',
               src:  'spd-logo.png' },
             { name: 'BÜNDNIS 90/DIE GRÜNEN',
-              event: 'Landesparteitage Hamburg / Hessen',
+              event: 'Landesparteitage Hamburg / Hessen / Schleswig-Holstein',
               src:  'gruene-logo.png' },
             { name: 'Grüne Jugend',
               event: 'Bundeskongress',
@@ -219,6 +219,9 @@ angular.module('openslides-website', [
             { name: 'Berufsverband der Kinder- und Jugendärzte e.V.',
               event: 'Delegiertenversammlung',
               src:  'bvkj-logo.png' },
+            { name: 'Deutscher Verband für Neuro-Linguistisches Programmieren e.V.',
+              event: 'Mitgliederversammlung',
+              src:  'dvnlp-logo.png' },
         ];
         $scope.maxpage = Math.ceil($scope.logos.length / $scope.numberPerPage) - 1;
 
