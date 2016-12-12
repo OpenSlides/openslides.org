@@ -263,14 +263,14 @@ angular.module('openslides-website', [
               url:  'https://github.com/OpenSlides/openslides-csv-export',
               tags: ['2.0']
             },
-            { name: 'Export Plugin',
-              desc: gettext('Exports OpenSlides data in several formats (e.g. ODT, HTML, CSV).'),
-              url:  'https://github.com/OpenSlides/openslides-export',
-              tags: ['1.7']
-            },
             { name: 'VoteCollector Plugin',
               desc: gettext('Connects OpenSlides with the electronic voting system VoteCollector.'),
               url:  'https://github.com/OpenSlides/openslides-votecollector',
+              tags: ['2.1']
+            },
+            { name: 'Export Plugin',
+              desc: gettext('Exports OpenSlides data in several formats (e.g. ODT, HTML, CSV).'),
+              url:  'https://github.com/OpenSlides/openslides-export',
               tags: ['1.7']
             },
             { name: 'Protocol Plugin (Beta)',
