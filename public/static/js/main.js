@@ -264,8 +264,8 @@ angular.module('openslides-website', [
     function ($scope) {
         $scope.stableVersion = '2.0';
         $scope.stableDate = '2016-04-18';
-        //$scope.betaVersion = '2.0b5';
-        //$scope.betaDate = '2016-03-21';
+        $scope.betaVersion = '2.1b1';
+        $scope.betaDate = '2016-12-17';
     }
 ])
 
