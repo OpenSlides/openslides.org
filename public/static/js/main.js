@@ -114,11 +114,23 @@ angular.module('openslides-website', [
 .run([
     '$rootScope',
     '$state',
+    '$location',
     'gettextCatalog',
     'Languages',
-    function($rootScope, $state, gettextCatalog, Languages) {
-        // set detected browser language as default language (fallback: 'en')
-        Languages.setCurrentLanguage(Languages.getBrowserLanguage());
+    function($rootScope, $state, $location, gettextCatalog, Languages) {
+        // set language spezified by query params (?lang=en) or browser language
+        var urlQuery = $location.search(),
+            langCodes = [],
+            languages = Languages.getLanguages();
+        for (var key in languages) { // I would prefer a quick _.map
+            langCodes.push(languages[key].code);
+        }
+
+        if (urlQuery.lang && langCodes.indexOf(urlQuery.lang) > -1) {
+            Languages.setCurrentLanguage(urlQuery.lang);
+        } else {
+            Languages.setCurrentLanguage(Languages.getBrowserLanguage());
+        }
 
         // Set this to true for debug. Helps to find untranslated strings by
         // adding "[MISSING]:".
@@ -144,9 +156,10 @@ angular.module('openslides-website', [
 
 .controller('LanguageCtrl', [
     '$scope',
+    '$location',
     'Languages',
     'filterFilter',
-    function ($scope, Languages, filterFilter) {
+    function ($scope, $location, Languages, filterFilter) {
         // get all available languages
         $scope.languages = Languages.getLanguages();
         // get detected browser language code
@@ -155,6 +168,9 @@ angular.module('openslides-website', [
         $scope.switchLanguage = function (lang) {
             $scope.languages = Languages.setCurrentLanguage(lang);
             $scope.selectedLangCode = filterFilter($scope.languages, {selected: true})[0].code;
+        };
+        $scope.getLanguageHref = function (lang) {
+            return $location.$$absUrl.split('?')[0] + '?lang=' + lang;
         };
     }
 ])
