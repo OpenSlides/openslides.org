@@ -49,7 +49,7 @@
           <img uib-dropdown-toggle ng-src="static/img/flags/{{ selectedLangCode }}.png" alt="flag-{{ selectedLangCode }}">
           <ul uib-dropdown-menu role="menu" class="pull-right">
             <li ng-repeat="language in languages">
-              <a href="" ng-click="switchLanguage(language.code)">
+              <a ng-href="{{ getLanguageHref(language.code) }}" ng-click="switchLanguage(language.code)">
                 <img ng-src="static/img/flags/{{ language.code }}.png">
                 {{ language.name }}
                 <i ng-if="language.selected" class="fa fa-check"></i>
