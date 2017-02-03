@@ -1,10 +1,11 @@
 # 
 # Translators:
 # fri, 2016
+# fri, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenSlides\n"
-"PO-Revision-Date: 2016-05-14 18:25+0000\n"
+"PO-Revision-Date: 2016-12-26 14:05+0000\n"
 "Last-Translator: fri\n"
 "Language-Team: Czech (http://www.transifex.com/openslides/openslides/language/cs/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -149,11 +150,11 @@ msgstr "Angličtina"
 
 #: home.html:217
 msgid "Enter and project election results as diagram."
-msgstr "Zadat a promítnout výsledky voleb jako diagram."
+msgstr "Zadejte a promítněte výsledky voleb jako diagram."
 
 #: home.html:133
 msgid "Export agenda as PDF."
-msgstr "Vyvést pořad jednání jako PDF."
+msgstr "Uložte pořad jednání jako PDF."
 
 #: home.html:218
 msgid "Export elections (with all results) as PDF."
@@ -161,7 +162,7 @@ msgstr "Vyvést volby (se všemi výsledky) jako PDF."
 
 #: home.html:179
 msgid "Export motions as PDF."
-msgstr "Vyvést návrhy jako PDF."
+msgstr "Vyveďte návrhy jako PDF."
 
 #: main.js:256
 msgid "Exports OpenSlides data in several formats (e.g. ODT, HTML, CSV)."
@@ -217,7 +218,7 @@ msgstr "Editor HTML k formátování textu návrhů a jejich odůvodnění."
 
 #: home.html:178
 msgid "Import motions from CSV."
-msgstr "Zavést návrhy z CSV."
+msgstr "Zaveďte návrhy z CSV."
 
 #: home.html:359 home.html:387
 msgid "install instructions"
@@ -251,7 +252,7 @@ msgstr "Udělejte svoji schůzi bezpapírovou a moderní."
 
 #: home.html:173
 msgid "Manage categories and tags."
-msgstr "Spravujte obory a značky."
+msgstr "Spravujte obory činnosti a klíčová slova."
 
 #: home.html:250
 msgid "Manage participants, groups and permissions."
@@ -259,11 +260,11 @@ msgstr "Spravujte účastníky, skupiny a oprávnění."
 
 #: home.html:25
 msgid "Manual"
-msgstr "Ruční"
+msgstr "Příručka"
 
 #: home.html:132
 msgid "Mark and hide closed agenda items."
-msgstr "Označit a skrýt zavřené položky pořadu jednání."
+msgstr "Označte a skryjte zavřené položky pořadu jednání."
 
 #: press.html:73 press.html:78 press.html:84 press.html:86
 msgid "more"
@@ -329,7 +330,7 @@ msgstr "OpenSlides v tisku"
 msgid ""
 "OpenSlides is a free, web based presentation and assembly system\n"
 "      for managing and projecting agenda, motions and elections of an assembly."
-msgstr "OpenSlides je svobodný na internetu založený promítací a schůzovací systém\n      k znázornění a řízení pořadu jednání, návrhů a voleb ve shromáždění."
+msgstr "OpenSlides je svobodný na internetu založený promítací a schůzovací systém\nk znázornění a řízení pořadu jednání, návrhů a voleb ve shromáždění."
 
 #: home.html:259
 msgid ""
@@ -339,7 +340,7 @@ msgstr "OpenSlides je webová aplikace nezávisející na určitém operačním 
 
 #: home.html:321
 msgid "OpenSlides is Free & Open Source Sofware."
-msgstr "OpenSlides je svobodný software s otevřeným zdrojovým kódem."
+msgstr "OpenSlides je svobodný program s otevřeným zdrojovým kódem."
 
 #: index.html:105
 msgid ""
@@ -425,11 +426,11 @@ msgstr "Pohotové provedení."
 
 #: home.html:169
 msgid "Save paper: Submit and manage motions and voting results digitally."
-msgstr "Šetřit papírem: Odesílejte a spravujte návrhy a výsledky hlasování digitálně."
+msgstr "Šetřte papírem: Odesílejte a spravujte návrhy a výsledky hlasování digitálně."
 
 #: home.html:130
 msgid "Scheduling: estimate duration of each agenda item."
-msgstr "Plánování času: Odhadnout dobu trvání každé položky pořadu jednání."
+msgstr "Plánování času: Odhadněte dobu trvání každé položky pořadu jednání."
 
 #: home.html:355 home.html:383
 msgid "See"
@@ -475,7 +476,7 @@ msgstr "Rozbalte přenositelnou verzi a spusťte openslides.exe."
 
 #: home.html:128
 msgid "Use countdowns to restrict speaking times."
-msgstr "Použít odpočítávání k omezení doby řečnění."
+msgstr "Použijte odpočítávání k omezení doby řečnění."
 
 #: home.html:303
 msgid "Use OpenSlides already for the preparation phase."
