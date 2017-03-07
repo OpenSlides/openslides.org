@@ -264,8 +264,8 @@ angular.module('openslides-website', [
     function ($scope) {
         $scope.stableVersion = '2.0';
         $scope.stableDate = '2016-04-18';
-        $scope.betaVersion = '2.1b2';
-        $scope.betaDate = '2017-01-26';
+        $scope.betaVersion = '2.1b4';
+        $scope.betaDate = '2017-03-07';
     }
 ])
 
@@ -277,7 +277,7 @@ angular.module('openslides-website', [
             { name: 'CSV Export Plugin',
               desc: gettext('Provides a CSV export of the lists of speakers. It is also useful as an example how to write plugins for OpenSlides.'),
               url:  'https://github.com/OpenSlides/openslides-csv-export',
-              tags: ['2.0']
+              tags: ['2.1']
             },
             { name: 'VoteCollector Plugin',
               desc: gettext('Connects OpenSlides with the electronic voting system VoteCollector.'),
