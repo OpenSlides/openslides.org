@@ -265,10 +265,10 @@ angular.module('openslides-website', [
 .controller('DownloadCtrl', [
     '$scope',
     function ($scope) {
-        $scope.stableVersion = '2.0';
-        $scope.stableDate = '2016-04-18';
-        $scope.betaVersion = '2.1b4';
-        $scope.betaDate = '2017-03-07';
+        $scope.stableVersion = '2.1';
+        $scope.stableDate = '2017-03-29';
+        //$scope.betaVersion = '2.1b4';
+        //$scope.betaDate = '2017-03-07';
     }
 ])
 
