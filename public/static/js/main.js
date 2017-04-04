@@ -220,7 +220,7 @@ angular.module('openslides-website', [
             { name: 'Opennet Initiative e.V.',
               event: 'Jahresversammlung',
               src:  'opennet-logo.png' },
-            { name: 'Studierende Cusanerinnen und Cusaner',
+            { name: 'Stipendiatinnen und Stipendiaten des Cusanuswerks',
               event: 'Cusanerkonferenz, Vollversammlung',
               src:  'cusaner-logo.png' },
             { name: 'AStA der Universität des Saarlandes',
