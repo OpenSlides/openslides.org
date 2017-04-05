@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenSlides\n"
-"PO-Revision-Date: 2016-05-02 13:48+0000\n"
-"Last-Translator: Marco A.G.Pinto <marcoagpinto@mail.telepac.pt>\n"
+"PO-Revision-Date: 2017-03-29 19:01+0000\n"
+"Last-Translator: Emanuel Schütze <emanuel.schuetze@intevation.de>\n"
 "Language-Team: Portuguese (Portugal) (http://www.transifex.com/openslides/openslides/language/pt_PT/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,7 +20,7 @@ msgstr "2º lugar"
 msgid "About"
 msgstr "Sobre"
 
-#: home.html:210
+#: home.html:213
 msgid ""
 "Accelerate the procedure: Generate ad hoc ballots for your secret elections."
 msgstr "Acelerar o procedimento: Gerar boletins ad hoc para as tuas eleições secretas."
@@ -29,15 +29,17 @@ msgstr "Acelerar o procedimento: Gerar boletins ad hoc para as tuas eleições s
 msgid "Agenda"
 msgstr "Agenda"
 
-#: home.html:104
-msgid "all references"
-msgstr "todas as referências"
+#: home.html:180
+msgid "Allow comment fields for motions."
+msgstr ""
 
-#: home.html:489
-msgid "and"
-msgstr "e"
+#: home.html:128
+msgid ""
+"Always have the current list of speakers visible (as overlay or on second "
+"projector)."
+msgstr ""
 
-#: home.html:444 home.html:449 home.html:454
+#: home.html:450 home.html:455 home.html:460
 msgid "Archive"
 msgstr "Arquivo"
 
@@ -45,17 +47,17 @@ msgstr "Arquivo"
 msgid "Articles and Publications"
 msgstr "Artigos e Publicações"
 
-#: home.html:129
+#: home.html:130
 msgid "Automatic numbering of items."
 msgstr "Numeração automática de itens."
+
+#: home.html:414
+msgid "Available Plugins"
+msgstr "Plugins disponíveis"
 
 #: press.html:10 press.html:49 press.html:99
 msgid "Available in German only!"
 msgstr "Disponível apenas em Alemão! "
-
-#: home.html:408
-msgid "Available Plugins"
-msgstr "Plugins disponíveis"
 
 #: press.html:68
 msgid "Awards"
@@ -65,57 +67,65 @@ msgstr "Prémios"
 msgid "Be flexible: Add, modify or move agenda items during operation."
 msgstr "Sê flexível: Adiciona, modifica ou move itens da agenda durante a operação."
 
-#: home.html:461
+#: home.html:257
+msgid "CSV import and export for agenda, motions and users."
+msgstr ""
+
+#: home.html:467
 msgid "Channel"
 msgstr "Canal"
 
-#: home.html:458
+#: home.html:464
 msgid ""
 "Chat with our OpenSlides developers via IRC network\n"
 "          <code>freenode</code>."
 msgstr "Conversa com os nossos desenvolvedores do OpenSlides via a rede de IRC\n<code>freenode</code>."
 
-#: home.html:422 home.html:425
+#: home.html:428 home.html:431
 msgid "Compatible with"
 msgstr "Compatível com"
 
-#: main.js:261
+#: main.js:286
 msgid "Connects OpenSlides with the electronic voting system VoteCollector."
 msgstr "Conecta o OpenSlides com o sistema de votação electrónica VoteCollector."
 
-#: home.html:435 index.html:78
+#: home.html:441 index.html:78
 msgid "Contact"
 msgstr "Contacto"
 
-#: home.html:488
+#: home.html:494
 msgid "Contact the three founder and core developers of OpenSlides:"
 msgstr "Contacta os três fundadores e desenvolvedores principais do OpenSlides:"
 
-#: home.html:134
+#: home.html:135
 msgid "Control projector from sidebar."
 msgstr "Controlar o projector a partir da barra lateral."
 
-#: home.html:487
+#: home.html:493
 msgid "Core developer team"
 msgstr "Equipa de desenvolvedores principais"
 
-#: home.html:335
+#: home.html:254
+msgid "Create multiple projectors."
+msgstr ""
+
+#: home.html:341
 msgid "Current stable version"
 msgstr "Versão actual estável"
 
-#: home.html:172
+#: home.html:173
 msgid "Customizable motion states and workflows."
 msgstr "Estados de moções personalizáveis e fluxos de trabalho."
 
-#: home.html:253
+#: home.html:259
 msgid "Customizeable front page."
 msgstr "Página inicial personalizável."
 
-#: home.html:256
+#: home.html:261
 msgid "Customizeable projector template."
 msgstr "Modelo do projector personalizável."
 
-#: home.html:174
+#: home.html:175
 msgid "Define required supporters per motion."
 msgstr "Definir apoiantes necessários por moção."
 
@@ -127,43 +137,39 @@ msgstr "Design:"
 msgid "Development and Editing:"
 msgstr "Desenvolvimento e Edição:"
 
-#: home.html:251
-msgid "Document filing with PDF projection."
-msgstr "Arquivamento de documentos com projecção PDF."
+#: home.html:256
+msgid "Document filing with PDF, image and video projection."
+msgstr ""
 
-#: press.html:85
-msgid "domainFACTORY readers choice for the best Open Source Software"
-msgstr "Escolha dos leitores domainFACTORY para o melhor Software Open Source"
-
-#: home.html:334 index.html:76
+#: home.html:340 index.html:76
 msgid "Download"
 msgstr "Descarregar"
 
-#: home.html:206
+#: home.html:209
 msgid "Elections"
 msgstr "Eleições"
 
-#: home.html:465
+#: home.html:471
 msgid "English"
 msgstr "Inglês"
 
-#: home.html:217
+#: home.html:221
 msgid "Enter and project election results as diagram."
 msgstr "Introduzir e projectar os resultados eleitorais como diagrama."
 
-#: home.html:133
+#: home.html:134
 msgid "Export agenda as PDF."
 msgstr "Exportar agenda como PDF."
 
-#: home.html:218
+#: home.html:222
 msgid "Export elections (with all results) as PDF."
 msgstr "Exportar eleições (com todos os resultados) como PDF."
 
-#: home.html:179
-msgid "Export motions as PDF."
-msgstr "Exportar moções como PDF."
+#: home.html:182
+msgid "Export motions as PDF, CSV or DOCX."
+msgstr ""
 
-#: main.js:256
+#: main.js:291
 msgid "Exports OpenSlides data in several formats (e.g. ODT, HTML, CSV)."
 msgstr "Exporta os dados do OpenSlides em vários formatos (ex: ODT, HTML, CSV)."
 
@@ -171,57 +177,49 @@ msgstr "Exporta os dados do OpenSlides em vários formatos (ex: ODT, HTML, CSV).
 msgid "Features"
 msgstr "Funcionalidades"
 
-#: home.html:452
+#: home.html:458
 msgid "For users and developers (English)"
 msgstr "Para os utilizadores e desenvolvedores (Inglês)"
 
-#: home.html:447
+#: home.html:453
 msgid "For users and developers (German)"
 msgstr "Para os utilizadores e desenvolvedores (Alemão)"
 
-#: home.html:255
+#: home.html:260
 msgid "Full text search."
 msgstr "Pesquisa de texto completo."
 
-#: home.html:469
+#: home.html:475
 msgid "German"
 msgstr "Alemão"
 
-#: home.html:315
+#: home.html:321
 msgid "Get professional support from developer team."
 msgstr "Obter apoio profissional da equipa de desenvolvimento."
 
-#: home.html:478
+#: home.html:484
 msgid ""
 "Get source code, report issues or read wiki pages on\n"
 "            <a href=\"https://github.com/OpenSlides/OpenSlides\" target=\"_blank\">GitHub</a>."
 msgstr "Obtém código-fonte, relata problemas ou lê páginas wiki em\n<a href=\"https://github.com/OpenSlides/OpenSlides\" target=\"_blank\">GitHub</a>."
 
-#: home.html:400
+#: home.html:406
 msgid "GitHub repository"
 msgstr "Repositório GitHub"
 
-#: home.html:252
+#: home.html:258
 msgid "Group chat."
 msgstr "Conversa em grupo."
 
-#: home.html:482
+#: home.html:488
 msgid ""
 "Help translating the UI or website of OpenSlides by using\n"
 "            <a href=\"https://www.transifex.com/openslides/openslides/\" target=\"_blank\">Transifex</a>."
 msgstr "Ajuda a traduzir a IU ou o sítio do OpenSlides usando o\n<a href=\"https://www.transifex.com/openslides/openslides/\" target=\"_blank\">Transifex</a>."
 
-#: home.html:176
-msgid "HTML editor to format motion text and reason."
-msgstr "Editor HTML para formatar o texto da moção e motivo."
-
-#: home.html:178
-msgid "Import motions from CSV."
-msgstr "Importar moções de CSV."
-
-#: home.html:359 home.html:387
-msgid "install instructions"
-msgstr "instruções de instalação"
+#: home.html:179
+msgid "Inline editor to format motion text and reason."
+msgstr ""
 
 #: home.html:78
 msgid ""
@@ -229,11 +227,11 @@ msgid ""
 "            (to submit motions or recall voting results)."
 msgstr "Integra o plenário! Dá acesso a participantes nos seus próprios dispositivos\n(para submeter moções ou recordar os resultados da votação)."
 
-#: home.html:131
+#: home.html:132
 msgid "Integrate unofficial items (e.g. breaks) into agenda."
 msgstr "Integrar itens não oficiais (ex: pausas) na agenda."
 
-#: home.html:363
+#: home.html:369
 msgid "Latest beta version"
 msgstr "Última versão beta"
 
@@ -245,15 +243,19 @@ msgstr "Aviso legal"
 msgid "List of speakers for each agenda item."
 msgstr "Lista de oradores para cada item da agenda."
 
-#: home.html:297
+#: home.html:303
 msgid "Make your assembly paperless and modern."
 msgstr "Torna a tua assembleia livre de papéis e moderna."
 
-#: home.html:173
-msgid "Manage categories and tags."
-msgstr "Gerir categorias e tags."
+#: home.html:174
+msgid "Manage categories, blocks and tags."
+msgstr ""
 
-#: home.html:250
+#: home.html:172
+msgid "Manage motions with line numbers."
+msgstr ""
+
+#: home.html:255
 msgid "Manage participants, groups and permissions."
 msgstr "Gere participantes, grupos e permissões."
 
@@ -261,27 +263,23 @@ msgstr "Gere participantes, grupos e permissões."
 msgid "Manual"
 msgstr "Manual"
 
-#: home.html:132
+#: home.html:133
 msgid "Mark and hide closed agenda items."
 msgstr "Marcar e ocultar itens fechados da agenda."
-
-#: press.html:73 press.html:78 press.html:84 press.html:86
-msgid "more"
-msgstr "mais"
 
 #: press.html:81
 msgid "More Awards"
 msgstr "Mais Prémios"
 
-#: home.html:245
+#: home.html:249
 msgid "More features"
 msgstr "Mais funcionalidades"
 
-#: home.html:291
+#: home.html:297
 msgid "More transparency and interaction for your plenum."
 msgstr "Maior transparência e interacção para o teu plenário."
 
-#: home.html:165
+#: home.html:166
 msgid "Motions"
 msgstr "Moções"
 
@@ -291,15 +289,17 @@ msgid ""
 "            Everything can be projected on a canvas. All you need is a browser."
 msgstr "Moções, eleições ou simplesmente uma lista de oradores:\nTudo pode ser projectado numa tela. Tudo que precisas é um navegador."
 
-#: home.html:258
-msgid "Multilingual (English, German, French, Czech, Portuguese and Spanish)."
-msgstr "Multilingue (Inglês, Alemão, Francês, Checo, Português e Espanhol)."
+#: home.html:264
+msgid ""
+"Multilingual (English, German, French, Czech, Portuguese, Spanish and "
+"Russian)."
+msgstr ""
 
-#: home.html:213
+#: home.html:216
 msgid "Nominate candidates from list of participants."
 msgstr "Nomear candidatos a partir da lista de participantes."
 
-#: home.html:442
+#: home.html:448
 msgid "Official announcements"
 msgstr "Comunicados oficiais"
 
@@ -310,7 +310,7 @@ msgid ""
 "your organization here."
 msgstr "O OpenSlides já teve sucesso em uso em inúmeros eventos. Aqui está uma selecção de referências. Ficaríamos contentes se nos fosse permitido mencionar aqui a tua organização."
 
-#: home.html:309
+#: home.html:315
 msgid "OpenSlides helps to create a protocol with all resolutions."
 msgstr "O OpenSlides ajuda a criar um protocolo com todas as resoluções."
 
@@ -325,19 +325,7 @@ msgstr "O OpenSlides ajuda a preparar e a realizar a tua assembleia.\nPodes geri
 msgid "OpenSlides in the press"
 msgstr "OpenSlides na imprensa"
 
-#: home.html:5
-msgid ""
-"OpenSlides is a free, web based presentation and assembly system\n"
-"      for managing and projecting agenda, motions and elections of an assembly."
-msgstr "O OpenSlides é um sistema livre de apresentação baseado na web e assembleia,\npara gerir e projectar a agenda, moções e eleições de uma assembleia."
-
-#: home.html:259
-msgid ""
-"OpenSlides is a plattform independet web application based on Python 3 and "
-"AngularJS with a REST-API."
-msgstr "O OpenSlides é uma aplicação web independente de plataforma baseada em Python 3 e AngularJS com uma REST-API."
-
-#: home.html:321
+#: home.html:327
 msgid "OpenSlides is Free & Open Source Sofware."
 msgstr "O OpenSlides é Software Livre & Open Source"
 
@@ -346,6 +334,18 @@ msgid ""
 "OpenSlides is Free Software, licensed under <a "
 "href=\"https://github.com/OpenSlides/OpenSlides/blob/master/LICENSE\">MIT</a>."
 msgstr "O OpenSlides é  Software Livre, licenciado sob  <a href=\"https://github.com/OpenSlides/OpenSlides/blob/master/LICENSE\">MIT</a>."
+
+#: home.html:5
+msgid ""
+"OpenSlides is a free, web based presentation and assembly system\n"
+"      for managing and projecting agenda, motions and elections of an assembly."
+msgstr "O OpenSlides é um sistema livre de apresentação baseado na web e assembleia,\npara gerir e projectar a agenda, moções e eleições de uma assembleia."
+
+#: home.html:265
+msgid ""
+"OpenSlides is a plattform independet web application based on Python 3 and "
+"AngularJS with a REST-API."
+msgstr "O OpenSlides é uma aplicação web independente de plataforma baseada em Python 3 e AngularJS com uma REST-API."
 
 #: home.html:68
 msgid ""
@@ -357,7 +357,7 @@ msgstr "O nosso backend permite gerires os teus slides em tempo real\nenquanto a
 msgid "Overview"
 msgstr "Visão geral"
 
-#: home.html:254
+#: home.html:263
 msgid "Portable Version for Windows."
 msgstr "Versão portátil para Windows."
 
@@ -365,7 +365,7 @@ msgstr "Versão portátil para Windows."
 msgid "Press"
 msgstr "Imprensa"
 
-#: press.html:193
+#: press.html:196
 msgid "Press contact"
 msgstr "Contacto de imprensa"
 
@@ -373,15 +373,15 @@ msgstr "Contacto de imprensa"
 msgid "Press releases"
 msgstr "Comunicados de imprensa"
 
-#: home.html:395
+#: home.html:401
 msgid "Previous releases and OpenPGP signatures"
 msgstr "Versões anteriores e assinaturas OpenPGP"
 
-#: home.html:214
+#: home.html:217
 msgid "Print personalized ballot papers for secret elections."
 msgstr "Imprimir boletins de voto personalizados para as eleições secretas."
 
-#: home.html:494
+#: home.html:500
 msgid "Professional Support"
 msgstr "Suporte Profissional"
 
@@ -391,17 +391,17 @@ msgid ""
 "one software!"
 msgstr "Projecta, controla, participa - Tudo para a tua assembleia sem papéis num único software!"
 
-#: main.js:251
+#: main.js:281
 msgid ""
 "Provides a CSV export of the lists of speakers. It is also useful as an "
 "example how to write plugins for OpenSlides."
 msgstr "Proporciona uma exportação CSV das listas de oradores. Também é útil como um exemplo de como criar plugins para o OpenSlides."
 
-#: main.js:266
+#: main.js:296
 msgid "Provides protocolling of agenda items in OpenSlides."
 msgstr "Fornece protocolização de itens da agenda no OpenSlides."
 
-#: home.html:177
+#: home.html:181
 msgid "Record voting results."
 msgstr "Gravar resultados da votação."
 
@@ -409,53 +409,53 @@ msgstr "Gravar resultados da votação."
 msgid "References"
 msgstr "Referências"
 
-#: home.html:34
-msgid "released"
-msgstr "lançado"
-
 #: legalnotice.html:4
 msgid ""
 "Responsible for the content of these pages as representative\n"
 "    of the OpenSlides initiative:"
 msgstr "Responsável pelo conteúdo destas páginas como representante\nda iniciativa OpenSlides:"
 
-#: home.html:257
+#: home.html:262
 msgid "Responsive design."
 msgstr "Design responsivo."
 
-#: home.html:169
+#: home.html:170
 msgid "Save paper: Submit and manage motions and voting results digitally."
 msgstr "Economiza papel: Submete e gere moções e resultados de votação digitalmente."
 
-#: home.html:130
+#: home.html:131
 msgid "Scheduling: estimate duration of each agenda item."
 msgstr "Agendamento: estimar a duração de cada item da agenda."
 
-#: home.html:355 home.html:383
+#: home.html:361 home.html:389
 msgid "See"
 msgstr "Ver"
 
-#: home.html:216
+#: home.html:220
 msgid "Several ballots."
 msgstr "Várias votações."
 
-#: home.html:171
+#: home.html:177
 msgid "Show/hide each motion in agenda."
 msgstr "Mostrar/ocultar cada moção na agenda."
 
-#: home.html:135
+#: home.html:136
 msgid "Sort agenda by drag and drop."
 msgstr "Ordenar agenda ao arrastar e largar."
 
-#: home.html:346 home.html:374
+#: home.html:352 home.html:380
 msgid "Source package"
 msgstr "Pacote fonte"
 
-#: home.html:443 home.html:448 home.html:453
+#: home.html:449 home.html:454 home.html:459
 msgid "Subscribe"
 msgstr "Subscrever"
 
-#: home.html:215
+#: home.html:176
+msgid "Support amendments and change recommendations."
+msgstr ""
+
+#: home.html:218
 msgid "Supported vote options: Yes/No/Abstain or one vote per candidate."
 msgstr "Opções de voto suportadas: Sim/Não/Abster ou um voto por candidato."
 
@@ -463,25 +463,25 @@ msgstr "Opções de voto suportadas: Sim/Não/Abster ou um voto por candidato."
 msgid "Try now"
 msgstr "Experimenta agora"
 
-#: home.html:474
+#: home.html:480
 msgid ""
 "Tweet your experience with OpenSlides and mention\n"
 "            <a href=\"https://twitter.com/openslides\" target=\"_blank\">@openslides</a>."
 msgstr "Tweeta a tua experiência com o OpenSlides e menciona\n<a href=\"https://twitter.com/openslides\" target=\"_blank\">@openslides</a>."
 
-#: home.html:353 home.html:381
+#: home.html:359 home.html:387
 msgid "Unzip portable version and run openslides.exe."
 msgstr "Descomprime a versão portátil e executa openslides.exe."
 
-#: home.html:128
-msgid "Use countdowns to restrict speaking times."
-msgstr "Usa contagens regressivas para restringir os tempos de oração."
-
-#: home.html:303
+#: home.html:309
 msgid "Use OpenSlides already for the preparation phase."
 msgstr "Usa o OpenSlides já para a fase de preparação."
 
-#: home.html:175
+#: home.html:129
+msgid "Use countdowns to restrict speaking times."
+msgstr "Usa contagens regressivas para restringir os tempos de oração."
+
+#: home.html:178
 msgid "Version history to maintain modifications."
 msgstr "Histórico de versões para manter modificações."
 
@@ -489,13 +489,37 @@ msgstr "Histórico de versões para manter modificações."
 msgid "What is OpenSlides?"
 msgstr "O que é o OpenSlides?"
 
-#: home.html:286
+#: home.html:292
 msgid "Why should I use OpenSlides?"
 msgstr "Porquê devo usar o OpenSlides?"
 
-#: home.html:495
+#: home.html:501
 msgid ""
 "You are looking for customisations and support for OpenSlides?\n"
 "          Look at our <a href=\"https://openslides.com\">service page</a> and request our\n"
 "          contact person:"
 msgstr "Procuras personalizações e suporte para o OpenSlides?\nVê a nossa <a href=\"https://openslides.com\">página de serviços</a> e solicita a nossa\npessoa de contacto:"
+
+#: home.html:104
+msgid "all references"
+msgstr "todas as referências"
+
+#: home.html:495
+msgid "and"
+msgstr "e"
+
+#: press.html:85
+msgid "domainFACTORY readers choice for the best Open Source Software"
+msgstr "Escolha dos leitores domainFACTORY para o melhor Software Open Source"
+
+#: home.html:365 home.html:393
+msgid "install instructions"
+msgstr "instruções de instalação"
+
+#: press.html:73 press.html:78 press.html:84 press.html:86
+msgid "more"
+msgstr "mais"
+
+#: home.html:34
+msgid "released"
+msgstr "lançado"

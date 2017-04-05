@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenSlides\n"
-"PO-Revision-Date: 2016-12-26 14:05+0000\n"
-"Last-Translator: fri\n"
+"PO-Revision-Date: 2017-03-29 19:01+0000\n"
+"Last-Translator: Emanuel Schütze <emanuel.schuetze@intevation.de>\n"
 "Language-Team: Czech (http://www.transifex.com/openslides/openslides/language/cs/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,7 +21,7 @@ msgstr "2. místo"
 msgid "About"
 msgstr "O programu"
 
-#: home.html:210
+#: home.html:213
 msgid ""
 "Accelerate the procedure: Generate ad hoc ballots for your secret elections."
 msgstr "Urychlete postup: Vytvářejte účelové hlasovací lístky jen pro své tajné volby."
@@ -30,15 +30,17 @@ msgstr "Urychlete postup: Vytvářejte účelové hlasovací lístky jen pro sv�
 msgid "Agenda"
 msgstr "Pořad jednání"
 
-#: home.html:104
-msgid "all references"
-msgstr "Všechny odkazy"
+#: home.html:180
+msgid "Allow comment fields for motions."
+msgstr ""
 
-#: home.html:489
-msgid "and"
-msgstr "a"
+#: home.html:128
+msgid ""
+"Always have the current list of speakers visible (as overlay or on second "
+"projector)."
+msgstr ""
 
-#: home.html:444 home.html:449 home.html:454
+#: home.html:450 home.html:455 home.html:460
 msgid "Archive"
 msgstr "Archiv"
 
@@ -46,17 +48,17 @@ msgstr "Archiv"
 msgid "Articles and Publications"
 msgstr "Články a publikace"
 
-#: home.html:129
+#: home.html:130
 msgid "Automatic numbering of items."
 msgstr "Automatické číslování položek."
+
+#: home.html:414
+msgid "Available Plugins"
+msgstr "Dostupné přídavné moduly"
 
 #: press.html:10 press.html:49 press.html:99
 msgid "Available in German only!"
 msgstr "Dostupné pouze v němčině"
-
-#: home.html:408
-msgid "Available Plugins"
-msgstr "Dostupné přídavné moduly"
 
 #: press.html:68
 msgid "Awards"
@@ -66,57 +68,65 @@ msgstr "Ocenění"
 msgid "Be flexible: Add, modify or move agenda items during operation."
 msgstr "Zůstávejte pružní: Průběžně doplňujte, měňte nebo přesouvejte položky pořadu jednání."
 
-#: home.html:461
+#: home.html:257
+msgid "CSV import and export for agenda, motions and users."
+msgstr ""
+
+#: home.html:467
 msgid "Channel"
 msgstr "Kanál"
 
-#: home.html:458
+#: home.html:464
 msgid ""
 "Chat with our OpenSlides developers via IRC network\n"
 "          <code>freenode</code>."
 msgstr "Hovořit s našimi vývojáři OpenSlides přes síť IRC\n          <code>freenode</code>."
 
-#: home.html:422 home.html:425
+#: home.html:428 home.html:431
 msgid "Compatible with"
 msgstr "Kompatibilní s"
 
-#: main.js:261
+#: main.js:286
 msgid "Connects OpenSlides with the electronic voting system VoteCollector."
 msgstr "Spojuje OpenSlides s elektronickým hlasovacím systémem VoteCollector."
 
-#: home.html:435 index.html:78
+#: home.html:441 index.html:78
 msgid "Contact"
 msgstr "Spojení"
 
-#: home.html:488
+#: home.html:494
 msgid "Contact the three founder and core developers of OpenSlides:"
 msgstr "Spojte se se třemi zakladateli a hlavními vývojáři OpenSlides:"
 
-#: home.html:134
+#: home.html:135
 msgid "Control projector from sidebar."
 msgstr "Ovládejte promítací stroj přes postranní panel."
 
-#: home.html:487
+#: home.html:493
 msgid "Core developer team"
 msgstr "Hlavní vývojářský tým"
 
-#: home.html:335
+#: home.html:254
+msgid "Create multiple projectors."
+msgstr ""
+
+#: home.html:341
 msgid "Current stable version"
 msgstr "Nynější stálá verze"
 
-#: home.html:172
+#: home.html:173
 msgid "Customizable motion states and workflows."
 msgstr "Přizpůsobitelná stavová hlášení o návrzích a průběhu práce."
 
-#: home.html:253
+#: home.html:259
 msgid "Customizeable front page."
 msgstr "Přizpůsobitelná první strana."
 
-#: home.html:256
+#: home.html:261
 msgid "Customizeable projector template."
 msgstr "Přizpůsobitelná předloha pro promítací stroj."
 
-#: home.html:174
+#: home.html:175
 msgid "Define required supporters per motion."
 msgstr "Stanovte počet podporovatelů potřebných pro návrh."
 
@@ -128,43 +138,39 @@ msgstr "Návrh:"
 msgid "Development and Editing:"
 msgstr "Vývoj a úpravy:"
 
-#: home.html:251
-msgid "Document filing with PDF projection."
-msgstr "Archivování dokumentu s promítnutím PDF."
+#: home.html:256
+msgid "Document filing with PDF, image and video projection."
+msgstr ""
 
-#: press.html:85
-msgid "domainFACTORY readers choice for the best Open Source Software"
-msgstr "Volba čtenářů domainFACTORY pro nejlepší software s otevřeným zdrojovým kódem"
-
-#: home.html:334 index.html:76
+#: home.html:340 index.html:76
 msgid "Download"
 msgstr "Stáhnout"
 
-#: home.html:206
+#: home.html:209
 msgid "Elections"
 msgstr "Volby"
 
-#: home.html:465
+#: home.html:471
 msgid "English"
 msgstr "Angličtina"
 
-#: home.html:217
+#: home.html:221
 msgid "Enter and project election results as diagram."
 msgstr "Zadejte a promítněte výsledky voleb jako diagram."
 
-#: home.html:133
+#: home.html:134
 msgid "Export agenda as PDF."
 msgstr "Uložte pořad jednání jako PDF."
 
-#: home.html:218
+#: home.html:222
 msgid "Export elections (with all results) as PDF."
 msgstr "Vyvést volby (se všemi výsledky) jako PDF."
 
-#: home.html:179
-msgid "Export motions as PDF."
-msgstr "Vyveďte návrhy jako PDF."
+#: home.html:182
+msgid "Export motions as PDF, CSV or DOCX."
+msgstr ""
 
-#: main.js:256
+#: main.js:291
 msgid "Exports OpenSlides data in several formats (e.g. ODT, HTML, CSV)."
 msgstr "Vyvést data OpenSlides do několika formátů (např. ODT, HTML, CSV)."
 
@@ -172,57 +178,49 @@ msgstr "Vyvést data OpenSlides do několika formátů (např. ODT, HTML, CSV)."
 msgid "Features"
 msgstr "Vlastnosti"
 
-#: home.html:452
+#: home.html:458
 msgid "For users and developers (English)"
 msgstr "Pro uživatele a vývojáře (anglicky)"
 
-#: home.html:447
+#: home.html:453
 msgid "For users and developers (German)"
 msgstr "Pro uživatele a vývojáře (německy)"
 
-#: home.html:255
+#: home.html:260
 msgid "Full text search."
 msgstr "Hledání v textu."
 
-#: home.html:469
+#: home.html:475
 msgid "German"
 msgstr "Německý"
 
-#: home.html:315
+#: home.html:321
 msgid "Get professional support from developer team."
 msgstr "Dostaňte odbornou podporu od vývojářů."
 
-#: home.html:478
+#: home.html:484
 msgid ""
 "Get source code, report issues or read wiki pages on\n"
 "            <a href=\"https://github.com/OpenSlides/OpenSlides\" target=\"_blank\">GitHub</a>."
 msgstr "Získejte zdrojový kód, hlašte potíže nebo čtěte stránky s dokumentací na \n            <a href=\"https://github.com/OpenSlides/OpenSlides\" target=\"_blank\">GitHubu</a>."
 
-#: home.html:400
+#: home.html:406
 msgid "GitHub repository"
 msgstr "Úložiště GitHub"
 
-#: home.html:252
+#: home.html:258
 msgid "Group chat."
 msgstr "Skupinový rozhovor."
 
-#: home.html:482
+#: home.html:488
 msgid ""
 "Help translating the UI or website of OpenSlides by using\n"
 "            <a href=\"https://www.transifex.com/openslides/openslides/\" target=\"_blank\">Transifex</a>."
 msgstr "Překládejte rozhraní programu nebo text stránek pomocí\n            <a href=\"https://www.transifex.com/openslides/openslides/\" target=\"_blank\">Transifexu</a>."
 
-#: home.html:176
-msgid "HTML editor to format motion text and reason."
-msgstr "Editor HTML k formátování textu návrhů a jejich odůvodnění."
-
-#: home.html:178
-msgid "Import motions from CSV."
-msgstr "Zaveďte návrhy z CSV."
-
-#: home.html:359 home.html:387
-msgid "install instructions"
-msgstr "Pokyny pro instalaci"
+#: home.html:179
+msgid "Inline editor to format motion text and reason."
+msgstr ""
 
 #: home.html:78
 msgid ""
@@ -230,11 +228,11 @@ msgid ""
 "            (to submit motions or recall voting results)."
 msgstr "Vtáhněte do diskuze shromáždění! Dejte účastníkům s vlastními zařízeními přístup\n            (k odesílání návrhů nebo vyvolání výsledků hlasování)."
 
-#: home.html:131
+#: home.html:132
 msgid "Integrate unofficial items (e.g. breaks) into agenda."
 msgstr "Zahrnout do pořadu jednání neoficiální body pořadu jednání (např. přestávky)."
 
-#: home.html:363
+#: home.html:369
 msgid "Latest beta version"
 msgstr "Poslední betaverze"
 
@@ -246,15 +244,19 @@ msgstr "Právní upozornění"
 msgid "List of speakers for each agenda item."
 msgstr "Seznam řečníků pro každou položku pořadu jednání."
 
-#: home.html:297
+#: home.html:303
 msgid "Make your assembly paperless and modern."
 msgstr "Udělejte svoji schůzi bezpapírovou a moderní."
 
-#: home.html:173
-msgid "Manage categories and tags."
-msgstr "Spravujte obory činnosti a klíčová slova."
+#: home.html:174
+msgid "Manage categories, blocks and tags."
+msgstr ""
 
-#: home.html:250
+#: home.html:172
+msgid "Manage motions with line numbers."
+msgstr ""
+
+#: home.html:255
 msgid "Manage participants, groups and permissions."
 msgstr "Spravujte účastníky, skupiny a oprávnění."
 
@@ -262,27 +264,23 @@ msgstr "Spravujte účastníky, skupiny a oprávnění."
 msgid "Manual"
 msgstr "Příručka"
 
-#: home.html:132
+#: home.html:133
 msgid "Mark and hide closed agenda items."
 msgstr "Označte a skryjte zavřené položky pořadu jednání."
-
-#: press.html:73 press.html:78 press.html:84 press.html:86
-msgid "more"
-msgstr "více"
 
 #: press.html:81
 msgid "More Awards"
 msgstr "Více ocenění"
 
-#: home.html:245
+#: home.html:249
 msgid "More features"
 msgstr "Více vlastností"
 
-#: home.html:291
+#: home.html:297
 msgid "More transparency and interaction for your plenum."
 msgstr "Více průhlednosti a spolupráce při vaší schůzi."
 
-#: home.html:165
+#: home.html:166
 msgid "Motions"
 msgstr "Návrhy"
 
@@ -292,15 +290,17 @@ msgid ""
 "            Everything can be projected on a canvas. All you need is a browser."
 msgstr "Návrhy, volby nebo jednoduše seznam řečníků:\n            Všechno se dá promítnout na plátno. Potřebujete k tomu jen prohlížeč."
 
-#: home.html:258
-msgid "Multilingual (English, German, French, Czech, Portuguese and Spanish)."
-msgstr "Vícejazyčný (angličtina, němčina, francouzština, čeština, portugalština a španělština)."
+#: home.html:264
+msgid ""
+"Multilingual (English, German, French, Czech, Portuguese, Spanish and "
+"Russian)."
+msgstr ""
 
-#: home.html:213
+#: home.html:216
 msgid "Nominate candidates from list of participants."
 msgstr "Navrhujte uchazeče ze seznamu účastníků."
 
-#: home.html:442
+#: home.html:448
 msgid "Official announcements"
 msgstr "Veřejná oznámení"
 
@@ -311,7 +311,7 @@ msgid ""
 "your organization here."
 msgstr "OpenSildes již byl úspěšně použit při četných událostech. Zde výběr z událostí, kdy je zmiňován. Rádi bychom zde uvedli i vaši organizaci."
 
-#: home.html:309
+#: home.html:315
 msgid "OpenSlides helps to create a protocol with all resolutions."
 msgstr "OpenSlides vám pomáhá při vytváření zápisu se všemi usneseními."
 
@@ -326,19 +326,7 @@ msgstr "OpenSlides pomáhá připravovat a provádět vaši schůzi.\n      Mů�
 msgid "OpenSlides in the press"
 msgstr "OpenSlides v tisku"
 
-#: home.html:5
-msgid ""
-"OpenSlides is a free, web based presentation and assembly system\n"
-"      for managing and projecting agenda, motions and elections of an assembly."
-msgstr "OpenSlides je svobodný na internetu založený promítací a schůzovací systém\nk znázornění a řízení pořadu jednání, návrhů a voleb ve shromáždění."
-
-#: home.html:259
-msgid ""
-"OpenSlides is a plattform independet web application based on Python 3 and "
-"AngularJS with a REST-API."
-msgstr "OpenSlides je webová aplikace nezávisející na určitém operačním systému založená na Pythonu 3 a AngularJS s REST-API."
-
-#: home.html:321
+#: home.html:327
 msgid "OpenSlides is Free & Open Source Sofware."
 msgstr "OpenSlides je svobodný program s otevřeným zdrojovým kódem."
 
@@ -347,6 +335,18 @@ msgid ""
 "OpenSlides is Free Software, licensed under <a "
 "href=\"https://github.com/OpenSlides/OpenSlides/blob/master/LICENSE\">MIT</a>."
 msgstr "OpenSlides je svobodný program licencovaný pod <a href=\"https://github.com/OpenSlides/OpenSlides/blob/master/LICENSE\">MIT</a>."
+
+#: home.html:5
+msgid ""
+"OpenSlides is a free, web based presentation and assembly system\n"
+"      for managing and projecting agenda, motions and elections of an assembly."
+msgstr "OpenSlides je svobodný na internetu založený promítací a schůzovací systém\nk znázornění a řízení pořadu jednání, návrhů a voleb ve shromáždění."
+
+#: home.html:265
+msgid ""
+"OpenSlides is a plattform independet web application based on Python 3 and "
+"AngularJS with a REST-API."
+msgstr "OpenSlides je webová aplikace nezávisející na určitém operačním systému založená na Pythonu 3 a AngularJS s REST-API."
 
 #: home.html:68
 msgid ""
@@ -358,7 +358,7 @@ msgstr "Naše podpůrná vrstva vám umožňuje spravovat snímky za běhu,\n   
 msgid "Overview"
 msgstr "Přehled"
 
-#: home.html:254
+#: home.html:263
 msgid "Portable Version for Windows."
 msgstr "Přenositelná verze pro operační systém Windows."
 
@@ -366,7 +366,7 @@ msgstr "Přenositelná verze pro operační systém Windows."
 msgid "Press"
 msgstr "Tisk"
 
-#: press.html:193
+#: press.html:196
 msgid "Press contact"
 msgstr "Kontakt pro tisk"
 
@@ -374,15 +374,15 @@ msgstr "Kontakt pro tisk"
 msgid "Press releases"
 msgstr "Vydání pro tisk"
 
-#: home.html:395
+#: home.html:401
 msgid "Previous releases and OpenPGP signatures"
 msgstr "Předchozí vydání a podpisy OpenPGP"
 
-#: home.html:214
+#: home.html:217
 msgid "Print personalized ballot papers for secret elections."
 msgstr "Tisk uzpůsobených hlasovacích lístků pro tajné volby."
 
-#: home.html:494
+#: home.html:500
 msgid "Professional Support"
 msgstr "Odborná podpora"
 
@@ -392,17 +392,17 @@ msgid ""
 "one software!"
 msgstr "Plánovat, řídit, účastnit se - vše pro vaše bezpapírové shromáždění v jednom programu!"
 
-#: main.js:251
+#: main.js:281
 msgid ""
 "Provides a CSV export of the lists of speakers. It is also useful as an "
 "example how to write plugins for OpenSlides."
 msgstr "Poskytuje uložení seznamu řečníků do CSV. Je to také užitečné jako příklad, jak psát přídavné moduly pro OpenSlides."
 
-#: main.js:266
+#: main.js:296
 msgid "Provides protocolling of agenda items in OpenSlides."
 msgstr "Poskytuje zápis položek pořadu jednání v OpenSlides."
 
-#: home.html:177
+#: home.html:181
 msgid "Record voting results."
 msgstr "Zaznamenávejte výsledky hlasování."
 
@@ -410,53 +410,53 @@ msgstr "Zaznamenávejte výsledky hlasování."
 msgid "References"
 msgstr "Odkazy"
 
-#: home.html:34
-msgid "released"
-msgstr "Vydáno"
-
 #: legalnotice.html:4
 msgid ""
 "Responsible for the content of these pages as representative\n"
 "    of the OpenSlides initiative:"
 msgstr "Zodpovědný za obsah těchto stránek jako zástupce\n    iniciativy OpenSlides:"
 
-#: home.html:257
+#: home.html:262
 msgid "Responsive design."
 msgstr "Pohotové provedení."
 
-#: home.html:169
+#: home.html:170
 msgid "Save paper: Submit and manage motions and voting results digitally."
 msgstr "Šetřte papírem: Odesílejte a spravujte návrhy a výsledky hlasování digitálně."
 
-#: home.html:130
+#: home.html:131
 msgid "Scheduling: estimate duration of each agenda item."
 msgstr "Plánování času: Odhadněte dobu trvání každé položky pořadu jednání."
 
-#: home.html:355 home.html:383
+#: home.html:361 home.html:389
 msgid "See"
 msgstr "Podívejte se na"
 
-#: home.html:216
+#: home.html:220
 msgid "Several ballots."
 msgstr "Několik hlasování."
 
-#: home.html:171
+#: home.html:177
 msgid "Show/hide each motion in agenda."
 msgstr "Ukázat/Skrýt každý návrh v pořadu jednání."
 
-#: home.html:135
+#: home.html:136
 msgid "Sort agenda by drag and drop."
 msgstr "Pořádejte pořad jednání tažením a puštěním."
 
-#: home.html:346 home.html:374
+#: home.html:352 home.html:380
 msgid "Source package"
 msgstr "Zdrojový balíček"
 
-#: home.html:443 home.html:448 home.html:453
+#: home.html:449 home.html:454 home.html:459
 msgid "Subscribe"
 msgstr "Odebírat"
 
-#: home.html:215
+#: home.html:176
+msgid "Support amendments and change recommendations."
+msgstr ""
+
+#: home.html:218
 msgid "Supported vote options: Yes/No/Abstain or one vote per candidate."
 msgstr "Podporované volby pro hlasování: Ano/Ne/Zdržet se nebo jeden hlas na uchazeče."
 
@@ -464,25 +464,25 @@ msgstr "Podporované volby pro hlasování: Ano/Ne/Zdržet se nebo jeden hlas na
 msgid "Try now"
 msgstr "Vyzkoušejte nyní"
 
-#: home.html:474
+#: home.html:480
 msgid ""
 "Tweet your experience with OpenSlides and mention\n"
 "            <a href=\"https://twitter.com/openslides\" target=\"_blank\">@openslides</a>."
 msgstr "Posílejte zprávy o své zkušenosti s OpenSlides a zmiňujte\n            <a href=\"https://twitter.com/openslides\" target=\"_blank\">@openslides</a>."
 
-#: home.html:353 home.html:381
+#: home.html:359 home.html:387
 msgid "Unzip portable version and run openslides.exe."
 msgstr "Rozbalte přenositelnou verzi a spusťte openslides.exe."
 
-#: home.html:128
-msgid "Use countdowns to restrict speaking times."
-msgstr "Použijte odpočítávání k omezení doby řečnění."
-
-#: home.html:303
+#: home.html:309
 msgid "Use OpenSlides already for the preparation phase."
 msgstr "Použijte OpenSlides již v přípravné fázi."
 
-#: home.html:175
+#: home.html:129
+msgid "Use countdowns to restrict speaking times."
+msgstr "Použijte odpočítávání k omezení doby řečnění."
+
+#: home.html:178
 msgid "Version history to maintain modifications."
 msgstr "Historie verzí ke správě změn návrhů."
 
@@ -490,13 +490,37 @@ msgstr "Historie verzí ke správě změn návrhů."
 msgid "What is OpenSlides?"
 msgstr "Co je to OpenSlides?"
 
-#: home.html:286
+#: home.html:292
 msgid "Why should I use OpenSlides?"
 msgstr "Proč bych měl používat OpenSlides?"
 
-#: home.html:495
+#: home.html:501
 msgid ""
 "You are looking for customisations and support for OpenSlides?\n"
 "          Look at our <a href=\"https://openslides.com\">service page</a> and request our\n"
 "          contact person:"
 msgstr "Hledáte přizpůsobení a podporu pro OpenSlides?\n          Podívejte se na naši <a href=\"https://openslides.com\">stránku se službami</a> a požádejte naši\n          kontaktní osobu:"
+
+#: home.html:104
+msgid "all references"
+msgstr "Všechny odkazy"
+
+#: home.html:495
+msgid "and"
+msgstr "a"
+
+#: press.html:85
+msgid "domainFACTORY readers choice for the best Open Source Software"
+msgstr "Volba čtenářů domainFACTORY pro nejlepší software s otevřeným zdrojovým kódem"
+
+#: home.html:365 home.html:393
+msgid "install instructions"
+msgstr "Pokyny pro instalaci"
+
+#: press.html:73 press.html:78 press.html:84 press.html:86
+msgid "more"
+msgstr "více"
+
+#: home.html:34
+msgid "released"
+msgstr "Vydáno"
