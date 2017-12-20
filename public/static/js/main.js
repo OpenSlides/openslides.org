@@ -277,8 +277,8 @@ angular.module('openslides-website', [
     function ($scope) {
         $scope.stableVersion = '2.1.1';
         $scope.stableDate = '2017-04-05';
-        //$scope.betaVersion = '2.1b4';
-        //$scope.betaDate = '2017-03-07';
+        $scope.betaVersion = '2.2b1';
+        $scope.betaDate = '2017-12-20';
     }
 ])
 
