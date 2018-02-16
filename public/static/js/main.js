@@ -280,8 +280,8 @@ angular.module('openslides-website', [
     function ($scope) {
         $scope.stableVersion = '2.1.1';
         $scope.stableDate = '2017-04-05';
-        $scope.betaVersion = '2.2b1';
-        $scope.betaDate = '2017-12-20';
+        $scope.betaVersion = '2.2b2';
+        $scope.betaDate = '2018-02-16';
     }
 ])
 
@@ -293,21 +293,21 @@ angular.module('openslides-website', [
             { name: 'CSV Export Plugin',
               desc: gettext('Provides a CSV export of the lists of speakers. It is also useful as an example how to write plugins for OpenSlides.'),
               url:  'https://github.com/OpenSlides/openslides-csv-export',
-              tags: ['2.1']
+              tags: ['2.2']
             },
             { name: 'VoteCollector Plugin',
               desc: gettext('Connects OpenSlides with the electronic voting system VoteCollector.'),
               url:  'https://github.com/OpenSlides/openslides-votecollector',
-              tags: ['2.1']
-            },
-            { name: 'Export Plugin',
-              desc: gettext('Exports OpenSlides data in several formats (e.g. ODT, HTML, CSV).'),
-              url:  'https://github.com/OpenSlides/openslides-export',
-              tags: ['1.7']
+              tags: ['2.2']
             },
             { name: 'Protocol Plugin (Beta)',
               desc: gettext('Provides protocolling of agenda items in OpenSlides.'),
               url:  'https://github.com/OpenSlides/openslides-protocol',
+              tags: ['2.2']
+            },
+            { name: 'Export Plugin',
+              desc: gettext('Exports OpenSlides data in several formats (e.g. ODT, HTML, CSV).'),
+              url:  'https://github.com/OpenSlides/openslides-export',
               tags: ['1.7']
             }
         ];
