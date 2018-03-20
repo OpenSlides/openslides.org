@@ -194,6 +194,9 @@ angular.module('openslides-website', [
             { name: 'Industriegewerkschaft Bauen Agrar Umwelt',
               event: 'Gewerkschaftstag',
               src:  'igbau-logo.png' },
+            { name: 'Gewerkschaft der Polizei (GdP)',
+              event: 'Bundesfrauenkonferenz / Bundesseniorenkonferenz',
+              src:  'gdp-logo.png' },
             { name: 'SPD',
               event: 'Kreisparteitag Nordfriesland / Landes-AK "Digitale Gesellschaft"',
               src:  'spd-logo.png' },
@@ -254,6 +257,12 @@ angular.module('openslides-website', [
             { name: 'Deutscher Verband für Neuro-Linguistisches Programmieren e.V.',
               event: 'Mitgliederversammlung',
               src:  'dvnlp-logo.png' },
+            { name: 'Junge Europäische Föderalisten Deutschland e.V.',
+              event: 'Bundeskongress',
+              src:  'jef-logo.png' },
+            { name: 'Gemeinde Neu Wulmstorf',
+              event: 'Gemeinderat',
+              src:  'neu-wulmstorf-logo.png' },
         ];
         $scope.maxpage = Math.ceil($scope.logos.length / $scope.numberPerPage) - 1;
 
