@@ -195,7 +195,7 @@ angular.module('openslides-website', [
               event: 'Gewerkschaftstag',
               src:  'igbau-logo.png' },
             { name: 'Gewerkschaft der Polizei (GdP)',
-              event: 'Bundesfrauenkonferenz / Bundesseniorenkonferenz',
+              event: 'Bundesfrauenkonferenz / Bundesseniorenkonferenz / Bundesjugendkonferenz',
               src:  'gdp-logo.png' },
             { name: 'SPD',
               event: 'Kreisparteitag Nordfriesland / Landes-AK "Digitale Gesellschaft"',
@@ -289,8 +289,8 @@ angular.module('openslides-website', [
     function ($scope) {
         $scope.stableVersion = '2.1.1';
         $scope.stableDate = '2017-04-05';
-        $scope.betaVersion = '2.2b2';
-        $scope.betaDate = '2018-02-16';
+        $scope.betaVersion = '2.2b3';
+        $scope.betaDate = '2018-04-13';
     }
 ])
 
