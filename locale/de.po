@@ -523,3 +523,6 @@ msgstr "mehr"
 #: home.html:34
 msgid "released"
 msgstr "veröffentlicht"
+
+msgid "Privacy policy"
+msgstr "Datenschutzerklärung"

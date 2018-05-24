@@ -40,6 +40,10 @@ angular.module('openslides-website', [
                 url: '/legalnotice',
                 templateUrl: 'static/views/legalnotice.html'
             })
+            .state('privacypolicy', {
+                url: '/privacypolicy',
+                templateUrl: 'static/views/privacypolicy.html'
+            })
             // press news
             .state('20141125', {
                 url: '/20141125',
