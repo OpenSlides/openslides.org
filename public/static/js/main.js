@@ -297,10 +297,10 @@ angular.module('openslides-website', [
 .controller('DownloadCtrl', [
     '$scope',
     function ($scope) {
-        $scope.stableVersion = '2.1.1';
-        $scope.stableDate = '2017-04-05';
-        $scope.betaVersion = '2.2b3';
-        $scope.betaDate = '2018-04-13';
+        $scope.stableVersion = '2.2';
+        $scope.stableDate = '2018-06-06';
+        //$scope.betaVersion = '2.2b3';
+        //$scope.betaDate = '2018-04-13';
     }
 ])
 
@@ -324,10 +324,15 @@ angular.module('openslides-website', [
               url:  'https://github.com/OpenSlides/openslides-protocol',
               tags: ['2.2']
             },
-            { name: 'Export Plugin',
-              desc: gettext('Exports OpenSlides data in several formats (e.g. ODT, HTML, CSV).'),
-              url:  'https://github.com/OpenSlides/openslides-export',
-              tags: ['1.7']
+            { name: 'OpenSlides Convercations (Beta)',
+              desc: gettext('Supports audio and video conferences using WebRTC'),
+              url:  'https://github.com/OpenSlides/openslides-conversations',
+              tags: ['2.2']
+            },
+            { name: 'OpenSlides Presenter',
+              desc: gettext('Provides presenter view and clicker support for pdf presentations'),
+              url:  'https://github.com/OpenSlides/openslides-conversations',
+              tags: ['2.2']
             }
         ];
     }
