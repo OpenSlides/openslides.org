@@ -319,19 +319,24 @@ angular.module('openslides-website', [
               url:  'https://github.com/OpenSlides/openslides-votecollector',
               tags: ['2.2']
             },
-            { name: 'Protocol Plugin (Beta)',
+            { name: 'Protocol Plugin',
               desc: gettext('Provides protocolling of agenda items in OpenSlides.'),
               url:  'https://github.com/OpenSlides/openslides-protocol',
               tags: ['2.2']
             },
             { name: 'OpenSlides Convercations (Beta)',
-              desc: gettext('Supports audio and video conferences using WebRTC'),
+              desc: gettext('Supports audio and video conferences using WebRTC.'),
               url:  'https://github.com/OpenSlides/openslides-conversations',
               tags: ['2.2']
             },
             { name: 'OpenSlides Presenter',
-              desc: gettext('Provides presenter view and clicker support for pdf presentations'),
-              url:  'https://github.com/OpenSlides/openslides-conversations',
+              desc: gettext('Provides presenter view and clicker support for pdf presentations.'),
+              url:  'https://github.com/OpenSlides/openslides-presenter',
+              tags: ['2.2']
+            },
+            { name: 'OpenSlides SAML',
+              desc: gettext('Provides a login via a SAML single sign on service.'),
+              url:  'https://github.com/OpenSlides/openslides-saml',
               tags: ['2.2']
             }
         ];
