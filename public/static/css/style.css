@@ -274,6 +274,9 @@ small {
 .references .row .logo {
     padding: 0 10px;
 }
+.referenceslider {
+    width: 100%;
+}
 
 /* ======= features ======= */
 

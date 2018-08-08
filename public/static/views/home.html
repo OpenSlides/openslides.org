@@ -91,7 +91,7 @@
               <i class="fa fa-chevron-left"></i>
             </a>
           </div>
-          <a ui-sref="references">
+          <a ui-sref="references" class="referenceslider">
             <img ng-repeat="logo in logos | limitTo: numberPerPage : page*numberPerPage" class="col-xs-2 logo"
               ng-src="static/img/references/{{ logo.src }}" alt="{{ logo.name }}" title="{{ logo.name }}">
           </a>
