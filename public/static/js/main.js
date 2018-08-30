@@ -210,10 +210,10 @@ angular.module('openslides-website', [
         ];
         $scope.logos_gewerkschaften = [
             { name: 'Deutscher Gewerkschaftsbund (DGB)',
-              event: 'DGB-Bundeskongress 2018, DGB-Bezirkskonferenz',
+              event: 'DGB-Bundeskongress 2018, DGB-Bezirkskonferenzen',
               src:  'dgb-logo.png' },
             { name: 'DGB Jugend',
-              event: 'DGB-Bundesjugendkonferenz 2017',
+              event: 'DGB-Bundesjugendkonferenz 2017, DGB-Bezirksjugendkonferenzen',
               src:  'dgb-jugend-logo.png' },
             { name: 'Industriegewerkschaft Bauen Agrar Umwelt',
               event: 'Gewerkschaftstag 2017',
@@ -311,8 +311,8 @@ angular.module('openslides-website', [
     function ($scope) {
         $scope.stableVersion = '2.2';
         $scope.stableDate = '2018-06-06';
-        //$scope.betaVersion = '2.2b3';
-        //$scope.betaDate = '2018-04-13';
+        $scope.betaVersion = '2.3b1';
+        $scope.betaDate = '2018-08-30';
     }
 ])
 
