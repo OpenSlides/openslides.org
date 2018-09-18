@@ -339,7 +339,7 @@ angular.module('openslides-website', [
               url:  'https://github.com/OpenSlides/openslides-protocol',
               tags: ['2.2']
             },
-            { name: 'OpenSlides Convercations (Beta)',
+            { name: 'OpenSlides Conversations (Beta)',
               desc: gettext('Supports audio and video conferences using WebRTC.'),
               url:  'https://github.com/OpenSlides/openslides-conversations',
               tags: ['2.2']
