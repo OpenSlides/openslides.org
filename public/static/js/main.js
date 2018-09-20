@@ -312,10 +312,10 @@ angular.module('openslides-website', [
 .controller('DownloadCtrl', [
     '$scope',
     function ($scope) {
-        $scope.stableVersion = '2.2';
-        $scope.stableDate = '2018-06-06';
-        $scope.betaVersion = '2.3b1';
-        $scope.betaDate = '2018-08-30';
+        $scope.stableVersion = '2.3';
+        $scope.stableDate = '2018-09-20';
+        //$scope.betaVersion = '2.3b1';
+        //$scope.betaDate = '2018-08-30';
     }
 ])
 
@@ -324,24 +324,14 @@ angular.module('openslides-website', [
     'gettext',
     function ($scope, gettext) {
         $scope.plugins = [
-            { name: 'CSV Export Plugin',
-              desc: gettext('Provides a CSV export of the lists of speakers. It is also useful as an example how to write plugins for OpenSlides.'),
-              url:  'https://github.com/OpenSlides/openslides-csv-export',
-              tags: ['2.2']
-            },
-            { name: 'VoteCollector Plugin',
-              desc: gettext('Connects OpenSlides with the electronic voting system VoteCollector.'),
+            { name: 'Voting Plugin',
+              desc: gettext('Provides electronic voting for motions and elections in OpenSlides.'),
               url:  'https://github.com/OpenSlides/openslides-votecollector',
-              tags: ['2.2']
+              tags: ['2.3']
             },
             { name: 'Protocol Plugin',
               desc: gettext('Provides protocolling of agenda items in OpenSlides.'),
               url:  'https://github.com/OpenSlides/openslides-protocol',
-              tags: ['2.2']
-            },
-            { name: 'OpenSlides Conversations (Beta)',
-              desc: gettext('Supports audio and video conferences using WebRTC.'),
-              url:  'https://github.com/OpenSlides/openslides-conversations',
               tags: ['2.2']
             },
             { name: 'OpenSlides Presenter',
@@ -352,6 +342,16 @@ angular.module('openslides-website', [
             { name: 'OpenSlides SAML',
               desc: gettext('Provides a login via a SAML single sign on service.'),
               url:  'https://github.com/OpenSlides/openslides-saml',
+              tags: ['2.2']
+            },
+            { name: 'OpenSlides Conversations (Beta)',
+              desc: gettext('Supports audio and video conferences using WebRTC.'),
+              url:  'https://github.com/OpenSlides/openslides-conversations',
+              tags: ['2.2']
+            },
+            { name: 'CSV Export Plugin',
+              desc: gettext('Provides a CSV export of the lists of speakers. It is also useful as an example how to write plugins for OpenSlides.'),
+              url:  'https://github.com/OpenSlides/openslides-csv-export',
               tags: ['2.2']
             }
         ];
