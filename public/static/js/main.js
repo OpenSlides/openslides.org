@@ -226,7 +226,10 @@ angular.module('openslides-website', [
               src:  'gdp-logo.png' },
             { name: 'Gewerkschaft Nahrung Genuss Gaststätten (NGG)',
               event: 'Bundesjugendkonferenz 2018',
-              src:  'ngg-logo.png' }
+              src:  'ngg-logo.png' },
+            { name: 'Gewerkschaft Erziehung und Wissenschaft (GEW)',
+              event: 'Landesvertreterversammlung Thüringen 2018',
+              src:  'gew-logo.png' },
         ];
         $scope.logos_misc = [
             { name: 'Amnesty International',
