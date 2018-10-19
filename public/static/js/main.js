@@ -335,17 +335,17 @@ angular.module('openslides-website', [
             { name: 'Protocol Plugin',
               desc: gettext('Provides protocolling of agenda items in OpenSlides.'),
               url:  'https://github.com/OpenSlides/openslides-protocol',
-              tags: ['2.2']
+              tags: ['2.3']
             },
             { name: 'OpenSlides Presenter',
               desc: gettext('Provides presenter view and clicker support for pdf presentations.'),
               url:  'https://github.com/OpenSlides/openslides-presenter',
-              tags: ['2.2']
+              tags: ['2.3']
             },
             { name: 'OpenSlides SAML',
               desc: gettext('Provides a login via a SAML single sign on service.'),
               url:  'https://github.com/OpenSlides/openslides-saml',
-              tags: ['2.2']
+              tags: ['2.3']
             },
             { name: 'OpenSlides Conversations (Beta)',
               desc: gettext('Supports audio and video conferences using WebRTC.'),
@@ -355,7 +355,7 @@ angular.module('openslides-website', [
             { name: 'CSV Export Plugin',
               desc: gettext('Provides a CSV export of the lists of speakers. It is also useful as an example how to write plugins for OpenSlides.'),
               url:  'https://github.com/OpenSlides/openslides-csv-export',
-              tags: ['2.2']
+              tags: ['2.3']
             }
         ];
     }
