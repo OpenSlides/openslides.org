@@ -204,12 +204,15 @@ angular.module('openslides-website', [
             { name: 'Jusos',
               event: 'Bezirk Hessen Süd / Kreis Nordfriesland / Ortsgruppe Föhr',
               src:  'jusos-logo.png' },
+            { name: 'Linksjugend',
+              event: 'Landesjugendplenum Sachsen',
+              src:  'linksjugend-logo.png' },
+            { name: 'Piraten ohne Grenzen',
+              event: 'Piratenversammlungen',
+              src:  'pog-logo.png' },
             { name: 'Junge Generation in der SPÖ Wien',
               event: 'Landeskonferenz',
               src:  'jgspoe-logo.png' },
-            { name: 'Piraten ohne Grenzen',
-              event: 'Piratenversammlungen',
-              src:  'pog-logo.png' }
         ];
         $scope.logos_gewerkschaften = [
             { name: 'Deutscher Gewerkschaftsbund (DGB)',
@@ -225,10 +228,10 @@ angular.module('openslides-website', [
               event: 'Bundesfrauenkonferenz / Bundesseniorenkonferenz / Bundesjugendkonferenz 2018',
               src:  'gdp-logo.png' },
             { name: 'Gewerkschaft Nahrung Genuss Gaststätten (NGG)',
-              event: 'Bundesjugendkonferenz 2018',
+              event: 'Gewerkschaftstag 2018, Bundesjugendkonferenz 2018',
               src:  'ngg-logo.png' },
             { name: 'Gewerkschaft Erziehung und Wissenschaft (GEW)',
-              event: 'Landesvertreterversammlung Thüringen 2018',
+              event: 'Landesvertreterversammlungen 2018 Thüringen, Brandenburg',
               src:  'gew-logo.png' },
         ];
         $scope.logos_misc = [
@@ -253,6 +256,9 @@ angular.module('openslides-website', [
             { name: 'Bund der Pfadfinderinnen und Pfadfinder e.V.',
               event: 'Bundesversammlung',
               src:  'bdp-logo.png' },
+            { name: 'Bund der Deutschen Katholischen Jugend',
+              event: 'Diözesanversammlung Diözesanverband Osnabrück',
+              src:  'bdkj-os-logo.png' },
             { name: 'Evangelische StudentInnengemeinde in der Bundesrepublik Deutschland (ESG)',
               event: 'Bundesversammlungen',
               src:  'esg-logo.png' },
