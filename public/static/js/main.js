@@ -45,6 +45,10 @@ angular.module('openslides-website', [
                 templateUrl: 'static/views/privacypolicy.html'
             })
             // press news
+            .state('dgb-bundeskongress2018', {
+                url: '/dgb-bundeskongress2018',
+                templateUrl: 'static/views/dgb-bundeskongress2018.html'
+            })
             .state('20141125', {
                 url: '/20141125',
                 templateUrl: 'static/views/news-20141125.html'

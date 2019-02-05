@@ -19,5 +19,8 @@
     "jshint": "~2.9.1",
     "main-bower-files": "~2.11.1",
     "po2json": "~0.4.1"
+  },
+  "dependencies": {
+    "natives": "^1.1.6"
   }
 }
